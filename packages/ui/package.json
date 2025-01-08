@@ -1,10 +1,10 @@
 {
-  "name": "@demox-labs/aleo-wallet-adapter-reactui",
-  "version": "0.0.31",
-  "description": "React UI Components for connecting Aleo-compatible wallets to your dApp.",
+  "name": "@demox-labs/miden-wallet-adapter-reactui",
+  "version": "0.0.0",
+  "description": "React UI Components for connecting Miden-compatible wallets to your dApp.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/demox-labs/aleo-wallet-adapter",
+  "repository": "https://github.com/demox-labs/miden-wallet-adapter",
   "author": "Demox Labs",
   "license": "MIT",
   "scripts": {
@@ -14,17 +14,17 @@
     "doc": "typedoc --plugin typedoc-plugin-markdown"
   },
   "dependencies": {
-    "@demox-labs/aleo-wallet-adapter-base": "^0.0.20",
-    "@demox-labs/aleo-wallet-adapter-react": "^0.0.19"
+    "@demox-labs/miden-wallet-adapter-base": "0.0.0",
+    "@demox-labs/miden-wallet-adapter-react": "0.0.0"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rimraf": "^3.0.2",
-    "typedoc": "^0.23.18",
-    "typedoc-plugin-markdown": "^3.13.6",
-    "typescript": "^4.8.4"
+    "rimraf": "^6.0.1",
+    "typedoc": "^0.27.6",
+    "typedoc-plugin-markdown": "^4.4.1",
+    "typescript": "^5.7.2"
   },
   "peerDependencies": {
     "react": "^18.2.0",
