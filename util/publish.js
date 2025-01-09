@@ -3,8 +3,8 @@ const path = require('path');
 const readline = require('readline');
 
 const directories = [
-  './packages/core/base',
-  './packages/core/react',
+  //'./packages/core/base',
+  //'./packages/core/react',
   './packages/ui',
   './packages/wallets/trident',
 ];
@@ -59,7 +59,7 @@ async function publishPackages() {
       await runCommand(dir, cmd);
     }
     // Handle npm publish separately to include OTP
-    await runCommand(dir, `npm publish --otp=${otp}`);
+    await runCommand(dir, `npm publish --otp=${otp} --access=public`);
   }
 
   console.log('All packages published successfully!');

@@ -9,8 +9,7 @@ import {
   WalletReadyState,
   DecryptPermission,
   WalletAdapterNetwork,
-  AleoTransaction,
-  AleoDeployment,
+  MidenTransaction,
 } from '@demox-labs/miden-wallet-adapter-base';
 import type { FC, ReactNode } from 'react';
 import React, {
@@ -213,7 +212,6 @@ export const WalletProvider: FC<WalletProviderProps> = ({
       isConnecting.current = true;
       setConnecting(true);
       try {
-        console.log('Connecting wallet', adapter.name);
         await adapter.connect(decryptPermission, network, programs);
       } catch (error: any) {
         // Clear the selected wallet
@@ -296,7 +294,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     | undefined = useMemo(
     () =>
       adapter && 'requestTransaction' in adapter
-        ? async (transaction: AleoTransaction) => {
+        ? async (transaction: MidenTransaction) => {
             if (!connected) throw handleError(new WalletNotConnectedError());
             return await adapter.requestTransaction(transaction);
           }

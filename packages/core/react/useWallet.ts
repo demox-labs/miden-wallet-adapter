@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react';
 import {
   Adapter,
-  AleoTransaction,
+  MidenTransaction,
   DecryptPermission,
   MessageSignerWalletAdapterProps,
   WalletAdapterNetwork,
@@ -60,7 +60,7 @@ const DEFAULT_CONTEXT = {
       console.error(constructMissingProviderErrorMessage('get', 'disconnect'))
     );
   },
-  requestTransaction(_transaction: AleoTransaction) {
+  requestTransaction(_transaction: MidenTransaction) {
     return Promise.reject(
       console.error(
         constructMissingProviderErrorMessage('get', 'requestTransaction')

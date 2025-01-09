@@ -10,7 +10,7 @@ import {
   WalletReadyState,
   DecryptPermission,
   WalletAdapterNetwork,
-  AleoTransaction,
+  MidenTransaction,
   WalletTransactionError,
 } from '@demox-labs/miden-wallet-adapter-base';
 
@@ -23,7 +23,7 @@ export interface TridentWalletEvents {
 export interface TridentWallet extends EventEmitter<TridentWalletEvents> {
   publicKey?: string;
   requestTransaction(
-    transaction: AleoTransaction
+    transaction: MidenTransaction
   ): Promise<{ transactionId?: string }>;
   connect(
     decryptPermission: DecryptPermission,
@@ -70,7 +70,6 @@ export class TridentWalletAdapter extends BaseMessageSignerWalletAdapter {
     this._publicKey = null;
     this._decryptPermission = DecryptPermission.NoDecrypt;
 
-    console.log('TridentWalletAdapter', appName);
     if (this._readyState !== WalletReadyState.Unsupported) {
       scopePollingDetectionStrategy(() => {
         if (window?.tridentWallet || window?.trident) {
@@ -103,7 +102,7 @@ export class TridentWalletAdapter extends BaseMessageSignerWalletAdapter {
     this._readyState = readyState;
   }
 
-  async requestTransaction(transaction: AleoTransaction): Promise<string> {
+  async requestTransaction(transaction: MidenTransaction): Promise<string> {
     try {
       const wallet = this._wallet;
       if (!wallet || !this.publicKey) throw new WalletNotConnectedError();

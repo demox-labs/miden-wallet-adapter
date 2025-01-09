@@ -1,47 +1,78 @@
+import { TransactionResult } from '@demox-labs/miden-sdk/dist/crates/miden_client_web';
 
-export interface AleoTransition {
-  program: string;
-  functionName: string;
-  inputs: any[];
+export type NoteTypeString = 'public' | 'private';
+
+export interface MidenSendTransaction {
+  senderAccountId: string;
+  recipientAccountId: string;
+  faucetId: string;
+  noteType: NoteTypeString;
+  amount: number;
+  recallBlocks?: number;
 }
 
-export class Transition implements AleoTransition {
-  program: string;
-  functionName: string;
-  inputs: any[];
+export class SendTransaction implements MidenSendTransaction {
+  senderAccountId: string;
+  recipientAccountId: string;
+  faucetId: string;
+  noteType: NoteTypeString;
+  amount: number;
+  recallBlocks?: number;
 
-  constructor(program: string, functionName: string, inputs: any[]) {
-    this.program = program;
-    this.functionName = functionName;
-    this.inputs = inputs;
+  constructor(
+    sender: string,
+    recipient: string,
+    faucetId: string,
+    noteType: NoteTypeString,
+    amount: number,
+    recallBlocks?: number
+  ) {
+    this.senderAccountId = sender;
+    this.recipientAccountId = recipient;
+    this.faucetId = faucetId;
+    this.noteType = noteType;
+    this.amount = amount;
+    this.recallBlocks = recallBlocks;
   }
 }
 
-export interface AleoTransaction {
-  address: string;
-  chainId: string;
-  transitions: AleoTransition[];
-  fee: number;
-  feePrivate: boolean;
+export interface MidenTransaction {
+  transactionResult?: TransactionResult;
+  sendTransaction?: MidenSendTransaction;
 }
 
-export class Transaction implements AleoTransaction {
-  address: string;
-  chainId: string;
-  transitions: AleoTransition[];
-  fee: number;
-  feePrivate: boolean;
+export class Transaction implements MidenTransaction {
+  transactionResult?: TransactionResult;
+  sendTransaction?: MidenSendTransaction;
 
-  constructor(address: string, chainId: string, transitions: AleoTransition[], fee: number, feePrivate = true) {
-    this.address = address;
-    this.chainId = chainId;
-    this.transitions = transitions;
-    this.fee = fee;
-    this.feePrivate = feePrivate;
+  constructor(
+    sendTransaction?: MidenSendTransaction,
+    transactionResult?: TransactionResult
+  ) {
+    this.sendTransaction = sendTransaction;
+    this.transactionResult = transactionResult;
   }
 
-  static createTransaction(address: string, chainId: string, program: string, functionName: string, inputs: any[], fee: number, feePrivate = true) {
-    const transition = new Transition(program, functionName, inputs);
-    return new Transaction(address, chainId, [transition], fee, feePrivate);
+  static createSendTransaction(
+    sender: string,
+    recipient: string,
+    faucetId: string,
+    noteType: NoteTypeString,
+    amount: number,
+    recallBlocks?: number
+  ) {
+    const sendTransaction = new SendTransaction(
+      sender,
+      recipient,
+      faucetId,
+      noteType,
+      amount,
+      recallBlocks
+    );
+    return new Transaction(sendTransaction);
+  }
+
+  static createTransactionResult(transactionResult: TransactionResult) {
+    return new Transaction(undefined, transactionResult);
   }
 }

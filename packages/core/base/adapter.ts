@@ -6,6 +6,8 @@ import type {
   WalletAdapterNetwork,
 } from './types';
 
+export { EventEmitter };
+
 export interface WalletAdapterEvents {
   connect(publicKey: string, programs?: string[]): void;
   disconnect(): void;

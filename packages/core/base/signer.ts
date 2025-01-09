@@ -1,6 +1,6 @@
 import type { WalletAdapter, WalletAdapterProps } from './adapter';
 import { BaseWalletAdapter } from './adapter';
-import { AleoTransaction } from './transaction';
+import { MidenTransaction } from './transaction';
 
 export type Adapter =
   | WalletAdapter
@@ -19,7 +19,7 @@ export abstract class BaseSignerWalletAdapter<Name extends string = string>
 
 export interface MessageSignerWalletAdapterProps<Name extends string = string>
   extends WalletAdapterProps<Name> {
-  requestTransaction(transaction: AleoTransaction): Promise<string>;
+  requestTransaction(transaction: MidenTransaction): Promise<string>;
 }
 
 export type MessageSignerWalletAdapter<Name extends string = string> =
@@ -31,5 +31,5 @@ export abstract class BaseMessageSignerWalletAdapter<
   extends BaseSignerWalletAdapter<Name>
   implements MessageSignerWalletAdapter<Name>
 {
-  abstract requestTransaction(transaction: AleoTransaction): Promise<string>;
+  abstract requestTransaction(transaction: MidenTransaction): Promise<string>;
 }
