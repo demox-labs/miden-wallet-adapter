@@ -6,7 +6,7 @@
 
 # Class: WalletWindowBlockedError
 
-Defined in: [errors.ts:71](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L71)
+Defined in: [errors.ts:71](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L71)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [errors.ts:71](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 > **new WalletWindowBlockedError**(`message`?, `error`?): [`WalletWindowBlockedError`](WalletWindowBlockedError.md)
 
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L5)
+Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L5)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **error**: `any`
 
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L2)
+Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L2)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 > **name**: `string` = `'WalletWindowBlockedError'`
 
-Defined in: [errors.ts:72](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L72)
+Defined in: [errors.ts:72](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L72)
 
 #### Overrides
 

@@ -6,7 +6,7 @@
 
 # Interface: TridentWallet
 
-Defined in: [adapter.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L23)
+Defined in: [adapter.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L23)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [adapter.ts:23](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `optional` **publicKey**: `string`
 
-Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L24)
+Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L24)
 
 ## Methods
 
@@ -60,7 +60,7 @@ Defined in: node\_modules/eventemitter3/index.d.ts:45
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
 
-Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L28)
+Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L28)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [adapter.ts:33](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L33)
+Defined in: [adapter.ts:33](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L33)
 
 #### Returns
 
@@ -375,7 +375,7 @@ Remove the listeners of a given event.
 
 > **requestTransaction**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
 
-Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L25)
+Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L25)
 
 #### Parameters
 

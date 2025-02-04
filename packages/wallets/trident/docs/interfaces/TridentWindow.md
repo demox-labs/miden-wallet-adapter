@@ -6,7 +6,7 @@
 
 # Interface: TridentWindow
 
-Defined in: [adapter.ts:36](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L36)
+Defined in: [adapter.ts:36](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L36)
 
 ## Extends
 
@@ -4292,7 +4292,7 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26451
 
 > `optional` **trident**: [`TridentWallet`](TridentWallet.md)
 
-Defined in: [adapter.ts:38](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L38)
+Defined in: [adapter.ts:38](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L38)
 
 ***
 
@@ -4300,7 +4300,7 @@ Defined in: [adapter.ts:38](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `optional` **tridentWallet**: [`TridentWallet`](TridentWallet.md)
 
-Defined in: [adapter.ts:37](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/wallets/trident/adapter.ts#L37)
+Defined in: [adapter.ts:37](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/wallets/trident/adapter.ts#L37)
 
 ***
 

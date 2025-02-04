@@ -6,7 +6,7 @@
 
 # Class: WalletSendTransactionError
 
-Defined in: [errors.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L55)
+Defined in: [errors.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L55)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [errors.ts:55](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 > **new WalletSendTransactionError**(`message`?, `error`?): [`WalletSendTransactionError`](WalletSendTransactionError.md)
 
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L5)
+Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L5)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **error**: `any`
 
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L2)
+Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L2)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 > **name**: `string` = `'WalletSendTransactionError'`
 
-Defined in: [errors.ts:56](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/errors.ts#L56)
+Defined in: [errors.ts:56](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/errors.ts#L56)
 
 #### Overrides
 

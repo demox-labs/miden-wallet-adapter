@@ -25,7 +25,21 @@ export const WalletListItem: FC<WalletListItemProps> = ({
       >
         {wallet.adapter.name}
         {wallet.readyState === WalletReadyState.Installed && (
-          <span>Detected</span>
+          <>
+            <span>Installed</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M10.1003 5L8.5 6.5745L13.6981 11.7L8.5 16.8255L10.1003 18.4L16.91 11.7L10.1003 5Z"
+                fill="black"
+              />
+            </svg>
+          </>
         )}
       </Button>
     </li>

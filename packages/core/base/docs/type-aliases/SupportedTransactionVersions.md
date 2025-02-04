@@ -8,4 +8,4 @@
 
 > **SupportedTransactionVersions**: `ReadonlySet`\<`any`\> \| `null`
 
-Defined in: [types.ts:6](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/base/types.ts#L6)
+Defined in: [types.ts:6](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/types.ts#L6)

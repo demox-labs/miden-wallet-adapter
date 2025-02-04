@@ -11,10 +11,10 @@
     dexie "^4.0.1"
     glob "^11.0.0"
 
-"@demox-labs/miden-wallet-adapter-base@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.0.3.tgz#c1f54bf17ca47c24a1817bd363e95b8debc0c196"
-  integrity sha512-WakkXc04lNT4jR1gddtujk/ya2b4AuwVZi/kqCQSncokojKEON6M8nOPi7rFLCueHuxhgeGrIQV0rNOylmNfLg==
+"@demox-labs/miden-wallet-adapter-base@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.0.4.tgz#cf10b69da17c7d2195f0669d7c025b9b194f4e6b"
+  integrity sha512-5qmf1xeCrGsW9wcq8MYhZ6bIJkYN2kH69DbbMpEplHXdb02mXieTsR4T0fUkaPXLNBeT/7tSg0bVigo7Fwn/4A==
   dependencies:
     eventemitter3 "^5.0.1"
 

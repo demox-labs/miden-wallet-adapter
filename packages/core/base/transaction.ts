@@ -1,6 +1,32 @@
-import { TransactionResult } from '@demox-labs/miden-sdk/dist/crates/miden_client_web';
+import { TransactionRequest } from '@demox-labs/miden-sdk/dist/crates/miden_client_web';
 
 export type NoteTypeString = 'public' | 'private';
+
+export interface MidenMintTransaction {
+  recipientAccountId: string;
+  faucetId: string;
+  noteType: NoteTypeString;
+  amount: number;
+}
+
+export class MintTransaction implements MidenMintTransaction {
+  recipientAccountId: string;
+  faucetId: string;
+  noteType: NoteTypeString;
+  amount: number;
+
+  constructor(
+    recipient: string,
+    faucetId: string,
+    noteType: NoteTypeString,
+    amount: number
+  ) {
+    this.recipientAccountId = recipient;
+    this.faucetId = faucetId;
+    this.noteType = noteType;
+    this.amount = amount;
+  }
+}
 
 export interface MidenSendTransaction {
   senderAccountId: string;
@@ -36,21 +62,43 @@ export class SendTransaction implements MidenSendTransaction {
   }
 }
 
+export enum TransactionType {
+  Mint = 'mint',
+  Send = 'send',
+  Custom = 'custom',
+}
+export type TransactionPayload =
+  | MidenMintTransaction
+  | MidenSendTransaction
+  | Uint8Array;
+
 export interface MidenTransaction {
-  transactionResult?: TransactionResult;
-  sendTransaction?: MidenSendTransaction;
+  type: TransactionType;
+  payload: TransactionPayload;
 }
 
 export class Transaction implements MidenTransaction {
-  transactionResult?: TransactionResult;
-  sendTransaction?: MidenSendTransaction;
+  type: TransactionType;
+  payload: TransactionPayload;
 
-  constructor(
-    sendTransaction?: MidenSendTransaction,
-    transactionResult?: TransactionResult
+  constructor(type: TransactionType, payload: TransactionPayload) {
+    this.type = type;
+    this.payload = payload;
+  }
+
+  static createMintTransaction(
+    recipient: string,
+    faucetId: string,
+    noteType: NoteTypeString,
+    amount: number
   ) {
-    this.sendTransaction = sendTransaction;
-    this.transactionResult = transactionResult;
+    const mintTransaction = new MintTransaction(
+      recipient,
+      faucetId,
+      noteType,
+      amount
+    );
+    return new Transaction(TransactionType.Mint, mintTransaction);
   }
 
   static createSendTransaction(
@@ -69,10 +117,14 @@ export class Transaction implements MidenTransaction {
       amount,
       recallBlocks
     );
-    return new Transaction(sendTransaction);
+    return new Transaction(TransactionType.Send, sendTransaction);
   }
 
-  static createTransactionResult(transactionResult: TransactionResult) {
-    return new Transaction(undefined, transactionResult);
+  static createCustomTransaction(transactionRequest: TransactionRequest) {
+    // TODO: change to .serialize() when available
+    const requestBytes = new TextEncoder().encode(
+      JSON.stringify(transactionRequest)
+    );
+    return new Transaction(TransactionType.Custom, requestBytes);
   }
 }

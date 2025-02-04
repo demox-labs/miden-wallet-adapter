@@ -8,14 +8,14 @@ import React, {
 } from 'react';
 import { createPortal } from 'react-dom';
 import {
+  WalletAdapterNetwork,
   WalletName,
   WalletReadyState,
 } from '@demox-labs/miden-wallet-adapter-base';
 import { useWallet, Wallet } from '@demox-labs/miden-wallet-adapter-react';
-import { Collapse } from './Collapse';
 import { useWalletModal } from './useWalletModal';
 import { WalletListItem } from './WalletListItem';
-import { AleoSVG } from './AleoSVG';
+import { DiscoverMidenMessage } from './DiscoverMidenMessage';
 
 export interface WalletModalProps {
   className?: string;
@@ -25,11 +25,13 @@ export interface WalletModalProps {
 export const WalletModal: FC<WalletModalProps> = ({
   className = '',
   container = 'body',
+  decryptPermission,
+  network,
+  programs,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { wallets, select } = useWallet();
+  const { wallets, select, connect, wallet } = useWallet();
   const { setVisible } = useWalletModal();
-  const [expanded, setExpanded] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
   const [portal, setPortal] = useState<Element | null>(null);
 
@@ -59,17 +61,15 @@ export const WalletModal: FC<WalletModalProps> = ({
           (wallet: { adapter: { name: WalletName } }) =>
             wallet.adapter.name === 'Trident Wallet'
         ) ||
-          wallets.find(
-            (wallet: { adapter: { name: WalletName } }) =>
-              wallet.adapter.name === 'Phantom'
-          ) ||
-          wallets.find(
-            (wallet: { readyState: any }) =>
-              wallet.readyState === WalletReadyState.Loadable
-          ) ||
           // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
           otherWallets[0]!;
   }, [installedWallets, wallets, otherWallets]);
+
+  const otherInstalledWallets = useMemo(() => {
+    return installedWallets.filter(
+      (wallet) => wallet.adapter.name !== getStartedWallet.adapter.name
+    );
+  }, [installedWallets, getStartedWallet]);
 
   const hideModal = useCallback(() => {
     setFadeIn(false);
@@ -90,11 +90,6 @@ export const WalletModal: FC<WalletModalProps> = ({
       handleClose(event);
     },
     [select, handleClose]
-  );
-
-  const handleCollapseClick = useCallback(
-    () => setExpanded(!expanded),
-    [expanded]
   );
 
   const handleTabKey = useCallback(
@@ -156,6 +151,18 @@ export const WalletModal: FC<WalletModalProps> = ({
     [container]
   );
 
+  useLayoutEffect(() => {
+    if (wallet) {
+      connect(
+        decryptPermission || 'NO_DECRYPT',
+        network || WalletAdapterNetwork.Testnet,
+        programs ?? []
+      ).catch((e) => {
+        console.log({ e });
+      });
+    }
+  }, [wallet]);
+
   return (
     portal &&
     createPortal(
@@ -170,77 +177,68 @@ export const WalletModal: FC<WalletModalProps> = ({
       >
         <div className="wallet-adapter-modal-container">
           <div className="wallet-adapter-modal-wrapper">
-            <button
-              onClick={handleClose}
-              className="wallet-adapter-modal-button-close"
-            >
-              <svg width="14" height="14">
-                <path d="M14 12.461 8.3 6.772l5.234-5.233L12.006 0 6.772 5.234 1.54 0 0 1.539l5.234 5.233L0 12.006l1.539 1.528L6.772 8.3l5.69 5.7L14 12.461z" />
-              </svg>
-            </button>
+            <div className="wallet-adapter-modal-title">
+              Connect a Wallet
+              <button
+                onClick={handleClose}
+                className="wallet-adapter-modal-button-close"
+              >
+                <svg width="14" height="14">
+                  <path d="M14 12.461 8.3 6.772l5.234-5.233L12.006 0 6.772 5.234 1.54 0 0 1.539l5.234 5.233L0 12.006l1.539 1.528L6.772 8.3l5.69 5.7L14 12.461z" />
+                </svg>
+              </button>
+            </div>
             {installedWallets.length ? (
               <>
-                <h1 className="wallet-adapter-modal-title">
-                  Connect a wallet on Miden to continue
-                </h1>
+                <div className="wallet-adapter-modal-content">
+                  Connect your Miden Wallet and start exploring its powerful
+                  features now!
+                  <hr />
+                </div>
                 <ul className="wallet-adapter-modal-list">
-                  {installedWallets.map((wallet) => (
-                    <WalletListItem
-                      key={wallet.adapter.name}
-                      handleClick={(event) =>
-                        handleWalletClick(event, wallet.adapter.name)
-                      }
-                      wallet={wallet}
-                    />
-                  ))}
-                  {otherWallets.length ? (
-                    <Collapse
-                      expanded={expanded}
-                      id="wallet-adapter-modal-collapse"
-                    >
+                  <span className="wallet-adapter-modal-list-section-title">
+                    Recommended
+                  </span>
+                  <WalletListItem
+                    key={getStartedWallet.adapter.name}
+                    handleClick={(event) =>
+                      handleWalletClick(event, getStartedWallet.adapter.name)
+                    }
+                    wallet={getStartedWallet}
+                  />
+                  {(otherInstalledWallets.length > 0 ||
+                    otherWallets.length > 0) && (
+                    <>
+                      <hr />
+                      <span className="wallet-adapter-modal-list-section-title">
+                        Other wallets
+                      </span>
+                      {otherInstalledWallets.map((wallet) => (
+                        <WalletListItem
+                          key={wallet.adapter.name}
+                          handleClick={(event) =>
+                            handleWalletClick(event, wallet.adapter.name)
+                          }
+                          wallet={wallet}
+                        />
+                      ))}
                       {otherWallets.map((wallet) => (
                         <WalletListItem
                           key={wallet.adapter.name}
                           handleClick={(event) =>
                             handleWalletClick(event, wallet.adapter.name)
                           }
-                          tabIndex={expanded ? 0 : -1}
                           wallet={wallet}
                         />
                       ))}
-                    </Collapse>
-                  ) : null}
+                    </>
+                  )}
                 </ul>
-                {otherWallets.length ? (
-                  <button
-                    className="wallet-adapter-modal-list-more"
-                    onClick={handleCollapseClick}
-                    tabIndex={0}
-                  >
-                    <span>{expanded ? 'Less ' : 'More '}options</span>
-                    <svg
-                      width="13"
-                      height="7"
-                      viewBox="0 0 13 7"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className={`${
-                        expanded
-                          ? 'wallet-adapter-modal-list-more-icon-rotate'
-                          : ''
-                      }`}
-                    >
-                      <path d="M0.71418 1.626L5.83323 6.26188C5.91574 6.33657 6.0181 6.39652 6.13327 6.43762C6.24844 6.47872 6.37371 6.5 6.50048 6.5C6.62725 6.5 6.75252 6.47872 6.8677 6.43762C6.98287 6.39652 7.08523 6.33657 7.16774 6.26188L12.2868 1.626C12.7753 1.1835 12.3703 0.5 11.6195 0.5H1.37997C0.629216 0.5 0.224175 1.1835 0.71418 1.626Z" />
-                    </svg>
-                  </button>
-                ) : null}
               </>
             ) : (
               <>
-                <h1 className="wallet-adapter-modal-title">
-                  You'll need a wallet on Miden to continue
-                </h1>
                 <div className="wallet-adapter-modal-middle">
-                  <AleoSVG />
+                  <DiscoverMidenMessage />
                   <button
                     type="button"
                     className="wallet-adapter-modal-middle-button"
@@ -248,53 +246,21 @@ export const WalletModal: FC<WalletModalProps> = ({
                       handleWalletClick(event, getStartedWallet.adapter.name)
                     }
                   >
-                    Get started
+                    Install Trident Wallet
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.1003 5L8.5 6.5745L13.6981 11.7L8.5 16.8255L10.1003 18.4L16.91 11.7L10.1003 5Z"
+                        fill="white"
+                      />
+                    </svg>
                   </button>
                 </div>
-                {otherWallets.length ? (
-                  <>
-                    <button
-                      className="wallet-adapter-modal-list-more"
-                      onClick={handleCollapseClick}
-                      tabIndex={0}
-                    >
-                      <span>
-                        {expanded ? 'Hide ' : 'Already have a wallet? View '}
-                        options
-                      </span>
-                      <svg
-                        width="13"
-                        height="7"
-                        viewBox="0 0 13 7"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={`${
-                          expanded
-                            ? 'wallet-adapter-modal-list-more-icon-rotate'
-                            : ''
-                        }`}
-                      >
-                        <path d="M0.71418 1.626L5.83323 6.26188C5.91574 6.33657 6.0181 6.39652 6.13327 6.43762C6.24844 6.47872 6.37371 6.5 6.50048 6.5C6.62725 6.5 6.75252 6.47872 6.8677 6.43762C6.98287 6.39652 7.08523 6.33657 7.16774 6.26188L12.2868 1.626C12.7753 1.1835 12.3703 0.5 11.6195 0.5H1.37997C0.629216 0.5 0.224175 1.1835 0.71418 1.626Z" />
-                      </svg>
-                    </button>
-                    <Collapse
-                      expanded={expanded}
-                      id="wallet-adapter-modal-collapse"
-                    >
-                      <ul className="wallet-adapter-modal-list">
-                        {otherWallets.map((wallet) => (
-                          <WalletListItem
-                            key={wallet.adapter.name}
-                            handleClick={(event) =>
-                              handleWalletClick(event, wallet.adapter.name)
-                            }
-                            tabIndex={expanded ? 0 : -1}
-                            wallet={wallet}
-                          />
-                        ))}
-                      </ul>
-                    </Collapse>
-                  </>
-                ) : null}
               </>
             )}
           </div>

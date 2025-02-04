@@ -8,7 +8,7 @@
 
 > **useWallet**(): [`WalletContextState`](../interfaces/WalletContextState.md)
 
-Defined in: [useWallet.ts:108](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/core/react/useWallet.ts#L108)
+Defined in: [useWallet.ts:108](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/react/useWallet.ts#L108)
 
 ## Returns
 

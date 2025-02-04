@@ -8,4 +8,4 @@
 
 > `const` **WalletModal**: `FC`\<[`WalletModalProps`](../interfaces/WalletModalProps.md)\>
 
-Defined in: [WalletModal.tsx:25](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/ui/src/WalletModal.tsx#L25)
+Defined in: [WalletModal.tsx:25](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/ui/src/WalletModal.tsx#L25)

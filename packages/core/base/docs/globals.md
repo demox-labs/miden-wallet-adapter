@@ -11,6 +11,7 @@
 ## Enumerations
 
 - [DecryptPermission](enumerations/DecryptPermission.md)
+- [TransactionType](enumerations/TransactionType.md)
 - [WalletAdapterNetwork](enumerations/WalletAdapterNetwork.md)
 - [WalletReadyState](enumerations/WalletReadyState.md)
 
@@ -19,8 +20,8 @@
 - [BaseMessageSignerWalletAdapter](classes/BaseMessageSignerWalletAdapter.md)
 - [BaseSignerWalletAdapter](classes/BaseSignerWalletAdapter.md)
 - [BaseWalletAdapter](classes/BaseWalletAdapter.md)
-- [Deployment](classes/Deployment.md)
 - [EventEmitter](classes/EventEmitter.md)
+- [MintTransaction](classes/MintTransaction.md)
 - [SendTransaction](classes/SendTransaction.md)
 - [Transaction](classes/Transaction.md)
 - [WalletAccountError](classes/WalletAccountError.md)
@@ -48,8 +49,8 @@
 
 ## Interfaces
 
-- [AleoDeployment](interfaces/AleoDeployment.md)
 - [MessageSignerWalletAdapterProps](interfaces/MessageSignerWalletAdapterProps.md)
+- [MidenMintTransaction](interfaces/MidenMintTransaction.md)
 - [MidenSendTransaction](interfaces/MidenSendTransaction.md)
 - [MidenTransaction](interfaces/MidenTransaction.md)
 - [SignerWalletAdapterProps](interfaces/SignerWalletAdapterProps.md)
@@ -64,6 +65,7 @@
 - [SignerWalletAdapter](type-aliases/SignerWalletAdapter.md)
 - [SupportedTransactionVersions](type-aliases/SupportedTransactionVersions.md)
 - [TransactionOrVersionedTransaction](type-aliases/TransactionOrVersionedTransaction.md)
+- [TransactionPayload](type-aliases/TransactionPayload.md)
 - [WalletAdapter](type-aliases/WalletAdapter.md)
 - [WalletName](type-aliases/WalletName.md)
 

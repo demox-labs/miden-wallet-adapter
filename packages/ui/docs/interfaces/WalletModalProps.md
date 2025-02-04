@@ -6,7 +6,7 @@
 
 # Interface: WalletModalProps
 
-Defined in: [WalletModal.tsx:20](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/ui/src/WalletModal.tsx#L20)
+Defined in: [WalletModal.tsx:20](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/ui/src/WalletModal.tsx#L20)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [WalletModal.tsx:20](https://github.com/demox-labs/miden-wallet-adap
 
 > `optional` **className**: `string`
 
-Defined in: [WalletModal.tsx:21](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/ui/src/WalletModal.tsx#L21)
+Defined in: [WalletModal.tsx:21](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/ui/src/WalletModal.tsx#L21)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [WalletModal.tsx:21](https://github.com/demox-labs/miden-wallet-adap
 
 > `optional` **container**: `string`
 
-Defined in: [WalletModal.tsx:22](https://github.com/demox-labs/miden-wallet-adapter/blob/1af414b0061ffb570410647de775211199a69766/packages/ui/src/WalletModal.tsx#L22)
+Defined in: [WalletModal.tsx:22](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/ui/src/WalletModal.tsx#L22)
