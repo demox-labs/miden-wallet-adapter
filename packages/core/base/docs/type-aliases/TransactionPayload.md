@@ -6,6 +6,6 @@
 
 # Type Alias: TransactionPayload
 
-> **TransactionPayload**: [`MidenMintTransaction`](../interfaces/MidenMintTransaction.md) \| [`MidenSendTransaction`](../interfaces/MidenSendTransaction.md) \| `Uint8Array`
+> **TransactionPayload**: [`MidenMintTransaction`](../interfaces/MidenMintTransaction.md) \| [`MidenSendTransaction`](../interfaces/MidenSendTransaction.md) \| [`MidenCustomTransaction`](../interfaces/MidenCustomTransaction.md)
 
-Defined in: [transaction.ts:70](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L70)
+Defined in: [transaction.ts:75](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L75)

@@ -6,7 +6,7 @@
 
 # Class: SendTransaction
 
-Defined in: [transaction.ts:40](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L40)
+Defined in: [transaction.ts:40](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L40)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [transaction.ts:40](https://github.com/demox-labs/miden-wallet-adapt
 
 > **new SendTransaction**(`sender`, `recipient`, `faucetId`, `noteType`, `amount`, `recallBlocks`?): [`SendTransaction`](SendTransaction.md)
 
-Defined in: [transaction.ts:48](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L48)
+Defined in: [transaction.ts:48](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L48)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [transaction.ts:48](https://github.com/demox-labs/miden-wallet-adapt
 
 > **amount**: `number`
 
-Defined in: [transaction.ts:45](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L45)
+Defined in: [transaction.ts:45](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L45)
 
 #### Implementation of
 
@@ -68,7 +68,7 @@ Defined in: [transaction.ts:45](https://github.com/demox-labs/miden-wallet-adapt
 
 > **faucetId**: `string`
 
-Defined in: [transaction.ts:43](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L43)
+Defined in: [transaction.ts:43](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L43)
 
 #### Implementation of
 
@@ -80,7 +80,7 @@ Defined in: [transaction.ts:43](https://github.com/demox-labs/miden-wallet-adapt
 
 > **noteType**: [`NoteTypeString`](../type-aliases/NoteTypeString.md)
 
-Defined in: [transaction.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L44)
+Defined in: [transaction.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L44)
 
 #### Implementation of
 
@@ -92,7 +92,7 @@ Defined in: [transaction.ts:44](https://github.com/demox-labs/miden-wallet-adapt
 
 > `optional` **recallBlocks**: `number`
 
-Defined in: [transaction.ts:46](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L46)
+Defined in: [transaction.ts:46](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L46)
 
 #### Implementation of
 
@@ -104,7 +104,7 @@ Defined in: [transaction.ts:46](https://github.com/demox-labs/miden-wallet-adapt
 
 > **recipientAccountId**: `string`
 
-Defined in: [transaction.ts:42](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L42)
+Defined in: [transaction.ts:42](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L42)
 
 #### Implementation of
 
@@ -116,7 +116,7 @@ Defined in: [transaction.ts:42](https://github.com/demox-labs/miden-wallet-adapt
 
 > **senderAccountId**: `string`
 
-Defined in: [transaction.ts:41](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/base/transaction.ts#L41)
+Defined in: [transaction.ts:41](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L41)
 
 #### Implementation of
 

@@ -50,6 +50,7 @@
 ## Interfaces
 
 - [MessageSignerWalletAdapterProps](interfaces/MessageSignerWalletAdapterProps.md)
+- [MidenCustomTransaction](interfaces/MidenCustomTransaction.md)
 - [MidenMintTransaction](interfaces/MidenMintTransaction.md)
 - [MidenSendTransaction](interfaces/MidenSendTransaction.md)
 - [MidenTransaction](interfaces/MidenTransaction.md)

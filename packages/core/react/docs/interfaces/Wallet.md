@@ -6,7 +6,7 @@
 
 # Interface: Wallet
 
-Defined in: [useWallet.ts:12](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/react/useWallet.ts#L12)
+Defined in: [useWallet.ts:12](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/react/useWallet.ts#L12)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [useWallet.ts:12](https://github.com/demox-labs/miden-wallet-adapter
 
 > **adapter**: `Adapter`
 
-Defined in: [useWallet.ts:13](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/react/useWallet.ts#L13)
+Defined in: [useWallet.ts:13](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/react/useWallet.ts#L13)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [useWallet.ts:13](https://github.com/demox-labs/miden-wallet-adapter
 
 > **readyState**: `WalletReadyState`
 
-Defined in: [useWallet.ts:14](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/core/react/useWallet.ts#L14)
+Defined in: [useWallet.ts:14](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/react/useWallet.ts#L14)

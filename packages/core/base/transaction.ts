@@ -1,4 +1,4 @@
-import { TransactionRequest } from '@demox-labs/miden-sdk/dist/crates/miden_client_web';
+import { TransactionRequest } from '@demox-labs/miden-sdk';
 
 export type NoteTypeString = 'public' | 'private';
 
@@ -62,6 +62,11 @@ export class SendTransaction implements MidenSendTransaction {
   }
 }
 
+export interface MidenCustomTransaction {
+  accountId: string;
+  transactionRequest: string;
+}
+
 export enum TransactionType {
   Mint = 'mint',
   Send = 'send',
@@ -70,7 +75,7 @@ export enum TransactionType {
 export type TransactionPayload =
   | MidenMintTransaction
   | MidenSendTransaction
-  | Uint8Array;
+  | MidenCustomTransaction;
 
 export interface MidenTransaction {
   type: TransactionType;
@@ -120,11 +125,16 @@ export class Transaction implements MidenTransaction {
     return new Transaction(TransactionType.Send, sendTransaction);
   }
 
-  static createCustomTransaction(transactionRequest: TransactionRequest) {
-    // TODO: change to .serialize() when available
-    const requestBytes = new TextEncoder().encode(
-      JSON.stringify(transactionRequest)
-    );
-    return new Transaction(TransactionType.Custom, requestBytes);
+  static createCustomTransaction(
+    accountId: string,
+    transactionRequest: TransactionRequest
+  ) {
+    const requestBytes = transactionRequest.serialize();
+    const base64 = Buffer.from(requestBytes).toString('base64');
+    const customTransaction = {
+      accountId,
+      transactionRequest: base64,
+    };
+    return new Transaction(TransactionType.Custom, customTransaction);
   }
 }

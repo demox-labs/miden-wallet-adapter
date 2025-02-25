@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-trident",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Miden wallet adapter for the Trident Wallet.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@demox-labs/miden-wallet-adapter-base": "0.0.4",
+    "@demox-labs/miden-wallet-adapter-base": "0.0.6",
     "nanoid": "^5.0.9"
   },
   "scripts": {
@@ -25,6 +25,6 @@
     "typescript": "^5.7.2",
     "webpack": "^5.75.0",
     "webpack-cli": "^6.0.1",
-    "@demox-labs/miden-sdk": "0.0.23"
+    "@demox-labs/miden-sdk": "^0.7.1"
   }
 }

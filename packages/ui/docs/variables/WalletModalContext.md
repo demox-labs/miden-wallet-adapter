@@ -8,4 +8,4 @@
 
 > `const` **WalletModalContext**: `any`
 
-Defined in: [useWalletModal.tsx:32](https://github.com/demox-labs/miden-wallet-adapter/blob/2c75496fbd917d06ce4a82202350716b4f0b6484/packages/ui/src/useWalletModal.tsx#L32)
+Defined in: [useWalletModal.tsx:32](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/ui/src/useWalletModal.tsx#L32)
