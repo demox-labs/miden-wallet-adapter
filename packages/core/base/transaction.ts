@@ -2,32 +2,6 @@ import { TransactionRequest } from '@demox-labs/miden-sdk';
 
 export type NoteTypeString = 'public' | 'private';
 
-export interface MidenMintTransaction {
-  recipientAccountId: string;
-  faucetId: string;
-  noteType: NoteTypeString;
-  amount: number;
-}
-
-export class MintTransaction implements MidenMintTransaction {
-  recipientAccountId: string;
-  faucetId: string;
-  noteType: NoteTypeString;
-  amount: number;
-
-  constructor(
-    recipient: string,
-    faucetId: string,
-    noteType: NoteTypeString,
-    amount: number
-  ) {
-    this.recipientAccountId = recipient;
-    this.faucetId = faucetId;
-    this.noteType = noteType;
-    this.amount = amount;
-  }
-}
-
 export interface MidenSendTransaction {
   senderAccountId: string;
   recipientAccountId: string;
@@ -65,17 +39,32 @@ export class SendTransaction implements MidenSendTransaction {
 export interface MidenCustomTransaction {
   accountId: string;
   transactionRequest: string;
+  inputNotes?: string[];
+}
+
+export class CustomTransaction implements MidenCustomTransaction {
+  accountId: string;
+  transactionRequest: string;
+  inputNotes?: string[];
+
+  constructor(
+    accountId: string,
+    transactionRequest: TransactionRequest,
+    inputNoteBytes?: string[]
+  ) {
+    this.accountId = accountId;
+    const requestBytes = transactionRequest.serialize();
+    const base64 = Buffer.from(requestBytes).toString('base64');
+    this.transactionRequest = base64;
+    this.inputNotes = inputNoteBytes;
+  }
 }
 
 export enum TransactionType {
-  Mint = 'mint',
   Send = 'send',
   Custom = 'custom',
 }
-export type TransactionPayload =
-  | MidenMintTransaction
-  | MidenSendTransaction
-  | MidenCustomTransaction;
+export type TransactionPayload = MidenSendTransaction | MidenCustomTransaction;
 
 export interface MidenTransaction {
   type: TransactionType;
@@ -89,21 +78,6 @@ export class Transaction implements MidenTransaction {
   constructor(type: TransactionType, payload: TransactionPayload) {
     this.type = type;
     this.payload = payload;
-  }
-
-  static createMintTransaction(
-    recipient: string,
-    faucetId: string,
-    noteType: NoteTypeString,
-    amount: number
-  ) {
-    const mintTransaction = new MintTransaction(
-      recipient,
-      faucetId,
-      noteType,
-      amount
-    );
-    return new Transaction(TransactionType.Mint, mintTransaction);
   }
 
   static createSendTransaction(
@@ -127,14 +101,14 @@ export class Transaction implements MidenTransaction {
 
   static createCustomTransaction(
     accountId: string,
-    transactionRequest: TransactionRequest
+    transactionRequest: TransactionRequest,
+    inputNotes?: string[]
   ) {
-    const requestBytes = transactionRequest.serialize();
-    const base64 = Buffer.from(requestBytes).toString('base64');
-    const customTransaction = {
+    const transactionBytes = new CustomTransaction(
       accountId,
-      transactionRequest: base64,
-    };
-    return new Transaction(TransactionType.Custom, customTransaction);
+      transactionRequest,
+      inputNotes
+    );
+    return new Transaction(TransactionType.Custom, transactionBytes);
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-react",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Core react infrastructure for connecting Miden-compatible wallets to your dApp.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
     "doc": "typedoc --plugin typedoc-plugin-markdown --entryPoints index.ts"
   },
   "dependencies": {
-    "@demox-labs/miden-wallet-adapter-base": "0.0.6",
+    "@demox-labs/miden-wallet-adapter-base": "^0.1.0",
     "react": "^18.2.0"
   },
   "devDependencies": {

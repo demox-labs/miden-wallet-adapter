@@ -6,7 +6,7 @@
 
 # Interface: MidenTransaction
 
-Defined in: [transaction.ts:80](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L80)
+Defined in: [transaction.ts:69](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L69)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [transaction.ts:80](https://github.com/demox-labs/miden-wallet-adapt
 
 > **payload**: [`TransactionPayload`](../type-aliases/TransactionPayload.md)
 
-Defined in: [transaction.ts:82](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L82)
+Defined in: [transaction.ts:71](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L71)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [transaction.ts:82](https://github.com/demox-labs/miden-wallet-adapt
 
 > **type**: [`TransactionType`](../enumerations/TransactionType.md)
 
-Defined in: [transaction.ts:81](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L81)
+Defined in: [transaction.ts:70](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L70)

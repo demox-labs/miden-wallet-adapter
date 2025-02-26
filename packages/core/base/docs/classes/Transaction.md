@@ -6,7 +6,7 @@
 
 # Class: Transaction
 
-Defined in: [transaction.ts:85](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L85)
+Defined in: [transaction.ts:74](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L74)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [transaction.ts:85](https://github.com/demox-labs/miden-wallet-adapt
 
 > **new Transaction**(`type`, `payload`): [`Transaction`](Transaction.md)
 
-Defined in: [transaction.ts:89](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L89)
+Defined in: [transaction.ts:78](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L78)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [transaction.ts:89](https://github.com/demox-labs/miden-wallet-adapt
 
 > **payload**: [`TransactionPayload`](../type-aliases/TransactionPayload.md)
 
-Defined in: [transaction.ts:87](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L87)
+Defined in: [transaction.ts:76](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L76)
 
 #### Implementation of
 
@@ -52,7 +52,7 @@ Defined in: [transaction.ts:87](https://github.com/demox-labs/miden-wallet-adapt
 
 > **type**: [`TransactionType`](../enumerations/TransactionType.md)
 
-Defined in: [transaction.ts:86](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L86)
+Defined in: [transaction.ts:75](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L75)
 
 #### Implementation of
 
@@ -62,9 +62,9 @@ Defined in: [transaction.ts:86](https://github.com/demox-labs/miden-wallet-adapt
 
 ### createCustomTransaction()
 
-> `static` **createCustomTransaction**(`accountId`, `transactionRequest`): [`Transaction`](Transaction.md)
+> `static` **createCustomTransaction**(`accountId`, `transactionRequest`, `inputNotes`?): [`Transaction`](Transaction.md)
 
-Defined in: [transaction.ts:128](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L128)
+Defined in: [transaction.ts:102](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L102)
 
 #### Parameters
 
@@ -76,35 +76,9 @@ Defined in: [transaction.ts:128](https://github.com/demox-labs/miden-wallet-adap
 
 `TransactionRequest`
 
-#### Returns
+##### inputNotes?
 
-[`Transaction`](Transaction.md)
-
-***
-
-### createMintTransaction()
-
-> `static` **createMintTransaction**(`recipient`, `faucetId`, `noteType`, `amount`): [`Transaction`](Transaction.md)
-
-Defined in: [transaction.ts:94](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L94)
-
-#### Parameters
-
-##### recipient
-
-`string`
-
-##### faucetId
-
-`string`
-
-##### noteType
-
-[`NoteTypeString`](../type-aliases/NoteTypeString.md)
-
-##### amount
-
-`number`
+`string`[]
 
 #### Returns
 
@@ -116,7 +90,7 @@ Defined in: [transaction.ts:94](https://github.com/demox-labs/miden-wallet-adapt
 
 > `static` **createSendTransaction**(`sender`, `recipient`, `faucetId`, `noteType`, `amount`, `recallBlocks`?): [`Transaction`](Transaction.md)
 
-Defined in: [transaction.ts:109](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/transaction.ts#L109)
+Defined in: [transaction.ts:83](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L83)
 
 #### Parameters
 

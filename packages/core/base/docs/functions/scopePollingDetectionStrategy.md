@@ -8,7 +8,7 @@
 
 > **scopePollingDetectionStrategy**(`detect`): `void`
 
-Defined in: [adapter.ts:98](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/core/base/adapter.ts#L98)
+Defined in: [adapter.ts:98](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/adapter.ts#L98)
 
 ## Parameters
 

@@ -6,7 +6,7 @@
 
 # Class: TridentWalletAdapter
 
-Defined in: [wallets/trident/adapter.ts:50](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L50)
+Defined in: [wallets/trident/adapter.ts:50](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L50)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [wallets/trident/adapter.ts:50](https://github.com/demox-labs/miden-
 
 > **new TridentWalletAdapter**(`__namedParameters`): [`TridentWalletAdapter`](TridentWalletAdapter.md)
 
-Defined in: [wallets/trident/adapter.ts:66](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L66)
+Defined in: [wallets/trident/adapter.ts:66](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L66)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [wallets/trident/adapter.ts:66](https://github.com/demox-labs/miden-
 
 > **icon**: `string` = `'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJERjI1N0M3NUFERjExRUQ4OTkyRDkwNjQwODFGMjUwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJERjI1N0M4NUFERjExRUQ4OTkyRDkwNjQwODFGMjUwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkRGMjU3QzU1QURGMTFFRDg5OTJEOTA2NDA4MUYyNTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkRGMjU3QzY1QURGMTFFRDg5OTJEOTA2NDA4MUYyNTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7ZyM59AAACz0lEQVR42uzdT2vTYADH8d+Tpo3oYeph4g4iE6boZV68idKDiHj1spt7BYL4DgTfgKDgTdxZr4JXD4LCRMGLghtUGPgHpbWmaRuTsWOTOpfkyZ5+v+xWlrT5dE+ewJPFrLRjkb08DgEAABAAABAAAFD1+TmvxbFGQ5VxmdBoyMumT3Y6dujixPdlzO4BkqPvNzV/PO+X/7vuL/W6k7ec7PfovILAHYAf3zQIMw9jJsBwqGMLuvcoBSy8tYd6tqaDhya8FA20ekvLF9wBuHtb798oOLD7IShBawV5Y8VehqCcms30j8+d06y3h5PweFzKe4pjCzu1Vf6HZRbENBQAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAmgGArGWUTubX7Q01fD1/qvVXU1b0FVs00KkzungFgO11uy9faDSqdKf9ntrXAbA3BBljbdzjJMxJGAACAAACYDar4zQ0uSwq4zYx46nVAmBaw0g3VrV4uvgtb3X05MHOrB+AzJLv/tllnTtf/Ja/bO4AcA6Y0iAsZbPhH07CBAAABAAABAAABAAABAAAABAAABAAABAAABAAABAAABAAABAAAFippMdnNFt1BKjd2lBj0kWcc4cLfnqTkTobAPzb9/Tx/RJ1AZheebdoA7BfDxOzIAAIAAAIAOeyMwuKIvV/y6t2tmO8Ov4rKDsAi0u6dLXSw5FY97r68BaA7S5fS38qrrOhOzdrd50xQ+eAku5+BYBZEAEAAAEAAAEAAAEAAAEAAAEAAAEAAAEAAAEAAAEAAAEAAAGwrwBculuonp/Fy3/HjYZD37Xcz2I8O/BmpT35nsQ4VhDo5JI7fwRhX58/Tn5pPNbcES2cKGW/m5/ShdleBrCf4xaGevfaoSEo+zFWydH5+V1ft0rZb7OVefSVvzzd4kNerQxQgY3xllkQ01AACAAACAAAyEJ/BRgAJph5IP1XFpwAAAAASUVORK5CYII='`
 
-Defined in: [wallets/trident/adapter.ts:53](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L53)
+Defined in: [wallets/trident/adapter.ts:53](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L53)
 
 #### Overrides
 
@@ -52,7 +52,7 @@ Defined in: [wallets/trident/adapter.ts:53](https://github.com/demox-labs/miden-
 
 > **name**: `WalletName`\<`"Trident Wallet"`\> = `TridentWalletName`
 
-Defined in: [wallets/trident/adapter.ts:51](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L51)
+Defined in: [wallets/trident/adapter.ts:51](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L51)
 
 #### Overrides
 
@@ -64,7 +64,7 @@ Defined in: [wallets/trident/adapter.ts:51](https://github.com/demox-labs/miden-
 
 > `readonly` **supportedTransactionVersions**: `any` = `null`
 
-Defined in: [wallets/trident/adapter.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L55)
+Defined in: [wallets/trident/adapter.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L55)
 
 #### Overrides
 
@@ -76,7 +76,7 @@ Defined in: [wallets/trident/adapter.ts:55](https://github.com/demox-labs/miden-
 
 > **url**: `string` = `'https://leo.app/miden'`
 
-Defined in: [wallets/trident/adapter.ts:52](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L52)
+Defined in: [wallets/trident/adapter.ts:52](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L52)
 
 #### Overrides
 
@@ -120,7 +120,7 @@ Defined in: core/base/dist/adapter.d.ts:63
 
 > **get** **connecting**(): `boolean`
 
-Defined in: [wallets/trident/adapter.ts:93](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L93)
+Defined in: [wallets/trident/adapter.ts:93](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L93)
 
 ##### Returns
 
@@ -138,7 +138,7 @@ Defined in: [wallets/trident/adapter.ts:93](https://github.com/demox-labs/miden-
 
 > **get** **decryptPermission**(): `string`
 
-Defined in: [wallets/trident/adapter.ts:89](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L89)
+Defined in: [wallets/trident/adapter.ts:89](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L89)
 
 ##### Returns
 
@@ -152,7 +152,7 @@ Defined in: [wallets/trident/adapter.ts:89](https://github.com/demox-labs/miden-
 
 > **get** **publicKey**(): `string`
 
-Defined in: [wallets/trident/adapter.ts:85](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L85)
+Defined in: [wallets/trident/adapter.ts:85](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L85)
 
 ##### Returns
 
@@ -170,7 +170,7 @@ Defined in: [wallets/trident/adapter.ts:85](https://github.com/demox-labs/miden-
 
 > **get** **readyState**(): `WalletReadyState`
 
-Defined in: [wallets/trident/adapter.ts:97](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L97)
+Defined in: [wallets/trident/adapter.ts:97](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L97)
 
 ##### Returns
 
@@ -180,7 +180,7 @@ Defined in: [wallets/trident/adapter.ts:97](https://github.com/demox-labs/miden-
 
 > **set** **readyState**(`readyState`): `void`
 
-Defined in: [wallets/trident/adapter.ts:101](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L101)
+Defined in: [wallets/trident/adapter.ts:101](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L101)
 
 ##### Parameters
 
@@ -236,7 +236,7 @@ Defined in: core/base/node\_modules/eventemitter3/index.d.ts:45
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
 
-Defined in: [wallets/trident/adapter.ts:121](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L121)
+Defined in: [wallets/trident/adapter.ts:121](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L121)
 
 #### Parameters
 
@@ -266,7 +266,7 @@ Defined in: [wallets/trident/adapter.ts:121](https://github.com/demox-labs/miden
 
 > **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [wallets/trident/adapter.ts:158](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L158)
+Defined in: [wallets/trident/adapter.ts:158](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L158)
 
 #### Returns
 
@@ -559,7 +559,7 @@ Remove the listeners of a given event.
 
 > **requestTransaction**(`transaction`): `Promise`\<`string`\>
 
-Defined in: [wallets/trident/adapter.ts:105](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L105)
+Defined in: [wallets/trident/adapter.ts:105](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L105)
 
 #### Parameters
 

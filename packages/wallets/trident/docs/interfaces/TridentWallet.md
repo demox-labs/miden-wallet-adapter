@@ -6,7 +6,7 @@
 
 # Interface: TridentWallet
 
-Defined in: [wallets/trident/adapter.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L23)
+Defined in: [wallets/trident/adapter.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L23)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [wallets/trident/adapter.ts:23](https://github.com/demox-labs/miden-
 
 > `optional` **publicKey**: `string`
 
-Defined in: [wallets/trident/adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L24)
+Defined in: [wallets/trident/adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L24)
 
 ## Methods
 
@@ -60,7 +60,7 @@ Defined in: core/base/node\_modules/eventemitter3/index.d.ts:45
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
 
-Defined in: [wallets/trident/adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L28)
+Defined in: [wallets/trident/adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L28)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [wallets/trident/adapter.ts:28](https://github.com/demox-labs/miden-
 
 > **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [wallets/trident/adapter.ts:33](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L33)
+Defined in: [wallets/trident/adapter.ts:33](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L33)
 
 #### Returns
 
@@ -375,7 +375,7 @@ Remove the listeners of a given event.
 
 > **requestTransaction**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
 
-Defined in: [wallets/trident/adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/8b5adc4c88745063c897a11791e0a6bf5e53b32c/packages/wallets/trident/adapter.ts#L25)
+Defined in: [wallets/trident/adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L25)
 
 #### Parameters
 
