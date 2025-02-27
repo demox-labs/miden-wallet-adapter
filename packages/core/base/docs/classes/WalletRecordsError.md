@@ -6,7 +6,7 @@
 
 # Class: WalletRecordsError
 
-Defined in: [errors.ts:87](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/errors.ts#L87)
+Defined in: [errors.ts:87](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/errors.ts#L87)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [errors.ts:87](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 > **new WalletRecordsError**(`message`?, `error`?): [`WalletRecordsError`](WalletRecordsError.md)
 
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/errors.ts#L5)
+Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/errors.ts#L5)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **error**: `any`
 
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/errors.ts#L2)
+Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/errors.ts#L2)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 > **name**: `string` = `'WalletRecordsError'`
 
-Defined in: [errors.ts:88](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/errors.ts#L88)
+Defined in: [errors.ts:88](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/errors.ts#L88)
 
 #### Overrides
 

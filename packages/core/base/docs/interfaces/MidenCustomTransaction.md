@@ -6,7 +6,7 @@
 
 # Interface: MidenCustomTransaction
 
-Defined in: [transaction.ts:39](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L39)
+Defined in: [transaction.ts:39](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L39)
 
 ## Properties
 
@@ -14,15 +14,23 @@ Defined in: [transaction.ts:39](https://github.com/demox-labs/miden-wallet-adapt
 
 > **accountId**: `string`
 
-Defined in: [transaction.ts:40](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L40)
+Defined in: [transaction.ts:40](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L40)
 
 ***
 
-### inputNotes?
+### importNotes?
 
-> `optional` **inputNotes**: `string`[]
+> `optional` **importNotes**: `string`[]
 
-Defined in: [transaction.ts:42](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L42)
+Defined in: [transaction.ts:43](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L43)
+
+***
+
+### inputNoteIds?
+
+> `optional` **inputNoteIds**: `string`[]
+
+Defined in: [transaction.ts:42](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L42)
 
 ***
 
@@ -30,4 +38,4 @@ Defined in: [transaction.ts:42](https://github.com/demox-labs/miden-wallet-adapt
 
 > **transactionRequest**: `string`
 
-Defined in: [transaction.ts:41](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/base/transaction.ts#L41)
+Defined in: [transaction.ts:41](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L41)

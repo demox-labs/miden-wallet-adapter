@@ -5,7 +5,7 @@ const readline = require('readline');
 const directories = [
   // './packages/core/base',
   // './packages/core/react',
-  './packages/ui',
+  // './packages/ui',
   './packages/wallets/trident',
 ];
 

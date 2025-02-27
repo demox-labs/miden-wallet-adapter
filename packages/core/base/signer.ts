@@ -1,6 +1,6 @@
 import type { WalletAdapter, WalletAdapterProps } from './adapter';
 import { BaseWalletAdapter } from './adapter';
-import { MidenTransaction } from './transaction';
+import { MidenSendTransaction, MidenTransaction } from './transaction';
 
 export type Adapter =
   | WalletAdapter
@@ -31,5 +31,6 @@ export abstract class BaseMessageSignerWalletAdapter<
   extends BaseSignerWalletAdapter<Name>
   implements MessageSignerWalletAdapter<Name>
 {
+  abstract requentSend(transaction: MidenSendTransaction): Promise<string>;
   abstract requestTransaction(transaction: MidenTransaction): Promise<string>;
 }

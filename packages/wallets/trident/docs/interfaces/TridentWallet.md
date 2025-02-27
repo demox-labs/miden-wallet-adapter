@@ -6,7 +6,7 @@
 
 # Interface: TridentWallet
 
-Defined in: [wallets/trident/adapter.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L23)
+Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L24)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [wallets/trident/adapter.ts:23](https://github.com/demox-labs/miden-
 
 > `optional` **publicKey**: `string`
 
-Defined in: [wallets/trident/adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L24)
+Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L25)
 
 ## Methods
 
@@ -26,7 +26,7 @@ Defined in: [wallets/trident/adapter.ts:24](https://github.com/demox-labs/miden-
 
 > **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:45
+Defined in: node\_modules/eventemitter3/index.d.ts:45
 
 #### Type Parameters
 
@@ -60,7 +60,7 @@ Defined in: core/base/node\_modules/eventemitter3/index.d.ts:45
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
 
-Defined in: [wallets/trident/adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L28)
+Defined in: [adapter.ts:32](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L32)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [wallets/trident/adapter.ts:28](https://github.com/demox-labs/miden-
 
 > **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [wallets/trident/adapter.ts:33](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L33)
+Defined in: [adapter.ts:37](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L37)
 
 #### Returns
 
@@ -98,7 +98,7 @@ Defined in: [wallets/trident/adapter.ts:33](https://github.com/demox-labs/miden-
 
 > **emit**\<`T`\>(`event`, ...`args`): `boolean`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:32
+Defined in: node\_modules/eventemitter3/index.d.ts:32
 
 Calls each of the listeners registered for a given event.
 
@@ -130,7 +130,7 @@ Calls each of the listeners registered for a given event.
 
 > **eventNames**(): keyof [`TridentWalletEvents`](TridentWalletEvents.md)[]
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:15
+Defined in: node\_modules/eventemitter3/index.d.ts:15
 
 Return an array listing the events for which the emitter has registered
 listeners.
@@ -149,7 +149,7 @@ keyof [`TridentWalletEvents`](TridentWalletEvents.md)[]
 
 > **listenerCount**(`event`): `number`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:27
+Defined in: node\_modules/eventemitter3/index.d.ts:27
 
 Return the number of listeners listening to a given event.
 
@@ -173,7 +173,7 @@ keyof [`TridentWalletEvents`](TridentWalletEvents.md)
 
 > **listeners**\<`T`\>(`event`): (...`args`) => `void`[]
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:20
+Defined in: node\_modules/eventemitter3/index.d.ts:20
 
 Return the listeners registered for a given event.
 
@@ -201,7 +201,7 @@ Return the listeners registered for a given event.
 
 > **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:69
+Defined in: node\_modules/eventemitter3/index.d.ts:69
 
 #### Type Parameters
 
@@ -239,7 +239,7 @@ Defined in: core/base/node\_modules/eventemitter3/index.d.ts:69
 
 > **on**\<`T`\>(`event`, `fn`, `context`?): `this`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:40
+Defined in: node\_modules/eventemitter3/index.d.ts:40
 
 Add a listener for a given event.
 
@@ -275,7 +275,7 @@ Add a listener for a given event.
 
 > **once**\<`T`\>(`event`, `fn`, `context`?): `this`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:54
+Defined in: node\_modules/eventemitter3/index.d.ts:54
 
 Add a one-time listener for a given event.
 
@@ -311,7 +311,7 @@ Add a one-time listener for a given event.
 
 > **removeAllListeners**(`event`?): `this`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:79
+Defined in: node\_modules/eventemitter3/index.d.ts:79
 
 Remove all listeners, or those of the specified event.
 
@@ -335,7 +335,7 @@ keyof [`TridentWalletEvents`](TridentWalletEvents.md)
 
 > **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
 
-Defined in: core/base/node\_modules/eventemitter3/index.d.ts:63
+Defined in: node\_modules/eventemitter3/index.d.ts:63
 
 Remove the listeners of a given event.
 
@@ -371,11 +371,29 @@ Remove the listeners of a given event.
 
 ***
 
+### requestSend()
+
+> **requestSend**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
+
+Defined in: [adapter.ts:26](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L26)
+
+#### Parameters
+
+##### transaction
+
+`MidenSendTransaction`
+
+#### Returns
+
+`Promise`\<\{ `transactionId`: `string`; \}\>
+
+***
+
 ### requestTransaction()
 
 > **requestTransaction**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
 
-Defined in: [wallets/trident/adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L25)
+Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L29)
 
 #### Parameters
 

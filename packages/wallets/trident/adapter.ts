@@ -10,6 +10,7 @@ import {
   WalletReadyState,
   DecryptPermission,
   WalletAdapterNetwork,
+  MidenSendTransaction,
   MidenTransaction,
   WalletTransactionError,
 } from '@demox-labs/miden-wallet-adapter-base';
@@ -22,6 +23,9 @@ export interface TridentWalletEvents {
 
 export interface TridentWallet extends EventEmitter<TridentWalletEvents> {
   publicKey?: string;
+  requestSend(
+    transaction: MidenSendTransaction
+  ): Promise<{ transactionId?: string }>;
   requestTransaction(
     transaction: MidenTransaction
   ): Promise<{ transactionId?: string }>;
@@ -100,6 +104,22 @@ export class TridentWalletAdapter extends BaseMessageSignerWalletAdapter {
 
   set readyState(readyState) {
     this._readyState = readyState;
+  }
+
+  async requestSend(transaction: MidenSendTransaction): Promise<string> {
+    try {
+      const wallet = this._wallet;
+      if (!wallet || !this.publicKey) throw new WalletNotConnectedError();
+      try {
+        const result = await wallet.requestSend(transaction);
+        return result.transactionId;
+      } catch (error: any) {
+        throw new WalletTransactionError(error?.message, error);
+      }
+    } catch (error: any) {
+      this.emit('error', error);
+      throw error;
+    }
   }
 
   async requestTransaction(transaction: MidenTransaction): Promise<string> {

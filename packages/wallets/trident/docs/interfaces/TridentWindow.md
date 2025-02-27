@@ -6,7 +6,7 @@
 
 # Interface: TridentWindow
 
-Defined in: [wallets/trident/adapter.ts:36](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L36)
+Defined in: [adapter.ts:40](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L40)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [wallets/trident/adapter.ts:36](https://github.com/demox-labs/miden-
 
 > `readonly` **caches**: `CacheStorage`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26635
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26635
 
 Available only in secure contexts.
 
@@ -38,7 +38,7 @@ Available only in secure contexts.
 
 > `readonly` **clientInformation**: `Navigator`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26286
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26286
 
 #### Deprecated
 
@@ -56,7 +56,7 @@ This is a legacy alias of `navigator`.
 
 > `readonly` **closed**: `boolean`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26292
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26292
 
 Returns true if the window has been closed, false otherwise.
 
@@ -72,7 +72,7 @@ Returns true if the window has been closed, false otherwise.
 
 > `readonly` **crossOriginIsolated**: `boolean`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26637
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26637
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/crossOriginIsolated)
 
@@ -86,7 +86,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26637
 
 > `readonly` **crypto**: `Crypto`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26639
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26639
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/crypto)
 
@@ -100,7 +100,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26639
 
 > `readonly` **customElements**: `CustomElementRegistry`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26298
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26298
 
 Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element.
 
@@ -116,7 +116,7 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **devicePixelRatio**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26300
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26300
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)
 
@@ -130,7 +130,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26300
 
 > `readonly` **document**: `Document`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26302
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26302
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/document)
 
@@ -144,7 +144,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26302
 
 > `readonly` **event**: `Event`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26308
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26308
 
 #### Deprecated
 
@@ -160,7 +160,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26308
 
 > `readonly` **external**: `External`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26314
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26314
 
 #### Deprecated
 
@@ -176,7 +176,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26314
 
 > `readonly` **frameElement**: `Element`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26316
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26316
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frameElement)
 
@@ -190,7 +190,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26316
 
 > `readonly` **frames**: `Window`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26318
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26318
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frames)
 
@@ -204,7 +204,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26318
 
 > `readonly` **history**: `History`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26320
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26320
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/history)
 
@@ -218,7 +218,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26320
 
 > `readonly` **indexedDB**: `IDBFactory`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26641
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26641
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/indexedDB)
 
@@ -232,7 +232,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26641
 
 > `readonly` **innerHeight**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26322
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26322
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerHeight)
 
@@ -246,7 +246,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26322
 
 > `readonly` **innerWidth**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26324
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26324
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerWidth)
 
@@ -260,7 +260,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26324
 
 > `readonly` **isSecureContext**: `boolean`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26643
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26643
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/isSecureContext)
 
@@ -274,7 +274,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26643
 
 > `readonly` **length**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26326
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26326
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/length)
 
@@ -288,7 +288,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26326
 
 > `readonly` **localStorage**: `Storage`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26626
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26626
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/localStorage)
 
@@ -302,7 +302,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26626
 
 > `readonly` **locationbar**: `BarProp`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26335
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26335
 
 Returns true if the location bar is visible; otherwise, returns false.
 
@@ -318,7 +318,7 @@ Returns true if the location bar is visible; otherwise, returns false.
 
 > `readonly` **menubar**: `BarProp`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26341
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26341
 
 Returns true if the menu bar is visible; otherwise, returns false.
 
@@ -334,7 +334,7 @@ Returns true if the menu bar is visible; otherwise, returns false.
 
 > **name**: `string`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26343
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26343
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/name)
 
@@ -348,7 +348,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26343
 
 > `readonly` **navigator**: `Navigator`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26345
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26345
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator)
 
@@ -362,7 +362,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26345
 
 > **onabort**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9452
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9452
 
 Fires when the user aborts the download.
 
@@ -394,7 +394,7 @@ The event.
 
 > **onafterprint**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26579
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26579
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/afterprint_event)
 
@@ -422,7 +422,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26579
 
 > **onanimationcancel**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9454
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9454
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event)
 
@@ -450,7 +450,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9454
 
 > **onanimationend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9456
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9456
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
 
@@ -478,7 +478,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9456
 
 > **onanimationiteration**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9458
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9458
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
 
@@ -506,7 +506,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9458
 
 > **onanimationstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9460
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9460
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
 
@@ -534,7 +534,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9460
 
 > **onauxclick**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9462
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9462
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event)
 
@@ -562,7 +562,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9462
 
 > **onbeforeinput**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9464
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9464
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/beforeinput_event)
 
@@ -590,7 +590,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9464
 
 > **onbeforeprint**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26581
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26581
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeprint_event)
 
@@ -618,7 +618,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26581
 
 > **onbeforetoggle**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9466
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9466
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforetoggle_event)
 
@@ -646,7 +646,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9466
 
 > **onbeforeunload**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26583
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26583
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event)
 
@@ -674,7 +674,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26583
 
 > **onblur**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9473
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9473
 
 Fires when the object loses the input focus.
 
@@ -706,7 +706,7 @@ The focus event.
 
 > **oncancel**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9475
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9475
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/cancel_event)
 
@@ -734,7 +734,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9475
 
 > **oncanplay**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9482
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9482
 
 Occurs when playback is possible, but would require further buffering.
 
@@ -766,7 +766,7 @@ The event.
 
 > **oncanplaythrough**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9484
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9484
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event)
 
@@ -794,7 +794,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9484
 
 > **onchange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9491
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9491
 
 Fires when the contents of the object or selection have changed.
 
@@ -826,7 +826,7 @@ The event.
 
 > **onclick**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9498
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9498
 
 Fires when the user clicks the left mouse button on the object
 
@@ -858,7 +858,7 @@ The mouse event.
 
 > **onclose**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9500
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9500
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event)
 
@@ -886,7 +886,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9500
 
 > **oncontextlost**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9502
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9502
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/webglcontextlost_event)
 
@@ -914,7 +914,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9502
 
 > **oncontextmenu**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9509
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9509
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
@@ -946,7 +946,7 @@ The mouse event.
 
 > **oncontextrestored**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9511
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9511
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/contextrestored_event)
 
@@ -974,7 +974,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9511
 
 > **oncopy**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9513
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9513
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event)
 
@@ -1002,7 +1002,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9513
 
 > **oncuechange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9515
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9515
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event)
 
@@ -1030,7 +1030,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9515
 
 > **oncut**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9517
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9517
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event)
 
@@ -1058,7 +1058,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9517
 
 > **ondblclick**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9524
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9524
 
 Fires when the user double-clicks the object.
 
@@ -1090,7 +1090,7 @@ The mouse event.
 
 > **ondevicemotion**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26351
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26351
 
 Available only in secure contexts.
 
@@ -1120,7 +1120,7 @@ Available only in secure contexts.
 
 > **ondeviceorientation**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26357
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26357
 
 Available only in secure contexts.
 
@@ -1150,7 +1150,7 @@ Available only in secure contexts.
 
 > **ondeviceorientationabsolute**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26363
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26363
 
 Available only in secure contexts.
 
@@ -1180,7 +1180,7 @@ Available only in secure contexts.
 
 > **ondrag**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9531
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9531
 
 Fires on the source object continuously during a drag operation.
 
@@ -1212,7 +1212,7 @@ The event.
 
 > **ondragend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9538
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9538
 
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
@@ -1244,7 +1244,7 @@ The event.
 
 > **ondragenter**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9545
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9545
 
 Fires on the target element when the user drags the object to a valid drop target.
 
@@ -1276,7 +1276,7 @@ The drag event.
 
 > **ondragleave**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9552
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9552
 
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
@@ -1308,7 +1308,7 @@ The drag event.
 
 > **ondragover**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9559
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9559
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
@@ -1340,7 +1340,7 @@ The event.
 
 > **ondragstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9566
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9566
 
 Fires on the source object when the user starts to drag a text selection or selected object.
 
@@ -1372,7 +1372,7 @@ The event.
 
 > **ondrop**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9568
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9568
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event)
 
@@ -1400,7 +1400,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9568
 
 > **ondurationchange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9575
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9575
 
 Occurs when the duration attribute is updated.
 
@@ -1432,7 +1432,7 @@ The event.
 
 > **onemptied**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9582
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9582
 
 Occurs when the media element is reset to its initial state.
 
@@ -1464,7 +1464,7 @@ The event.
 
 > **onended**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9589
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9589
 
 Occurs when the end of playback is reached.
 
@@ -1496,7 +1496,7 @@ The event
 
 > **onerror**: `OnErrorEventHandlerNonNull`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9596
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9596
 
 Fires when an error occurs during object loading.
 
@@ -1516,7 +1516,7 @@ The event.
 
 > **onfocus**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9603
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9603
 
 Fires when the object receives focus.
 
@@ -1548,7 +1548,7 @@ The event.
 
 > **onformdata**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9605
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9605
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event)
 
@@ -1576,7 +1576,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9605
 
 > **ongamepadconnected**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26585
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26585
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepadconnected_event)
 
@@ -1604,7 +1604,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26585
 
 > **ongamepaddisconnected**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26587
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26587
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepaddisconnected_event)
 
@@ -1632,7 +1632,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26587
 
 > **ongotpointercapture**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9607
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9607
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event)
 
@@ -1660,7 +1660,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9607
 
 > **onhashchange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26589
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26589
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/hashchange_event)
 
@@ -1688,7 +1688,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26589
 
 > **oninput**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9609
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9609
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/input_event)
 
@@ -1716,7 +1716,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9609
 
 > **oninvalid**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9611
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9611
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event)
 
@@ -1744,7 +1744,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9611
 
 > **onkeydown**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9618
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9618
 
 Fires when the user presses a key.
 
@@ -1776,7 +1776,7 @@ The keyboard event
 
 > **onkeypress**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9626
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9626
 
 Fires when the user presses an alphanumeric key.
 
@@ -1810,7 +1810,7 @@ The event.
 
 > **onkeyup**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9633
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9633
 
 Fires when the user releases a key.
 
@@ -1842,7 +1842,7 @@ The keyboard event
 
 > **onlanguagechange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26591
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26591
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/languagechange_event)
 
@@ -1870,7 +1870,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26591
 
 > **onload**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9640
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9640
 
 Fires immediately after the browser loads the object.
 
@@ -1902,7 +1902,7 @@ The event.
 
 > **onloadeddata**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9647
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9647
 
 Occurs when media data is loaded at the current playback position.
 
@@ -1934,7 +1934,7 @@ The event.
 
 > **onloadedmetadata**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9654
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9654
 
 Occurs when the duration and dimensions of the media have been determined.
 
@@ -1966,7 +1966,7 @@ The event.
 
 > **onloadstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9661
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9661
 
 Occurs when Internet Explorer begins looking for media data.
 
@@ -1998,7 +1998,7 @@ The event.
 
 > **onlostpointercapture**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9663
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9663
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/lostpointercapture_event)
 
@@ -2026,7 +2026,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9663
 
 > **onmessage**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26593
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26593
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/message_event)
 
@@ -2054,7 +2054,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26593
 
 > **onmessageerror**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26595
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26595
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/messageerror_event)
 
@@ -2082,7 +2082,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26595
 
 > **onmousedown**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9670
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9670
 
 Fires when the user clicks the object with either mouse button.
 
@@ -2114,7 +2114,7 @@ The mouse event.
 
 > **onmouseenter**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9672
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9672
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event)
 
@@ -2142,7 +2142,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9672
 
 > **onmouseleave**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9674
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9674
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event)
 
@@ -2170,7 +2170,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9674
 
 > **onmousemove**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9681
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9681
 
 Fires when the user moves the mouse over the object.
 
@@ -2202,7 +2202,7 @@ The mouse event.
 
 > **onmouseout**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9688
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9688
 
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
@@ -2234,7 +2234,7 @@ The mouse event.
 
 > **onmouseover**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9695
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9695
 
 Fires when the user moves the mouse pointer into the object.
 
@@ -2266,7 +2266,7 @@ The mouse event.
 
 > **onmouseup**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9702
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9702
 
 Fires when the user releases a mouse button while the mouse is over the object.
 
@@ -2298,7 +2298,7 @@ The mouse event.
 
 > **onoffline**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26597
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26597
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/offline_event)
 
@@ -2326,7 +2326,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26597
 
 > **ononline**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26599
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26599
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/online_event)
 
@@ -2354,7 +2354,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26599
 
 > **onorientationchange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26369
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26369
 
 #### Parameters
 
@@ -2384,7 +2384,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26369
 
 > **onpagehide**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26601
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26601
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pagehide_event)
 
@@ -2412,7 +2412,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26601
 
 > **onpageshow**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26603
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26603
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pageshow_event)
 
@@ -2440,7 +2440,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26603
 
 > **onpaste**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9704
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9704
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event)
 
@@ -2468,7 +2468,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9704
 
 > **onpause**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9711
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9711
 
 Occurs when playback is paused.
 
@@ -2500,7 +2500,7 @@ The event.
 
 > **onplay**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9718
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9718
 
 Occurs when the play method is requested.
 
@@ -2532,7 +2532,7 @@ The event.
 
 > **onplaying**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9725
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9725
 
 Occurs when the audio or video has started playing.
 
@@ -2564,7 +2564,7 @@ The event.
 
 > **onpointercancel**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9727
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9727
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event)
 
@@ -2592,7 +2592,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9727
 
 > **onpointerdown**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9729
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9729
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event)
 
@@ -2620,7 +2620,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9729
 
 > **onpointerenter**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9731
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9731
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event)
 
@@ -2648,7 +2648,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9731
 
 > **onpointerleave**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9733
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9733
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event)
 
@@ -2676,7 +2676,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9733
 
 > **onpointermove**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9735
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9735
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event)
 
@@ -2704,7 +2704,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9735
 
 > **onpointerout**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9737
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9737
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event)
 
@@ -2732,7 +2732,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9737
 
 > **onpointerover**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9739
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9739
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event)
 
@@ -2760,7 +2760,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9739
 
 > **onpointerup**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9741
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9741
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event)
 
@@ -2788,7 +2788,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9741
 
 > **onpopstate**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26605
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26605
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/popstate_event)
 
@@ -2816,7 +2816,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26605
 
 > **onprogress**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9748
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9748
 
 Occurs to indicate progress while downloading media data.
 
@@ -2848,7 +2848,7 @@ The event.
 
 > **onratechange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9755
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9755
 
 Occurs when the playback rate is increased or decreased.
 
@@ -2880,7 +2880,7 @@ The event.
 
 > **onrejectionhandled**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26607
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26607
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/rejectionhandled_event)
 
@@ -2908,7 +2908,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26607
 
 > **onreset**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9762
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9762
 
 Fires when the user resets a form.
 
@@ -2940,7 +2940,7 @@ The event.
 
 > **onresize**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9764
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9764
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event)
 
@@ -2968,7 +2968,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9764
 
 > **onscroll**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9771
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9771
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
@@ -3000,7 +3000,7 @@ The event.
 
 > **onscrollend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9773
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9773
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scrollend_event)
 
@@ -3028,7 +3028,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9773
 
 > **onsecuritypolicyviolation**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9775
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9775
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event)
 
@@ -3056,7 +3056,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9775
 
 > **onseeked**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9782
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9782
 
 Occurs when the seek operation ends.
 
@@ -3088,7 +3088,7 @@ The event.
 
 > **onseeking**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9789
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9789
 
 Occurs when the current playback position is moved.
 
@@ -3120,7 +3120,7 @@ The event.
 
 > **onselect**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9796
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9796
 
 Fires when the current selection changes.
 
@@ -3152,7 +3152,7 @@ The event.
 
 > **onselectionchange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9798
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9798
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event)
 
@@ -3180,7 +3180,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9798
 
 > **onselectstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9800
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9800
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event)
 
@@ -3208,7 +3208,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9800
 
 > **onslotchange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9802
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9802
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event)
 
@@ -3236,7 +3236,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9802
 
 > **onstalled**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9809
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9809
 
 Occurs when the download has stopped.
 
@@ -3268,7 +3268,7 @@ The event.
 
 > **onstorage**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26609
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26609
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/storage_event)
 
@@ -3296,7 +3296,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26609
 
 > **onsubmit**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9811
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9811
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event)
 
@@ -3324,7 +3324,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9811
 
 > **onsuspend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9818
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9818
 
 Occurs if the load operation has been intentionally halted.
 
@@ -3356,7 +3356,7 @@ The event.
 
 > **ontimeupdate**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9825
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9825
 
 Occurs to indicate the current playback position.
 
@@ -3388,7 +3388,7 @@ The event.
 
 > **ontoggle**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9827
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9827
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event)
 
@@ -3416,7 +3416,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9827
 
 > `optional` **ontouchcancel**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9829
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9829
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event)
 
@@ -3444,7 +3444,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9829
 
 > `optional` **ontouchend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9831
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9831
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event)
 
@@ -3472,7 +3472,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9831
 
 > `optional` **ontouchmove**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9833
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9833
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event)
 
@@ -3500,7 +3500,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9833
 
 > `optional` **ontouchstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9835
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9835
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event)
 
@@ -3528,7 +3528,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9835
 
 > **ontransitioncancel**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9837
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9837
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event)
 
@@ -3556,7 +3556,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9837
 
 > **ontransitionend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9839
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9839
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
 
@@ -3584,7 +3584,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9839
 
 > **ontransitionrun**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9841
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9841
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event)
 
@@ -3612,7 +3612,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9841
 
 > **ontransitionstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9843
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9843
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event)
 
@@ -3640,7 +3640,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9843
 
 > **onunhandledrejection**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26611
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26611
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unhandledrejection_event)
 
@@ -3668,7 +3668,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26611
 
 > **onunload**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26617
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26617
 
 #### Parameters
 
@@ -3698,7 +3698,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26617
 
 > **onvolumechange**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9850
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9850
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
@@ -3730,7 +3730,7 @@ The event.
 
 > **onwaiting**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9857
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9857
 
 Occurs when playback stops because the next frame of a video resource is not available.
 
@@ -3762,7 +3762,7 @@ The event.
 
 > **onwebkitanimationend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9863
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9863
 
 #### Parameters
 
@@ -3794,7 +3794,7 @@ This is a legacy alias of `onanimationend`.
 
 > **onwebkitanimationiteration**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9869
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9869
 
 #### Parameters
 
@@ -3826,7 +3826,7 @@ This is a legacy alias of `onanimationiteration`.
 
 > **onwebkitanimationstart**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9875
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9875
 
 #### Parameters
 
@@ -3858,7 +3858,7 @@ This is a legacy alias of `onanimationstart`.
 
 > **onwebkittransitionend**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9881
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9881
 
 #### Parameters
 
@@ -3890,7 +3890,7 @@ This is a legacy alias of `ontransitionend`.
 
 > **onwheel**: (`this`, `ev`) => `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9883
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9883
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event)
 
@@ -3918,7 +3918,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:9883
 
 > **opener**: `any`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26371
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26371
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/opener)
 
@@ -3932,7 +3932,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26371
 
 > `readonly` **orientation**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26377
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26377
 
 #### Deprecated
 
@@ -3948,7 +3948,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26377
 
 > `readonly` **origin**: `string`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26645
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26645
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/origin)
 
@@ -3962,7 +3962,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26645
 
 > `readonly` **outerHeight**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26379
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26379
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerHeight)
 
@@ -3976,7 +3976,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26379
 
 > `readonly` **outerWidth**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26381
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26381
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerWidth)
 
@@ -3990,7 +3990,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26381
 
 > `readonly` **pageXOffset**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26387
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26387
 
 #### Deprecated
 
@@ -4008,7 +4008,7 @@ This is a legacy alias of `scrollX`.
 
 > `readonly` **pageYOffset**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26393
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26393
 
 #### Deprecated
 
@@ -4026,7 +4026,7 @@ This is a legacy alias of `scrollY`.
 
 > `readonly` **parent**: `Window`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26401
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26401
 
 Refers to either the parent WindowProxy, or itself.
 
@@ -4044,7 +4044,7 @@ It can rarely be null e.g. for contentWindow of an iframe that is already remove
 
 > `readonly` **performance**: `Performance`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26647
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26647
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/performance)
 
@@ -4058,7 +4058,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26647
 
 > `readonly` **personalbar**: `BarProp`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26407
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26407
 
 Returns true if the personal bar is visible; otherwise, returns false.
 
@@ -4074,7 +4074,7 @@ Returns true if the personal bar is visible; otherwise, returns false.
 
 > `readonly` **screen**: `Screen`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26409
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26409
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screen)
 
@@ -4088,7 +4088,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26409
 
 > `readonly` **screenLeft**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26411
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26411
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenLeft)
 
@@ -4102,7 +4102,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26411
 
 > `readonly` **screenTop**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26413
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26413
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenTop)
 
@@ -4116,7 +4116,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26413
 
 > `readonly` **screenX**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26415
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26415
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenX)
 
@@ -4130,7 +4130,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26415
 
 > `readonly` **screenY**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26417
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26417
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenY)
 
@@ -4144,7 +4144,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26417
 
 > `readonly` **scrollbars**: `BarProp`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26427
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26427
 
 Returns true if the scrollbars are visible; otherwise, returns false.
 
@@ -4160,7 +4160,7 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 
 > `readonly` **scrollX**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26419
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26419
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX)
 
@@ -4174,7 +4174,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26419
 
 > `readonly` **scrollY**: `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26421
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26421
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY)
 
@@ -4188,7 +4188,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26421
 
 > `readonly` **self**: `Window` & *typeof* `globalThis`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26429
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26429
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/self)
 
@@ -4202,7 +4202,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26429
 
 > `readonly` **sessionStorage**: `Storage`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26675
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26675
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage)
 
@@ -4216,7 +4216,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26675
 
 > `readonly` **speechSynthesis**: `SpeechSynthesis`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26431
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26431
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis)
 
@@ -4230,7 +4230,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26431
 
 > **status**: `string`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26437
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26437
 
 #### Deprecated
 
@@ -4246,7 +4246,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26437
 
 > `readonly` **statusbar**: `BarProp`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26443
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26443
 
 Returns true if the status bar is visible; otherwise, returns false.
 
@@ -4262,7 +4262,7 @@ Returns true if the status bar is visible; otherwise, returns false.
 
 > `readonly` **toolbar**: `BarProp`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26449
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26449
 
 Returns true if the toolbar is visible; otherwise, returns false.
 
@@ -4278,7 +4278,7 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 > `readonly` **top**: `Window`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26451
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26451
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/top)
 
@@ -4292,7 +4292,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26451
 
 > `optional` **trident**: [`TridentWallet`](TridentWallet.md)
 
-Defined in: [wallets/trident/adapter.ts:38](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L38)
+Defined in: [adapter.ts:42](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L42)
 
 ***
 
@@ -4300,7 +4300,7 @@ Defined in: [wallets/trident/adapter.ts:38](https://github.com/demox-labs/miden-
 
 > `optional` **tridentWallet**: [`TridentWallet`](TridentWallet.md)
 
-Defined in: [wallets/trident/adapter.ts:37](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/wallets/trident/adapter.ts#L37)
+Defined in: [adapter.ts:41](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L41)
 
 ***
 
@@ -4308,7 +4308,7 @@ Defined in: [wallets/trident/adapter.ts:37](https://github.com/demox-labs/miden-
 
 > `readonly` **visualViewport**: `VisualViewport`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26453
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26453
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/visualViewport)
 
@@ -4322,7 +4322,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26453
 
 > `readonly` **window**: `Window` & *typeof* `globalThis`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26455
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26455
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/window)
 
@@ -4338,7 +4338,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26455
 
 > **get** **location**(): `Location`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26328
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26328
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/location)
 
@@ -4350,7 +4350,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26328
 
 > **set** **location**(`href`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26329
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26329
 
 ##### Parameters
 
@@ -4374,7 +4374,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26329
 
 > **addEventListener**\<`K`\>(`type`, `listener`, `options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26544
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26544
 
 Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
 
@@ -4422,7 +4422,7 @@ The event listener is appended to target's event listener list and is not append
 
 > **addEventListener**(`type`, `listener`, `options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26545
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26545
 
 Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
 
@@ -4468,7 +4468,7 @@ The event listener is appended to target's event listener list and is not append
 
 > **alert**(`message`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26457
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26457
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/alert)
 
@@ -4492,7 +4492,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26457
 
 > **atob**(`data`): `string`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26649
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26649
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/atob)
 
@@ -4516,7 +4516,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26649
 
 > **blur**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26463
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26463
 
 #### Returns
 
@@ -4536,7 +4536,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26463
 
 > **btoa**(`data`): `string`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26651
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26651
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/btoa)
 
@@ -4560,7 +4560,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26651
 
 > **cancelAnimationFrame**(`handle`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:2743
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2743
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/cancelAnimationFrame)
 
@@ -4584,7 +4584,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:2743
 
 > **cancelIdleCallback**(`handle`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26465
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26465
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback)
 
@@ -4608,7 +4608,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26465
 
 > **captureEvents**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26471
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26471
 
 #### Returns
 
@@ -4628,7 +4628,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26471
 
 > **clearInterval**(`id`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26653
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26653
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearInterval)
 
@@ -4652,7 +4652,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26653
 
 > **clearTimeout**(`id`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26655
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26655
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearTimeout)
 
@@ -4676,7 +4676,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26655
 
 > **close**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26477
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26477
 
 Closes the window.
 
@@ -4696,7 +4696,7 @@ Closes the window.
 
 > **confirm**(`message`?): `boolean`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26479
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26479
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/confirm)
 
@@ -4722,7 +4722,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26479
 
 > **createImageBitmap**(`image`, `options`?): `Promise`\<`ImageBitmap`\>
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26657
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26657
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/createImageBitmap)
 
@@ -4748,7 +4748,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26657
 
 > **createImageBitmap**(`image`, `sx`, `sy`, `sw`, `sh`, `options`?): `Promise`\<`ImageBitmap`\>
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26658
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26658
 
 ##### Parameters
 
@@ -4790,7 +4790,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26658
 
 > **dispatchEvent**(`event`): `boolean`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:8719
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:8719
 
 Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
 
@@ -4816,7 +4816,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 > **fetch**(`input`, `init`?): `Promise`\<`Response`\>
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26660
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26660
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/fetch)
 
@@ -4844,7 +4844,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26660
 
 > **focus**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26485
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26485
 
 Moves the focus to the window's browsing context, if any.
 
@@ -4864,7 +4864,7 @@ Moves the focus to the window's browsing context, if any.
 
 > **getComputedStyle**(`elt`, `pseudoElt`?): `CSSStyleDeclaration`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26487
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26487
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle)
 
@@ -4892,7 +4892,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26487
 
 > **getSelection**(): `Selection`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26489
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26489
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getSelection)
 
@@ -4910,7 +4910,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26489
 
 > **matchMedia**(`query`): `MediaQueryList`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26491
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26491
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/matchMedia)
 
@@ -4934,7 +4934,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26491
 
 > **moveBy**(`x`, `y`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26493
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26493
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveBy)
 
@@ -4962,7 +4962,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26493
 
 > **moveTo**(`x`, `y`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26495
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26495
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveTo)
 
@@ -4990,7 +4990,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26495
 
 > **open**(`url`?, `target`?, `features`?): `Window`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26497
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26497
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/open)
 
@@ -5024,7 +5024,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26497
 
 > **postMessage**(`message`, `targetOrigin`, `transfer`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26511
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26511
 
 Posts a message to the given window. Messages can be structured objects, e.g. nested objects and arrays, can contain JavaScript values (strings, numbers, Date objects, etc), and can contain certain data objects such as File Blob, FileList, and ArrayBuffer objects.
 
@@ -5064,7 +5064,7 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 > **postMessage**(`message`, `options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26512
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26512
 
 ##### Parameters
 
@@ -5090,7 +5090,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26512
 
 > **print**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26514
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26514
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/print)
 
@@ -5108,7 +5108,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26514
 
 > **prompt**(`message`?, `_default`?): `string`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26516
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26516
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/prompt)
 
@@ -5136,7 +5136,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26516
 
 > **queueMicrotask**(`callback`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26662
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26662
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/queueMicrotask)
 
@@ -5160,7 +5160,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26662
 
 > **releaseEvents**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26522
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26522
 
 #### Returns
 
@@ -5182,7 +5182,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26522
 
 > **removeEventListener**\<`K`\>(`type`, `listener`, `options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26546
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26546
 
 Removes the event listener in target's event listener list with the same type, callback, and options.
 
@@ -5218,7 +5218,7 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **removeEventListener**(`type`, `listener`, `options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26547
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26547
 
 Removes the event listener in target's event listener list with the same type, callback, and options.
 
@@ -5252,7 +5252,7 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **reportError**(`e`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26664
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26664
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/reportError)
 
@@ -5276,7 +5276,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26664
 
 > **requestAnimationFrame**(`callback`): `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:2745
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2745
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/requestAnimationFrame)
 
@@ -5300,7 +5300,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:2745
 
 > **requestIdleCallback**(`callback`, `options`?): `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26524
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26524
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback)
 
@@ -5328,7 +5328,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26524
 
 > **resizeBy**(`x`, `y`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26526
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26526
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeBy)
 
@@ -5356,7 +5356,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26526
 
 > **resizeTo**(`width`, `height`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26528
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26528
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeTo)
 
@@ -5386,7 +5386,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26528
 
 > **scroll**(`options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26530
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26530
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scroll)
 
@@ -5408,7 +5408,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26530
 
 > **scroll**(`x`, `y`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26531
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26531
 
 ##### Parameters
 
@@ -5436,7 +5436,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26531
 
 > **scrollBy**(`options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26533
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26533
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollBy)
 
@@ -5458,7 +5458,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26533
 
 > **scrollBy**(`x`, `y`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26534
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26534
 
 ##### Parameters
 
@@ -5486,7 +5486,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26534
 
 > **scrollTo**(`options`?): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26536
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26536
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollTo)
 
@@ -5508,7 +5508,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26536
 
 > **scrollTo**(`x`, `y`): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26537
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26537
 
 ##### Parameters
 
@@ -5534,7 +5534,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26537
 
 > **setInterval**(`handler`, `timeout`?, ...`arguments`?): `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26666
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26666
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/setInterval)
 
@@ -5566,7 +5566,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26666
 
 > **setTimeout**(`handler`, `timeout`?, ...`arguments`?): `number`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26668
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26668
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/setTimeout)
 
@@ -5598,7 +5598,7 @@ Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26668
 
 > **stop**(): `void`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26543
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26543
 
 Cancels the document load.
 
@@ -5618,7 +5618,7 @@ Cancels the document load.
 
 > **structuredClone**\<`T`\>(`value`, `options`?): `T`
 
-Defined in: wallets/trident/node\_modules/typescript/lib/lib.dom.d.ts:26670
+Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26670
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/structuredClone)
 

@@ -39,24 +39,30 @@ export class SendTransaction implements MidenSendTransaction {
 export interface MidenCustomTransaction {
   accountId: string;
   transactionRequest: string;
-  inputNotes?: string[];
+  inputNoteIds?: string[];
+  importNotes?: string[];
 }
 
 export class CustomTransaction implements MidenCustomTransaction {
   accountId: string;
   transactionRequest: string;
-  inputNotes?: string[];
+  inputNoteIds?: string[];
+  importNotes?: string[];
 
   constructor(
     accountId: string,
     transactionRequest: TransactionRequest,
-    inputNoteBytes?: string[]
+    inputNotesIds?: string[],
+    inputNoteBytes?: Uint8Array[]
   ) {
     this.accountId = accountId;
     const requestBytes = transactionRequest.serialize();
     const base64 = Buffer.from(requestBytes).toString('base64');
     this.transactionRequest = base64;
-    this.inputNotes = inputNoteBytes;
+    this.inputNoteIds = inputNotesIds;
+    this.importNotes = inputNoteBytes.map((note) =>
+      Buffer.from(note).toString('base64')
+    );
   }
 }
 
@@ -102,12 +108,14 @@ export class Transaction implements MidenTransaction {
   static createCustomTransaction(
     accountId: string,
     transactionRequest: TransactionRequest,
-    inputNotes?: string[]
+    inputNoteIds?: string[],
+    noteBytes?: Uint8Array[]
   ) {
     const transactionBytes = new CustomTransaction(
       accountId,
       transactionRequest,
-      inputNotes
+      inputNoteIds,
+      noteBytes
     );
     return new Transaction(TransactionType.Custom, transactionBytes);
   }
