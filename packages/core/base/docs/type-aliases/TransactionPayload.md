@@ -8,4 +8,4 @@
 
 > **TransactionPayload**: [`MidenSendTransaction`](../interfaces/MidenSendTransaction.md) \| [`MidenConsumeTransaction`](../interfaces/MidenConsumeTransaction.md) \| [`MidenCustomTransaction`](../interfaces/MidenCustomTransaction.md)
 
-Defined in: [transaction.ts:104](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/transaction.ts#L104)
+Defined in: [transaction.ts:104](https://github.com/demox-labs/miden-wallet-adapter/blob/4e4ca8998b01f40befb8850757ab37009c071cf2/packages/core/base/transaction.ts#L104)

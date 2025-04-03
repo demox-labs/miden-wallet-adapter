@@ -62,7 +62,7 @@ export class ConsumeTransaction implements MidenConsumeTransaction {
     this.noteId = noteId;
     this.noteType = noteType;
     this.amount = amount;
-    this.noteBytes = Buffer.from(noteBytes).toString('base64');
+    this.noteBytes = noteBytes ? Buffer.from(noteBytes).toString('base64') : undefined;
   }
 }
 

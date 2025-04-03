@@ -8,7 +8,7 @@
 
 > **SignerWalletAdapter**\<`Name`\>: [`WalletAdapter`](WalletAdapter.md)\<`Name`\> & [`SignerWalletAdapterProps`](../interfaces/SignerWalletAdapterProps.md)\<`Name`\>
 
-Defined in: [signer.ts:17](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/signer.ts#L17)
+Defined in: [signer.ts:17](https://github.com/demox-labs/miden-wallet-adapter/blob/4e4ca8998b01f40befb8850757ab37009c071cf2/packages/core/base/signer.ts#L17)
 
 ## Type Parameters
 

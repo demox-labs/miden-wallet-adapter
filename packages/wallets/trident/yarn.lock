@@ -12,9 +12,9 @@
     glob "^11.0.0"
 
 "@demox-labs/miden-wallet-adapter-base@^0.1.0":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.1.2.tgz#e3621f104c4c1ed4867b243cf9092dd8d6eccfac"
-  integrity sha512-M97wH/nEI6pqW18q4wgVv6Be8YmZvfjyYIL5I4MLpiYEzg6pPROXTzNfyH3bQrLWosp94IeuKIfmeOhD6TElCw==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.1.4.tgz#9a6038d4a624f9d4cdee8840efaa7358929a426a"
+  integrity sha512-FCOmtT63mdCyAzEtPSwNdclaNga7hot2uK125HSh67yme5ck5OB0iWZj7tC3odOFU7+5N9Xzko6vPZqC3GUjUg==
   dependencies:
     eventemitter3 "^5.0.1"
 

@@ -8,7 +8,7 @@
 
 > **WalletName**\<`T`\>: `T` & `object`
 
-Defined in: [adapter.ts:20](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/adapter.ts#L20)
+Defined in: [adapter.ts:20](https://github.com/demox-labs/miden-wallet-adapter/blob/4e4ca8998b01f40befb8850757ab37009c071cf2/packages/core/base/adapter.ts#L20)
 
 ## Type declaration
 
