@@ -6,15 +6,23 @@
 
 # Enumeration: TransactionType
 
-Defined in: [transaction.ts:69](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L69)
+Defined in: [transaction.ts:99](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/transaction.ts#L99)
 
 ## Enumeration Members
+
+### Consume
+
+> **Consume**: `"consume"`
+
+Defined in: [transaction.ts:101](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/transaction.ts#L101)
+
+***
 
 ### Custom
 
 > **Custom**: `"custom"`
 
-Defined in: [transaction.ts:71](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L71)
+Defined in: [transaction.ts:102](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/transaction.ts#L102)
 
 ***
 
@@ -22,4 +30,4 @@ Defined in: [transaction.ts:71](https://github.com/demox-labs/miden-wallet-adapt
 
 > **Send**: `"send"`
 
-Defined in: [transaction.ts:70](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L70)
+Defined in: [transaction.ts:100](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/transaction.ts#L100)

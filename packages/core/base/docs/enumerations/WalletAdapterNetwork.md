@@ -6,7 +6,7 @@
 
 # Enumeration: WalletAdapterNetwork
 
-Defined in: [types.ts:1](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/types.ts#L1)
+Defined in: [types.ts:1](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/types.ts#L1)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:1](https://github.com/demox-labs/miden-wallet-adapter/blob
 
 > **Localnet**: `"localnet"`
 
-Defined in: [types.ts:3](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/types.ts#L3)
+Defined in: [types.ts:3](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/types.ts#L3)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [types.ts:3](https://github.com/demox-labs/miden-wallet-adapter/blob
 
 > **Testnet**: `"testnet"`
 
-Defined in: [types.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/types.ts#L2)
+Defined in: [types.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/types.ts#L2)

@@ -8,4 +8,4 @@
 
 > **NoteTypeString**: `"public"` \| `"private"`
 
-Defined in: [transaction.ts:3](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/core/base/transaction.ts#L3)
+Defined in: [transaction.ts:3](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/core/base/transaction.ts#L3)

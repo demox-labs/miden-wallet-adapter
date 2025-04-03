@@ -6,7 +6,7 @@
 
 # Interface: TridentWalletEvents
 
-Defined in: [adapter.ts:18](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L18)
+Defined in: [wallets/trident/adapter.ts:19](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L19)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [adapter.ts:18](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **accountChange**(...`args`): `unknown`
 
-Defined in: [adapter.ts:21](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L21)
+Defined in: [wallets/trident/adapter.ts:22](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L22)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [adapter.ts:21](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **connect**(...`args`): `unknown`
 
-Defined in: [adapter.ts:19](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L19)
+Defined in: [wallets/trident/adapter.ts:20](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L20)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [adapter.ts:19](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **disconnect**(...`args`): `unknown`
 
-Defined in: [adapter.ts:20](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L20)
+Defined in: [wallets/trident/adapter.ts:21](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L21)
 
 #### Parameters
 

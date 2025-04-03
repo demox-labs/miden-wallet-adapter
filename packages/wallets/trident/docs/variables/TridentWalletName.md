@@ -8,4 +8,4 @@
 
 > `const` **TridentWalletName**: `WalletName`\<`"Trident Wallet"`\>
 
-Defined in: [adapter.ts:51](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L51)
+Defined in: [wallets/trident/adapter.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L55)

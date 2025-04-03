@@ -6,7 +6,7 @@
 
 # Interface: TridentWalletAdapterConfig
 
-Defined in: [adapter.ts:47](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L47)
+Defined in: [wallets/trident/adapter.ts:51](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L51)
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: [adapter.ts:47](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `optional` **appName**: `string`
 
-Defined in: [adapter.ts:48](https://github.com/demox-labs/miden-wallet-adapter/blob/22591ca132b14748ff986f82f27cfe8773be90bd/packages/wallets/trident/adapter.ts#L48)
+Defined in: [wallets/trident/adapter.ts:52](https://github.com/demox-labs/miden-wallet-adapter/blob/46e4cf9b66d74a1c5eb19ca70ee28c2507dce28f/packages/wallets/trident/adapter.ts#L52)

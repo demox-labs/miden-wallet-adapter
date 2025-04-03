@@ -20,6 +20,7 @@
 - [BaseMessageSignerWalletAdapter](classes/BaseMessageSignerWalletAdapter.md)
 - [BaseSignerWalletAdapter](classes/BaseSignerWalletAdapter.md)
 - [BaseWalletAdapter](classes/BaseWalletAdapter.md)
+- [ConsumeTransaction](classes/ConsumeTransaction.md)
 - [CustomTransaction](classes/CustomTransaction.md)
 - [EventEmitter](classes/EventEmitter.md)
 - [SendTransaction](classes/SendTransaction.md)
@@ -50,6 +51,7 @@
 ## Interfaces
 
 - [MessageSignerWalletAdapterProps](interfaces/MessageSignerWalletAdapterProps.md)
+- [MidenConsumeTransaction](interfaces/MidenConsumeTransaction.md)
 - [MidenCustomTransaction](interfaces/MidenCustomTransaction.md)
 - [MidenSendTransaction](interfaces/MidenSendTransaction.md)
 - [MidenTransaction](interfaces/MidenTransaction.md)
