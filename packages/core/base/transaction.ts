@@ -36,6 +36,36 @@ export class SendTransaction implements MidenSendTransaction {
   }
 }
 
+export interface MidenConsumeTransaction {
+  faucetId: string;
+  noteId: string;
+  noteType: NoteTypeString;
+  amount: number;
+  noteBytes?: string;
+}
+
+export class ConsumeTransaction implements MidenConsumeTransaction {
+  faucetId: string;
+  noteId: string;
+  noteType: NoteTypeString;
+  amount: number;
+  noteBytes?: string;
+
+  constructor(
+    faucetId: string,
+    noteId: string,
+    noteType: NoteTypeString,
+    amount: number,
+    noteBytes?: Uint8Array
+  ) {
+    this.faucetId = faucetId;
+    this.noteId = noteId;
+    this.noteType = noteType;
+    this.amount = amount;
+    this.noteBytes = Buffer.from(noteBytes).toString('base64');
+  }
+}
+
 export interface MidenCustomTransaction {
   accountId: string;
   transactionRequest: string;
@@ -68,9 +98,13 @@ export class CustomTransaction implements MidenCustomTransaction {
 
 export enum TransactionType {
   Send = 'send',
+  Consume = 'consume',
   Custom = 'custom',
 }
-export type TransactionPayload = MidenSendTransaction | MidenCustomTransaction;
+export type TransactionPayload =
+  | MidenSendTransaction
+  | MidenConsumeTransaction
+  | MidenCustomTransaction;
 
 export interface MidenTransaction {
   type: TransactionType;
@@ -103,6 +137,23 @@ export class Transaction implements MidenTransaction {
       recallBlocks
     );
     return new Transaction(TransactionType.Send, sendTransaction);
+  }
+
+  static createConsumeTransaction(
+    faucetId: string,
+    noteId: string,
+    noteType: NoteTypeString,
+    amount: number,
+    noteBytes?: Uint8Array
+  ) {
+    const consumeTransaction = new ConsumeTransaction(
+      faucetId,
+      noteId,
+      noteType,
+      amount,
+      noteBytes
+    );
+    return new Transaction(TransactionType.Consume, consumeTransaction);
   }
 
   static createCustomTransaction(
