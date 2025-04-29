@@ -523,7 +523,7 @@
           /*! @demox-labs/miden-wallet-adapter-base */ '../../core/base/dist/index.js'
         );
 
-      const TridentWalletName = 'Trident Wallet';
+      const TridentWalletName = 'Miden Wallet';
       class TridentWalletAdapter extends _demox_labs_miden_wallet_adapter_base__WEBPACK_IMPORTED_MODULE_0__.BaseMessageSignerWalletAdapter {
         name = TridentWalletName;
         url = 'https://leo.app/download';

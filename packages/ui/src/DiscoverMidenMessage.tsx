@@ -9,10 +9,10 @@ export const DiscoverMidenMessage = () => {
       <h1>
         Discover
         <br />
-        Polygon Miden
+        Miden
       </h1>
       <p>
-        Experience the next evolution of blockchain technology with Polygon
+        Experience the next evolution of blockchain technology with
         Miden. Install the Miden Wallet and access a seamless, decentralized
         ecosystem today.
       </p>

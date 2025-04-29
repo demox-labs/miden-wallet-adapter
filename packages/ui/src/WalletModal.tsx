@@ -59,7 +59,7 @@ export const WalletModal: FC<WalletModalProps> = ({
         installedWallets[0]!
       : wallets.find(
           (wallet: { adapter: { name: WalletName } }) =>
-            wallet.adapter.name === 'Trident Wallet'
+            wallet.adapter.name === 'Miden Wallet'
         ) ||
           // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
           otherWallets[0]!;
@@ -246,7 +246,7 @@ export const WalletModal: FC<WalletModalProps> = ({
                       handleWalletClick(event, getStartedWallet.adapter.name)
                     }
                   >
-                    Install Trident Wallet
+                    Install Miden Wallet
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"

@@ -53,7 +53,7 @@ export interface TridentWalletAdapterConfig {
 }
 
 export const TridentWalletName =
-  'Trident Wallet' as WalletName<'Trident Wallet'>;
+  'Miden Wallet' as WalletName<'Miden Wallet'>;
 
 export class TridentWalletAdapter extends BaseMessageSignerWalletAdapter {
   name = TridentWalletName;
