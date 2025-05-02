@@ -7,9 +7,7 @@ export const DiscoverMidenMessage = () => {
     <div className="wallet-adapter-modal-discover-miden-message">
       <MidenSVG />
       <h1>
-        Discover
-        <br />
-        Miden
+        Discover Miden
       </h1>
       <p>
         Experience the next evolution of blockchain technology with

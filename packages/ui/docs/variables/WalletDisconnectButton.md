@@ -8,4 +8,4 @@
 
 > `const` **WalletDisconnectButton**: `FC`\<`ButtonProps`\>
 
-Defined in: [WalletDisconnectButton.tsx:8](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/ui/src/WalletDisconnectButton.tsx#L8)
+Defined in: [WalletDisconnectButton.tsx:8](https://github.com/demox-labs/miden-wallet-adapter/blob/dace41a6cc08c0bf9f794ef1f69e3b9bfa985444/packages/ui/src/WalletDisconnectButton.tsx#L8)

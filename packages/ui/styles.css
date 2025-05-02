@@ -36,14 +36,22 @@
 }
 
 .wallet-adapter-button-end-icon,
-.wallet-adapter-button-start-icon,
-.wallet-adapter-button-end-icon img,
+.wallet-adapter-button-start-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
 .wallet-adapter-button-start-icon img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
 }
 
 .wallet-adapter-button-end-icon {
@@ -274,12 +282,19 @@
 }
 
 .wallet-adapter-modal-list .wallet-adapter-button-end-icon,
-.wallet-adapter-modal-list .wallet-adapter-button-start-icon,
-.wallet-adapter-modal-list .wallet-adapter-button-end-icon img,
-.wallet-adapter-modal-list .wallet-adapter-button-start-icon img {
+.wallet-adapter-modal-list .wallet-adapter-button-start-icon {
   width: 32px;
   height: 32px;
   border-radius: 6px;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button-start-icon {
+  border: 1px solid #E5E5E5;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button-start-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 .wallet-adapter-modal-list .wallet-adapter-button span {

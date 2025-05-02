@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-trident",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Miden wallet adapter for the Trident Wallet.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
