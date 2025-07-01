@@ -1,3 +1,7 @@
+**@demox-labs/miden-wallet-adapter-miden**
+
+***
+
 ## Overview
 
 The **Miden Wallet Adapter** is a modular TypeScript library that provides wallet integration capabilities for Miden blockchain applications. It's designed to connect Miden-compatible wallets to decentralized applications (dApps) in a standardized way.

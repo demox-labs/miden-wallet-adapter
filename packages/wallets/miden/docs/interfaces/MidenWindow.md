@@ -1,12 +1,12 @@
-[**@demox-labs/miden-wallet-adapter-trident**](../README.md)
+[**@demox-labs/miden-wallet-adapter-miden**](../README.md)
 
 ***
 
-[@demox-labs/miden-wallet-adapter-trident](../globals.md) / TridentWindow
+[@demox-labs/miden-wallet-adapter-miden](../globals.md) / MidenWindow
 
-# Interface: TridentWindow
+# Interface: MidenWindow
 
-Defined in: [adapter.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/dace41a6cc08c0bf9f794ef1f69e3b9bfa985444/packages/wallets/trident/adapter.ts#L44)
+Defined in: adapter.ts:44
 
 ## Extends
 
@@ -327,6 +327,22 @@ Returns true if the menu bar is visible; otherwise, returns false.
 #### Inherited from
 
 `Window.menubar`
+
+***
+
+### miden?
+
+> `optional` **miden**: [`MidenWallet`](MidenWallet.md)
+
+Defined in: adapter.ts:46
+
+***
+
+### midenWallet?
+
+> `optional` **midenWallet**: [`MidenWallet`](MidenWallet.md)
+
+Defined in: adapter.ts:45
 
 ***
 
@@ -4285,22 +4301,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26451
 #### Inherited from
 
 `Window.top`
-
-***
-
-### trident?
-
-> `optional` **trident**: [`TridentWallet`](TridentWallet.md)
-
-Defined in: [adapter.ts:46](https://github.com/demox-labs/miden-wallet-adapter/blob/dace41a6cc08c0bf9f794ef1f69e3b9bfa985444/packages/wallets/trident/adapter.ts#L46)
-
-***
-
-### tridentWallet?
-
-> `optional` **tridentWallet**: [`TridentWallet`](TridentWallet.md)
-
-Defined in: [adapter.ts:45](https://github.com/demox-labs/miden-wallet-adapter/blob/dace41a6cc08c0bf9f794ef1f69e3b9bfa985444/packages/wallets/trident/adapter.ts#L45)
 
 ***
 

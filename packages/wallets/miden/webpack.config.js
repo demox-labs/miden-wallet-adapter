@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '.'),
-    filename: 'trident-wallet-bundle.js', // <--- Will be compiled to this single file
+    filename: 'miden-wallet-bundle.js', // <--- Will be compiled to this single file
     library: {
       type: 'module',
     },
