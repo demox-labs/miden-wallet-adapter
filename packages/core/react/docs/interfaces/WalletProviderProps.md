@@ -6,7 +6,7 @@
 
 # Interface: WalletProviderProps
 
-Defined in: [WalletProvider.tsx:26](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L26)
+Defined in: [WalletProvider.tsx:26](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L26)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [WalletProvider.tsx:26](https://github.com/demox-labs/miden-wallet-a
 
 > `optional` **autoConnect**: `boolean`
 
-Defined in: [WalletProvider.tsx:32](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L32)
+Defined in: [WalletProvider.tsx:32](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L32)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [WalletProvider.tsx:32](https://github.com/demox-labs/miden-wallet-a
 
 > **children**: `ReactNode`
 
-Defined in: [WalletProvider.tsx:27](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L27)
+Defined in: [WalletProvider.tsx:27](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L27)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [WalletProvider.tsx:27](https://github.com/demox-labs/miden-wallet-a
 
 > `optional` **decryptPermission**: `DecryptPermission`
 
-Defined in: [WalletProvider.tsx:29](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L29)
+Defined in: [WalletProvider.tsx:29](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L29)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [WalletProvider.tsx:29](https://github.com/demox-labs/miden-wallet-a
 
 > `optional` **localStorageKey**: `string`
 
-Defined in: [WalletProvider.tsx:34](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L34)
+Defined in: [WalletProvider.tsx:34](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L34)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [WalletProvider.tsx:34](https://github.com/demox-labs/miden-wallet-a
 
 > `optional` **network**: `WalletAdapterNetwork`
 
-Defined in: [WalletProvider.tsx:31](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L31)
+Defined in: [WalletProvider.tsx:31](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L31)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [WalletProvider.tsx:31](https://github.com/demox-labs/miden-wallet-a
 
 > `optional` **onError**: (`error`) => `void`
 
-Defined in: [WalletProvider.tsx:33](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L33)
+Defined in: [WalletProvider.tsx:33](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L33)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [WalletProvider.tsx:33](https://github.com/demox-labs/miden-wallet-a
 
 > `optional` **programs**: `string`[]
 
-Defined in: [WalletProvider.tsx:30](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L30)
+Defined in: [WalletProvider.tsx:30](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L30)
 
 ***
 
@@ -80,4 +80,4 @@ Defined in: [WalletProvider.tsx:30](https://github.com/demox-labs/miden-wallet-a
 
 > **wallets**: `Adapter`[]
 
-Defined in: [WalletProvider.tsx:28](https://github.com/demox-labs/miden-wallet-adapter/blob/a795f9d3e359fa653418e9d00c02ece3d62ee138/packages/core/react/WalletProvider.tsx#L28)
+Defined in: [WalletProvider.tsx:28](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/WalletProvider.tsx#L28)

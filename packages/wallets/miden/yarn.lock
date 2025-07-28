@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@demox-labs/miden-sdk@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-sdk/-/miden-sdk-0.7.1.tgz#87ad3712f462673c37b975e506b82f0fe4853a57"
-  integrity sha512-AuTPy/zEkxodZTUmLaa4a6a20iwCVVfjfbdAW3m3ZTvDeI1XIxfblA2dgFmL5T/9TQ1u0b8IsxkbhS6beoUCNw==
+"@demox-labs/miden-sdk@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@demox-labs/miden-sdk/-/miden-sdk-0.10.1.tgz#1eb59dae60e7d850118fe76405468bedda844ccc"
+  integrity sha512-2fdTkifJ1H+HTfc0QKUcSr5bK++jYw4W/m0kWt//DeQoZeg3RORMo8POG2eDMLakxgLDZy7WRYLRScGguTaLAQ==
   dependencies:
     chai-as-promised "^8.0.0"
     dexie "^4.0.1"
     glob "^11.0.0"
 
-"@demox-labs/miden-wallet-adapter-base@^0.1.0":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.1.4.tgz#9a6038d4a624f9d4cdee8840efaa7358929a426a"
-  integrity sha512-FCOmtT63mdCyAzEtPSwNdclaNga7hot2uK125HSh67yme5ck5OB0iWZj7tC3odOFU7+5N9Xzko6vPZqC3GUjUg==
+"@demox-labs/miden-wallet-adapter-base@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.1.5.tgz#0069407b1174fe81d31ee538550aa5c0a0f2201c"
+  integrity sha512-wrl8svHDJ5+PvqGuwH5mFVqyhR89ci/8U0u5Z2W4eMb0amvq+Gy7ROlfHaydPpmMdmN020Wwmyz2pEMXGmqG1w==
   dependencies:
     eventemitter3 "^5.0.1"
 

@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-base",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Core infrastructure for connecting Miden-compatible wallets to your dApp.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
     "typedoc": "^0.27.6",
     "typedoc-plugin-markdown": "^4.4.1",
     "typescript": "^5.7.2",
-    "@demox-labs/miden-sdk": "^0.7.1",
+    "@demox-labs/miden-sdk": "^0.10.1",
     "@types/node": "^22.13.5"
   },
   "private": false,

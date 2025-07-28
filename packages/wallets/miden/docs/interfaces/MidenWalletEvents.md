@@ -6,7 +6,7 @@
 
 # Interface: MidenWalletEvents
 
-Defined in: adapter.ts:19
+Defined in: [adapter.ts:19](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L19)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: adapter.ts:19
 
 > **accountChange**(...`args`): `unknown`
 
-Defined in: adapter.ts:22
+Defined in: [adapter.ts:22](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L22)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: adapter.ts:22
 
 > **connect**(...`args`): `unknown`
 
-Defined in: adapter.ts:20
+Defined in: [adapter.ts:20](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L20)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: adapter.ts:20
 
 > **disconnect**(...`args`): `unknown`
 
-Defined in: adapter.ts:21
+Defined in: [adapter.ts:21](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L21)
 
 #### Parameters
 

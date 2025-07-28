@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@demox-labs/miden-sdk@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-sdk/-/miden-sdk-0.7.1.tgz#87ad3712f462673c37b975e506b82f0fe4853a57"
-  integrity sha512-AuTPy/zEkxodZTUmLaa4a6a20iwCVVfjfbdAW3m3ZTvDeI1XIxfblA2dgFmL5T/9TQ1u0b8IsxkbhS6beoUCNw==
+"@demox-labs/miden-sdk@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@demox-labs/miden-sdk/-/miden-sdk-0.10.1.tgz#1eb59dae60e7d850118fe76405468bedda844ccc"
+  integrity sha512-2fdTkifJ1H+HTfc0QKUcSr5bK++jYw4W/m0kWt//DeQoZeg3RORMo8POG2eDMLakxgLDZy7WRYLRScGguTaLAQ==
   dependencies:
     chai-as-promised "^8.0.0"
     dexie "^4.0.1"
     glob "^11.0.0"
 
-"@demox-labs/miden-wallet-adapter-base@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.1.0.tgz#fcf76c138a784b5edc48abcd6ce58254e8133a83"
-  integrity sha512-tAe6CFmYZAfImTd/UUjh5bcmYReO9AQuUrf5E0G4NeRMtEcWEIsVap2CfFSKkatBIXLSEUrizd6b1IRRnhcIMw==
+"@demox-labs/miden-wallet-adapter-base@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.1.5.tgz#0069407b1174fe81d31ee538550aa5c0a0f2201c"
+  integrity sha512-wrl8svHDJ5+PvqGuwH5mFVqyhR89ci/8U0u5Z2W4eMb0amvq+Gy7ROlfHaydPpmMdmN020Wwmyz2pEMXGmqG1w==
   dependencies:
     eventemitter3 "^5.0.1"
 
@@ -323,8 +323,16 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
-  name string-width-cjs
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -342,8 +350,14 @@ string-width@^5.0.1, string-width@^5.1.2:
     emoji-regex "^9.2.2"
     strip-ansi "^7.0.1"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
-  name strip-ansi-cjs
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
