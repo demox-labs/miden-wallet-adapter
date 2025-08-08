@@ -47,7 +47,14 @@ await wallet.adapter.requestTransaction(customTransaction)
 
 ## Architecture & Structure
 
-This repository contains three main packages:
+For consumers looking to integrate their React app with the Miden Wallet, the `@demox-labs/miden-wallet-adapter` package contains all necessary components
+- **Purpose**: Provides all components necessary to integrate with the Miden Wallet in a React context
+- **Key Components**:
+  - **Wallet detection and connection**: Detects and handles connections to Miden Wallet
+  - **Persistence and state management**: Automatic wallet reconnects across sessions
+  - **React Context Providers and UI Components**: Provides useful hooks, context providers, and components to make UI integration simple
+
+For other use cases, including different front-end libraries and other wallets in the Miden ecosystem, this repository also exposes composable and extensible packages that can be used as building blocks:
 
 ### 1. **Core Base Package** (`@demox-labs/miden-wallet-adapter-base`)
 - **Purpose**: Provides the foundational infrastructure and interfaces
