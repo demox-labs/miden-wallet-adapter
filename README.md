@@ -47,6 +47,8 @@ await wallet.adapter.requestTransaction(customTransaction)
 
 ## Architecture & Structure
 
+### **Main Package**: `@demox-labs/miden-wallet-adapter`
+
 For consumers looking to integrate their React app with the Miden Wallet, the `@demox-labs/miden-wallet-adapter` package contains all necessary components
 - **Purpose**: Provides all components necessary to integrate with the Miden Wallet in a React context
 - **Key Components**:
