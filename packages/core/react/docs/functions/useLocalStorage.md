@@ -8,7 +8,7 @@
 
 > **useLocalStorage**\<`T`\>(`key`, `defaultState`): \[`T`, `Dispatch`\<`SetStateAction`\<`T`\>\>\]
 
-Defined in: [useLocalStorage.ts:4](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/react/useLocalStorage.ts#L4)
+Defined in: [useLocalStorage.ts:4](https://github.com/demox-labs/miden-wallet-adapter/blob/936af832afefbf69ccca2be9df2bcc84be315019/packages/core/react/useLocalStorage.ts#L4)
 
 ## Type Parameters
 

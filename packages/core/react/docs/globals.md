@@ -10,12 +10,9 @@
 - [WalletContextState](interfaces/WalletContextState.md)
 - [WalletProviderProps](interfaces/WalletProviderProps.md)
 
-## Variables
-
-- [WalletContext](variables/WalletContext.md)
-- [WalletProvider](variables/WalletProvider.md)
-
 ## Functions
 
 - [useLocalStorage](functions/useLocalStorage.md)
 - [useWallet](functions/useWallet.md)
+- [WalletContext](functions/WalletContext.md)
+- [WalletProvider](functions/WalletProvider.md)
