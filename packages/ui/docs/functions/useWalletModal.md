@@ -8,7 +8,7 @@
 
 > **useWalletModal**(): [`WalletModalContextState`](../interfaces/WalletModalContextState.md)
 
-Defined in: [src/useWalletModal.tsx:34](https://github.com/demox-labs/miden-wallet-adapter/blob/be204aed4a2fe464b8d3fb58a33af058b069dafd/packages/ui/src/useWalletModal.tsx#L34)
+Defined in: [src/useWalletModal.tsx:34](https://github.com/demox-labs/miden-wallet-adapter/blob/b95c3f0253c124739bfd0c3166e26c4b73cd6fc7/packages/ui/src/useWalletModal.tsx#L34)
 
 ## Returns
 

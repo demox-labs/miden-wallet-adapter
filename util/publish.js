@@ -10,10 +10,10 @@ const buildOrder = [
   // ['./packages/core/react', './packages/wallets/miden'],
   
   // // Level 3: UI components (depends on base + react)
-  // ['./packages/ui'],
+  ['./packages/ui'],
   
   // Level 4: All-in-one wrapper (depends on all others)
-  ['./packages/all']
+  // ['./packages/all']
 ];
 
 const commands = [

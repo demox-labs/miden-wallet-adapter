@@ -77,12 +77,15 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     this._wallet = null;
     this._publicKey = null;
     this._decryptPermission = DecryptPermission.NoDecrypt;
-
+    console.log(`MidenWalletAdapter constructor: status ${this._readyState}`);
     if (this._readyState !== WalletReadyState.Unsupported) {
       scopePollingDetectionStrategy(() => {
+        console.log(`Checking for midenWallet: ${window?.midenWallet}`);
+        console.log(`Checking for miden: ${window?.miden}`);
         if (window?.midenWallet || window?.miden) {
           this._readyState = WalletReadyState.Installed;
           this.emit('readyStateChange', this._readyState);
+          console.log(`MidenWalletAdapter constructor: status ${this._readyState}`);
           return true;
         }
         return false;
