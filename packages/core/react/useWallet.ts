@@ -43,9 +43,6 @@ const DEFAULT_CONTEXT = {
   connecting: false,
   connected: false,
   disconnecting: false,
-  wallets: EMPTY_ARRAY,
-  wallet: null,
-  publicKey: null,
   select(_name: WalletName) {
     console.error(constructMissingProviderErrorMessage('get', 'select'));
   },
@@ -71,6 +68,24 @@ const DEFAULT_CONTEXT = {
     );
   },
 } as WalletContextState;
+Object.defineProperty(DEFAULT_CONTEXT, 'wallets', {
+  get() {
+    console.error(constructMissingProviderErrorMessage('read', 'wallets'));
+    return EMPTY_ARRAY;
+  },
+});
+Object.defineProperty(DEFAULT_CONTEXT, 'wallet', {
+  get() {
+    console.error(constructMissingProviderErrorMessage('read', 'wallet'));
+    return null;
+  },
+});
+Object.defineProperty(DEFAULT_CONTEXT, 'publicKey', {
+  get() {
+    console.error(constructMissingProviderErrorMessage('read', 'publicKey'));
+    return null;
+  },
+});
 
 function constructMissingProviderErrorMessage(
   action: string,

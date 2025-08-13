@@ -6,7 +6,7 @@
 
 # Interface: WalletIconProps
 
-Defined in: [src/WalletIcon.tsx:4](https://github.com/demox-labs/miden-wallet-adapter/blob/b95c3f0253c124739bfd0c3166e26c4b73cd6fc7/packages/ui/src/WalletIcon.tsx#L4)
+Defined in: [src/WalletIcon.tsx:4](https://github.com/demox-labs/miden-wallet-adapter/blob/be204aed4a2fe464b8d3fb58a33af058b069dafd/packages/ui/src/WalletIcon.tsx#L4)
 
 ## Extends
 
@@ -3795,7 +3795,7 @@ Defined in: node\_modules/@types/react/index.d.ts:2736
 
 > **wallet**: `null` \| `Wallet`
 
-Defined in: [src/WalletIcon.tsx:9](https://github.com/demox-labs/miden-wallet-adapter/blob/b95c3f0253c124739bfd0c3166e26c4b73cd6fc7/packages/ui/src/WalletIcon.tsx#L9)
+Defined in: [src/WalletIcon.tsx:9](https://github.com/demox-labs/miden-wallet-adapter/blob/be204aed4a2fe464b8d3fb58a33af058b069dafd/packages/ui/src/WalletIcon.tsx#L9)
 
 ***
 

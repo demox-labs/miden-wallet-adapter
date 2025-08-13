@@ -12,7 +12,7 @@ import {
   MidenTransaction,
 } from '@demox-labs/miden-wallet-adapter-base';
 import type { FC, ReactNode } from 'react';
-import {
+import React, {
   useCallback,
   useEffect,
   useMemo,
@@ -69,21 +69,16 @@ export const WalletProvider: FC<WalletProviderProps> = ({
   const isDisconnecting = useRef(false);
   const isUnloading = useRef(false);
 
-  console.log(`WalletProvider: initialadapters ${adapters.map((adapter) => adapter.name)}`);
   // Wrap adapters to conform to the `Wallet` interface
   const [wallets, setWallets] = useState(() =>
-    adapters.map((adapter) => {
-      console.log(`WalletProvider: adapter ${adapter.name} readyState ${adapter.readyState}`);
-      return {
-        adapter,
-        readyState: adapter.readyState,
-      }
-    })
+    adapters.map((adapter) => ({
+      adapter,
+      readyState: adapter.readyState,
+    }))
   );
 
   // When the adapters change, start to listen for changes to their `readyState`
   useEffect(() => {
-    console.log(`WalletProvider: new adapters ${adapters.map((adapter) => adapter.name)}`);
     // When the adapters change, wrap them to conform to the `Wallet` interface
     setWallets((wallets) =>
       adapters.map((adapter, index) => {
@@ -311,6 +306,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     <WalletContext.Provider
       value={{
         autoConnect,
+        decryptPermission,
         wallets,
         wallet,
         publicKey,
