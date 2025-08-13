@@ -1,5 +1,4 @@
 import type { FC, MouseEventHandler } from 'react';
-import React from 'react';
 import { WalletReadyState } from '@demox-labs/miden-wallet-adapter-base';
 import { Wallet } from '@demox-labs/miden-wallet-adapter-react';
 import { Button } from './Button';

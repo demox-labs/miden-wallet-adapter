@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-reactui",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "React UI Components for connecting Miden-compatible wallets to your dApp.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,20 +15,22 @@
   },
   "dependencies": {
     "@demox-labs/miden-wallet-adapter-base": "^0.1.5",
-    "@demox-labs/miden-wallet-adapter-react": "^0.1.1"
+    "@demox-labs/miden-wallet-adapter-react": "^0.1.2"
   },
   "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "copyfiles": "^2.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "rimraf": "^6.0.1",
     "typedoc": "^0.27.6",
     "typedoc-plugin-markdown": "^4.4.1",
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

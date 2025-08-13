@@ -1,5 +1,5 @@
 import type { FC, MouseEvent } from 'react';
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import type { ButtonProps } from './Button';
 import { Button } from './Button';
 import { useWalletModal } from './useWalletModal';

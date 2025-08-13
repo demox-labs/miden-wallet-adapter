@@ -1,12 +1,16 @@
 import type { FC, MouseEventHandler } from 'react';
-import React, { useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { useWallet } from '@demox-labs/miden-wallet-adapter-react';
 import type { ButtonProps } from './Button';
 import { Button } from './Button';
 import { WalletIcon } from './WalletIcon';
-import { WalletAdapterNetwork } from '@demox-labs/miden-wallet-adapter-base';
+import { DecryptPermission, WalletAdapterNetwork } from '@demox-labs/miden-wallet-adapter-base';
 
-export const WalletConnectButton: FC<ButtonProps> = ({
+interface WalletConnectButtonProps extends ButtonProps {
+  programs?: string[];
+}
+
+export const WalletConnectButton: FC<WalletConnectButtonProps> = ({
   children,
   disabled,
   onClick,
@@ -23,7 +27,7 @@ export const WalletConnectButton: FC<ButtonProps> = ({
       // eslint-disable-next-line @typescript-eslint/no-empty-function
       if (!event.defaultPrevented)
         connect(
-          decryptPermission || 'NO_DECRYPT',
+          decryptPermission || DecryptPermission.NoDecrypt,
           network || WalletAdapterNetwork.Testnet,
           programs ?? []
         ).catch(() => {});

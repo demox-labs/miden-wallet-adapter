@@ -1,5 +1,5 @@
 import type { FC, MouseEvent } from 'react';
-import React, {
+import {
   useCallback,
   useLayoutEffect,
   useMemo,
@@ -8,6 +8,7 @@ import React, {
 } from 'react';
 import { createPortal } from 'react-dom';
 import {
+  DecryptPermission,
   WalletAdapterNetwork,
   WalletName,
   WalletReadyState,
@@ -20,6 +21,9 @@ import { DiscoverMidenMessage } from './DiscoverMidenMessage';
 export interface WalletModalProps {
   className?: string;
   container?: string;
+  decryptPermission?: DecryptPermission;
+  network?: WalletAdapterNetwork;
+  programs?: string[];
 }
 
 export const WalletModal: FC<WalletModalProps> = ({
@@ -154,14 +158,14 @@ export const WalletModal: FC<WalletModalProps> = ({
   useLayoutEffect(() => {
     if (wallet) {
       connect(
-        decryptPermission || 'NO_DECRYPT',
+        decryptPermission || DecryptPermission.NoDecrypt,
         network || WalletAdapterNetwork.Testnet,
         programs ?? []
       ).catch((e) => {
         console.log({ e });
       });
     }
-  }, [wallet]);
+  }, [wallet, decryptPermission, network, programs, connect]);
 
   return (
     portal &&

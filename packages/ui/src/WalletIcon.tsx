@@ -1,5 +1,4 @@
 import type { DetailedHTMLProps, FC, ImgHTMLAttributes } from 'react';
-import React from 'react';
 import { Wallet } from '@demox-labs/miden-wallet-adapter-react';
 
 export interface WalletIconProps

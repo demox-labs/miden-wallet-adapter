@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import { MidenSVG } from './MidenSVG';
 
 export const DiscoverMidenMessage = () => {

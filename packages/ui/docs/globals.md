@@ -11,17 +11,14 @@
 - [WalletModalProps](interfaces/WalletModalProps.md)
 - [WalletModalProviderProps](interfaces/WalletModalProviderProps.md)
 
-## Variables
-
-- [WalletConnectButton](variables/WalletConnectButton.md)
-- [WalletDisconnectButton](variables/WalletDisconnectButton.md)
-- [WalletIcon](variables/WalletIcon.md)
-- [WalletModal](variables/WalletModal.md)
-- [WalletModalButton](variables/WalletModalButton.md)
-- [WalletModalContext](variables/WalletModalContext.md)
-- [WalletModalProvider](variables/WalletModalProvider.md)
-- [WalletMultiButton](variables/WalletMultiButton.md)
-
 ## Functions
 
 - [useWalletModal](functions/useWalletModal.md)
+- [WalletConnectButton](functions/WalletConnectButton.md)
+- [WalletDisconnectButton](functions/WalletDisconnectButton.md)
+- [WalletIcon](functions/WalletIcon.md)
+- [WalletModal](functions/WalletModal.md)
+- [WalletModalButton](functions/WalletModalButton.md)
+- [WalletModalContext](functions/WalletModalContext.md)
+- [WalletModalProvider](functions/WalletModalProvider.md)
+- [WalletMultiButton](functions/WalletMultiButton.md)

@@ -1,5 +1,5 @@
 import type { FC, MouseEventHandler } from 'react';
-import React, { useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { useWallet } from '@demox-labs/miden-wallet-adapter-react';
 import type { ButtonProps } from './Button';
 import { Button } from './Button';
