@@ -23,7 +23,7 @@ export interface MidenWalletEvents {
 }
 
 export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
-  publicKey?: string;
+  accountId?: string;
   requestSend(
     transaction: MidenSendTransaction
   ): Promise<{ transactionId?: string }>;
@@ -64,7 +64,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
 
   private _connecting: boolean;
   private _wallet: MidenWallet | null;
-  private _publicKey: string | null;
+  private _accountId: string | null;
   private _decryptPermission: string;
   private _readyState: WalletReadyState =
     typeof window === 'undefined' || typeof document === 'undefined'
@@ -75,7 +75,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     super();
     this._connecting = false;
     this._wallet = null;
-    this._publicKey = null;
+    this._accountId = null;
     this._decryptPermission = DecryptPermission.NoDecrypt;
 
     if (this._readyState !== WalletReadyState.Unsupported) {
@@ -90,8 +90,8 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     }
   }
 
-  get publicKey() {
-    return this._publicKey;
+  get accountId() {
+    return this._accountId;
   }
 
   get decryptPermission() {
@@ -113,7 +113,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestSend(transaction: MidenSendTransaction): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.publicKey) throw new WalletNotConnectedError();
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestSend(transaction);
         return result.transactionId;
@@ -131,7 +131,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   ): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.publicKey) throw new WalletNotConnectedError();
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestConsume(transaction);
         return result.transactionId;
@@ -147,7 +147,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestTransaction(transaction: MidenTransaction): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.publicKey) throw new WalletNotConnectedError();
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestTransaction(transaction);
         return result.transactionId;
@@ -177,10 +177,10 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
 
       try {
         await wallet.connect(decryptPermission, network, programs);
-        if (!wallet?.publicKey) {
+        if (!wallet?.accountId) {
           throw new WalletConnectionError();
         }
-        this._publicKey = wallet.publicKey!;
+        this._accountId = wallet.accountId!;
       } catch (error: any) {
         throw new WalletConnectionError(error?.message, error);
       }
@@ -188,7 +188,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       this._wallet = wallet;
       this._decryptPermission = decryptPermission;
 
-      this.emit('connect', this._publicKey);
+      this.emit('connect', this._accountId);
     } catch (error: any) {
       this.emit('error', error);
       throw error;
@@ -203,7 +203,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       // wallet.off('disconnect', this._disconnected);
 
       this._wallet = null;
-      this._publicKey = null;
+      this._accountId = null;
 
       try {
         await wallet.disconnect();

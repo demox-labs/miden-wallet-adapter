@@ -18,7 +18,7 @@ export interface WalletContextState {
   autoConnect: boolean;
   wallets: Wallet[];
   wallet: Wallet | null;
-  publicKey: string | null;
+  accountId: string | null;
   connecting: boolean;
   connected: boolean;
   disconnecting: boolean;
@@ -80,9 +80,9 @@ Object.defineProperty(DEFAULT_CONTEXT, 'wallet', {
     return null;
   },
 });
-Object.defineProperty(DEFAULT_CONTEXT, 'publicKey', {
+Object.defineProperty(DEFAULT_CONTEXT, 'accountId', {
   get() {
-    console.error(constructMissingProviderErrorMessage('read', 'publicKey'));
+    console.error(constructMissingProviderErrorMessage('read', 'accountId'));
     return null;
   },
 });

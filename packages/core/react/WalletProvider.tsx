@@ -12,7 +12,7 @@ import {
   MidenTransaction,
 } from '@demox-labs/miden-wallet-adapter-base';
 import type { FC, ReactNode } from 'react';
-import React, {
+import {
   useCallback,
   useEffect,
   useMemo,
@@ -37,12 +37,12 @@ export interface WalletProviderProps {
 const initialState: {
   wallet: Wallet | null;
   adapter: Adapter | null;
-  publicKey: string | null;
+  accountId: string | null;
   connected: boolean;
 } = {
   wallet: null,
   adapter: null,
-  publicKey: null,
+  accountId: null,
   connected: false,
 };
 
@@ -60,7 +60,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     localStorageKey,
     null
   );
-  const [{ wallet, adapter, publicKey, connected }, setState] =
+  const [{ wallet, adapter, accountId, connected }, setState] =
     useState(initialState);
   const readyState = adapter?.readyState || WalletReadyState.Unsupported;
   const [connecting, setConnecting] = useState(false);
@@ -130,7 +130,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         wallet,
         adapter: wallet.adapter,
         connected: wallet.adapter.connected,
-        publicKey: wallet.adapter.publicKey,
+        accountId: wallet.adapter.accountId,
       });
     } else {
       setState(initialState);
@@ -153,7 +153,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     setState((state) => ({
       ...state,
       connected: adapter.connected,
-      publicKey: adapter.publicKey,
+      accountId: adapter.accountId,
     }));
   }, [adapter]);
 
@@ -306,10 +306,9 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     <WalletContext.Provider
       value={{
         autoConnect,
-        decryptPermission,
         wallets,
         wallet,
-        publicKey,
+        accountId,
         connected,
         connecting,
         disconnecting,

@@ -9,7 +9,7 @@ import type {
 export { EventEmitter };
 
 export interface WalletAdapterEvents {
-  connect(publicKey: string, programs?: string[]): void;
+  connect(accountId: string, programs?: string[]): void;
   disconnect(): void;
   error(error: WalletError): void;
   readyStateChange(readyState: WalletReadyState): void;
@@ -26,7 +26,7 @@ export interface WalletAdapterProps<Name extends string = string> {
   url: string;
   icon: string;
   readyState: WalletReadyState;
-  publicKey: string | null;
+  accountId: string | null;
   connecting: boolean;
   connected: boolean;
   supportedTransactionVersions: SupportedTransactionVersions;
@@ -79,12 +79,12 @@ export abstract class BaseWalletAdapter<Name extends string = string>
   abstract url: string;
   abstract icon: string;
   abstract readyState: WalletReadyState;
-  abstract publicKey: string | null;
+  abstract accountId: string | null;
   abstract connecting: boolean;
   abstract supportedTransactionVersions: SupportedTransactionVersions;
 
   get connected() {
-    return !!this.publicKey;
+    return !!this.accountId;
   }
 
   abstract connect(
