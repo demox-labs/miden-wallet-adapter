@@ -6,7 +6,7 @@
 
 # Interface: MidenWindow
 
-Defined in: [adapter.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L44)
+Defined in: [adapter.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L44)
 
 ## Extends
 
@@ -334,7 +334,7 @@ Returns true if the menu bar is visible; otherwise, returns false.
 
 > `optional` **miden**: [`MidenWallet`](MidenWallet.md)
 
-Defined in: [adapter.ts:46](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L46)
+Defined in: [adapter.ts:46](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L46)
 
 ***
 
@@ -342,7 +342,7 @@ Defined in: [adapter.ts:46](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `optional` **midenWallet**: [`MidenWallet`](MidenWallet.md)
 
-Defined in: [adapter.ts:45](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L45)
+Defined in: [adapter.ts:45](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L45)
 
 ***
 

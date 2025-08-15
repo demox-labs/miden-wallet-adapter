@@ -6,7 +6,7 @@
 
 # Class: WalletConnectionError
 
-Defined in: [errors.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L23)
+Defined in: [errors.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L23)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [errors.ts:23](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 > **new WalletConnectionError**(`message`?, `error`?): [`WalletConnectionError`](WalletConnectionError.md)
 
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L5)
+Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L5)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **error**: `any`
 
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L2)
+Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L2)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 > **name**: `string` = `'WalletConnectionError'`
 
-Defined in: [errors.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L24)
+Defined in: [errors.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L24)
 
 #### Overrides
 

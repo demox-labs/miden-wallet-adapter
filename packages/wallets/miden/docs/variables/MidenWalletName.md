@@ -8,4 +8,4 @@
 
 > `const` **MidenWalletName**: `WalletName`\<`"Miden Wallet"`\>
 
-Defined in: [adapter.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/wallets/miden/adapter.ts#L55)
+Defined in: [adapter.ts:55](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L55)

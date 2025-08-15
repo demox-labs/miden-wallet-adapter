@@ -6,7 +6,7 @@
 
 # Enumeration: DecryptPermission
 
-Defined in: [types.ts:12](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/types.ts#L12)
+Defined in: [types.ts:12](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/types.ts#L12)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:12](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > **AutoDecrypt**: `"AUTO_DECRYPT"`
 
-Defined in: [types.ts:15](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/types.ts#L15)
+Defined in: [types.ts:15](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/types.ts#L15)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types.ts:15](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > **NoDecrypt**: `"NO_DECRYPT"`
 
-Defined in: [types.ts:13](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/types.ts#L13)
+Defined in: [types.ts:13](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/types.ts#L13)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types.ts:13](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > **OnChainHistory**: `"ON_CHAIN_HISTORY"`
 
-Defined in: [types.ts:16](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/types.ts#L16)
+Defined in: [types.ts:16](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/types.ts#L16)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [types.ts:16](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > **UponRequest**: `"DECRYPT_UPON_REQUEST"`
 
-Defined in: [types.ts:14](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/types.ts#L14)
+Defined in: [types.ts:14](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/types.ts#L14)

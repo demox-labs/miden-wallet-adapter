@@ -8,7 +8,7 @@
 
 > **WalletMultiButton**(`props`): `ReactNode` \| `Promise`\<`ReactNode`\>
 
-Defined in: [src/WalletMultiButton.tsx:17](https://github.com/demox-labs/miden-wallet-adapter/blob/be204aed4a2fe464b8d3fb58a33af058b069dafd/packages/ui/src/WalletMultiButton.tsx#L17)
+Defined in: [src/WalletMultiButton.tsx:17](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletMultiButton.tsx#L17)
 
 ## Parameters
 

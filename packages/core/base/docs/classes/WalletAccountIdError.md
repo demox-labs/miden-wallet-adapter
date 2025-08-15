@@ -2,11 +2,11 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletPublicKeyError
+[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletAccountIdError
 
-# Class: WalletPublicKeyError
+# Class: WalletAccountIdError
 
-Defined in: [errors.ts:43](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L43)
+Defined in: [errors.ts:43](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L43)
 
 ## Extends
 
@@ -14,11 +14,11 @@ Defined in: [errors.ts:43](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 ## Constructors
 
-### new WalletPublicKeyError()
+### new WalletAccountIdError()
 
-> **new WalletPublicKeyError**(`message`?, `error`?): [`WalletPublicKeyError`](WalletPublicKeyError.md)
+> **new WalletAccountIdError**(`message`?, `error`?): [`WalletAccountIdError`](WalletAccountIdError.md)
 
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L5)
+Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L5)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 #### Returns
 
-[`WalletPublicKeyError`](WalletPublicKeyError.md)
+[`WalletAccountIdError`](WalletAccountIdError.md)
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **error**: `any`
 
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L2)
+Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L2)
 
 #### Inherited from
 
@@ -78,9 +78,9 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 ### name
 
-> **name**: `string` = `'WalletPublicKeyError'`
+> **name**: `string` = `'WalletAccountIdError'`
 
-Defined in: [errors.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/errors.ts#L44)
+Defined in: [errors.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L44)
 
 #### Overrides
 

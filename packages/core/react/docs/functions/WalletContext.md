@@ -8,7 +8,7 @@
 
 > **WalletContext**(`props`): `ReactNode`
 
-Defined in: [useWallet.ts:89](https://github.com/demox-labs/miden-wallet-adapter/blob/936af832afefbf69ccca2be9df2bcc84be315019/packages/core/react/useWallet.ts#L89)
+Defined in: [useWallet.ts:104](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L104)
 
 ## Parameters
 

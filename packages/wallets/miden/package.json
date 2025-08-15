@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-miden",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Miden wallet adapter for the Miden Wallet.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@demox-labs/miden-wallet-adapter-base": "^0.1.5",
+    "@demox-labs/miden-wallet-adapter-base": "^0.2.0",
     "nanoid": "^5.0.9"
   },
   "scripts": {

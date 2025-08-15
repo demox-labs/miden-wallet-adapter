@@ -8,7 +8,7 @@
 
 > **WalletProvider**(`props`): `ReactNode` \| `Promise`\<`ReactNode`\>
 
-Defined in: [WalletProvider.tsx:49](https://github.com/demox-labs/miden-wallet-adapter/blob/936af832afefbf69ccca2be9df2bcc84be315019/packages/core/react/WalletProvider.tsx#L49)
+Defined in: [WalletProvider.tsx:49](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/WalletProvider.tsx#L49)
 
 ## Parameters
 

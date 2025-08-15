@@ -79,13 +79,13 @@ Access wallet state and functionality with the `useWallet` hook:
 import { useWallet, SendTransaction } from '@demox-labs/miden-wallet-adapter';
 
 function SendComponent() {
-  const { wallet, publicKey, connected } = useWallet();
+  const { wallet, accountId, connected } = useWallet();
 
   const handleSend = async () => {
-    if (!wallet || !publicKey) return;
+    if (!wallet || !accountId) return;
 
     const transaction = new SendTransaction(
-      publicKey,
+      accountId,
       'recipient_address_here',
       'faucet_id_here',
       'public', // or 'private'
@@ -106,7 +106,7 @@ function SendComponent() {
 
   return (
     <div>
-      <p>Connected: {publicKey}</p>
+      <p>Connected: {accountId}</p>
       <button onClick={handleSend}>Send Transaction</button>
     </div>
   );
@@ -121,13 +121,13 @@ function SendComponent() {
 import { useWallet, CustomTransaction } from '@demox-labs/miden-wallet-adapter';
 
 function CustomTransactionComponent() {
-  const { wallet, publicKey } = useWallet();
+  const { wallet, accountId } = useWallet();
 
   const handleCustomTransaction = async () => {
-    if (!wallet || !publicKey) return;
+    if (!wallet || !accountId) return;
 
     const customTransaction = new CustomTransaction(
-      publicKey,
+      accountId,
       transactionRequest // TransactionRequest from Miden Web SDK
     );
 
@@ -144,13 +144,13 @@ function CustomTransactionComponent() {
 import { useWallet, ConsumeTransaction } from '@demox-labs/miden-wallet-adapter';
 
 function ConsumeComponent() {
-  const { wallet, publicKey } = useWallet();
+  const { wallet, accountId } = useWallet();
 
   const handleConsume = async () => {
-    if (!wallet || !publicKey) return;
+    if (!wallet || !accountId) return;
 
     const consumeTransaction = new ConsumeTransaction(
-      publicKey,
+      accountId,
       noteId,
       'private' // or 'public'
     );

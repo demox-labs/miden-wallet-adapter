@@ -6,7 +6,7 @@ The **Miden Wallet Adapter** is a modular TypeScript library that provides walle
 
 1. **Setup**: Wrap your app with `WalletProvider` and specify available wallet adapters
 2. **Connection**: Use `WalletMultiButton` to connect or do so programmatically
-3. **Interaction**: Use the `useWallet` hook to access wallet state and methods, such as the wallet's publicKey
+3. **Interaction**: Use the `useWallet` hook to access wallet state and methods, such as the wallet's accountId
 4. **Transactions**: Use [transaction types](https://github.com/demox-labs/miden-wallet-adapter/blob/main/packages/core/base/transaction.ts) to submit a consume or send transaction via the wallet, or a generic transaction using a Miden `TransactionRequest` object
 
 Connecting a wallet
@@ -24,9 +24,9 @@ const walletAdapter = new MidenWalletAdapter({ appName: 'Your Miden App', });
 
 Submitting a send transaction
 ```js
-const { wallet, publicKey } = useWallet();
+const { wallet, accountId } = useWallet();
 const midenTransaction = new SendTransaction(
-    publicKey,
+    accountId,
     toAddress,
     faucetId,
     sharePrivately ? 'private' : 'public',
@@ -37,9 +37,9 @@ await wallet.adapter.requestSend(midenTransaction);
 
 Submitting a custom transaction
 ```js
-const { wallet, publicKey } = useWallet();
+const { wallet, accountId } = useWallet();
 const customTransaction = new CustomTransaction(
-    publicKey, // AccountId the transaction request will be executed against
+    accountId, // AccountId the transaction request will be executed against
     transactionRequest // TransactionRequest object (will need to be generated using the Miden Web SDK)
 );
 await wallet.adapter.requestTransaction(customTransaction)

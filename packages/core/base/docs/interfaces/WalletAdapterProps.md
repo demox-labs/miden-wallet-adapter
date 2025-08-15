@@ -6,7 +6,7 @@
 
 # Interface: WalletAdapterProps\<Name\>
 
-Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L24)
+Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L24)
 
 ## Extended by
 
@@ -19,11 +19,19 @@ Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/b
 
 ## Properties
 
+### accountId
+
+> **accountId**: `string`
+
+Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L29)
+
+***
+
 ### connected
 
 > **connected**: `boolean`
 
-Defined in: [adapter.ts:31](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L31)
+Defined in: [adapter.ts:31](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L31)
 
 ***
 
@@ -31,7 +39,7 @@ Defined in: [adapter.ts:31](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **connecting**: `boolean`
 
-Defined in: [adapter.ts:30](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L30)
+Defined in: [adapter.ts:30](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L30)
 
 ***
 
@@ -39,7 +47,7 @@ Defined in: [adapter.ts:30](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **icon**: `string`
 
-Defined in: [adapter.ts:27](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L27)
+Defined in: [adapter.ts:27](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L27)
 
 ***
 
@@ -47,15 +55,7 @@ Defined in: [adapter.ts:27](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **name**: [`WalletName`](../type-aliases/WalletName.md)\<`Name`\>
 
-Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L25)
-
-***
-
-### publicKey
-
-> **publicKey**: `string`
-
-Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L29)
+Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L25)
 
 ***
 
@@ -63,7 +63,7 @@ Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **readyState**: [`WalletReadyState`](../enumerations/WalletReadyState.md)
 
-Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L28)
+Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L28)
 
 ***
 
@@ -71,7 +71,7 @@ Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **supportedTransactionVersions**: `ReadonlySet`\<`any`\>
 
-Defined in: [adapter.ts:32](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L32)
+Defined in: [adapter.ts:32](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L32)
 
 ***
 
@@ -79,7 +79,7 @@ Defined in: [adapter.ts:32](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **url**: `string`
 
-Defined in: [adapter.ts:26](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L26)
+Defined in: [adapter.ts:26](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L26)
 
 ## Methods
 
@@ -87,7 +87,7 @@ Defined in: [adapter.ts:26](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
 
-Defined in: [adapter.ts:34](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L34)
+Defined in: [adapter.ts:34](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L34)
 
 #### Parameters
 
@@ -113,7 +113,7 @@ Defined in: [adapter.ts:34](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [adapter.ts:39](https://github.com/demox-labs/miden-wallet-adapter/blob/945eae693dfd04e72f79c45431d1d0335907d921/packages/core/base/adapter.ts#L39)
+Defined in: [adapter.ts:39](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L39)
 
 #### Returns
 
