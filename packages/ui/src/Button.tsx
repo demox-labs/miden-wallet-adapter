@@ -20,6 +20,7 @@ export type ButtonProps = PropsWithChildren<{
   startIcon?: ReactElement;
   style?: CSSProperties;
   tabIndex?: number;
+  programs?: string[];
 }>;
 
 export const Button: FC<ButtonProps> = (props) => {

@@ -6,15 +6,11 @@
 
 # Interface: WalletModalContextState
 
-Defined in: [src/useWalletModal.tsx:3](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/useWalletModal.tsx#L3)
-
 ## Properties
 
 ### setVisible()
 
 > **setVisible**: (`open`) => `void`
-
-Defined in: [src/useWalletModal.tsx:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/useWalletModal.tsx#L5)
 
 #### Parameters
 
@@ -31,5 +27,3 @@ Defined in: [src/useWalletModal.tsx:5](https://github.com/demox-labs/miden-walle
 ### visible
 
 > **visible**: `boolean`
-
-Defined in: [src/useWalletModal.tsx:4](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/useWalletModal.tsx#L4)

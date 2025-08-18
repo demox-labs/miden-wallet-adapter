@@ -6,8 +6,6 @@
 
 # Interface: MidenWindow
 
-Defined in: [adapter.ts:44](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L44)
-
 ## Extends
 
 - `Window`
@@ -22,8 +20,6 @@ Defined in: [adapter.ts:44](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `readonly` **caches**: `CacheStorage`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26635
-
 Available only in secure contexts.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/caches)
@@ -37,8 +33,6 @@ Available only in secure contexts.
 ### ~~clientInformation~~
 
 > `readonly` **clientInformation**: `Navigator`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26286
 
 #### Deprecated
 
@@ -56,8 +50,6 @@ This is a legacy alias of `navigator`.
 
 > `readonly` **closed**: `boolean`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26292
-
 Returns true if the window has been closed, false otherwise.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/closed)
@@ -72,8 +64,6 @@ Returns true if the window has been closed, false otherwise.
 
 > `readonly` **crossOriginIsolated**: `boolean`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26637
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/crossOriginIsolated)
 
 #### Inherited from
@@ -86,8 +76,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26637
 
 > `readonly` **crypto**: `Crypto`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26639
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/crypto)
 
 #### Inherited from
@@ -99,8 +87,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26639
 ### customElements
 
 > `readonly` **customElements**: `CustomElementRegistry`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26298
 
 Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element.
 
@@ -116,8 +102,6 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **devicePixelRatio**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26300
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)
 
 #### Inherited from
@@ -130,8 +114,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26300
 
 > `readonly` **document**: `Document`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26302
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/document)
 
 #### Inherited from
@@ -143,8 +125,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26302
 ### ~~event~~
 
 > `readonly` **event**: `Event`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26308
 
 #### Deprecated
 
@@ -160,8 +140,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26308
 
 > `readonly` **external**: `External`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26314
-
 #### Deprecated
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/external)
@@ -176,8 +154,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26314
 
 > `readonly` **frameElement**: `Element`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26316
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frameElement)
 
 #### Inherited from
@@ -189,8 +165,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26316
 ### frames
 
 > `readonly` **frames**: `Window`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26318
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frames)
 
@@ -204,8 +178,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26318
 
 > `readonly` **history**: `History`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26320
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/history)
 
 #### Inherited from
@@ -217,8 +189,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26320
 ### indexedDB
 
 > `readonly` **indexedDB**: `IDBFactory`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26641
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/indexedDB)
 
@@ -232,8 +202,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26641
 
 > `readonly` **innerHeight**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26322
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerHeight)
 
 #### Inherited from
@@ -245,8 +213,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26322
 ### innerWidth
 
 > `readonly` **innerWidth**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26324
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerWidth)
 
@@ -260,8 +226,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26324
 
 > `readonly` **isSecureContext**: `boolean`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26643
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/isSecureContext)
 
 #### Inherited from
@@ -273,8 +237,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26643
 ### length
 
 > `readonly` **length**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26326
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/length)
 
@@ -288,8 +250,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26326
 
 > `readonly` **localStorage**: `Storage`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26626
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/localStorage)
 
 #### Inherited from
@@ -301,8 +261,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26626
 ### locationbar
 
 > `readonly` **locationbar**: `BarProp`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26335
 
 Returns true if the location bar is visible; otherwise, returns false.
 
@@ -318,8 +276,6 @@ Returns true if the location bar is visible; otherwise, returns false.
 
 > `readonly` **menubar**: `BarProp`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26341
-
 Returns true if the menu bar is visible; otherwise, returns false.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/menubar)
@@ -334,23 +290,17 @@ Returns true if the menu bar is visible; otherwise, returns false.
 
 > `optional` **miden**: [`MidenWallet`](MidenWallet.md)
 
-Defined in: [adapter.ts:46](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L46)
-
 ***
 
 ### midenWallet?
 
 > `optional` **midenWallet**: [`MidenWallet`](MidenWallet.md)
 
-Defined in: [adapter.ts:45](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/wallets/miden/adapter.ts#L45)
-
 ***
 
 ### name
 
 > **name**: `string`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26343
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/name)
 
@@ -364,8 +314,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26343
 
 > `readonly` **navigator**: `Navigator`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26345
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator)
 
 #### Inherited from
@@ -377,8 +325,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26345
 ### onabort()
 
 > **onabort**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9452
 
 Fires when the user aborts the download.
 
@@ -410,8 +356,6 @@ The event.
 
 > **onafterprint**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26579
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/afterprint_event)
 
 #### Parameters
@@ -437,8 +381,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26579
 ### onanimationcancel()
 
 > **onanimationcancel**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9454
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event)
 
@@ -466,8 +408,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9454
 
 > **onanimationend**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9456
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
 
 #### Parameters
@@ -493,8 +433,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9456
 ### onanimationiteration()
 
 > **onanimationiteration**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9458
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
 
@@ -522,8 +460,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9458
 
 > **onanimationstart**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9460
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
 
 #### Parameters
@@ -549,8 +485,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9460
 ### onauxclick()
 
 > **onauxclick**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9462
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event)
 
@@ -578,8 +512,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9462
 
 > **onbeforeinput**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9464
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/beforeinput_event)
 
 #### Parameters
@@ -605,8 +537,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9464
 ### onbeforeprint()
 
 > **onbeforeprint**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26581
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeprint_event)
 
@@ -634,8 +564,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26581
 
 > **onbeforetoggle**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9466
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforetoggle_event)
 
 #### Parameters
@@ -662,8 +590,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9466
 
 > **onbeforeunload**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26583
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event)
 
 #### Parameters
@@ -689,8 +615,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26583
 ### onblur()
 
 > **onblur**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9473
 
 Fires when the object loses the input focus.
 
@@ -722,8 +646,6 @@ The focus event.
 
 > **oncancel**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9475
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/cancel_event)
 
 #### Parameters
@@ -749,8 +671,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9475
 ### oncanplay()
 
 > **oncanplay**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9482
 
 Occurs when playback is possible, but would require further buffering.
 
@@ -782,8 +702,6 @@ The event.
 
 > **oncanplaythrough**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9484
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event)
 
 #### Parameters
@@ -809,8 +727,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9484
 ### onchange()
 
 > **onchange**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9491
 
 Fires when the contents of the object or selection have changed.
 
@@ -842,8 +758,6 @@ The event.
 
 > **onclick**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9498
-
 Fires when the user clicks the left mouse button on the object
 
 #### Parameters
@@ -874,8 +788,6 @@ The mouse event.
 
 > **onclose**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9500
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event)
 
 #### Parameters
@@ -902,8 +814,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9500
 
 > **oncontextlost**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9502
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/webglcontextlost_event)
 
 #### Parameters
@@ -929,8 +839,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9502
 ### oncontextmenu()
 
 > **oncontextmenu**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9509
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
@@ -962,8 +870,6 @@ The mouse event.
 
 > **oncontextrestored**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9511
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/contextrestored_event)
 
 #### Parameters
@@ -989,8 +895,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9511
 ### oncopy()
 
 > **oncopy**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9513
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event)
 
@@ -1018,8 +922,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9513
 
 > **oncuechange**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9515
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event)
 
 #### Parameters
@@ -1046,8 +948,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9515
 
 > **oncut**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9517
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event)
 
 #### Parameters
@@ -1073,8 +973,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9517
 ### ondblclick()
 
 > **ondblclick**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9524
 
 Fires when the user double-clicks the object.
 
@@ -1106,8 +1004,6 @@ The mouse event.
 
 > **ondevicemotion**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26351
-
 Available only in secure contexts.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicemotion_event)
@@ -1135,8 +1031,6 @@ Available only in secure contexts.
 ### ondeviceorientation()
 
 > **ondeviceorientation**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26357
 
 Available only in secure contexts.
 
@@ -1166,8 +1060,6 @@ Available only in secure contexts.
 
 > **ondeviceorientationabsolute**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26363
-
 Available only in secure contexts.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/deviceorientationabsolute_event)
@@ -1195,8 +1087,6 @@ Available only in secure contexts.
 ### ondrag()
 
 > **ondrag**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9531
 
 Fires on the source object continuously during a drag operation.
 
@@ -1228,8 +1118,6 @@ The event.
 
 > **ondragend**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9538
-
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
 #### Parameters
@@ -1259,8 +1147,6 @@ The event.
 ### ondragenter()
 
 > **ondragenter**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9545
 
 Fires on the target element when the user drags the object to a valid drop target.
 
@@ -1292,8 +1178,6 @@ The drag event.
 
 > **ondragleave**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9552
-
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
 #### Parameters
@@ -1323,8 +1207,6 @@ The drag event.
 ### ondragover()
 
 > **ondragover**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9559
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
@@ -1356,8 +1238,6 @@ The event.
 
 > **ondragstart**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9566
-
 Fires on the source object when the user starts to drag a text selection or selected object.
 
 #### Parameters
@@ -1388,8 +1268,6 @@ The event.
 
 > **ondrop**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9568
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event)
 
 #### Parameters
@@ -1415,8 +1293,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9568
 ### ondurationchange()
 
 > **ondurationchange**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9575
 
 Occurs when the duration attribute is updated.
 
@@ -1448,8 +1324,6 @@ The event.
 
 > **onemptied**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9582
-
 Occurs when the media element is reset to its initial state.
 
 #### Parameters
@@ -1479,8 +1353,6 @@ The event.
 ### onended()
 
 > **onended**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9589
 
 Occurs when the end of playback is reached.
 
@@ -1512,8 +1384,6 @@ The event
 
 > **onerror**: `OnErrorEventHandlerNonNull`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9596
-
 Fires when an error occurs during object loading.
 
 #### Param
@@ -1531,8 +1401,6 @@ The event.
 ### onfocus()
 
 > **onfocus**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9603
 
 Fires when the object receives focus.
 
@@ -1564,8 +1432,6 @@ The event.
 
 > **onformdata**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9605
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event)
 
 #### Parameters
@@ -1591,8 +1457,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9605
 ### ongamepadconnected()
 
 > **ongamepadconnected**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26585
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepadconnected_event)
 
@@ -1620,8 +1484,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26585
 
 > **ongamepaddisconnected**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26587
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepaddisconnected_event)
 
 #### Parameters
@@ -1647,8 +1509,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26587
 ### ongotpointercapture()
 
 > **ongotpointercapture**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9607
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event)
 
@@ -1676,8 +1536,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9607
 
 > **onhashchange**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26589
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/hashchange_event)
 
 #### Parameters
@@ -1703,8 +1561,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26589
 ### oninput()
 
 > **oninput**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9609
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/input_event)
 
@@ -1732,8 +1588,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9609
 
 > **oninvalid**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9611
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event)
 
 #### Parameters
@@ -1759,8 +1613,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9611
 ### onkeydown()
 
 > **onkeydown**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9618
 
 Fires when the user presses a key.
 
@@ -1791,8 +1643,6 @@ The keyboard event
 ### ~~onkeypress()~~
 
 > **onkeypress**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9626
 
 Fires when the user presses an alphanumeric key.
 
@@ -1826,8 +1676,6 @@ The event.
 
 > **onkeyup**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9633
-
 Fires when the user releases a key.
 
 #### Parameters
@@ -1858,8 +1706,6 @@ The keyboard event
 
 > **onlanguagechange**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26591
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/languagechange_event)
 
 #### Parameters
@@ -1885,8 +1731,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26591
 ### onload()
 
 > **onload**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9640
 
 Fires immediately after the browser loads the object.
 
@@ -1918,8 +1762,6 @@ The event.
 
 > **onloadeddata**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9647
-
 Occurs when media data is loaded at the current playback position.
 
 #### Parameters
@@ -1949,8 +1791,6 @@ The event.
 ### onloadedmetadata()
 
 > **onloadedmetadata**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9654
 
 Occurs when the duration and dimensions of the media have been determined.
 
@@ -1982,8 +1822,6 @@ The event.
 
 > **onloadstart**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9661
-
 Occurs when Internet Explorer begins looking for media data.
 
 #### Parameters
@@ -2014,8 +1852,6 @@ The event.
 
 > **onlostpointercapture**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9663
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/lostpointercapture_event)
 
 #### Parameters
@@ -2041,8 +1877,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9663
 ### onmessage()
 
 > **onmessage**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26593
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/message_event)
 
@@ -2070,8 +1904,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26593
 
 > **onmessageerror**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26595
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/messageerror_event)
 
 #### Parameters
@@ -2097,8 +1929,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26595
 ### onmousedown()
 
 > **onmousedown**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9670
 
 Fires when the user clicks the object with either mouse button.
 
@@ -2130,8 +1960,6 @@ The mouse event.
 
 > **onmouseenter**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9672
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event)
 
 #### Parameters
@@ -2158,8 +1986,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9672
 
 > **onmouseleave**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9674
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event)
 
 #### Parameters
@@ -2185,8 +2011,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9674
 ### onmousemove()
 
 > **onmousemove**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9681
 
 Fires when the user moves the mouse over the object.
 
@@ -2218,8 +2042,6 @@ The mouse event.
 
 > **onmouseout**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9688
-
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
 #### Parameters
@@ -2249,8 +2071,6 @@ The mouse event.
 ### onmouseover()
 
 > **onmouseover**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9695
 
 Fires when the user moves the mouse pointer into the object.
 
@@ -2282,8 +2102,6 @@ The mouse event.
 
 > **onmouseup**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9702
-
 Fires when the user releases a mouse button while the mouse is over the object.
 
 #### Parameters
@@ -2314,8 +2132,6 @@ The mouse event.
 
 > **onoffline**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26597
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/offline_event)
 
 #### Parameters
@@ -2342,8 +2158,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26597
 
 > **ononline**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26599
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/online_event)
 
 #### Parameters
@@ -2369,8 +2183,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26599
 ### ~~onorientationchange()~~
 
 > **onorientationchange**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26369
 
 #### Parameters
 
@@ -2400,8 +2212,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26369
 
 > **onpagehide**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26601
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pagehide_event)
 
 #### Parameters
@@ -2427,8 +2237,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26601
 ### onpageshow()
 
 > **onpageshow**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26603
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pageshow_event)
 
@@ -2456,8 +2264,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26603
 
 > **onpaste**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9704
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event)
 
 #### Parameters
@@ -2483,8 +2289,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9704
 ### onpause()
 
 > **onpause**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9711
 
 Occurs when playback is paused.
 
@@ -2516,8 +2320,6 @@ The event.
 
 > **onplay**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9718
-
 Occurs when the play method is requested.
 
 #### Parameters
@@ -2547,8 +2349,6 @@ The event.
 ### onplaying()
 
 > **onplaying**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9725
 
 Occurs when the audio or video has started playing.
 
@@ -2580,8 +2380,6 @@ The event.
 
 > **onpointercancel**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9727
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event)
 
 #### Parameters
@@ -2607,8 +2405,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9727
 ### onpointerdown()
 
 > **onpointerdown**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9729
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event)
 
@@ -2636,8 +2432,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9729
 
 > **onpointerenter**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9731
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event)
 
 #### Parameters
@@ -2663,8 +2457,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9731
 ### onpointerleave()
 
 > **onpointerleave**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9733
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event)
 
@@ -2692,8 +2484,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9733
 
 > **onpointermove**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9735
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event)
 
 #### Parameters
@@ -2719,8 +2509,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9735
 ### onpointerout()
 
 > **onpointerout**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9737
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event)
 
@@ -2748,8 +2536,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9737
 
 > **onpointerover**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9739
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event)
 
 #### Parameters
@@ -2775,8 +2561,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9739
 ### onpointerup()
 
 > **onpointerup**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9741
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event)
 
@@ -2804,8 +2588,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9741
 
 > **onpopstate**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26605
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/popstate_event)
 
 #### Parameters
@@ -2831,8 +2613,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26605
 ### onprogress()
 
 > **onprogress**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9748
 
 Occurs to indicate progress while downloading media data.
 
@@ -2864,8 +2644,6 @@ The event.
 
 > **onratechange**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9755
-
 Occurs when the playback rate is increased or decreased.
 
 #### Parameters
@@ -2896,8 +2674,6 @@ The event.
 
 > **onrejectionhandled**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26607
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/rejectionhandled_event)
 
 #### Parameters
@@ -2923,8 +2699,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26607
 ### onreset()
 
 > **onreset**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9762
 
 Fires when the user resets a form.
 
@@ -2956,8 +2730,6 @@ The event.
 
 > **onresize**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9764
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event)
 
 #### Parameters
@@ -2983,8 +2755,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9764
 ### onscroll()
 
 > **onscroll**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9771
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
@@ -3016,8 +2786,6 @@ The event.
 
 > **onscrollend**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9773
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scrollend_event)
 
 #### Parameters
@@ -3044,8 +2812,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9773
 
 > **onsecuritypolicyviolation**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9775
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event)
 
 #### Parameters
@@ -3071,8 +2837,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9775
 ### onseeked()
 
 > **onseeked**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9782
 
 Occurs when the seek operation ends.
 
@@ -3104,8 +2868,6 @@ The event.
 
 > **onseeking**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9789
-
 Occurs when the current playback position is moved.
 
 #### Parameters
@@ -3135,8 +2897,6 @@ The event.
 ### onselect()
 
 > **onselect**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9796
 
 Fires when the current selection changes.
 
@@ -3168,8 +2928,6 @@ The event.
 
 > **onselectionchange**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9798
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event)
 
 #### Parameters
@@ -3195,8 +2953,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9798
 ### onselectstart()
 
 > **onselectstart**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9800
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event)
 
@@ -3224,8 +2980,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9800
 
 > **onslotchange**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9802
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event)
 
 #### Parameters
@@ -3251,8 +3005,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9802
 ### onstalled()
 
 > **onstalled**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9809
 
 Occurs when the download has stopped.
 
@@ -3284,8 +3036,6 @@ The event.
 
 > **onstorage**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26609
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/storage_event)
 
 #### Parameters
@@ -3312,8 +3062,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26609
 
 > **onsubmit**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9811
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event)
 
 #### Parameters
@@ -3339,8 +3087,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9811
 ### onsuspend()
 
 > **onsuspend**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9818
 
 Occurs if the load operation has been intentionally halted.
 
@@ -3372,8 +3118,6 @@ The event.
 
 > **ontimeupdate**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9825
-
 Occurs to indicate the current playback position.
 
 #### Parameters
@@ -3404,8 +3148,6 @@ The event.
 
 > **ontoggle**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9827
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event)
 
 #### Parameters
@@ -3431,8 +3173,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9827
 ### ontouchcancel()?
 
 > `optional` **ontouchcancel**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9829
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event)
 
@@ -3460,8 +3200,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9829
 
 > `optional` **ontouchend**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9831
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event)
 
 #### Parameters
@@ -3487,8 +3225,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9831
 ### ontouchmove()?
 
 > `optional` **ontouchmove**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9833
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event)
 
@@ -3516,8 +3252,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9833
 
 > `optional` **ontouchstart**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9835
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event)
 
 #### Parameters
@@ -3543,8 +3277,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9835
 ### ontransitioncancel()
 
 > **ontransitioncancel**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9837
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event)
 
@@ -3572,8 +3304,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9837
 
 > **ontransitionend**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9839
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
 
 #### Parameters
@@ -3599,8 +3329,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9839
 ### ontransitionrun()
 
 > **ontransitionrun**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9841
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event)
 
@@ -3628,8 +3356,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9841
 
 > **ontransitionstart**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9843
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event)
 
 #### Parameters
@@ -3656,8 +3382,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9843
 
 > **onunhandledrejection**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26611
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unhandledrejection_event)
 
 #### Parameters
@@ -3683,8 +3407,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26611
 ### ~~onunload()~~
 
 > **onunload**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26617
 
 #### Parameters
 
@@ -3713,8 +3435,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26617
 ### onvolumechange()
 
 > **onvolumechange**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9850
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
@@ -3746,8 +3466,6 @@ The event.
 
 > **onwaiting**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9857
-
 Occurs when playback stops because the next frame of a video resource is not available.
 
 #### Parameters
@@ -3777,8 +3495,6 @@ The event.
 ### ~~onwebkitanimationend()~~
 
 > **onwebkitanimationend**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9863
 
 #### Parameters
 
@@ -3810,8 +3526,6 @@ This is a legacy alias of `onanimationend`.
 
 > **onwebkitanimationiteration**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9869
-
 #### Parameters
 
 ##### this
@@ -3841,8 +3555,6 @@ This is a legacy alias of `onanimationiteration`.
 ### ~~onwebkitanimationstart()~~
 
 > **onwebkitanimationstart**: (`this`, `ev`) => `any`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9875
 
 #### Parameters
 
@@ -3874,8 +3586,6 @@ This is a legacy alias of `onanimationstart`.
 
 > **onwebkittransitionend**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9881
-
 #### Parameters
 
 ##### this
@@ -3906,8 +3616,6 @@ This is a legacy alias of `ontransitionend`.
 
 > **onwheel**: (`this`, `ev`) => `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9883
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event)
 
 #### Parameters
@@ -3934,8 +3642,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:9883
 
 > **opener**: `any`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26371
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/opener)
 
 #### Inherited from
@@ -3947,8 +3653,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26371
 ### ~~orientation~~
 
 > `readonly` **orientation**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26377
 
 #### Deprecated
 
@@ -3964,8 +3668,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26377
 
 > `readonly` **origin**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26645
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/origin)
 
 #### Inherited from
@@ -3977,8 +3679,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26645
 ### outerHeight
 
 > `readonly` **outerHeight**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26379
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerHeight)
 
@@ -3992,8 +3692,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26379
 
 > `readonly` **outerWidth**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26381
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerWidth)
 
 #### Inherited from
@@ -4005,8 +3703,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26381
 ### ~~pageXOffset~~
 
 > `readonly` **pageXOffset**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26387
 
 #### Deprecated
 
@@ -4024,8 +3720,6 @@ This is a legacy alias of `scrollX`.
 
 > `readonly` **pageYOffset**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26393
-
 #### Deprecated
 
 This is a legacy alias of `scrollY`.
@@ -4041,8 +3735,6 @@ This is a legacy alias of `scrollY`.
 ### parent
 
 > `readonly` **parent**: `Window`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26401
 
 Refers to either the parent WindowProxy, or itself.
 
@@ -4060,8 +3752,6 @@ It can rarely be null e.g. for contentWindow of an iframe that is already remove
 
 > `readonly` **performance**: `Performance`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26647
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/performance)
 
 #### Inherited from
@@ -4073,8 +3763,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26647
 ### personalbar
 
 > `readonly` **personalbar**: `BarProp`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26407
 
 Returns true if the personal bar is visible; otherwise, returns false.
 
@@ -4090,8 +3778,6 @@ Returns true if the personal bar is visible; otherwise, returns false.
 
 > `readonly` **screen**: `Screen`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26409
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screen)
 
 #### Inherited from
@@ -4103,8 +3789,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26409
 ### screenLeft
 
 > `readonly` **screenLeft**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26411
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenLeft)
 
@@ -4118,8 +3802,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26411
 
 > `readonly` **screenTop**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26413
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenTop)
 
 #### Inherited from
@@ -4131,8 +3813,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26413
 ### screenX
 
 > `readonly` **screenX**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26415
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenX)
 
@@ -4146,8 +3826,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26415
 
 > `readonly` **screenY**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26417
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenY)
 
 #### Inherited from
@@ -4159,8 +3837,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26417
 ### scrollbars
 
 > `readonly` **scrollbars**: `BarProp`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26427
 
 Returns true if the scrollbars are visible; otherwise, returns false.
 
@@ -4176,8 +3852,6 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 
 > `readonly` **scrollX**: `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26419
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX)
 
 #### Inherited from
@@ -4189,8 +3863,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26419
 ### scrollY
 
 > `readonly` **scrollY**: `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26421
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY)
 
@@ -4204,8 +3876,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26421
 
 > `readonly` **self**: `Window` & *typeof* `globalThis`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26429
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/self)
 
 #### Inherited from
@@ -4217,8 +3887,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26429
 ### sessionStorage
 
 > `readonly` **sessionStorage**: `Storage`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26675
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage)
 
@@ -4232,8 +3900,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26675
 
 > `readonly` **speechSynthesis**: `SpeechSynthesis`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26431
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis)
 
 #### Inherited from
@@ -4245,8 +3911,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26431
 ### ~~status~~
 
 > **status**: `string`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26437
 
 #### Deprecated
 
@@ -4262,8 +3926,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26437
 
 > `readonly` **statusbar**: `BarProp`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26443
-
 Returns true if the status bar is visible; otherwise, returns false.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/statusbar)
@@ -4277,8 +3939,6 @@ Returns true if the status bar is visible; otherwise, returns false.
 ### toolbar
 
 > `readonly` **toolbar**: `BarProp`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26449
 
 Returns true if the toolbar is visible; otherwise, returns false.
 
@@ -4294,8 +3954,6 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 > `readonly` **top**: `Window`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26451
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/top)
 
 #### Inherited from
@@ -4308,8 +3966,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26451
 
 > `readonly` **visualViewport**: `VisualViewport`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26453
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/visualViewport)
 
 #### Inherited from
@@ -4321,8 +3977,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26453
 ### window
 
 > `readonly` **window**: `Window` & *typeof* `globalThis`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26455
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/window)
 
@@ -4338,8 +3992,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26455
 
 > **get** **location**(): `Location`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26328
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/location)
 
 ##### Returns
@@ -4349,8 +4001,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26328
 #### Set Signature
 
 > **set** **location**(`href`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26329
 
 ##### Parameters
 
@@ -4373,8 +4023,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26329
 #### Call Signature
 
 > **addEventListener**\<`K`\>(`type`, `listener`, `options`?): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26544
 
 Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
 
@@ -4422,8 +4070,6 @@ The event listener is appended to target's event listener list and is not append
 
 > **addEventListener**(`type`, `listener`, `options`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26545
-
 Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
 
 The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
@@ -4468,8 +4114,6 @@ The event listener is appended to target's event listener list and is not append
 
 > **alert**(`message`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26457
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/alert)
 
 #### Parameters
@@ -4491,8 +4135,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26457
 ### atob()
 
 > **atob**(`data`): `string`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26649
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/atob)
 
@@ -4516,8 +4158,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26649
 
 > **blur**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26463
-
 #### Returns
 
 `void`
@@ -4535,8 +4175,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26463
 ### btoa()
 
 > **btoa**(`data`): `string`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26651
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/btoa)
 
@@ -4560,8 +4198,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26651
 
 > **cancelAnimationFrame**(`handle`): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2743
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/cancelAnimationFrame)
 
 #### Parameters
@@ -4583,8 +4219,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2743
 ### cancelIdleCallback()
 
 > **cancelIdleCallback**(`handle`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26465
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback)
 
@@ -4608,8 +4242,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26465
 
 > **captureEvents**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26471
-
 #### Returns
 
 `void`
@@ -4627,8 +4259,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26471
 ### clearInterval()
 
 > **clearInterval**(`id`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26653
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearInterval)
 
@@ -4652,8 +4282,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26653
 
 > **clearTimeout**(`id`): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26655
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearTimeout)
 
 #### Parameters
@@ -4676,8 +4304,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26655
 
 > **close**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26477
-
 Closes the window.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/close)
@@ -4695,8 +4321,6 @@ Closes the window.
 ### confirm()
 
 > **confirm**(`message`?): `boolean`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26479
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/confirm)
 
@@ -4722,8 +4346,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26479
 
 > **createImageBitmap**(`image`, `options`?): `Promise`\<`ImageBitmap`\>
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26657
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/createImageBitmap)
 
 ##### Parameters
@@ -4747,8 +4369,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26657
 #### Call Signature
 
 > **createImageBitmap**(`image`, `sx`, `sy`, `sw`, `sh`, `options`?): `Promise`\<`ImageBitmap`\>
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26658
 
 ##### Parameters
 
@@ -4790,8 +4410,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26658
 
 > **dispatchEvent**(`event`): `boolean`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:8719
-
 Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
@@ -4815,8 +4433,6 @@ Dispatches a synthetic event event to target and returns true if either event's 
 ### fetch()
 
 > **fetch**(`input`, `init`?): `Promise`\<`Response`\>
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26660
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/fetch)
 
@@ -4844,8 +4460,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26660
 
 > **focus**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26485
-
 Moves the focus to the window's browsing context, if any.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/focus)
@@ -4863,8 +4477,6 @@ Moves the focus to the window's browsing context, if any.
 ### getComputedStyle()
 
 > **getComputedStyle**(`elt`, `pseudoElt`?): `CSSStyleDeclaration`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26487
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle)
 
@@ -4892,8 +4504,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26487
 
 > **getSelection**(): `Selection`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26489
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getSelection)
 
 #### Returns
@@ -4909,8 +4519,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26489
 ### matchMedia()
 
 > **matchMedia**(`query`): `MediaQueryList`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26491
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/matchMedia)
 
@@ -4933,8 +4541,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26491
 ### moveBy()
 
 > **moveBy**(`x`, `y`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26493
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveBy)
 
@@ -4962,8 +4568,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26493
 
 > **moveTo**(`x`, `y`): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26495
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveTo)
 
 #### Parameters
@@ -4989,8 +4593,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26495
 ### open()
 
 > **open**(`url`?, `target`?, `features`?): `Window`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26497
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/open)
 
@@ -5023,8 +4625,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26497
 #### Call Signature
 
 > **postMessage**(`message`, `targetOrigin`, `transfer`?): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26511
 
 Posts a message to the given window. Messages can be structured objects, e.g. nested objects and arrays, can contain JavaScript values (strings, numbers, Date objects, etc), and can contain certain data objects such as File Blob, FileList, and ArrayBuffer objects.
 
@@ -5064,8 +4664,6 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 > **postMessage**(`message`, `options`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26512
-
 ##### Parameters
 
 ###### message
@@ -5090,8 +4688,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26512
 
 > **print**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26514
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/print)
 
 #### Returns
@@ -5107,8 +4703,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26514
 ### prompt()
 
 > **prompt**(`message`?, `_default`?): `string`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26516
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/prompt)
 
@@ -5136,8 +4730,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26516
 
 > **queueMicrotask**(`callback`): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26662
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/queueMicrotask)
 
 #### Parameters
@@ -5160,8 +4752,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26662
 
 > **releaseEvents**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26522
-
 #### Returns
 
 `void`
@@ -5181,8 +4771,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26522
 #### Call Signature
 
 > **removeEventListener**\<`K`\>(`type`, `listener`, `options`?): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26546
 
 Removes the event listener in target's event listener list with the same type, callback, and options.
 
@@ -5218,8 +4806,6 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **removeEventListener**(`type`, `listener`, `options`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26547
-
 Removes the event listener in target's event listener list with the same type, callback, and options.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
@@ -5252,8 +4838,6 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **reportError**(`e`): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26664
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/reportError)
 
 #### Parameters
@@ -5276,8 +4860,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26664
 
 > **requestAnimationFrame**(`callback`): `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2745
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/requestAnimationFrame)
 
 #### Parameters
@@ -5299,8 +4881,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:2745
 ### requestIdleCallback()
 
 > **requestIdleCallback**(`callback`, `options`?): `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26524
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback)
 
@@ -5328,8 +4908,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26524
 
 > **resizeBy**(`x`, `y`): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26526
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeBy)
 
 #### Parameters
@@ -5355,8 +4933,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26526
 ### resizeTo()
 
 > **resizeTo**(`width`, `height`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26528
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeTo)
 
@@ -5386,8 +4962,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26528
 
 > **scroll**(`options`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26530
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scroll)
 
 ##### Parameters
@@ -5407,8 +4981,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26530
 #### Call Signature
 
 > **scroll**(`x`, `y`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26531
 
 ##### Parameters
 
@@ -5436,8 +5008,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26531
 
 > **scrollBy**(`options`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26533
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollBy)
 
 ##### Parameters
@@ -5457,8 +5027,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26533
 #### Call Signature
 
 > **scrollBy**(`x`, `y`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26534
 
 ##### Parameters
 
@@ -5486,8 +5054,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26534
 
 > **scrollTo**(`options`?): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26536
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollTo)
 
 ##### Parameters
@@ -5507,8 +5073,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26536
 #### Call Signature
 
 > **scrollTo**(`x`, `y`): `void`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26537
 
 ##### Parameters
 
@@ -5533,8 +5097,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26537
 ### setInterval()
 
 > **setInterval**(`handler`, `timeout`?, ...`arguments`?): `number`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26666
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/setInterval)
 
@@ -5566,8 +5128,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26666
 
 > **setTimeout**(`handler`, `timeout`?, ...`arguments`?): `number`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26668
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/setTimeout)
 
 #### Parameters
@@ -5598,8 +5158,6 @@ Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26668
 
 > **stop**(): `void`
 
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26543
-
 Cancels the document load.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/stop)
@@ -5617,8 +5175,6 @@ Cancels the document load.
 ### structuredClone()
 
 > **structuredClone**\<`T`\>(`value`, `options`?): `T`
-
-Defined in: node\_modules/typescript/lib/lib.dom.d.ts:26670
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/structuredClone)
 

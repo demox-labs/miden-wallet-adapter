@@ -6,15 +6,11 @@
 
 # Interface: ListenerFn()\<Args\>
 
-Defined in: node\_modules/eventemitter3/index.d.ts:83
-
 ## Type Parameters
 
 • **Args** *extends* `any`[] = `any`[]
 
 > **ListenerFn**(...`args`): `void`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:84
 
 ## Parameters
 

@@ -6,15 +6,11 @@
 
 # Interface: EventEmitterStatic
 
-Defined in: node\_modules/eventemitter3/index.d.ts:87
-
 ## Constructors
 
 ### new EventEmitterStatic()
 
 > **new EventEmitterStatic**\<`EventTypes`, `Context`\>(): [`EventEmitter`](../../../classes/EventEmitter.md)\<`EventTypes`, `Context`\>
-
-Defined in: node\_modules/eventemitter3/index.d.ts:88
 
 #### Returns
 

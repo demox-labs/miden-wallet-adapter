@@ -6,8 +6,6 @@
 
 # Interface: WalletModalProviderProps
 
-Defined in: [src/WalletModalProvider.tsx:7](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModalProvider.tsx#L7)
-
 ## Extends
 
 - [`WalletModalProps`](WalletModalProps.md)
@@ -18,15 +16,11 @@ Defined in: [src/WalletModalProvider.tsx:7](https://github.com/demox-labs/miden-
 
 > **children**: `ReactNode`
 
-Defined in: [src/WalletModalProvider.tsx:8](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModalProvider.tsx#L8)
-
 ***
 
 ### className?
 
 > `optional` **className**: `string`
-
-Defined in: [src/WalletModal.tsx:22](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModal.tsx#L22)
 
 #### Inherited from
 
@@ -38,8 +32,6 @@ Defined in: [src/WalletModal.tsx:22](https://github.com/demox-labs/miden-wallet-
 
 > `optional` **container**: `string`
 
-Defined in: [src/WalletModal.tsx:23](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModal.tsx#L23)
-
 #### Inherited from
 
 [`WalletModalProps`](WalletModalProps.md).[`container`](WalletModalProps.md#container)
@@ -49,8 +41,6 @@ Defined in: [src/WalletModal.tsx:23](https://github.com/demox-labs/miden-wallet-
 ### decryptPermission?
 
 > `optional` **decryptPermission**: `DecryptPermission`
-
-Defined in: [src/WalletModal.tsx:24](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModal.tsx#L24)
 
 #### Inherited from
 
@@ -62,8 +52,6 @@ Defined in: [src/WalletModal.tsx:24](https://github.com/demox-labs/miden-wallet-
 
 > `optional` **network**: `WalletAdapterNetwork`
 
-Defined in: [src/WalletModal.tsx:25](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModal.tsx#L25)
-
 #### Inherited from
 
 [`WalletModalProps`](WalletModalProps.md).[`network`](WalletModalProps.md#network)
@@ -73,8 +61,6 @@ Defined in: [src/WalletModal.tsx:25](https://github.com/demox-labs/miden-wallet-
 ### programs?
 
 > `optional` **programs**: `string`[]
-
-Defined in: [src/WalletModal.tsx:26](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletModal.tsx#L26)
 
 #### Inherited from
 

@@ -11,35 +11,28 @@
     dexie "^4.0.1"
     glob "^11.0.0"
 
-"@demox-labs/miden-wallet-adapter-base@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-base/-/miden-wallet-adapter-base-0.2.0.tgz#a50738f447f8e3f9d57de25fd73464f3e4a0fd07"
-  integrity sha512-vhx+Ji8axzC9LZh/GbyMr4rAXC8/QY+CGKs3WnOJcvOhfGsrnVVjOL8DT7+/XfTAPptLPOLe4hn6daFa9BgW6Q==
+"@demox-labs/miden-wallet-adapter-base@file:../core/base":
+  version "0.3.0"
   dependencies:
     eventemitter3 "^5.0.1"
 
-"@demox-labs/miden-wallet-adapter-miden@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-miden/-/miden-wallet-adapter-miden-0.2.0.tgz#7da2f2f89bdf2131c310da4cadb8e45544a667e2"
-  integrity sha512-FV1VP0ctcO6Z5/5+TJu6MlONFyT2Iwha/tIqzYkahg6qjo2yBt40YPjjjV98hXXkWYCqrH+yvj+F56tj/Tc6/Q==
+"@demox-labs/miden-wallet-adapter-miden@file:../wallets/miden":
+  version "0.3.0"
   dependencies:
-    "@demox-labs/miden-wallet-adapter-base" "^0.2.0"
+    "@demox-labs/miden-wallet-adapter-base" "file:../core/base"
     nanoid "^5.0.9"
 
-"@demox-labs/miden-wallet-adapter-react@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-react/-/miden-wallet-adapter-react-0.2.0.tgz#9b0758fd914c6bc7fabc674fd2ce1952133ec492"
-  integrity sha512-ajpxAmqj5qcMOAxiBxdaypeD0LVf+5VPPJ0ZmE1t2ChR8hf51+HvYmh/jm85A5bWcLTJYq+gUwZ6tkp0FdE5aw==
+"@demox-labs/miden-wallet-adapter-react@file:../core/react":
+  version "0.3.0"
   dependencies:
-    "@demox-labs/miden-wallet-adapter-base" "^0.2.0"
+    "@demox-labs/miden-wallet-adapter-base" "file:../core/base"
+    react "^18.2.0"
 
-"@demox-labs/miden-wallet-adapter-reactui@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@demox-labs/miden-wallet-adapter-reactui/-/miden-wallet-adapter-reactui-0.2.0.tgz#c9093cbdb61780b01661c2bcabaa4f18fa28d091"
-  integrity sha512-xY4qgIGiesYqG8OyYUUbFudCEF6zzfJ/mrNqLPDv/3F7RBk8QHyyhn4HR8+Tjawov+RHgneYebvJ1YZHIhNsaw==
+"@demox-labs/miden-wallet-adapter-reactui@file:../ui":
+  version "0.3.0"
   dependencies:
-    "@demox-labs/miden-wallet-adapter-base" "^0.2.0"
-    "@demox-labs/miden-wallet-adapter-react" "^0.2.0"
+    "@demox-labs/miden-wallet-adapter-base" "file:../core/base"
+    "@demox-labs/miden-wallet-adapter-react" "file:../core/react"
 
 "@isaacs/balanced-match@^4.0.1":
   version "4.0.1"

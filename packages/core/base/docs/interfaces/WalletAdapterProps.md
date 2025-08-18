@@ -6,8 +6,6 @@
 
 # Interface: WalletAdapterProps\<Name\>
 
-Defined in: [adapter.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L24)
-
 ## Extended by
 
 - [`SignerWalletAdapterProps`](SignerWalletAdapterProps.md)
@@ -31,23 +29,17 @@ Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **connected**: `boolean`
 
-Defined in: [adapter.ts:31](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L31)
-
 ***
 
 ### connecting
 
 > **connecting**: `boolean`
 
-Defined in: [adapter.ts:30](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L30)
-
 ***
 
 ### icon
 
 > **icon**: `string`
-
-Defined in: [adapter.ts:27](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L27)
 
 ***
 
@@ -63,15 +55,11 @@ Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **readyState**: [`WalletReadyState`](../enumerations/WalletReadyState.md)
 
-Defined in: [adapter.ts:28](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L28)
-
 ***
 
 ### supportedTransactionVersions
 
 > **supportedTransactionVersions**: `ReadonlySet`\<`any`\>
-
-Defined in: [adapter.ts:32](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L32)
 
 ***
 
@@ -79,15 +67,11 @@ Defined in: [adapter.ts:32](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > **url**: `string`
 
-Defined in: [adapter.ts:26](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L26)
-
 ## Methods
 
 ### connect()
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
-
-Defined in: [adapter.ts:34](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L34)
 
 #### Parameters
 
@@ -112,8 +96,6 @@ Defined in: [adapter.ts:34](https://github.com/demox-labs/miden-wallet-adapter/b
 ### disconnect()
 
 > **disconnect**(): `Promise`\<`void`\>
-
-Defined in: [adapter.ts:39](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L39)
 
 #### Returns
 

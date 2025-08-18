@@ -6,8 +6,6 @@
 
 # Class: ConsumeTransaction
 
-Defined in: [transaction.ts:47](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L47)
-
 ## Implements
 
 - [`MidenConsumeTransaction`](../interfaces/MidenConsumeTransaction.md)
@@ -17,8 +15,6 @@ Defined in: [transaction.ts:47](https://github.com/demox-labs/miden-wallet-adapt
 ### new ConsumeTransaction()
 
 > **new ConsumeTransaction**(`faucetId`, `noteId`, `noteType`, `amount`, `noteBytes`?): [`ConsumeTransaction`](ConsumeTransaction.md)
-
-Defined in: [transaction.ts:54](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L54)
 
 #### Parameters
 
@@ -52,8 +48,6 @@ Defined in: [transaction.ts:54](https://github.com/demox-labs/miden-wallet-adapt
 
 > **amount**: `number`
 
-Defined in: [transaction.ts:51](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L51)
-
 #### Implementation of
 
 [`MidenConsumeTransaction`](../interfaces/MidenConsumeTransaction.md).[`amount`](../interfaces/MidenConsumeTransaction.md#amount)
@@ -63,8 +57,6 @@ Defined in: [transaction.ts:51](https://github.com/demox-labs/miden-wallet-adapt
 ### faucetId
 
 > **faucetId**: `string`
-
-Defined in: [transaction.ts:48](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L48)
 
 #### Implementation of
 
@@ -76,8 +68,6 @@ Defined in: [transaction.ts:48](https://github.com/demox-labs/miden-wallet-adapt
 
 > `optional` **noteBytes**: `string`
 
-Defined in: [transaction.ts:52](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L52)
-
 #### Implementation of
 
 [`MidenConsumeTransaction`](../interfaces/MidenConsumeTransaction.md).[`noteBytes`](../interfaces/MidenConsumeTransaction.md#notebytes)
@@ -88,8 +78,6 @@ Defined in: [transaction.ts:52](https://github.com/demox-labs/miden-wallet-adapt
 
 > **noteId**: `string`
 
-Defined in: [transaction.ts:49](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L49)
-
 #### Implementation of
 
 [`MidenConsumeTransaction`](../interfaces/MidenConsumeTransaction.md).[`noteId`](../interfaces/MidenConsumeTransaction.md#noteid)
@@ -99,8 +87,6 @@ Defined in: [transaction.ts:49](https://github.com/demox-labs/miden-wallet-adapt
 ### noteType
 
 > **noteType**: [`NoteTypeString`](../type-aliases/NoteTypeString.md)
-
-Defined in: [transaction.ts:50](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/transaction.ts#L50)
 
 #### Implementation of
 

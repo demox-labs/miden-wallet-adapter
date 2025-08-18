@@ -4,13 +4,13 @@ const readline = require('readline');
 
 const buildOrder = [
   // // Level 1: Base infrastructure
-  // ['./packages/core/base'],
+  ['./packages/core/base'],
   
   // // Level 2: Packages that only depend on base
-  // ['./packages/core/react', './packages/wallets/miden'],
+  ['./packages/core/react', './packages/wallets/miden'],
   
   // // Level 3: UI components (depends on base + react)
-  // ['./packages/ui'],
+  ['./packages/ui'],
   
   // Level 4: All-in-one wrapper (depends on all others)
   ['./packages/all']
@@ -18,8 +18,10 @@ const buildOrder = [
 
 const commands = [
   'yarn',
+  'yarn clean',
+  'yarn',
   'yarn build',
-  'yarn doc',
+  // 'yarn doc',
   // 'npm publish' will be handled separately to include OTP
 ];
 
@@ -77,7 +79,7 @@ async function publishPackages() {
       
       // Handle npm publish separately to include OTP
       console.log(`Publishing ${dir}...`);
-      await runCommand(dir, `npm publish --otp=${otp} --access=public`);
+      // await runCommand(dir, `npm publish --otp=${otp} --access=public`);
     });
     
     // Wait for all packages in this level to complete before moving to next level

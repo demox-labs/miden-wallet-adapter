@@ -6,8 +6,6 @@
 
 # Interface: WalletContextState
 
-Defined in: [useWallet.ts:17](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L17)
-
 ## Properties
 
 ### accountId
@@ -22,15 +20,11 @@ Defined in: [useWallet.ts:21](https://github.com/demox-labs/miden-wallet-adapter
 
 > **autoConnect**: `boolean`
 
-Defined in: [useWallet.ts:18](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L18)
-
 ***
 
 ### connected
 
 > **connected**: `boolean`
-
-Defined in: [useWallet.ts:23](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L23)
 
 ***
 
@@ -38,7 +32,11 @@ Defined in: [useWallet.ts:23](https://github.com/demox-labs/miden-wallet-adapter
 
 > **connecting**: `boolean`
 
-Defined in: [useWallet.ts:22](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L22)
+***
+
+### decryptPermission?
+
+> `optional` **decryptPermission**: `DecryptPermission`
 
 ***
 
@@ -53,8 +51,6 @@ Defined in: [useWallet.ts:24](https://github.com/demox-labs/miden-wallet-adapter
 ### requestTransaction()
 
 > **requestTransaction**: (`transaction`) => `Promise`\<`string`\>
-
-Defined in: [useWallet.ts:34](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L34)
 
 #### Parameters
 
@@ -72,23 +68,17 @@ Defined in: [useWallet.ts:34](https://github.com/demox-labs/miden-wallet-adapter
 
 > **wallet**: [`Wallet`](Wallet.md)
 
-Defined in: [useWallet.ts:20](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L20)
-
 ***
 
 ### wallets
 
 > **wallets**: [`Wallet`](Wallet.md)[]
 
-Defined in: [useWallet.ts:19](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L19)
-
 ## Methods
 
 ### connect()
 
 > **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
-
-Defined in: [useWallet.ts:27](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L27)
 
 #### Parameters
 
@@ -114,8 +104,6 @@ Defined in: [useWallet.ts:27](https://github.com/demox-labs/miden-wallet-adapter
 
 > **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [useWallet.ts:32](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L32)
-
 #### Returns
 
 `Promise`\<`void`\>
@@ -125,8 +113,6 @@ Defined in: [useWallet.ts:32](https://github.com/demox-labs/miden-wallet-adapter
 ### select()
 
 > **select**(`walletName`): `void`
-
-Defined in: [useWallet.ts:26](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L26)
 
 #### Parameters
 

@@ -8,8 +8,6 @@
 
 > **ValidEventTypes**: `string` \| `symbol` \| `object`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:103
-
 `object` should be in either of the following forms:
 ```
 interface EventTypes {

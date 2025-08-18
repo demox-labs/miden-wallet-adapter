@@ -6,8 +6,6 @@
 
 # Class: WalletSignTransactionError
 
-Defined in: [errors.ts:63](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L63)
-
 ## Extends
 
 - [`WalletError`](WalletError.md)
@@ -17,8 +15,6 @@ Defined in: [errors.ts:63](https://github.com/demox-labs/miden-wallet-adapter/bl
 ### new WalletSignTransactionError()
 
 > **new WalletSignTransactionError**(`message`?, `error`?): [`WalletSignTransactionError`](WalletSignTransactionError.md)
-
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L5)
 
 #### Parameters
 
@@ -44,8 +40,6 @@ Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > `optional` **cause**: `unknown`
 
-Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
-
 #### Inherited from
 
 [`WalletError`](WalletError.md).[`cause`](WalletError.md#cause)
@@ -55,8 +49,6 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 ### error
 
 > **error**: `any`
-
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L2)
 
 #### Inherited from
 
@@ -68,8 +60,6 @@ Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > **message**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
-
 #### Inherited from
 
 [`WalletError`](WalletError.md).[`message`](WalletError.md#message-1)
@@ -79,8 +69,6 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 ### name
 
 > **name**: `string` = `'WalletSignTransactionError'`
-
-Defined in: [errors.ts:64](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L64)
 
 #### Overrides
 
@@ -92,8 +80,6 @@ Defined in: [errors.ts:64](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 > `optional` **stack**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1078
-
 #### Inherited from
 
 [`WalletError`](WalletError.md).[`stack`](WalletError.md#stack)
@@ -103,8 +89,6 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1078
 ### prepareStackTrace()?
 
 > `static` `optional` **prepareStackTrace**: (`err`, `stackTraces`) => `any`
-
-Defined in: node\_modules/@types/node/globals.d.ts:143
 
 Optional override for formatting stack traces
 
@@ -136,8 +120,6 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 > `static` **stackTraceLimit**: `number`
 
-Defined in: node\_modules/@types/node/globals.d.ts:145
-
 #### Inherited from
 
 [`WalletError`](WalletError.md).[`stackTraceLimit`](WalletError.md#stacktracelimit)
@@ -147,8 +129,6 @@ Defined in: node\_modules/@types/node/globals.d.ts:145
 ### captureStackTrace()
 
 > `static` **captureStackTrace**(`targetObject`, `constructorOpt`?): `void`
-
-Defined in: node\_modules/@types/node/globals.d.ts:136
 
 Create .stack property on a target object
 

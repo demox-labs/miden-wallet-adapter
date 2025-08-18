@@ -6,8 +6,6 @@
 
 # Class: WalletError
 
-Defined in: [errors.ts:1](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L1)
-
 ## Extends
 
 - `Error`
@@ -42,8 +40,6 @@ Defined in: [errors.ts:1](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > **new WalletError**(`message`?, `error`?): [`WalletError`](WalletError.md)
 
-Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L5)
-
 #### Parameters
 
 ##### message?
@@ -68,8 +64,6 @@ Defined in: [errors.ts:5](https://github.com/demox-labs/miden-wallet-adapter/blo
 
 > `optional` **cause**: `unknown`
 
-Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
-
 #### Inherited from
 
 `Error.cause`
@@ -80,15 +74,11 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **error**: `any`
 
-Defined in: [errors.ts:2](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/errors.ts#L2)
-
 ***
 
 ### message
 
 > **message**: `string`
-
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 #### Inherited from
 
@@ -100,8 +90,6 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 > **name**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1076
-
 #### Inherited from
 
 `Error.name`
@@ -112,8 +100,6 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1076
 
 > `optional` **stack**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1078
-
 #### Inherited from
 
 `Error.stack`
@@ -123,8 +109,6 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1078
 ### prepareStackTrace()?
 
 > `static` `optional` **prepareStackTrace**: (`err`, `stackTraces`) => `any`
-
-Defined in: node\_modules/@types/node/globals.d.ts:143
 
 Optional override for formatting stack traces
 
@@ -156,8 +140,6 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 > `static` **stackTraceLimit**: `number`
 
-Defined in: node\_modules/@types/node/globals.d.ts:145
-
 #### Inherited from
 
 `Error.stackTraceLimit`
@@ -167,8 +149,6 @@ Defined in: node\_modules/@types/node/globals.d.ts:145
 ### captureStackTrace()
 
 > `static` **captureStackTrace**(`targetObject`, `constructorOpt`?): `void`
-
-Defined in: node\_modules/@types/node/globals.d.ts:136
 
 Create .stack property on a target object
 

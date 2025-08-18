@@ -8,8 +8,6 @@
 
 > **EventNames**\<`T`\>: `T` *extends* `string` \| `symbol` ? `T` : keyof `T`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:105
-
 ## Type Parameters
 
 • **T** *extends* [`ValidEventTypes`](ValidEventTypes.md)
