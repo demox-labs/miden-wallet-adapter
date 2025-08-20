@@ -45,8 +45,6 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 > `abstract` **accountId**: `string`
 
-Defined in: [adapter.ts:82](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L82)
-
 #### Implementation of
 
 `WalletAdapter.accountId`

@@ -166,7 +166,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestPrivateNotes(): Promise<any[]> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.publicKey) throw new WalletNotConnectedError();
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestPrivateNotes();
         return result.privateNotes;

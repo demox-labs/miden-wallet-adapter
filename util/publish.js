@@ -21,7 +21,7 @@ const commands = [
   'yarn clean',
   'yarn',
   'yarn build',
-  // 'yarn doc',
+  'yarn doc',
   // 'npm publish' will be handled separately to include OTP
 ];
 
@@ -79,11 +79,13 @@ async function publishPackages() {
       
       // Handle npm publish separately to include OTP
       console.log(`Publishing ${dir}...`);
-      // await runCommand(dir, `npm publish --otp=${otp} --access=public`);
+      await runCommand(dir, `npm publish --otp=${otp} --access=public`);
     });
     
     // Wait for all packages in this level to complete before moving to next level
     await Promise.all(levelPromises);
+    // set timeout 
+    await new Promise(resolve => setTimeout(resolve, 10000)); // 1 second delay between levels
     console.log(`Level ${level + 1} completed successfully!`);
   }
 

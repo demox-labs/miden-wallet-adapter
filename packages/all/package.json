@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc && yarn copy-styles",
     "clean": "rimraf dist/ node_modules/",
-    "copy-styles": "copyfiles -u 4 node_modules/@demox-labs/miden-wallet-adapter-reactui/dist/styles.css dist/"
+    "copy-styles": "copyfiles -u 4 node_modules/@demox-labs/miden-wallet-adapter-reactui/dist/styles.css dist/",
+    "doc": "echo \"(no docs)\""
   },
   "dependencies": {
     "@demox-labs/miden-wallet-adapter-base": "^0.3.0",

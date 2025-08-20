@@ -12,8 +12,6 @@
 
 > **accountId**: `string`
 
-Defined in: [useWallet.ts:21](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L21)
-
 ***
 
 ### autoConnect
@@ -44,7 +42,15 @@ Defined in: [useWallet.ts:21](https://github.com/demox-labs/miden-wallet-adapter
 
 > **disconnecting**: `boolean`
 
-Defined in: [useWallet.ts:24](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/react/useWallet.ts#L24)
+***
+
+### requestPrivateNotes()
+
+> **requestPrivateNotes**: () => `Promise`\<`any`[]\>
+
+#### Returns
+
+`Promise`\<`any`[]\>
 
 ***
 

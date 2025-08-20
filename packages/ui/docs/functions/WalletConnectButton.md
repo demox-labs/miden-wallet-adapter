@@ -8,8 +8,6 @@
 
 > **WalletConnectButton**(`props`): `ReactNode` \| `Promise`\<`ReactNode`\>
 
-Defined in: [src/WalletConnectButton.tsx:13](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletConnectButton.tsx#L13)
-
 ## Parameters
 
 ### props

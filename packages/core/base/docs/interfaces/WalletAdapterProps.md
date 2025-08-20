@@ -21,8 +21,6 @@
 
 > **accountId**: `string`
 
-Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L29)
-
 ***
 
 ### connected
@@ -46,8 +44,6 @@ Defined in: [adapter.ts:29](https://github.com/demox-labs/miden-wallet-adapter/b
 ### name
 
 > **name**: [`WalletName`](../type-aliases/WalletName.md)\<`Name`\>
-
-Defined in: [adapter.ts:25](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L25)
 
 ***
 
