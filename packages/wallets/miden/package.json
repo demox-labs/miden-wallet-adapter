@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-miden",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Miden wallet adapter for the Miden Wallet.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,17 +9,19 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@demox-labs/miden-wallet-adapter-base": "^0.2.0",
+    "@demox-labs/miden-wallet-adapter-base": "^0.3.0",
     "nanoid": "^5.0.9"
   },
   "scripts": {
     "build": "tsc",
-    "doc": "typedoc --plugin typedoc-plugin-markdown index.ts",
+    "clean": "rimraf dist/ node_modules/",
+    "doc": "typedoc --disableSources --plugin typedoc-plugin-markdown index.ts",
     "bundle": "webpack"
   },
   "devDependencies": {
     "@demox-labs/miden-sdk": "^0.10.1",
     "@types/react": "^19.0.4",
+    "rimraf": "^6.0.1",
     "ts-loader": "^9.4.1",
     "typedoc": "^0.27.6",
     "typedoc-plugin-markdown": "^4.4.1",

@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Modular TypeScript wallet adapters and React components for Miden applications.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,15 +8,16 @@
   "author": "Demox Labs",
   "license": "MIT",
   "scripts": {
-    "build": "yarn clean && tsc && yarn copy-styles",
-    "clean": "rimraf dist/",
-    "copy-styles": "copyfiles -u 4 node_modules/@demox-labs/miden-wallet-adapter-reactui/dist/styles.css dist/"
+    "build": "tsc && yarn copy-styles",
+    "clean": "rimraf dist/ node_modules/",
+    "copy-styles": "copyfiles -u 4 node_modules/@demox-labs/miden-wallet-adapter-reactui/dist/styles.css dist/",
+    "doc": "echo \"(no docs)\""
   },
   "dependencies": {
-    "@demox-labs/miden-wallet-adapter-base": "^0.2.0",
-    "@demox-labs/miden-wallet-adapter-react": "^0.2.0",
-    "@demox-labs/miden-wallet-adapter-reactui": "^0.2.0",
-    "@demox-labs/miden-wallet-adapter-miden": "^0.2.0"
+    "@demox-labs/miden-wallet-adapter-base": "^0.3.0",
+    "@demox-labs/miden-wallet-adapter-react": "^0.3.0",
+    "@demox-labs/miden-wallet-adapter-reactui": "^0.3.0",
+    "@demox-labs/miden-wallet-adapter-miden": "^0.3.0"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",

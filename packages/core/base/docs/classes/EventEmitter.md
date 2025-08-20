@@ -6,8 +6,6 @@
 
 # Class: EventEmitter\<EventTypes, Context\>
 
-Defined in: node\_modules/eventemitter3/index.d.ts:5
-
 Minimal `EventEmitter` interface that is molded against the Node.js
 `EventEmitter` interface.
 
@@ -37,15 +35,11 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 > `static` **prefixed**: `string` \| `boolean`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:9
-
 ## Methods
 
 ### addListener()
 
 > **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:45
 
 #### Type Parameters
 
@@ -75,8 +69,6 @@ Defined in: node\_modules/eventemitter3/index.d.ts:45
 
 > **emit**\<`T`\>(`event`, ...`args`): `boolean`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:32
-
 Calls each of the listeners registered for a given event.
 
 #### Type Parameters
@@ -103,8 +95,6 @@ Calls each of the listeners registered for a given event.
 
 > **eventNames**(): [`EventNames`](../namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>[]
 
-Defined in: node\_modules/eventemitter3/index.d.ts:15
-
 Return an array listing the events for which the emitter has registered
 listeners.
 
@@ -117,8 +107,6 @@ listeners.
 ### listenerCount()
 
 > **listenerCount**(`event`): `number`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:27
 
 Return the number of listeners listening to a given event.
 
@@ -137,8 +125,6 @@ Return the number of listeners listening to a given event.
 ### listeners()
 
 > **listeners**\<`T`\>(`event`): [`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>[]
-
-Defined in: node\_modules/eventemitter3/index.d.ts:20
 
 Return the listeners registered for a given event.
 
@@ -161,8 +147,6 @@ Return the listeners registered for a given event.
 ### off()
 
 > **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:69
 
 #### Type Parameters
 
@@ -196,8 +180,6 @@ Defined in: node\_modules/eventemitter3/index.d.ts:69
 
 > **on**\<`T`\>(`event`, `fn`, `context`?): `this`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:40
-
 Add a listener for a given event.
 
 #### Type Parameters
@@ -227,8 +209,6 @@ Add a listener for a given event.
 ### once()
 
 > **once**\<`T`\>(`event`, `fn`, `context`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:54
 
 Add a one-time listener for a given event.
 
@@ -260,8 +240,6 @@ Add a one-time listener for a given event.
 
 > **removeAllListeners**(`event`?): `this`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:79
-
 Remove all listeners, or those of the specified event.
 
 #### Parameters
@@ -279,8 +257,6 @@ Remove all listeners, or those of the specified event.
 ### removeListener()
 
 > **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:63
 
 Remove the listeners of a given event.
 

@@ -22,6 +22,7 @@ export interface WalletContextState {
   connecting: boolean;
   connected: boolean;
   disconnecting: boolean;
+  decryptPermission?: DecryptPermission;
 
   select(walletName: WalletName): void;
   connect(
@@ -33,6 +34,10 @@ export interface WalletContextState {
 
   requestTransaction:
     | MessageSignerWalletAdapterProps['requestTransaction']
+    | undefined;
+  
+  requestPrivateNotes: 
+    | MessageSignerWalletAdapterProps['requestPrivateNotes']
     | undefined;
 }
 
@@ -64,6 +69,13 @@ const DEFAULT_CONTEXT = {
     return Promise.reject(
       console.error(
         constructMissingProviderErrorMessage('get', 'requestTransaction')
+      )
+    );
+  },
+  requestPrivateNotes() {
+    return Promise.reject(
+      console.error(
+        constructMissingProviderErrorMessage('get', 'requestPrivateNotes')
       )
     );
   },

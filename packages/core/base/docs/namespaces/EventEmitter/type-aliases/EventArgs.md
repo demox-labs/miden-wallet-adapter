@@ -8,8 +8,6 @@
 
 > **EventArgs**\<`T`, `K`\>: `Parameters`\<[`EventListener`](EventListener.md)\<`T`, `K`\>\>
 
-Defined in: node\_modules/eventemitter3/index.d.ts:126
-
 ## Type Parameters
 
 • **T** *extends* [`ValidEventTypes`](ValidEventTypes.md)

@@ -4,19 +4,21 @@ const readline = require('readline');
 
 const buildOrder = [
   // // Level 1: Base infrastructure
-  // ['./packages/core/base'],
+  ['./packages/core/base'],
   
   // // Level 2: Packages that only depend on base
-  // ['./packages/core/react', './packages/wallets/miden'],
+  ['./packages/core/react', './packages/wallets/miden'],
   
   // // Level 3: UI components (depends on base + react)
-  // ['./packages/ui'],
+  ['./packages/ui'],
   
   // Level 4: All-in-one wrapper (depends on all others)
   ['./packages/all']
 ];
 
 const commands = [
+  'yarn',
+  'yarn clean',
   'yarn',
   'yarn build',
   'yarn doc',
@@ -82,6 +84,8 @@ async function publishPackages() {
     
     // Wait for all packages in this level to complete before moving to next level
     await Promise.all(levelPromises);
+    // set timeout 
+    await new Promise(resolve => setTimeout(resolve, 10000)); // 1 second delay between levels
     console.log(`Level ${level + 1} completed successfully!`);
   }
 

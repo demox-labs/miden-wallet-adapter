@@ -33,6 +33,9 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
   requestTransaction(
     transaction: MidenTransaction
   ): Promise<{ transactionId?: string }>;
+  requestPrivateNotes(): Promise<{ 
+    privateNotes: any[]
+  }>;
   connect(
     decryptPermission: DecryptPermission,
     network: WalletAdapterNetwork,
@@ -116,7 +119,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestSend(transaction);
-        return result.transactionId;
+        return result.transactionId!;
       } catch (error: any) {
         throw new WalletTransactionError(error?.message, error);
       }
@@ -134,7 +137,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestConsume(transaction);
-        return result.transactionId;
+        return result.transactionId!;
       } catch (error: any) {
         throw new WalletTransactionError(error?.message, error);
       }
@@ -150,7 +153,23 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestTransaction(transaction);
-        return result.transactionId;
+        return result.transactionId!;
+      } catch (error: any) {
+        throw new WalletTransactionError(error?.message, error);
+      }
+    } catch (error: any) {
+      this.emit('error', error);
+      throw error;
+    }
+  }
+
+  async requestPrivateNotes(): Promise<any[]> {
+    try {
+      const wallet = this._wallet;
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      try {
+        const result = await wallet.requestPrivateNotes();
+        return result.privateNotes;
       } catch (error: any) {
         throw new WalletTransactionError(error?.message, error);
       }

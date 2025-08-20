@@ -6,8 +6,6 @@
 
 # Interface: WalletIconProps
 
-Defined in: [src/WalletIcon.tsx:4](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletIcon.tsx#L4)
-
 ## Extends
 
 - `DetailedHTMLProps`\<`ImgHTMLAttributes`\<`HTMLImageElement`\>, `HTMLImageElement`\>
@@ -17,8 +15,6 @@ Defined in: [src/WalletIcon.tsx:4](https://github.com/demox-labs/miden-wallet-ad
 ### about?
 
 > `optional` **about**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2726
 
 #### Inherited from
 
@@ -30,8 +26,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2726
 
 > `optional` **accessKey**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2699
-
 #### Inherited from
 
 `DetailedHTMLProps.accessKey`
@@ -42,8 +36,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2699
 
 > `optional` **alt**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:3071
-
 #### Inherited from
 
 `DetailedHTMLProps.alt`
@@ -53,8 +45,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3071
 ### aria-activedescendant?
 
 > `optional` **aria-activedescendant**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2397
 
 Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.
 
@@ -68,8 +58,6 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 > `optional` **aria-atomic**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2399
-
 Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.
 
 #### Inherited from
@@ -81,8 +69,6 @@ Indicates whether assistive technologies will present all, or only parts of, the
 ### aria-autocomplete?
 
 > `optional` **aria-autocomplete**: `"list"` \| `"none"` \| `"both"` \| `"inline"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2404
 
 Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
 presented if they are made.
@@ -96,8 +82,6 @@ presented if they are made.
 ### aria-braillelabel?
 
 > `optional` **aria-braillelabel**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2410
 
 Defines a string value that labels the current element, which is intended to be converted into Braille.
 
@@ -115,8 +99,6 @@ aria-label.
 
 > `optional` **aria-brailleroledescription**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2415
-
 Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.
 
 #### See
@@ -133,8 +115,6 @@ aria-roledescription.
 
 > `optional` **aria-busy**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2416
-
 #### Inherited from
 
 `DetailedHTMLProps.aria-busy`
@@ -144,8 +124,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2416
 ### aria-checked?
 
 > `optional` **aria-checked**: `boolean` \| `"true"` \| `"false"` \| `"mixed"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2421
 
 Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
 
@@ -164,8 +142,6 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 > `optional` **aria-colcount**: `number`
 
-Defined in: node\_modules/@types/react/index.d.ts:2426
-
 Defines the total number of columns in a table, grid, or treegrid.
 
 #### See
@@ -181,8 +157,6 @@ aria-colindex.
 ### aria-colindex?
 
 > `optional` **aria-colindex**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2431
 
 Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
 
@@ -201,8 +175,6 @@ Defines an element's column index or position with respect to the total number o
 
 > `optional` **aria-colindextext**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2436
-
 Defines a human readable text alternative of aria-colindex.
 
 #### See
@@ -218,8 +190,6 @@ aria-rowindextext.
 ### aria-colspan?
 
 > `optional` **aria-colspan**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2441
 
 Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
 
@@ -238,8 +208,6 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 > `optional` **aria-controls**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2446
-
 Identifies the element (or elements) whose contents or presence are controlled by the current element.
 
 #### See
@@ -256,8 +224,6 @@ aria-owns.
 
 > `optional` **aria-current**: `boolean` \| `"true"` \| `"false"` \| `"time"` \| `"page"` \| `"step"` \| `"location"` \| `"date"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2448
-
 Indicates the element that represents the current item within a container or set of related elements.
 
 #### Inherited from
@@ -269,8 +235,6 @@ Indicates the element that represents the current item within a container or set
 ### aria-describedby?
 
 > `optional` **aria-describedby**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2453
 
 Identifies the element (or elements) that describes the object.
 
@@ -288,8 +252,6 @@ aria-labelledby
 
 > `optional` **aria-description**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2458
-
 Defines a string value that describes or annotates the current element.
 
 #### See
@@ -306,8 +268,6 @@ related aria-describedby.
 
 > `optional` **aria-details**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2463
-
 Identifies the element that provides a detailed, extended description for the object.
 
 #### See
@@ -323,8 +283,6 @@ aria-describedby.
 ### aria-disabled?
 
 > `optional` **aria-disabled**: `Booleanish`
-
-Defined in: node\_modules/@types/react/index.d.ts:2468
 
 Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
 
@@ -343,8 +301,6 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 > `optional` **aria-dropeffect**: `"link"` \| `"copy"` \| `"none"` \| `"move"` \| `"execute"` \| `"popup"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2473
-
 Indicates what functions can be performed when a dragged object is released on the drop target.
 
 #### Deprecated
@@ -360,8 +316,6 @@ in ARIA 1.1
 ### aria-errormessage?
 
 > `optional` **aria-errormessage**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2478
 
 Identifies the element that provides an error message for the object.
 
@@ -380,8 +334,6 @@ Identifies the element that provides an error message for the object.
 
 > `optional` **aria-expanded**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2480
-
 Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
 #### Inherited from
@@ -393,8 +345,6 @@ Indicates whether the element, or another grouping element it controls, is curre
 ### aria-flowto?
 
 > `optional` **aria-flowto**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2485
 
 Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
 allows assistive technology to override the general default of reading in document source order.
@@ -408,8 +358,6 @@ allows assistive technology to override the general default of reading in docume
 ### ~~aria-grabbed?~~
 
 > `optional` **aria-grabbed**: `Booleanish`
-
-Defined in: node\_modules/@types/react/index.d.ts:2490
 
 Indicates an element's "grabbed" state in a drag-and-drop operation.
 
@@ -427,8 +375,6 @@ in ARIA 1.1
 
 > `optional` **aria-haspopup**: `boolean` \| `"dialog"` \| `"grid"` \| `"listbox"` \| `"menu"` \| `"tree"` \| `"true"` \| `"false"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2492
-
 Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.
 
 #### Inherited from
@@ -440,8 +386,6 @@ Indicates the availability and type of interactive popup element, such as menu o
 ### aria-hidden?
 
 > `optional` **aria-hidden**: `Booleanish`
-
-Defined in: node\_modules/@types/react/index.d.ts:2497
 
 Indicates whether the element is exposed to an accessibility API.
 
@@ -459,8 +403,6 @@ aria-disabled.
 
 > `optional` **aria-invalid**: `boolean` \| `"true"` \| `"false"` \| `"grammar"` \| `"spelling"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2502
-
 Indicates the entered value does not conform to the format expected by the application.
 
 #### See
@@ -477,8 +419,6 @@ aria-errormessage.
 
 > `optional` **aria-keyshortcuts**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2504
-
 Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.
 
 #### Inherited from
@@ -490,8 +430,6 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 ### aria-label?
 
 > `optional` **aria-label**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2509
 
 Defines a string value that labels the current element.
 
@@ -509,8 +447,6 @@ aria-labelledby.
 
 > `optional` **aria-labelledby**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2514
-
 Identifies the element (or elements) that labels the current element.
 
 #### See
@@ -527,8 +463,6 @@ aria-describedby.
 
 > `optional` **aria-level**: `number`
 
-Defined in: node\_modules/@types/react/index.d.ts:2516
-
 Defines the hierarchical level of an element within a structure.
 
 #### Inherited from
@@ -540,8 +474,6 @@ Defines the hierarchical level of an element within a structure.
 ### aria-live?
 
 > `optional` **aria-live**: `"off"` \| `"assertive"` \| `"polite"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2518
 
 Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
 
@@ -555,8 +487,6 @@ Indicates that an element will be updated, and describes the types of updates th
 
 > `optional` **aria-modal**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2520
-
 Indicates whether an element is modal when displayed.
 
 #### Inherited from
@@ -568,8 +498,6 @@ Indicates whether an element is modal when displayed.
 ### aria-multiline?
 
 > `optional` **aria-multiline**: `Booleanish`
-
-Defined in: node\_modules/@types/react/index.d.ts:2522
 
 Indicates whether a text box accepts multiple lines of input or only a single line.
 
@@ -583,8 +511,6 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 > `optional` **aria-multiselectable**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2524
-
 Indicates that the user may select more than one item from the current selectable descendants.
 
 #### Inherited from
@@ -597,8 +523,6 @@ Indicates that the user may select more than one item from the current selectabl
 
 > `optional` **aria-orientation**: `"horizontal"` \| `"vertical"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2526
-
 Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous.
 
 #### Inherited from
@@ -610,8 +534,6 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 ### aria-owns?
 
 > `optional` **aria-owns**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2532
 
 Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
 between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
@@ -630,8 +552,6 @@ aria-controls.
 
 > `optional` **aria-placeholder**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2537
-
 Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
 A hint could be a sample value or a brief description of the expected format.
 
@@ -644,8 +564,6 @@ A hint could be a sample value or a brief description of the expected format.
 ### aria-posinset?
 
 > `optional` **aria-posinset**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2542
 
 Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
 
@@ -662,8 +580,6 @@ aria-setsize.
 ### aria-pressed?
 
 > `optional` **aria-pressed**: `boolean` \| `"true"` \| `"false"` \| `"mixed"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2547
 
 Indicates the current "pressed" state of toggle buttons.
 
@@ -682,8 +598,6 @@ Indicates the current "pressed" state of toggle buttons.
 
 > `optional` **aria-readonly**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2552
-
 Indicates that the element is not editable, but is otherwise operable.
 
 #### See
@@ -699,8 +613,6 @@ aria-disabled.
 ### aria-relevant?
 
 > `optional` **aria-relevant**: `"all"` \| `"text"` \| `"additions"` \| `"additions removals"` \| `"additions text"` \| `"removals"` \| `"removals additions"` \| `"removals text"` \| `"text additions"` \| `"text removals"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2557
 
 Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
 
@@ -718,8 +630,6 @@ aria-atomic.
 
 > `optional` **aria-required**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2570
-
 Indicates that user input is required on the element before a form may be submitted.
 
 #### Inherited from
@@ -732,8 +642,6 @@ Indicates that user input is required on the element before a form may be submit
 
 > `optional` **aria-roledescription**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2572
-
 Defines a human-readable, author-localized description for the role of an element.
 
 #### Inherited from
@@ -745,8 +653,6 @@ Defines a human-readable, author-localized description for the role of an elemen
 ### aria-rowcount?
 
 > `optional` **aria-rowcount**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2577
 
 Defines the total number of rows in a table, grid, or treegrid.
 
@@ -763,8 +669,6 @@ aria-rowindex.
 ### aria-rowindex?
 
 > `optional` **aria-rowindex**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2582
 
 Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
 
@@ -783,8 +687,6 @@ Defines an element's row index or position with respect to the total number of r
 
 > `optional` **aria-rowindextext**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2587
-
 Defines a human readable text alternative of aria-rowindex.
 
 #### See
@@ -800,8 +702,6 @@ aria-colindextext.
 ### aria-rowspan?
 
 > `optional` **aria-rowspan**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2592
 
 Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
 
@@ -820,8 +720,6 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 > `optional` **aria-selected**: `Booleanish`
 
-Defined in: node\_modules/@types/react/index.d.ts:2597
-
 Indicates the current "selected" state of various widgets.
 
 #### See
@@ -839,8 +737,6 @@ Indicates the current "selected" state of various widgets.
 
 > `optional` **aria-setsize**: `number`
 
-Defined in: node\_modules/@types/react/index.d.ts:2602
-
 Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
 
 #### See
@@ -857,8 +753,6 @@ aria-posinset.
 
 > `optional` **aria-sort**: `"none"` \| `"ascending"` \| `"descending"` \| `"other"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2604
-
 Indicates if items in a table or grid are sorted in ascending or descending order.
 
 #### Inherited from
@@ -870,8 +764,6 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 ### aria-valuemax?
 
 > `optional` **aria-valuemax**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2606
 
 Defines the maximum allowed value for a range widget.
 
@@ -885,8 +777,6 @@ Defines the maximum allowed value for a range widget.
 
 > `optional` **aria-valuemin**: `number`
 
-Defined in: node\_modules/@types/react/index.d.ts:2608
-
 Defines the minimum allowed value for a range widget.
 
 #### Inherited from
@@ -898,8 +788,6 @@ Defines the minimum allowed value for a range widget.
 ### aria-valuenow?
 
 > `optional` **aria-valuenow**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2613
 
 Defines the current value for a range widget.
 
@@ -917,8 +805,6 @@ aria-valuetext.
 
 > `optional` **aria-valuetext**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2615
-
 Defines the human readable text alternative of aria-valuenow for a range widget.
 
 #### Inherited from
@@ -931,8 +817,6 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 > `optional` **autoCapitalize**: `"none"` \| `string` & `object` \| `"off"` \| `"on"` \| `"sentences"` \| `"words"` \| `"characters"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2700
-
 #### Inherited from
 
 `DetailedHTMLProps.autoCapitalize`
@@ -942,8 +826,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2700
 ### autoCorrect?
 
 > `optional` **autoCorrect**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2739
 
 #### Inherited from
 
@@ -955,8 +837,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2739
 
 > `optional` **autoFocus**: `boolean`
 
-Defined in: node\_modules/@types/react/index.d.ts:2701
-
 #### Inherited from
 
 `DetailedHTMLProps.autoFocus`
@@ -966,8 +846,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2701
 ### autoSave?
 
 > `optional` **autoSave**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2740
 
 #### Inherited from
 
@@ -979,8 +857,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2740
 
 > `optional` **children**: `ReactNode`
 
-Defined in: node\_modules/@types/react/index.d.ts:2173
-
 #### Inherited from
 
 `DetailedHTMLProps.children`
@@ -990,8 +866,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2173
 ### className?
 
 > `optional` **className**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2702
 
 #### Inherited from
 
@@ -1003,8 +877,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2702
 
 > `optional` **color**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2741
-
 #### Inherited from
 
 `DetailedHTMLProps.color`
@@ -1014,8 +886,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2741
 ### content?
 
 > `optional` **content**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2727
 
 #### Inherited from
 
@@ -1027,8 +897,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2727
 
 > `optional` **contentEditable**: `"inherit"` \| `Booleanish` \| `"plaintext-only"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2703
-
 #### Inherited from
 
 `DetailedHTMLProps.contentEditable`
@@ -1038,8 +906,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2703
 ### contextMenu?
 
 > `optional` **contextMenu**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2704
 
 #### Inherited from
 
@@ -1051,8 +917,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2704
 
 > `optional` **crossOrigin**: `CrossOrigin`
 
-Defined in: node\_modules/@types/react/index.d.ts:3072
-
 #### Inherited from
 
 `DetailedHTMLProps.crossOrigin`
@@ -1062,8 +926,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3072
 ### dangerouslySetInnerHTML?
 
 > `optional` **dangerouslySetInnerHTML**: `object`
-
-Defined in: node\_modules/@types/react/index.d.ts:2174
 
 #### \_\_html
 
@@ -1079,8 +941,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2174
 
 > `optional` **datatype**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2728
-
 #### Inherited from
 
 `DetailedHTMLProps.datatype`
@@ -1090,8 +950,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2728
 ### decoding?
 
 > `optional` **decoding**: `"auto"` \| `"async"` \| `"sync"`
-
-Defined in: node\_modules/@types/react/index.d.ts:3073
 
 #### Inherited from
 
@@ -1103,8 +961,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3073
 
 > `optional` **defaultChecked**: `boolean`
 
-Defined in: node\_modules/@types/react/index.d.ts:2693
-
 #### Inherited from
 
 `DetailedHTMLProps.defaultChecked`
@@ -1114,8 +970,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2693
 ### defaultValue?
 
 > `optional` **defaultValue**: `string` \| `number` \| readonly `string`[]
-
-Defined in: node\_modules/@types/react/index.d.ts:2694
 
 #### Inherited from
 
@@ -1127,8 +981,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2694
 
 > `optional` **dir**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2705
-
 #### Inherited from
 
 `DetailedHTMLProps.dir`
@@ -1138,8 +990,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2705
 ### draggable?
 
 > `optional` **draggable**: `Booleanish`
-
-Defined in: node\_modules/@types/react/index.d.ts:2706
 
 #### Inherited from
 
@@ -1151,8 +1001,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2706
 
 > `optional` **enterKeyHint**: `"search"` \| `"enter"` \| `"done"` \| `"go"` \| `"next"` \| `"previous"` \| `"send"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2707
-
 #### Inherited from
 
 `DetailedHTMLProps.enterKeyHint`
@@ -1162,8 +1010,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2707
 ### exportparts?
 
 > `optional` **exportparts**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2774
 
 #### See
 
@@ -1179,8 +1025,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2774
 
 > `optional` **fetchPriority**: `"auto"` \| `"high"` \| `"low"`
 
-Defined in: node\_modules/@types/react/index.d.ts:3074
-
 #### Inherited from
 
 `DetailedHTMLProps.fetchPriority`
@@ -1190,8 +1034,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3074
 ### height?
 
 > `optional` **height**: `string` \| `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:3075
 
 #### Inherited from
 
@@ -1203,8 +1045,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3075
 
 > `optional` **hidden**: `boolean`
 
-Defined in: node\_modules/@types/react/index.d.ts:2708
-
 #### Inherited from
 
 `DetailedHTMLProps.hidden`
@@ -1215,8 +1055,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2708
 
 > `optional` **id**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2709
-
 #### Inherited from
 
 `DetailedHTMLProps.id`
@@ -1226,8 +1064,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2709
 ### inert?
 
 > `optional` **inert**: `boolean`
-
-Defined in: node\_modules/@types/react/index.d.ts:2760
 
 #### See
 
@@ -1243,8 +1079,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert
 
 > `optional` **inlist**: `any`
 
-Defined in: node\_modules/@types/react/index.d.ts:2729
-
 #### Inherited from
 
 `DetailedHTMLProps.inlist`
@@ -1254,8 +1088,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2729
 ### inputMode?
 
 > `optional` **inputMode**: `"search"` \| `"none"` \| `"text"` \| `"tel"` \| `"url"` \| `"email"` \| `"numeric"` \| `"decimal"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2765
 
 Hints at the type of data that might be entered by the user while editing the element or its contents
 
@@ -1273,8 +1105,6 @@ Hints at the type of data that might be entered by the user while editing the el
 
 > `optional` **is**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2770
-
 Specify that a standard HTML element should behave like a defined custom built-in element
 
 #### See
@@ -1291,8 +1121,6 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 > `optional` **itemID**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2745
-
 #### Inherited from
 
 `DetailedHTMLProps.itemID`
@@ -1302,8 +1130,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2745
 ### itemProp?
 
 > `optional` **itemProp**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2742
 
 #### Inherited from
 
@@ -1315,8 +1141,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2742
 
 > `optional` **itemRef**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2746
-
 #### Inherited from
 
 `DetailedHTMLProps.itemRef`
@@ -1326,8 +1150,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2746
 ### itemScope?
 
 > `optional` **itemScope**: `boolean`
-
-Defined in: node\_modules/@types/react/index.d.ts:2743
 
 #### Inherited from
 
@@ -1339,8 +1161,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2743
 
 > `optional` **itemType**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2744
-
 #### Inherited from
 
 `DetailedHTMLProps.itemType`
@@ -1350,8 +1170,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2744
 ### key?
 
 > `optional` **key**: `null` \| `Key`
-
-Defined in: node\_modules/@types/react/index.d.ts:250
 
 #### Inherited from
 
@@ -1363,8 +1181,6 @@ Defined in: node\_modules/@types/react/index.d.ts:250
 
 > `optional` **lang**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2710
-
 #### Inherited from
 
 `DetailedHTMLProps.lang`
@@ -1374,8 +1190,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2710
 ### loading?
 
 > `optional` **loading**: `"eager"` \| `"lazy"`
-
-Defined in: node\_modules/@types/react/index.d.ts:3076
 
 #### Inherited from
 
@@ -1387,8 +1201,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3076
 
 > `optional` **nonce**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2711
-
 #### Inherited from
 
 `DetailedHTMLProps.nonce`
@@ -1398,8 +1210,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2711
 ### onAbort?
 
 > `optional` **onAbort**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2233
 
 #### Inherited from
 
@@ -1411,8 +1221,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2233
 
 > `optional` **onAbortCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2234
-
 #### Inherited from
 
 `DetailedHTMLProps.onAbortCapture`
@@ -1422,8 +1230,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2234
 ### onAnimationEnd?
 
 > `optional` **onAnimationEnd**: `AnimationEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2363
 
 #### Inherited from
 
@@ -1435,8 +1241,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2363
 
 > `optional` **onAnimationEndCapture**: `AnimationEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2364
-
 #### Inherited from
 
 `DetailedHTMLProps.onAnimationEndCapture`
@@ -1446,8 +1250,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2364
 ### onAnimationIteration?
 
 > `optional` **onAnimationIteration**: `AnimationEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2365
 
 #### Inherited from
 
@@ -1459,8 +1261,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2365
 
 > `optional` **onAnimationIterationCapture**: `AnimationEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2366
-
 #### Inherited from
 
 `DetailedHTMLProps.onAnimationIterationCapture`
@@ -1470,8 +1270,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2366
 ### onAnimationStart?
 
 > `optional` **onAnimationStart**: `AnimationEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2361
 
 #### Inherited from
 
@@ -1483,8 +1281,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2361
 
 > `optional` **onAnimationStartCapture**: `AnimationEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2362
-
 #### Inherited from
 
 `DetailedHTMLProps.onAnimationStartCapture`
@@ -1494,8 +1290,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2362
 ### onAuxClick?
 
 > `optional` **onAuxClick**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2279
 
 #### Inherited from
 
@@ -1507,8 +1301,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2279
 
 > `optional` **onAuxClickCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2280
-
 #### Inherited from
 
 `DetailedHTMLProps.onAuxClickCapture`
@@ -1518,8 +1310,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2280
 ### onBeforeInput?
 
 > `optional` **onBeforeInput**: `InputEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2205
 
 #### Inherited from
 
@@ -1531,8 +1321,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2205
 
 > `optional` **onBeforeInputCapture**: `FormEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2206
-
 #### Inherited from
 
 `DetailedHTMLProps.onBeforeInputCapture`
@@ -1542,8 +1330,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2206
 ### onBeforeToggle?
 
 > `optional` **onBeforeToggle**: `ToggleEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2370
 
 #### Inherited from
 
@@ -1555,8 +1341,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2370
 
 > `optional` **onBlur**: `FocusEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2199
-
 #### Inherited from
 
 `DetailedHTMLProps.onBlur`
@@ -1566,8 +1350,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2199
 ### onBlurCapture?
 
 > `optional` **onBlurCapture**: `FocusEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2200
 
 #### Inherited from
 
@@ -1579,8 +1361,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2200
 
 > `optional` **onCanPlay**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2235
-
 #### Inherited from
 
 `DetailedHTMLProps.onCanPlay`
@@ -1590,8 +1370,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2235
 ### onCanPlayCapture?
 
 > `optional` **onCanPlayCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2236
 
 #### Inherited from
 
@@ -1603,8 +1381,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2236
 
 > `optional` **onCanPlayThrough**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2237
-
 #### Inherited from
 
 `DetailedHTMLProps.onCanPlayThrough`
@@ -1614,8 +1390,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2237
 ### onCanPlayThroughCapture?
 
 > `optional` **onCanPlayThroughCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2238
 
 #### Inherited from
 
@@ -1627,8 +1401,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2238
 
 > `optional` **onChange**: `FormEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2203
-
 #### Inherited from
 
 `DetailedHTMLProps.onChange`
@@ -1638,8 +1410,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2203
 ### onChangeCapture?
 
 > `optional` **onChangeCapture**: `FormEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2204
 
 #### Inherited from
 
@@ -1651,8 +1421,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2204
 
 > `optional` **onClick**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2281
-
 #### Inherited from
 
 `DetailedHTMLProps.onClick`
@@ -1662,8 +1430,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2281
 ### onClickCapture?
 
 > `optional` **onClickCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2282
 
 #### Inherited from
 
@@ -1675,8 +1441,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2282
 
 > `optional` **onCompositionEnd**: `CompositionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2189
-
 #### Inherited from
 
 `DetailedHTMLProps.onCompositionEnd`
@@ -1686,8 +1450,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2189
 ### onCompositionEndCapture?
 
 > `optional` **onCompositionEndCapture**: `CompositionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2190
 
 #### Inherited from
 
@@ -1699,8 +1461,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2190
 
 > `optional` **onCompositionStart**: `CompositionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2191
-
 #### Inherited from
 
 `DetailedHTMLProps.onCompositionStart`
@@ -1710,8 +1470,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2191
 ### onCompositionStartCapture?
 
 > `optional` **onCompositionStartCapture**: `CompositionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2192
 
 #### Inherited from
 
@@ -1723,8 +1481,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2192
 
 > `optional` **onCompositionUpdate**: `CompositionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2193
-
 #### Inherited from
 
 `DetailedHTMLProps.onCompositionUpdate`
@@ -1734,8 +1490,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2193
 ### onCompositionUpdateCapture?
 
 > `optional` **onCompositionUpdateCapture**: `CompositionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2194
 
 #### Inherited from
 
@@ -1747,8 +1501,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2194
 
 > `optional` **onContextMenu**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2283
-
 #### Inherited from
 
 `DetailedHTMLProps.onContextMenu`
@@ -1758,8 +1510,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2283
 ### onContextMenuCapture?
 
 > `optional` **onContextMenuCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2284
 
 #### Inherited from
 
@@ -1771,8 +1521,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2284
 
 > `optional` **onCopy**: `ClipboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2181
-
 #### Inherited from
 
 `DetailedHTMLProps.onCopy`
@@ -1782,8 +1530,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2181
 ### onCopyCapture?
 
 > `optional` **onCopyCapture**: `ClipboardEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2182
 
 #### Inherited from
 
@@ -1795,8 +1541,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2182
 
 > `optional` **onCut**: `ClipboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2183
-
 #### Inherited from
 
 `DetailedHTMLProps.onCut`
@@ -1806,8 +1550,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2183
 ### onCutCapture?
 
 > `optional` **onCutCapture**: `ClipboardEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2184
 
 #### Inherited from
 
@@ -1819,8 +1561,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2184
 
 > `optional` **onDoubleClick**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2285
-
 #### Inherited from
 
 `DetailedHTMLProps.onDoubleClick`
@@ -1830,8 +1570,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2285
 ### onDoubleClickCapture?
 
 > `optional` **onDoubleClickCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2286
 
 #### Inherited from
 
@@ -1843,8 +1581,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2286
 
 > `optional` **onDrag**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2287
-
 #### Inherited from
 
 `DetailedHTMLProps.onDrag`
@@ -1854,8 +1590,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2287
 ### onDragCapture?
 
 > `optional` **onDragCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2288
 
 #### Inherited from
 
@@ -1867,8 +1601,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2288
 
 > `optional` **onDragEnd**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2289
-
 #### Inherited from
 
 `DetailedHTMLProps.onDragEnd`
@@ -1878,8 +1610,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2289
 ### onDragEndCapture?
 
 > `optional` **onDragEndCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2290
 
 #### Inherited from
 
@@ -1891,8 +1621,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2290
 
 > `optional` **onDragEnter**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2291
-
 #### Inherited from
 
 `DetailedHTMLProps.onDragEnter`
@@ -1902,8 +1630,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2291
 ### onDragEnterCapture?
 
 > `optional` **onDragEnterCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2292
 
 #### Inherited from
 
@@ -1915,8 +1641,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2292
 
 > `optional` **onDragExit**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2293
-
 #### Inherited from
 
 `DetailedHTMLProps.onDragExit`
@@ -1926,8 +1650,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2293
 ### onDragExitCapture?
 
 > `optional` **onDragExitCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2294
 
 #### Inherited from
 
@@ -1939,8 +1661,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2294
 
 > `optional` **onDragLeave**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2295
-
 #### Inherited from
 
 `DetailedHTMLProps.onDragLeave`
@@ -1950,8 +1670,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2295
 ### onDragLeaveCapture?
 
 > `optional` **onDragLeaveCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2296
 
 #### Inherited from
 
@@ -1963,8 +1681,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2296
 
 > `optional` **onDragOver**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2297
-
 #### Inherited from
 
 `DetailedHTMLProps.onDragOver`
@@ -1974,8 +1690,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2297
 ### onDragOverCapture?
 
 > `optional` **onDragOverCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2298
 
 #### Inherited from
 
@@ -1987,8 +1701,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2298
 
 > `optional` **onDragStart**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2299
-
 #### Inherited from
 
 `DetailedHTMLProps.onDragStart`
@@ -1998,8 +1710,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2299
 ### onDragStartCapture?
 
 > `optional` **onDragStartCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2300
 
 #### Inherited from
 
@@ -2011,8 +1721,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2300
 
 > `optional` **onDrop**: `DragEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2301
-
 #### Inherited from
 
 `DetailedHTMLProps.onDrop`
@@ -2022,8 +1730,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2301
 ### onDropCapture?
 
 > `optional` **onDropCapture**: `DragEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2302
 
 #### Inherited from
 
@@ -2035,8 +1741,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2302
 
 > `optional` **onDurationChange**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2239
-
 #### Inherited from
 
 `DetailedHTMLProps.onDurationChange`
@@ -2046,8 +1750,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2239
 ### onDurationChangeCapture?
 
 > `optional` **onDurationChangeCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2240
 
 #### Inherited from
 
@@ -2059,8 +1761,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2240
 
 > `optional` **onEmptied**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2241
-
 #### Inherited from
 
 `DetailedHTMLProps.onEmptied`
@@ -2070,8 +1770,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2241
 ### onEmptiedCapture?
 
 > `optional` **onEmptiedCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2242
 
 #### Inherited from
 
@@ -2083,8 +1781,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2242
 
 > `optional` **onEncrypted**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2243
-
 #### Inherited from
 
 `DetailedHTMLProps.onEncrypted`
@@ -2094,8 +1790,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2243
 ### onEncryptedCapture?
 
 > `optional` **onEncryptedCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2244
 
 #### Inherited from
 
@@ -2107,8 +1801,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2244
 
 > `optional` **onEnded**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2245
-
 #### Inherited from
 
 `DetailedHTMLProps.onEnded`
@@ -2118,8 +1810,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2245
 ### onEndedCapture?
 
 > `optional` **onEndedCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2246
 
 #### Inherited from
 
@@ -2131,8 +1821,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2246
 
 > `optional` **onError**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2219
-
 #### Inherited from
 
 `DetailedHTMLProps.onError`
@@ -2142,8 +1830,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2219
 ### onErrorCapture?
 
 > `optional` **onErrorCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2220
 
 #### Inherited from
 
@@ -2155,8 +1841,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2220
 
 > `optional` **onFocus**: `FocusEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2197
-
 #### Inherited from
 
 `DetailedHTMLProps.onFocus`
@@ -2166,8 +1850,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2197
 ### onFocusCapture?
 
 > `optional` **onFocusCapture**: `FocusEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2198
 
 #### Inherited from
 
@@ -2179,8 +1861,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2198
 
 > `optional` **onGotPointerCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2345
-
 #### Inherited from
 
 `DetailedHTMLProps.onGotPointerCapture`
@@ -2190,8 +1870,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2345
 ### onGotPointerCaptureCapture?
 
 > `optional` **onGotPointerCaptureCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2346
 
 #### Inherited from
 
@@ -2203,8 +1881,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2346
 
 > `optional` **onInput**: `FormEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2207
-
 #### Inherited from
 
 `DetailedHTMLProps.onInput`
@@ -2214,8 +1890,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2207
 ### onInputCapture?
 
 > `optional` **onInputCapture**: `FormEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2208
 
 #### Inherited from
 
@@ -2227,8 +1901,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2208
 
 > `optional` **onInvalid**: `FormEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2213
-
 #### Inherited from
 
 `DetailedHTMLProps.onInvalid`
@@ -2238,8 +1910,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2213
 ### onInvalidCapture?
 
 > `optional` **onInvalidCapture**: `FormEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2214
 
 #### Inherited from
 
@@ -2251,8 +1921,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2214
 
 > `optional` **onKeyDown**: `KeyboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2223
-
 #### Inherited from
 
 `DetailedHTMLProps.onKeyDown`
@@ -2263,8 +1931,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2223
 
 > `optional` **onKeyDownCapture**: `KeyboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2224
-
 #### Inherited from
 
 `DetailedHTMLProps.onKeyDownCapture`
@@ -2274,8 +1940,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2224
 ### ~~onKeyPress?~~
 
 > `optional` **onKeyPress**: `KeyboardEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2226
 
 #### Deprecated
 
@@ -2291,8 +1955,6 @@ Use `onKeyUp` or `onKeyDown` instead
 
 > `optional` **onKeyPressCapture**: `KeyboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2228
-
 #### Deprecated
 
 Use `onKeyUpCapture` or `onKeyDownCapture` instead
@@ -2307,8 +1969,6 @@ Use `onKeyUpCapture` or `onKeyDownCapture` instead
 
 > `optional` **onKeyUp**: `KeyboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2229
-
 #### Inherited from
 
 `DetailedHTMLProps.onKeyUp`
@@ -2318,8 +1978,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2229
 ### onKeyUpCapture?
 
 > `optional` **onKeyUpCapture**: `KeyboardEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2230
 
 #### Inherited from
 
@@ -2331,8 +1989,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2230
 
 > `optional` **onLoad**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2217
-
 #### Inherited from
 
 `DetailedHTMLProps.onLoad`
@@ -2342,8 +1998,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2217
 ### onLoadCapture?
 
 > `optional` **onLoadCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2218
 
 #### Inherited from
 
@@ -2355,8 +2009,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2218
 
 > `optional` **onLoadedData**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2247
-
 #### Inherited from
 
 `DetailedHTMLProps.onLoadedData`
@@ -2366,8 +2018,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2247
 ### onLoadedDataCapture?
 
 > `optional` **onLoadedDataCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2248
 
 #### Inherited from
 
@@ -2379,8 +2029,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2248
 
 > `optional` **onLoadedMetadata**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2249
-
 #### Inherited from
 
 `DetailedHTMLProps.onLoadedMetadata`
@@ -2390,8 +2038,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2249
 ### onLoadedMetadataCapture?
 
 > `optional` **onLoadedMetadataCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2250
 
 #### Inherited from
 
@@ -2403,8 +2049,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2250
 
 > `optional` **onLoadStart**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2251
-
 #### Inherited from
 
 `DetailedHTMLProps.onLoadStart`
@@ -2414,8 +2058,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2251
 ### onLoadStartCapture?
 
 > `optional` **onLoadStartCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2252
 
 #### Inherited from
 
@@ -2427,8 +2069,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2252
 
 > `optional` **onLostPointerCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2347
-
 #### Inherited from
 
 `DetailedHTMLProps.onLostPointerCapture`
@@ -2438,8 +2078,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2347
 ### onLostPointerCaptureCapture?
 
 > `optional` **onLostPointerCaptureCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2348
 
 #### Inherited from
 
@@ -2451,8 +2089,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2348
 
 > `optional` **onMouseDown**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2303
-
 #### Inherited from
 
 `DetailedHTMLProps.onMouseDown`
@@ -2462,8 +2098,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2303
 ### onMouseDownCapture?
 
 > `optional` **onMouseDownCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2304
 
 #### Inherited from
 
@@ -2475,8 +2109,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2304
 
 > `optional` **onMouseEnter**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2305
-
 #### Inherited from
 
 `DetailedHTMLProps.onMouseEnter`
@@ -2486,8 +2118,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2305
 ### onMouseLeave?
 
 > `optional` **onMouseLeave**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2306
 
 #### Inherited from
 
@@ -2499,8 +2129,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2306
 
 > `optional` **onMouseMove**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2307
-
 #### Inherited from
 
 `DetailedHTMLProps.onMouseMove`
@@ -2510,8 +2138,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2307
 ### onMouseMoveCapture?
 
 > `optional` **onMouseMoveCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2308
 
 #### Inherited from
 
@@ -2523,8 +2149,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2308
 
 > `optional` **onMouseOut**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2309
-
 #### Inherited from
 
 `DetailedHTMLProps.onMouseOut`
@@ -2534,8 +2158,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2309
 ### onMouseOutCapture?
 
 > `optional` **onMouseOutCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2310
 
 #### Inherited from
 
@@ -2547,8 +2169,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2310
 
 > `optional` **onMouseOver**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2311
-
 #### Inherited from
 
 `DetailedHTMLProps.onMouseOver`
@@ -2558,8 +2178,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2311
 ### onMouseOverCapture?
 
 > `optional` **onMouseOverCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2312
 
 #### Inherited from
 
@@ -2571,8 +2189,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2312
 
 > `optional` **onMouseUp**: `MouseEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2313
-
 #### Inherited from
 
 `DetailedHTMLProps.onMouseUp`
@@ -2582,8 +2198,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2313
 ### onMouseUpCapture?
 
 > `optional` **onMouseUpCapture**: `MouseEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2314
 
 #### Inherited from
 
@@ -2595,8 +2209,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2314
 
 > `optional` **onPaste**: `ClipboardEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2185
-
 #### Inherited from
 
 `DetailedHTMLProps.onPaste`
@@ -2606,8 +2218,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2185
 ### onPasteCapture?
 
 > `optional` **onPasteCapture**: `ClipboardEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2186
 
 #### Inherited from
 
@@ -2619,8 +2229,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2186
 
 > `optional` **onPause**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2253
-
 #### Inherited from
 
 `DetailedHTMLProps.onPause`
@@ -2630,8 +2238,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2253
 ### onPauseCapture?
 
 > `optional` **onPauseCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2254
 
 #### Inherited from
 
@@ -2643,8 +2249,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2254
 
 > `optional` **onPlay**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2255
-
 #### Inherited from
 
 `DetailedHTMLProps.onPlay`
@@ -2654,8 +2258,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2255
 ### onPlayCapture?
 
 > `optional` **onPlayCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2256
 
 #### Inherited from
 
@@ -2667,8 +2269,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2256
 
 > `optional` **onPlaying**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2257
-
 #### Inherited from
 
 `DetailedHTMLProps.onPlaying`
@@ -2678,8 +2278,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2257
 ### onPlayingCapture?
 
 > `optional` **onPlayingCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2258
 
 #### Inherited from
 
@@ -2691,8 +2289,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2258
 
 > `optional` **onPointerCancel**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2337
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerCancel`
@@ -2702,8 +2298,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2337
 ### onPointerCancelCapture?
 
 > `optional` **onPointerCancelCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2338
 
 #### Inherited from
 
@@ -2715,8 +2309,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2338
 
 > `optional` **onPointerDown**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2331
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerDown`
@@ -2726,8 +2318,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2331
 ### onPointerDownCapture?
 
 > `optional` **onPointerDownCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2332
 
 #### Inherited from
 
@@ -2739,8 +2329,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2332
 
 > `optional` **onPointerEnter**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2339
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerEnter`
@@ -2750,8 +2338,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2339
 ### onPointerLeave?
 
 > `optional` **onPointerLeave**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2340
 
 #### Inherited from
 
@@ -2763,8 +2349,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2340
 
 > `optional` **onPointerMove**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2333
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerMove`
@@ -2774,8 +2358,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2333
 ### onPointerMoveCapture?
 
 > `optional` **onPointerMoveCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2334
 
 #### Inherited from
 
@@ -2787,8 +2369,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2334
 
 > `optional` **onPointerOut**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2343
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerOut`
@@ -2798,8 +2378,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2343
 ### onPointerOutCapture?
 
 > `optional` **onPointerOutCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2344
 
 #### Inherited from
 
@@ -2811,8 +2389,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2344
 
 > `optional` **onPointerOver**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2341
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerOver`
@@ -2822,8 +2398,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2341
 ### onPointerOverCapture?
 
 > `optional` **onPointerOverCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2342
 
 #### Inherited from
 
@@ -2835,8 +2409,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2342
 
 > `optional` **onPointerUp**: `PointerEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2335
-
 #### Inherited from
 
 `DetailedHTMLProps.onPointerUp`
@@ -2846,8 +2418,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2335
 ### onPointerUpCapture?
 
 > `optional` **onPointerUpCapture**: `PointerEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2336
 
 #### Inherited from
 
@@ -2859,8 +2429,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2336
 
 > `optional` **onProgress**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2259
-
 #### Inherited from
 
 `DetailedHTMLProps.onProgress`
@@ -2870,8 +2438,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2259
 ### onProgressCapture?
 
 > `optional` **onProgressCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2260
 
 #### Inherited from
 
@@ -2883,8 +2449,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2260
 
 > `optional` **onRateChange**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2261
-
 #### Inherited from
 
 `DetailedHTMLProps.onRateChange`
@@ -2894,8 +2458,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2261
 ### onRateChangeCapture?
 
 > `optional` **onRateChangeCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2262
 
 #### Inherited from
 
@@ -2907,8 +2469,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2262
 
 > `optional` **onReset**: `FormEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2209
-
 #### Inherited from
 
 `DetailedHTMLProps.onReset`
@@ -2918,8 +2478,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2209
 ### onResetCapture?
 
 > `optional` **onResetCapture**: `FormEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2210
 
 #### Inherited from
 
@@ -2931,8 +2489,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2210
 
 > `optional` **onScroll**: `UIEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2351
-
 #### Inherited from
 
 `DetailedHTMLProps.onScroll`
@@ -2942,8 +2498,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2351
 ### onScrollCapture?
 
 > `optional` **onScrollCapture**: `UIEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2352
 
 #### Inherited from
 
@@ -2955,8 +2509,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2352
 
 > `optional` **onScrollEnd**: `UIEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2353
-
 #### Inherited from
 
 `DetailedHTMLProps.onScrollEnd`
@@ -2966,8 +2518,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2353
 ### onScrollEndCapture?
 
 > `optional` **onScrollEndCapture**: `UIEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2354
 
 #### Inherited from
 
@@ -2979,8 +2529,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2354
 
 > `optional` **onSeeked**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2263
-
 #### Inherited from
 
 `DetailedHTMLProps.onSeeked`
@@ -2990,8 +2538,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2263
 ### onSeekedCapture?
 
 > `optional` **onSeekedCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2264
 
 #### Inherited from
 
@@ -3003,8 +2549,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2264
 
 > `optional` **onSeeking**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2265
-
 #### Inherited from
 
 `DetailedHTMLProps.onSeeking`
@@ -3014,8 +2558,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2265
 ### onSeekingCapture?
 
 > `optional` **onSeekingCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2266
 
 #### Inherited from
 
@@ -3027,8 +2569,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2266
 
 > `optional` **onSelect**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2317
-
 #### Inherited from
 
 `DetailedHTMLProps.onSelect`
@@ -3038,8 +2578,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2317
 ### onSelectCapture?
 
 > `optional` **onSelectCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2318
 
 #### Inherited from
 
@@ -3051,8 +2589,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2318
 
 > `optional` **onStalled**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2267
-
 #### Inherited from
 
 `DetailedHTMLProps.onStalled`
@@ -3062,8 +2598,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2267
 ### onStalledCapture?
 
 > `optional` **onStalledCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2268
 
 #### Inherited from
 
@@ -3075,8 +2609,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2268
 
 > `optional` **onSubmit**: `FormEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2211
-
 #### Inherited from
 
 `DetailedHTMLProps.onSubmit`
@@ -3086,8 +2618,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2211
 ### onSubmitCapture?
 
 > `optional` **onSubmitCapture**: `FormEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2212
 
 #### Inherited from
 
@@ -3099,8 +2629,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2212
 
 > `optional` **onSuspend**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2269
-
 #### Inherited from
 
 `DetailedHTMLProps.onSuspend`
@@ -3110,8 +2638,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2269
 ### onSuspendCapture?
 
 > `optional` **onSuspendCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2270
 
 #### Inherited from
 
@@ -3123,8 +2649,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2270
 
 > `optional` **onTimeUpdate**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2271
-
 #### Inherited from
 
 `DetailedHTMLProps.onTimeUpdate`
@@ -3134,8 +2658,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2271
 ### onTimeUpdateCapture?
 
 > `optional` **onTimeUpdateCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2272
 
 #### Inherited from
 
@@ -3147,8 +2669,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2272
 
 > `optional` **onToggle**: `ToggleEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2369
-
 #### Inherited from
 
 `DetailedHTMLProps.onToggle`
@@ -3158,8 +2678,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2369
 ### onTouchCancel?
 
 > `optional` **onTouchCancel**: `TouchEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2321
 
 #### Inherited from
 
@@ -3171,8 +2689,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2321
 
 > `optional` **onTouchCancelCapture**: `TouchEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2322
-
 #### Inherited from
 
 `DetailedHTMLProps.onTouchCancelCapture`
@@ -3182,8 +2698,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2322
 ### onTouchEnd?
 
 > `optional` **onTouchEnd**: `TouchEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2323
 
 #### Inherited from
 
@@ -3195,8 +2709,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2323
 
 > `optional` **onTouchEndCapture**: `TouchEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2324
-
 #### Inherited from
 
 `DetailedHTMLProps.onTouchEndCapture`
@@ -3206,8 +2718,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2324
 ### onTouchMove?
 
 > `optional` **onTouchMove**: `TouchEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2325
 
 #### Inherited from
 
@@ -3219,8 +2729,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2325
 
 > `optional` **onTouchMoveCapture**: `TouchEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2326
-
 #### Inherited from
 
 `DetailedHTMLProps.onTouchMoveCapture`
@@ -3230,8 +2738,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2326
 ### onTouchStart?
 
 > `optional` **onTouchStart**: `TouchEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2327
 
 #### Inherited from
 
@@ -3243,8 +2749,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2327
 
 > `optional` **onTouchStartCapture**: `TouchEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2328
-
 #### Inherited from
 
 `DetailedHTMLProps.onTouchStartCapture`
@@ -3254,8 +2758,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2328
 ### onTransitionCancel?
 
 > `optional` **onTransitionCancel**: `TransitionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2373
 
 #### Inherited from
 
@@ -3267,8 +2769,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2373
 
 > `optional` **onTransitionCancelCapture**: `TransitionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2374
-
 #### Inherited from
 
 `DetailedHTMLProps.onTransitionCancelCapture`
@@ -3278,8 +2778,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2374
 ### onTransitionEnd?
 
 > `optional` **onTransitionEnd**: `TransitionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2375
 
 #### Inherited from
 
@@ -3291,8 +2789,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2375
 
 > `optional` **onTransitionEndCapture**: `TransitionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2376
-
 #### Inherited from
 
 `DetailedHTMLProps.onTransitionEndCapture`
@@ -3302,8 +2798,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2376
 ### onTransitionRun?
 
 > `optional` **onTransitionRun**: `TransitionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2377
 
 #### Inherited from
 
@@ -3315,8 +2809,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2377
 
 > `optional` **onTransitionRunCapture**: `TransitionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2378
-
 #### Inherited from
 
 `DetailedHTMLProps.onTransitionRunCapture`
@@ -3326,8 +2818,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2378
 ### onTransitionStart?
 
 > `optional` **onTransitionStart**: `TransitionEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2379
 
 #### Inherited from
 
@@ -3339,8 +2829,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2379
 
 > `optional` **onTransitionStartCapture**: `TransitionEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2380
-
 #### Inherited from
 
 `DetailedHTMLProps.onTransitionStartCapture`
@@ -3350,8 +2838,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2380
 ### onVolumeChange?
 
 > `optional` **onVolumeChange**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2273
 
 #### Inherited from
 
@@ -3363,8 +2849,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2273
 
 > `optional` **onVolumeChangeCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2274
-
 #### Inherited from
 
 `DetailedHTMLProps.onVolumeChangeCapture`
@@ -3374,8 +2858,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2274
 ### onWaiting?
 
 > `optional` **onWaiting**: `ReactEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2275
 
 #### Inherited from
 
@@ -3387,8 +2869,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2275
 
 > `optional` **onWaitingCapture**: `ReactEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2276
-
 #### Inherited from
 
 `DetailedHTMLProps.onWaitingCapture`
@@ -3398,8 +2878,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2276
 ### onWheel?
 
 > `optional` **onWheel**: `WheelEventHandler`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:2357
 
 #### Inherited from
 
@@ -3411,8 +2889,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2357
 
 > `optional` **onWheelCapture**: `WheelEventHandler`\<`HTMLImageElement`\>
 
-Defined in: node\_modules/@types/react/index.d.ts:2358
-
 #### Inherited from
 
 `DetailedHTMLProps.onWheelCapture`
@@ -3422,8 +2898,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2358
 ### part?
 
 > `optional` **part**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2778
 
 #### See
 
@@ -3439,8 +2913,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2778
 
 > `optional` **popover**: `""` \| `"auto"` \| `"manual"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2752
-
 #### Inherited from
 
 `DetailedHTMLProps.popover`
@@ -3450,8 +2922,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2752
 ### popoverTarget?
 
 > `optional` **popoverTarget**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2754
 
 #### Inherited from
 
@@ -3463,8 +2933,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2754
 
 > `optional` **popoverTargetAction**: `"toggle"` \| `"show"` \| `"hide"`
 
-Defined in: node\_modules/@types/react/index.d.ts:2753
-
 #### Inherited from
 
 `DetailedHTMLProps.popoverTargetAction`
@@ -3474,8 +2942,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2753
 ### prefix?
 
 > `optional` **prefix**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2730
 
 #### Inherited from
 
@@ -3487,8 +2953,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2730
 
 > `optional` **property**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2731
-
 #### Inherited from
 
 `DetailedHTMLProps.property`
@@ -3499,8 +2963,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2731
 
 > `optional` **radioGroup**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2720
-
 #### Inherited from
 
 `DetailedHTMLProps.radioGroup`
@@ -3510,8 +2972,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2720
 ### ref?
 
 > `optional` **ref**: `Ref`\<`HTMLImageElement`\>
-
-Defined in: node\_modules/@types/react/index.d.ts:292
 
 Allows getting a ref to the component instance.
 Once the component unmounts, React will set `ref.current` to `null`
@@ -3531,8 +2991,6 @@ Once the component unmounts, React will set `ref.current` to `null`
 
 > `optional` **referrerPolicy**: `HTMLAttributeReferrerPolicy`
 
-Defined in: node\_modules/@types/react/index.d.ts:3077
-
 #### Inherited from
 
 `DetailedHTMLProps.referrerPolicy`
@@ -3542,8 +3000,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3077
 ### rel?
 
 > `optional` **rel**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2732
 
 #### Inherited from
 
@@ -3555,8 +3011,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2732
 
 > `optional` **resource**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2733
-
 #### Inherited from
 
 `DetailedHTMLProps.resource`
@@ -3566,8 +3020,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2733
 ### results?
 
 > `optional` **results**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2747
 
 #### Inherited from
 
@@ -3579,8 +3031,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2747
 
 > `optional` **rev**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2734
-
 #### Inherited from
 
 `DetailedHTMLProps.rev`
@@ -3590,8 +3040,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2734
 ### role?
 
 > `optional` **role**: `AriaRole`
-
-Defined in: node\_modules/@types/react/index.d.ts:2723
 
 #### Inherited from
 
@@ -3603,8 +3051,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2723
 
 > `optional` **security**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2748
-
 #### Inherited from
 
 `DetailedHTMLProps.security`
@@ -3614,8 +3060,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2748
 ### sizes?
 
 > `optional` **sizes**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:3078
 
 #### Inherited from
 
@@ -3627,8 +3071,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3078
 
 > `optional` **slot**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2712
-
 #### Inherited from
 
 `DetailedHTMLProps.slot`
@@ -3638,8 +3080,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2712
 ### spellCheck?
 
 > `optional` **spellCheck**: `Booleanish`
-
-Defined in: node\_modules/@types/react/index.d.ts:2713
 
 #### Inherited from
 
@@ -3651,8 +3091,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2713
 
 > `optional` **src**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:3079
-
 #### Inherited from
 
 `DetailedHTMLProps.src`
@@ -3662,8 +3100,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3079
 ### srcSet?
 
 > `optional` **srcSet**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:3085
 
 #### Inherited from
 
@@ -3675,8 +3111,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3085
 
 > `optional` **style**: `CSSProperties`
 
-Defined in: node\_modules/@types/react/index.d.ts:2714
-
 #### Inherited from
 
 `DetailedHTMLProps.style`
@@ -3686,8 +3120,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2714
 ### suppressContentEditableWarning?
 
 > `optional` **suppressContentEditableWarning**: `boolean`
-
-Defined in: node\_modules/@types/react/index.d.ts:2695
 
 #### Inherited from
 
@@ -3699,8 +3131,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2695
 
 > `optional` **suppressHydrationWarning**: `boolean`
 
-Defined in: node\_modules/@types/react/index.d.ts:2696
-
 #### Inherited from
 
 `DetailedHTMLProps.suppressHydrationWarning`
@@ -3710,8 +3140,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2696
 ### tabIndex?
 
 > `optional` **tabIndex**: `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:2715
 
 #### Inherited from
 
@@ -3723,8 +3151,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2715
 
 > `optional` **title**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2716
-
 #### Inherited from
 
 `DetailedHTMLProps.title`
@@ -3734,8 +3160,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2716
 ### translate?
 
 > `optional` **translate**: `"yes"` \| `"no"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2717
 
 #### Inherited from
 
@@ -3747,8 +3171,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2717
 
 > `optional` **typeof**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:2735
-
 #### Inherited from
 
 `DetailedHTMLProps.typeof`
@@ -3758,8 +3180,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2735
 ### unselectable?
 
 > `optional` **unselectable**: `"off"` \| `"on"`
-
-Defined in: node\_modules/@types/react/index.d.ts:2749
 
 #### Inherited from
 
@@ -3771,8 +3191,6 @@ Defined in: node\_modules/@types/react/index.d.ts:2749
 
 > `optional` **useMap**: `string`
 
-Defined in: node\_modules/@types/react/index.d.ts:3086
-
 #### Inherited from
 
 `DetailedHTMLProps.useMap`
@@ -3782,8 +3200,6 @@ Defined in: node\_modules/@types/react/index.d.ts:3086
 ### vocab?
 
 > `optional` **vocab**: `string`
-
-Defined in: node\_modules/@types/react/index.d.ts:2736
 
 #### Inherited from
 
@@ -3795,15 +3211,11 @@ Defined in: node\_modules/@types/react/index.d.ts:2736
 
 > **wallet**: `null` \| `Wallet`
 
-Defined in: [src/WalletIcon.tsx:9](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/ui/src/WalletIcon.tsx#L9)
-
 ***
 
 ### width?
 
 > `optional` **width**: `string` \| `number`
-
-Defined in: node\_modules/@types/react/index.d.ts:3087
 
 #### Inherited from
 

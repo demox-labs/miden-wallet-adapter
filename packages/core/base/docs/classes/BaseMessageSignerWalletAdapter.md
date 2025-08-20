@@ -6,8 +6,6 @@
 
 # Class: `abstract` BaseMessageSignerWalletAdapter\<Name\>
 
-Defined in: [signer.ts:32](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/signer.ts#L32)
-
 Minimal `EventEmitter` interface that is molded against the Node.js
 `EventEmitter` interface.
 
@@ -43,8 +41,6 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 > `abstract` **accountId**: `string`
 
-Defined in: [adapter.ts:82](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L82)
-
 #### Implementation of
 
 `MessageSignerWalletAdapter.accountId`
@@ -58,8 +54,6 @@ Defined in: [adapter.ts:82](https://github.com/demox-labs/miden-wallet-adapter/b
 ### connecting
 
 > `abstract` **connecting**: `boolean`
-
-Defined in: [adapter.ts:83](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L83)
 
 #### Implementation of
 
@@ -75,8 +69,6 @@ Defined in: [adapter.ts:83](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `abstract` **icon**: `string`
 
-Defined in: [adapter.ts:80](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L80)
-
 #### Implementation of
 
 `MessageSignerWalletAdapter.icon`
@@ -90,8 +82,6 @@ Defined in: [adapter.ts:80](https://github.com/demox-labs/miden-wallet-adapter/b
 ### name
 
 > `abstract` **name**: [`WalletName`](../type-aliases/WalletName.md)\<`Name`\>
-
-Defined in: [adapter.ts:78](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L78)
 
 #### Implementation of
 
@@ -107,8 +97,6 @@ Defined in: [adapter.ts:78](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `abstract` **readyState**: [`WalletReadyState`](../enumerations/WalletReadyState.md)
 
-Defined in: [adapter.ts:81](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L81)
-
 #### Implementation of
 
 `MessageSignerWalletAdapter.readyState`
@@ -122,8 +110,6 @@ Defined in: [adapter.ts:81](https://github.com/demox-labs/miden-wallet-adapter/b
 ### supportedTransactionVersions
 
 > `abstract` **supportedTransactionVersions**: `ReadonlySet`\<`any`\>
-
-Defined in: [adapter.ts:84](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L84)
 
 #### Implementation of
 
@@ -139,8 +125,6 @@ Defined in: [adapter.ts:84](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `abstract` **url**: `string`
 
-Defined in: [adapter.ts:79](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L79)
-
 #### Implementation of
 
 `MessageSignerWalletAdapter.url`
@@ -155,8 +139,6 @@ Defined in: [adapter.ts:79](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `static` **prefixed**: `string` \| `boolean`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:9
-
 #### Inherited from
 
 [`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`prefixed`](BaseSignerWalletAdapter.md#prefixed)
@@ -168,8 +150,6 @@ Defined in: node\_modules/eventemitter3/index.d.ts:9
 #### Get Signature
 
 > **get** **connected**(): `boolean`
-
-Defined in: [adapter.ts:86](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L86)
 
 ##### Returns
 
@@ -188,8 +168,6 @@ Defined in: [adapter.ts:86](https://github.com/demox-labs/miden-wallet-adapter/b
 ### addListener()
 
 > **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:45
 
 #### Type Parameters
 
@@ -227,8 +205,6 @@ Defined in: node\_modules/eventemitter3/index.d.ts:45
 
 > `abstract` **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
 
-Defined in: [adapter.ts:90](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L90)
-
 #### Parameters
 
 ##### decryptPermission
@@ -261,8 +237,6 @@ Defined in: [adapter.ts:90](https://github.com/demox-labs/miden-wallet-adapter/b
 
 > `abstract` **disconnect**(): `Promise`\<`void`\>
 
-Defined in: [adapter.ts:95](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/adapter.ts#L95)
-
 #### Returns
 
 `Promise`\<`void`\>
@@ -280,8 +254,6 @@ Defined in: [adapter.ts:95](https://github.com/demox-labs/miden-wallet-adapter/b
 ### emit()
 
 > **emit**\<`T`\>(`event`, ...`args`): `boolean`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:32
 
 Calls each of the listeners registered for a given event.
 
@@ -317,8 +289,6 @@ Calls each of the listeners registered for a given event.
 
 > **eventNames**(): keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)[]
 
-Defined in: node\_modules/eventemitter3/index.d.ts:15
-
 Return an array listing the events for which the emitter has registered
 listeners.
 
@@ -339,8 +309,6 @@ keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)[]
 ### listenerCount()
 
 > **listenerCount**(`event`): `number`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:27
 
 Return the number of listeners listening to a given event.
 
@@ -367,8 +335,6 @@ keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 ### listeners()
 
 > **listeners**\<`T`\>(`event`): (...`args`) => `void`[]
-
-Defined in: node\_modules/eventemitter3/index.d.ts:20
 
 Return the listeners registered for a given event.
 
@@ -399,8 +365,6 @@ Return the listeners registered for a given event.
 ### off()
 
 > **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:69
 
 #### Type Parameters
 
@@ -442,8 +406,6 @@ Defined in: node\_modules/eventemitter3/index.d.ts:69
 
 > **on**\<`T`\>(`event`, `fn`, `context`?): `this`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:40
-
 Add a listener for a given event.
 
 #### Type Parameters
@@ -481,8 +443,6 @@ Add a listener for a given event.
 ### once()
 
 > **once**\<`T`\>(`event`, `fn`, `context`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:54
 
 Add a one-time listener for a given event.
 
@@ -522,8 +482,6 @@ Add a one-time listener for a given event.
 
 > **removeAllListeners**(`event`?): `this`
 
-Defined in: node\_modules/eventemitter3/index.d.ts:79
-
 Remove all listeners, or those of the specified event.
 
 #### Parameters
@@ -549,8 +507,6 @@ keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 ### removeListener()
 
 > **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
-
-Defined in: node\_modules/eventemitter3/index.d.ts:63
 
 Remove the listeners of a given event.
 
@@ -594,8 +550,6 @@ Remove the listeners of a given event.
 
 > `abstract` **requestConsume**(`transaction`): `Promise`\<`string`\>
 
-Defined in: [signer.ts:39](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/signer.ts#L39)
-
 #### Parameters
 
 ##### transaction
@@ -608,11 +562,23 @@ Defined in: [signer.ts:39](https://github.com/demox-labs/miden-wallet-adapter/bl
 
 ***
 
+### requestPrivateNotes()
+
+> `abstract` **requestPrivateNotes**(): `Promise`\<`any`[]\>
+
+#### Returns
+
+`Promise`\<`any`[]\>
+
+#### Implementation of
+
+`MessageSignerWalletAdapter.requestPrivateNotes`
+
+***
+
 ### requestSend()
 
 > `abstract` **requestSend**(`transaction`): `Promise`\<`string`\>
-
-Defined in: [signer.ts:38](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/signer.ts#L38)
 
 #### Parameters
 
@@ -629,8 +595,6 @@ Defined in: [signer.ts:38](https://github.com/demox-labs/miden-wallet-adapter/bl
 ### requestTransaction()
 
 > `abstract` **requestTransaction**(`transaction`): `Promise`\<`string`\>
-
-Defined in: [signer.ts:40](https://github.com/demox-labs/miden-wallet-adapter/blob/1ef8b04773cb8b7272bbf6a4eb810ab074d47de8/packages/core/base/signer.ts#L40)
 
 #### Parameters
 
