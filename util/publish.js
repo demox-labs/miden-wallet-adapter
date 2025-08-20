@@ -1,6 +1,7 @@
 const { exec } = require('child_process');
 const path = require('path');
 const readline = require('readline');
+const fs = require('fs');
 
 const buildOrder = [
   // // Level 1: Base infrastructure
@@ -16,13 +17,12 @@ const buildOrder = [
   ['./packages/all']
 ];
 
-const commands = [
+const buildCommands = [
   'yarn',
   'yarn clean',
   'yarn',
   'yarn build',
-  'yarn doc',
-  // 'npm publish' will be handled separately to include OTP
+  'yarn doc'
 ];
 
 function runCommand(directory, command) {
@@ -41,6 +41,57 @@ function runCommand(directory, command) {
       resolve();
     });
   });
+}
+
+function parsePackageJson(directory) {
+  const packageJsonPath = path.resolve(directory, 'package.json');
+  if (!fs.existsSync(packageJsonPath)) {
+    throw new Error(`package.json not found in ${directory}`);
+  }
+  return JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+}
+
+function getPackageInfo(directory) {
+  const packageInfo = parsePackageJson(directory);
+  if (!packageInfo.name || !packageInfo.version) {
+    throw new Error(`Invalid package.json in ${directory}: missing name or version`);
+  }
+  return {
+    name: packageInfo.name,
+    version: packageInfo.version,
+  };
+}
+
+function checkIfVersionExists(packageName, version) {
+  return new Promise((resolve, reject) => {
+    exec(`npm view ${packageName}@${version} version`, (error, stdout, stderr) => {
+      if (error) {
+        // If the command fails, the version doesn't exist
+        // Check if it's a network error vs package not found
+        if (error.message.includes('ENOTFOUND') || error.message.includes('network')) {
+          console.warn(`Network error checking ${packageName}@${version}. Proceeding with publish...`);
+          resolve(false);
+        } else {
+          // Package or version not found - safe to proceed
+          resolve(false);
+        }
+      } else {
+        // If the command succeeds and returns the version, it exists
+        const publishedVersion = stdout.trim();
+        resolve(publishedVersion === version);
+      }
+    });
+  });
+}
+
+async function waitIfNecessary(results) {
+  const publishedPackages = results.filter(result => result && result.published);
+  if (publishedPackages.length > 0) {
+    console.log(`Waiting 10 seconds for npm propagation of ${publishedPackages.length} newly published package(s)...`);
+    await new Promise(resolve => setTimeout(resolve, 10000)); // 10 second delay between levels
+  } else {
+    console.log(`No new packages published in this level - skipping propagation delay.`);
+  }
 }
 
 async function getOtp() {
@@ -70,22 +121,42 @@ async function publishPackages() {
     
     // Within each level, process packages in parallel
     const levelPromises = levelPackages.map(async (dir) => {
-      console.log(`Building ${dir}...`);
-      
-      // Run commands sequentially for each package
-      for (let cmd of commands) {
-        await runCommand(dir, cmd);
+      try {
+        console.log(`Processing ${dir}...`);
+
+        // Check if new version to publish exists
+        const { name: packageName, version: packageVersion } = getPackageInfo(dir);
+        console.log(`Checking if ${packageName}@${packageVersion} already exists on npm...`);
+        const versionExists = await checkIfVersionExists(packageName, packageVersion);
+        if (versionExists) {
+          console.log(`✓ Version ${packageVersion} of ${packageName} already exists on npm. Skipping build and publish.`);
+          return { published: false, packageName, packageVersion };
+        }
+
+        console.log(`Building ${dir}...`);
+
+        // Run commands sequentially for each package
+        for (let cmd of buildCommands) {
+          await runCommand(dir, cmd);
+        }
+
+        // Handle npm publish separately to include OTP
+        console.log(`Publishing ${dir}...`);
+        await runCommand(dir, `npm publish --otp=${otp} --access=public`);
+        console.log(`Successfully published ${packageName}@${packageVersion}`);
+        return { published: true, packageName, packageVersion };
+      } catch (error) {
+        console.error(`Failed to process ${dir}:`, error.message);
+        throw error; // Re-throw to fail the entire level
       }
-      
-      // Handle npm publish separately to include OTP
-      console.log(`Publishing ${dir}...`);
-      await runCommand(dir, `npm publish --otp=${otp} --access=public`);
     });
     
     // Wait for all packages in this level to complete before moving to next level
-    await Promise.all(levelPromises);
-    // set timeout 
-    await new Promise(resolve => setTimeout(resolve, 10000)); // 1 second delay between levels
+    const results = await Promise.all(levelPromises);
+
+    // Wait for npm propagation of newly published packages
+    await waitIfNecessary(results);
+
     console.log(`Level ${level + 1} completed successfully!`);
   }
 
