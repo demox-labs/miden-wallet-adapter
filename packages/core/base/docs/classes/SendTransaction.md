@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / SendTransaction
+[@demox-labs/miden-wallet-adapter-base](../README.md) / SendTransaction
 
 # Class: SendTransaction
 
@@ -12,9 +12,9 @@
 
 ## Constructors
 
-### new SendTransaction()
+### Constructor
 
-> **new SendTransaction**(`sender`, `recipient`, `faucetId`, `noteType`, `amount`, `recallBlocks`?): [`SendTransaction`](SendTransaction.md)
+> **new SendTransaction**(`sender`, `recipient`, `faucetId`, `noteType`, `amount`, `recallBlocks?`): `SendTransaction`
 
 #### Parameters
 
@@ -44,7 +44,7 @@
 
 #### Returns
 
-[`SendTransaction`](SendTransaction.md)
+`SendTransaction`
 
 ## Properties
 

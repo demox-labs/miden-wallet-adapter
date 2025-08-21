@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-react](../globals.md) / Wallet
+[@demox-labs/miden-wallet-adapter-react](../README.md) / Wallet
 
 # Interface: Wallet
 

@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / DecryptPermission
+[@demox-labs/miden-wallet-adapter-base](../README.md) / DecryptPermission
 
 # Enumeration: DecryptPermission
 

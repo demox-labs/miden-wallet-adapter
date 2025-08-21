@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-reactui](../globals.md) / useWalletModal
+[@demox-labs/miden-wallet-adapter-reactui](../README.md) / useWalletModal
 
 # Function: useWalletModal()
 

@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-reactui](../globals.md) / WalletModalProps
+[@demox-labs/miden-wallet-adapter-reactui](../README.md) / WalletModalProps
 
 # Interface: WalletModalProps
 

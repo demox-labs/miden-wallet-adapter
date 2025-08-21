@@ -90,7 +90,7 @@ async function waitIfNecessary(results) {
     console.log(`Waiting 10 seconds for npm propagation of ${publishedPackages.length} newly published package(s)...`);
     await new Promise(resolve => setTimeout(resolve, 10000)); // 10 second delay between levels
   } else {
-    console.log(`No new packages published in this level - skipping propagation delay.`);
+    console.log(`No new packages published in this level`);
   }
 }
 
@@ -112,7 +112,10 @@ async function getOtp() {
 }
 
 async function publishPackages() {
-  const otp = await getOtp();
+  // Check for dry-run flag
+  const isDryRun = process.argv.includes('--dry-run');
+  console.log(isDryRun ? 'DRY RUN MODE - No packages will be actually published' : '🚀 LIVE MODE - Packages will be published to npm');
+  const otp = isDryRun ? 'dry-run-otp' : await getOtp();
 
   // Process each level sequentially
   for (let level = 0; level < buildOrder.length; level++) {
@@ -126,14 +129,13 @@ async function publishPackages() {
 
         // Check if new version to publish exists
         const { name: packageName, version: packageVersion } = getPackageInfo(dir);
-        console.log(`Checking if ${packageName}@${packageVersion} already exists on npm...`);
         const versionExists = await checkIfVersionExists(packageName, packageVersion);
         if (versionExists) {
-          console.log(`✓ Version ${packageVersion} of ${packageName} already exists on npm. Skipping build and publish.`);
+          console.log(`${packageName}@${packageVersion} already exists on npm. Skipping build and publish.`);
           return { published: false, packageName, packageVersion };
         }
 
-        console.log(`Building ${dir}...`);
+        console.log(`Building ${packageName}@${packageVersion}...`);
 
         // Run commands sequentially for each package
         for (let cmd of buildCommands) {
@@ -141,10 +143,17 @@ async function publishPackages() {
         }
 
         // Handle npm publish separately to include OTP
-        console.log(`Publishing ${dir}...`);
-        await runCommand(dir, `npm publish --otp=${otp} --access=public`);
-        console.log(`Successfully published ${packageName}@${packageVersion}`);
-        return { published: true, packageName, packageVersion };
+        if (isDryRun) {
+          console.log(`DRY RUN: Would publish ${packageName}@${packageVersion}`);
+          await runCommand(dir, `yarn npm publish --dry-run --access=public`);
+          console.log(`DRY RUN: Validation successful for ${packageName}@${packageVersion}`);
+          return { published: true, packageName, packageVersion };
+        } else {
+          console.log(`Publishing ${packageName}@${packageVersion}...`);
+          await runCommand(dir, `yarn npm publish --otp=${otp} --access=public`);
+          console.log(`Successfully published ${packageName}@${packageVersion}`);
+          return { published: true, packageName, packageVersion };
+        }
       } catch (error) {
         console.error(`Failed to process ${dir}:`, error.message);
         throw error; // Re-throw to fail the entire level
@@ -157,7 +166,7 @@ async function publishPackages() {
     // Wait for npm propagation of newly published packages
     await waitIfNecessary(results);
 
-    console.log(`Level ${level + 1} completed successfully!`);
+    console.log(`Level ${level + 1} completed successfully!\n\n`);
   }
 
   console.log('All packages published successfully!');

@@ -2,8 +2,8 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / Adapter
+[@demox-labs/miden-wallet-adapter-base](../README.md) / Adapter
 
 # Type Alias: Adapter
 
-> **Adapter**: [`WalletAdapter`](WalletAdapter.md) \| [`SignerWalletAdapter`](SignerWalletAdapter.md) \| [`MessageSignerWalletAdapter`](MessageSignerWalletAdapter.md)
+> **Adapter** = [`WalletAdapter`](WalletAdapter.md) \| [`SignerWalletAdapter`](SignerWalletAdapter.md) \| [`MessageSignerWalletAdapter`](MessageSignerWalletAdapter.md)

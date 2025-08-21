@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-miden](../globals.md) / MidenWalletName
+[@demox-labs/miden-wallet-adapter-miden](../README.md) / MidenWalletName
 
 # Variable: MidenWalletName
 

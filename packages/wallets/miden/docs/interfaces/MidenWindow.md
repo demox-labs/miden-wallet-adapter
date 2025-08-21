@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-miden](../globals.md) / MidenWindow
+[@demox-labs/miden-wallet-adapter-miden](../README.md) / MidenWindow
 
 # Interface: MidenWindow
 
@@ -50,13 +50,27 @@ This is a legacy alias of `navigator`.
 
 > `readonly` **closed**: `boolean`
 
-Returns true if the window has been closed, false otherwise.
+The **`Window.closed`** read-only property indicates whether the referenced window is closed or not.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/closed)
 
 #### Inherited from
 
 `Window.closed`
+
+***
+
+### cookieStore
+
+> `readonly` **cookieStore**: `CookieStore`
+
+The **`cookieStore`** read-only property of the Window interface returns a reference to the CookieStore object for the current document context.
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/cookieStore)
+
+#### Inherited from
+
+`Window.cookieStore`
 
 ***
 
@@ -88,7 +102,7 @@ Returns true if the window has been closed, false otherwise.
 
 > `readonly` **customElements**: `CustomElementRegistry`
 
-Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element.
+The **`customElements`** read-only property of the Window interface returns a reference to the CustomElementRegistry object, which can be used to register new custom elements and get information about previously registered custom elements.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/customElements)
 
@@ -102,6 +116,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **devicePixelRatio**: `number`
 
+The **`devicePixelRatio`** of Window interface returns the ratio of the resolution in _physical pixels_ to the resolution in _CSS pixels_ for the current display device.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio)
 
 #### Inherited from
@@ -114,6 +130,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **document**: `Document`
 
+**`window.document`** returns a reference to the document contained in the window.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/document)
 
 #### Inherited from
@@ -125,6 +143,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 ### ~~event~~
 
 > `readonly` **event**: `Event`
+
+The read-only Window property **`event`** returns the Event which is currently being handled by the site's code.
 
 #### Deprecated
 
@@ -140,6 +160,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **external**: `External`
 
+The `external` property of the Window API returns an instance of the `External` interface, which was intended to contain functions related to adding external search providers to the browser.
+
 #### Deprecated
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/external)
@@ -154,6 +176,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **frameElement**: `Element`
 
+The **`Window.frameElement`** property returns the element (such as iframe or object) in which the window is embedded.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frameElement)
 
 #### Inherited from
@@ -166,6 +190,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **frames**: `Window`
 
+Returns the window itself, which is an array-like object, listing the direct sub-frames of the current window.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frames)
 
 #### Inherited from
@@ -177,6 +203,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 ### history
 
 > `readonly` **history**: `History`
+
+The `Window.history` read-only property returns a reference to the History object, which provides an interface for manipulating the browser _session history_ (pages visited in the tab or frame that the current page is loaded in).
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/history)
 
@@ -202,6 +230,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **innerHeight**: `number`
 
+The read-only **`innerHeight`** property of the including the height of the horizontal scroll bar, if present.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerHeight)
 
 #### Inherited from
@@ -213,6 +243,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 ### innerWidth
 
 > `readonly` **innerWidth**: `number`
+
+The read-only Window property **`innerWidth`** returns the interior width of the window in pixels (that is, the width of the window's layout viewport).
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerWidth)
 
@@ -238,6 +270,8 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **length**: `number`
 
+Returns the number of frames (either frame or A number.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/length)
 
 #### Inherited from
@@ -262,7 +296,7 @@ Defines a new custom element, mapping the given name to the given constructor as
 
 > `readonly` **locationbar**: `BarProp`
 
-Returns true if the location bar is visible; otherwise, returns false.
+Returns the `locationbar` object.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/locationbar)
 
@@ -276,7 +310,7 @@ Returns true if the location bar is visible; otherwise, returns false.
 
 > `readonly` **menubar**: `BarProp`
 
-Returns true if the menu bar is visible; otherwise, returns false.
+Returns the `menubar` object.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/menubar)
 
@@ -302,6 +336,8 @@ Returns true if the menu bar is visible; otherwise, returns false.
 
 > **name**: `string`
 
+The `Window.name` property gets/sets the name of the window's browsing context.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/name)
 
 #### Inherited from
@@ -313,6 +349,8 @@ Returns true if the menu bar is visible; otherwise, returns false.
 ### navigator
 
 > `readonly` **navigator**: `Navigator`
+
+The **`Window.navigator`** read-only property returns a reference to the Navigator object, which has methods and properties about the application running the script.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator)
 
@@ -326,7 +364,7 @@ Returns true if the menu bar is visible; otherwise, returns false.
 
 > **onabort**: (`this`, `ev`) => `any`
 
-Fires when the user aborts the download.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/abort_event)
 
 #### Parameters
 
@@ -337,10 +375,6 @@ Fires when the user aborts the download.
 ##### ev
 
 `UIEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/abort_event)
 
 #### Returns
 
@@ -496,7 +530,7 @@ The event.
 
 ##### ev
 
-`MouseEvent`
+`PointerEvent`
 
 #### Returns
 
@@ -531,6 +565,32 @@ The event.
 #### Inherited from
 
 `Window.onbeforeinput`
+
+***
+
+### onbeforematch()
+
+> **onbeforematch**: (`this`, `ev`) => `any`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/beforematch_event)
+
+#### Parameters
+
+##### this
+
+`GlobalEventHandlers`
+
+##### ev
+
+`Event`
+
+#### Returns
+
+`any`
+
+#### Inherited from
+
+`Window.onbeforematch`
 
 ***
 
@@ -574,7 +634,7 @@ The event.
 
 ##### ev
 
-`Event`
+`ToggleEvent`
 
 #### Returns
 
@@ -616,7 +676,7 @@ The event.
 
 > **onblur**: (`this`, `ev`) => `any`
 
-Fires when the object loses the input focus.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/blur_event)
 
 #### Parameters
 
@@ -627,10 +687,6 @@ Fires when the object loses the input focus.
 ##### ev
 
 `FocusEvent`
-
-The focus event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/blur_event)
 
 #### Returns
 
@@ -646,7 +702,7 @@ The focus event.
 
 > **oncancel**: (`this`, `ev`) => `any`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/cancel_event)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/cancel_event)
 
 #### Parameters
 
@@ -672,7 +728,7 @@ The focus event.
 
 > **oncanplay**: (`this`, `ev`) => `any`
 
-Occurs when playback is possible, but would require further buffering.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplay_event)
 
 #### Parameters
 
@@ -683,10 +739,6 @@ Occurs when playback is possible, but would require further buffering.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplay_event)
 
 #### Returns
 
@@ -728,7 +780,7 @@ The event.
 
 > **onchange**: (`this`, `ev`) => `any`
 
-Fires when the contents of the object or selection have changed.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event)
 
 #### Parameters
 
@@ -739,10 +791,6 @@ Fires when the contents of the object or selection have changed.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event)
 
 #### Returns
 
@@ -758,7 +806,7 @@ The event.
 
 > **onclick**: (`this`, `ev`) => `any`
 
-Fires when the user clicks the left mouse button on the object
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/click_event)
 
 #### Parameters
 
@@ -768,11 +816,7 @@ Fires when the user clicks the left mouse button on the object
 
 ##### ev
 
-`MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/click_event)
+`PointerEvent`
 
 #### Returns
 
@@ -814,7 +858,7 @@ The mouse event.
 
 > **oncontextlost**: (`this`, `ev`) => `any`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/webglcontextlost_event)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/contextlost_event)
 
 #### Parameters
 
@@ -840,7 +884,7 @@ The mouse event.
 
 > **oncontextmenu**: (`this`, `ev`) => `any`
 
-Fires when the user clicks the right mouse button in the client area, opening the context menu.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event)
 
 #### Parameters
 
@@ -850,11 +894,7 @@ Fires when the user clicks the right mouse button in the client area, opening th
 
 ##### ev
 
-`MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event)
+`PointerEvent`
 
 #### Returns
 
@@ -974,7 +1014,7 @@ The mouse event.
 
 > **ondblclick**: (`this`, `ev`) => `any`
 
-Fires when the user double-clicks the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/dblclick_event)
 
 #### Parameters
 
@@ -985,10 +1025,6 @@ Fires when the user double-clicks the object.
 ##### ev
 
 `MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/dblclick_event)
 
 #### Returns
 
@@ -1088,7 +1124,7 @@ Available only in secure contexts.
 
 > **ondrag**: (`this`, `ev`) => `any`
 
-Fires on the source object continuously during a drag operation.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event)
 
 #### Parameters
 
@@ -1099,10 +1135,6 @@ Fires on the source object continuously during a drag operation.
 ##### ev
 
 `DragEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event)
 
 #### Returns
 
@@ -1118,7 +1150,7 @@ The event.
 
 > **ondragend**: (`this`, `ev`) => `any`
 
-Fires on the source object when the user releases the mouse at the close of a drag operation.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event)
 
 #### Parameters
 
@@ -1129,10 +1161,6 @@ Fires on the source object when the user releases the mouse at the close of a dr
 ##### ev
 
 `DragEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event)
 
 #### Returns
 
@@ -1148,7 +1176,7 @@ The event.
 
 > **ondragenter**: (`this`, `ev`) => `any`
 
-Fires on the target element when the user drags the object to a valid drop target.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event)
 
 #### Parameters
 
@@ -1159,10 +1187,6 @@ Fires on the target element when the user drags the object to a valid drop targe
 ##### ev
 
 `DragEvent`
-
-The drag event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event)
 
 #### Returns
 
@@ -1178,7 +1202,7 @@ The drag event.
 
 > **ondragleave**: (`this`, `ev`) => `any`
 
-Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event)
 
 #### Parameters
 
@@ -1189,10 +1213,6 @@ Fires on the target object when the user moves the mouse out of a valid drop tar
 ##### ev
 
 `DragEvent`
-
-The drag event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event)
 
 #### Returns
 
@@ -1208,7 +1228,7 @@ The drag event.
 
 > **ondragover**: (`this`, `ev`) => `any`
 
-Fires on the target element continuously while the user drags the object over a valid drop target.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event)
 
 #### Parameters
 
@@ -1219,10 +1239,6 @@ Fires on the target element continuously while the user drags the object over a 
 ##### ev
 
 `DragEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event)
 
 #### Returns
 
@@ -1238,7 +1254,7 @@ The event.
 
 > **ondragstart**: (`this`, `ev`) => `any`
 
-Fires on the source object when the user starts to drag a text selection or selected object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event)
 
 #### Parameters
 
@@ -1249,10 +1265,6 @@ Fires on the source object when the user starts to drag a text selection or sele
 ##### ev
 
 `DragEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event)
 
 #### Returns
 
@@ -1294,7 +1306,7 @@ The event.
 
 > **ondurationchange**: (`this`, `ev`) => `any`
 
-Occurs when the duration attribute is updated.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/durationchange_event)
 
 #### Parameters
 
@@ -1305,10 +1317,6 @@ Occurs when the duration attribute is updated.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/durationchange_event)
 
 #### Returns
 
@@ -1324,7 +1332,7 @@ The event.
 
 > **onemptied**: (`this`, `ev`) => `any`
 
-Occurs when the media element is reset to its initial state.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/emptied_event)
 
 #### Parameters
 
@@ -1335,10 +1343,6 @@ Occurs when the media element is reset to its initial state.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/emptied_event)
 
 #### Returns
 
@@ -1354,7 +1358,7 @@ The event.
 
 > **onended**: (`this`, `ev`) => `any`
 
-Occurs when the end of playback is reached.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ended_event)
 
 #### Parameters
 
@@ -1365,10 +1369,6 @@ Occurs when the end of playback is reached.
 ##### ev
 
 `Event`
-
-The event
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ended_event)
 
 #### Returns
 
@@ -1384,12 +1384,6 @@ The event
 
 > **onerror**: `OnErrorEventHandlerNonNull`
 
-Fires when an error occurs during object loading.
-
-#### Param
-
-The event.
-
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/error_event)
 
 #### Inherited from
@@ -1402,7 +1396,7 @@ The event.
 
 > **onfocus**: (`this`, `ev`) => `any`
 
-Fires when the object receives focus.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/focus_event)
 
 #### Parameters
 
@@ -1413,10 +1407,6 @@ Fires when the object receives focus.
 ##### ev
 
 `FocusEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/focus_event)
 
 #### Returns
 
@@ -1614,7 +1604,7 @@ The event.
 
 > **onkeydown**: (`this`, `ev`) => `any`
 
-Fires when the user presses a key.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keydown_event)
 
 #### Parameters
 
@@ -1625,10 +1615,6 @@ Fires when the user presses a key.
 ##### ev
 
 `KeyboardEvent`
-
-The keyboard event
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keydown_event)
 
 #### Returns
 
@@ -1644,8 +1630,6 @@ The keyboard event
 
 > **onkeypress**: (`this`, `ev`) => `any`
 
-Fires when the user presses an alphanumeric key.
-
 #### Parameters
 
 ##### this
@@ -1655,8 +1639,6 @@ Fires when the user presses an alphanumeric key.
 ##### ev
 
 `KeyboardEvent`
-
-The event.
 
 #### Returns
 
@@ -1676,7 +1658,7 @@ The event.
 
 > **onkeyup**: (`this`, `ev`) => `any`
 
-Fires when the user releases a key.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keyup_event)
 
 #### Parameters
 
@@ -1687,10 +1669,6 @@ Fires when the user releases a key.
 ##### ev
 
 `KeyboardEvent`
-
-The keyboard event
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keyup_event)
 
 #### Returns
 
@@ -1732,7 +1710,7 @@ The keyboard event
 
 > **onload**: (`this`, `ev`) => `any`
 
-Fires immediately after the browser loads the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/load_event)
 
 #### Parameters
 
@@ -1743,10 +1721,6 @@ Fires immediately after the browser loads the object.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGElement/load_event)
 
 #### Returns
 
@@ -1762,7 +1736,7 @@ The event.
 
 > **onloadeddata**: (`this`, `ev`) => `any`
 
-Occurs when media data is loaded at the current playback position.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadeddata_event)
 
 #### Parameters
 
@@ -1773,10 +1747,6 @@ Occurs when media data is loaded at the current playback position.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadeddata_event)
 
 #### Returns
 
@@ -1792,7 +1762,7 @@ The event.
 
 > **onloadedmetadata**: (`this`, `ev`) => `any`
 
-Occurs when the duration and dimensions of the media have been determined.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadedmetadata_event)
 
 #### Parameters
 
@@ -1803,10 +1773,6 @@ Occurs when the duration and dimensions of the media have been determined.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadedmetadata_event)
 
 #### Returns
 
@@ -1822,7 +1788,7 @@ The event.
 
 > **onloadstart**: (`this`, `ev`) => `any`
 
-Occurs when Internet Explorer begins looking for media data.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadstart_event)
 
 #### Parameters
 
@@ -1833,10 +1799,6 @@ Occurs when Internet Explorer begins looking for media data.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadstart_event)
 
 #### Returns
 
@@ -1930,7 +1892,7 @@ The event.
 
 > **onmousedown**: (`this`, `ev`) => `any`
 
-Fires when the user clicks the object with either mouse button.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousedown_event)
 
 #### Parameters
 
@@ -1941,10 +1903,6 @@ Fires when the user clicks the object with either mouse button.
 ##### ev
 
 `MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousedown_event)
 
 #### Returns
 
@@ -2012,7 +1970,7 @@ The mouse event.
 
 > **onmousemove**: (`this`, `ev`) => `any`
 
-Fires when the user moves the mouse over the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousemove_event)
 
 #### Parameters
 
@@ -2023,10 +1981,6 @@ Fires when the user moves the mouse over the object.
 ##### ev
 
 `MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousemove_event)
 
 #### Returns
 
@@ -2042,7 +1996,7 @@ The mouse event.
 
 > **onmouseout**: (`this`, `ev`) => `any`
 
-Fires when the user moves the mouse pointer outside the boundaries of the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseout_event)
 
 #### Parameters
 
@@ -2053,10 +2007,6 @@ Fires when the user moves the mouse pointer outside the boundaries of the object
 ##### ev
 
 `MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseout_event)
 
 #### Returns
 
@@ -2072,7 +2022,7 @@ The mouse event.
 
 > **onmouseover**: (`this`, `ev`) => `any`
 
-Fires when the user moves the mouse pointer into the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseover_event)
 
 #### Parameters
 
@@ -2083,10 +2033,6 @@ Fires when the user moves the mouse pointer into the object.
 ##### ev
 
 `MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseover_event)
 
 #### Returns
 
@@ -2102,7 +2048,7 @@ The mouse event.
 
 > **onmouseup**: (`this`, `ev`) => `any`
 
-Fires when the user releases a mouse button while the mouse is over the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseup_event)
 
 #### Parameters
 
@@ -2113,10 +2059,6 @@ Fires when the user releases a mouse button while the mouse is over the object.
 ##### ev
 
 `MouseEvent`
-
-The mouse event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseup_event)
 
 #### Returns
 
@@ -2234,6 +2176,32 @@ The mouse event.
 
 ***
 
+### onpagereveal()
+
+> **onpagereveal**: (`this`, `ev`) => `any`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pagereveal_event)
+
+#### Parameters
+
+##### this
+
+`WindowEventHandlers`
+
+##### ev
+
+`PageRevealEvent`
+
+#### Returns
+
+`any`
+
+#### Inherited from
+
+`Window.onpagereveal`
+
+***
+
 ### onpageshow()
 
 > **onpageshow**: (`this`, `ev`) => `any`
@@ -2257,6 +2225,32 @@ The mouse event.
 #### Inherited from
 
 `Window.onpageshow`
+
+***
+
+### onpageswap()
+
+> **onpageswap**: (`this`, `ev`) => `any`
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pageswap_event)
+
+#### Parameters
+
+##### this
+
+`WindowEventHandlers`
+
+##### ev
+
+`PageSwapEvent`
+
+#### Returns
+
+`any`
+
+#### Inherited from
+
+`Window.onpageswap`
 
 ***
 
@@ -2290,7 +2284,7 @@ The mouse event.
 
 > **onpause**: (`this`, `ev`) => `any`
 
-Occurs when playback is paused.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause_event)
 
 #### Parameters
 
@@ -2301,10 +2295,6 @@ Occurs when playback is paused.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause_event)
 
 #### Returns
 
@@ -2320,7 +2310,7 @@ The event.
 
 > **onplay**: (`this`, `ev`) => `any`
 
-Occurs when the play method is requested.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play_event)
 
 #### Parameters
 
@@ -2331,10 +2321,6 @@ Occurs when the play method is requested.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play_event)
 
 #### Returns
 
@@ -2350,7 +2336,7 @@ The event.
 
 > **onplaying**: (`this`, `ev`) => `any`
 
-Occurs when the audio or video has started playing.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playing_event)
 
 #### Parameters
 
@@ -2361,10 +2347,6 @@ Occurs when the audio or video has started playing.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playing_event)
 
 #### Returns
 
@@ -2558,6 +2540,34 @@ The event.
 
 ***
 
+### onpointerrawupdate()
+
+> **onpointerrawupdate**: (`this`, `ev`) => `any`
+
+Available only in secure contexts.
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerrawupdate_event)
+
+#### Parameters
+
+##### this
+
+`GlobalEventHandlers`
+
+##### ev
+
+`Event`
+
+#### Returns
+
+`any`
+
+#### Inherited from
+
+`Window.onpointerrawupdate`
+
+***
+
 ### onpointerup()
 
 > **onpointerup**: (`this`, `ev`) => `any`
@@ -2614,7 +2624,7 @@ The event.
 
 > **onprogress**: (`this`, `ev`) => `any`
 
-Occurs to indicate progress while downloading media data.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/progress_event)
 
 #### Parameters
 
@@ -2625,10 +2635,6 @@ Occurs to indicate progress while downloading media data.
 ##### ev
 
 `ProgressEvent`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/progress_event)
 
 #### Returns
 
@@ -2644,7 +2650,7 @@ The event.
 
 > **onratechange**: (`this`, `ev`) => `any`
 
-Occurs when the playback rate is increased or decreased.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ratechange_event)
 
 #### Parameters
 
@@ -2655,10 +2661,6 @@ Occurs when the playback rate is increased or decreased.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ratechange_event)
 
 #### Returns
 
@@ -2700,7 +2702,7 @@ The event.
 
 > **onreset**: (`this`, `ev`) => `any`
 
-Fires when the user resets a form.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset_event)
 
 #### Parameters
 
@@ -2711,10 +2713,6 @@ Fires when the user resets a form.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset_event)
 
 #### Returns
 
@@ -2756,7 +2754,7 @@ The event.
 
 > **onscroll**: (`this`, `ev`) => `any`
 
-Fires when the user repositions the scroll box in the scroll bar on the object.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scroll_event)
 
 #### Parameters
 
@@ -2767,10 +2765,6 @@ Fires when the user repositions the scroll box in the scroll bar on the object.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scroll_event)
 
 #### Returns
 
@@ -2838,7 +2832,7 @@ The event.
 
 > **onseeked**: (`this`, `ev`) => `any`
 
-Occurs when the seek operation ends.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeked_event)
 
 #### Parameters
 
@@ -2849,10 +2843,6 @@ Occurs when the seek operation ends.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeked_event)
 
 #### Returns
 
@@ -2868,7 +2858,7 @@ The event.
 
 > **onseeking**: (`this`, `ev`) => `any`
 
-Occurs when the current playback position is moved.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeking_event)
 
 #### Parameters
 
@@ -2879,10 +2869,6 @@ Occurs when the current playback position is moved.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeking_event)
 
 #### Returns
 
@@ -2898,7 +2884,7 @@ The event.
 
 > **onselect**: (`this`, `ev`) => `any`
 
-Fires when the current selection changes.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select_event)
 
 #### Parameters
 
@@ -2909,10 +2895,6 @@ Fires when the current selection changes.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select_event)
 
 #### Returns
 
@@ -3006,7 +2988,7 @@ The event.
 
 > **onstalled**: (`this`, `ev`) => `any`
 
-Occurs when the download has stopped.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/stalled_event)
 
 #### Parameters
 
@@ -3017,10 +2999,6 @@ Occurs when the download has stopped.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/stalled_event)
 
 #### Returns
 
@@ -3088,7 +3066,7 @@ The event.
 
 > **onsuspend**: (`this`, `ev`) => `any`
 
-Occurs if the load operation has been intentionally halted.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/suspend_event)
 
 #### Parameters
 
@@ -3099,10 +3077,6 @@ Occurs if the load operation has been intentionally halted.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/suspend_event)
 
 #### Returns
 
@@ -3118,7 +3092,7 @@ The event.
 
 > **ontimeupdate**: (`this`, `ev`) => `any`
 
-Occurs to indicate the current playback position.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/timeupdate_event)
 
 #### Parameters
 
@@ -3129,10 +3103,6 @@ Occurs to indicate the current playback position.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/timeupdate_event)
 
 #### Returns
 
@@ -3148,7 +3118,7 @@ The event.
 
 > **ontoggle**: (`this`, `ev`) => `any`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/toggle_event)
 
 #### Parameters
 
@@ -3158,7 +3128,7 @@ The event.
 
 ##### ev
 
-`Event`
+`ToggleEvent`
 
 #### Returns
 
@@ -3436,7 +3406,7 @@ The event.
 
 > **onvolumechange**: (`this`, `ev`) => `any`
 
-Occurs when the volume is changed, or playback is muted or unmuted.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/volumechange_event)
 
 #### Parameters
 
@@ -3447,10 +3417,6 @@ Occurs when the volume is changed, or playback is muted or unmuted.
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/volumechange_event)
 
 #### Returns
 
@@ -3466,7 +3432,7 @@ The event.
 
 > **onwaiting**: (`this`, `ev`) => `any`
 
-Occurs when playback stops because the next frame of a video resource is not available.
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/waiting_event)
 
 #### Parameters
 
@@ -3477,10 +3443,6 @@ Occurs when playback stops because the next frame of a video resource is not ava
 ##### ev
 
 `Event`
-
-The event.
-
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/waiting_event)
 
 #### Returns
 
@@ -3642,6 +3604,8 @@ This is a legacy alias of `ontransitionend`.
 
 > **opener**: `any`
 
+The Window interface's **`opener`** property returns a reference to the window that opened the window, either with Window.open, or by navigating a link with a `target` attribute.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/opener)
 
 #### Inherited from
@@ -3653,6 +3617,8 @@ This is a legacy alias of `ontransitionend`.
 ### ~~orientation~~
 
 > `readonly` **orientation**: `number`
+
+Returns the orientation in degrees (in 90-degree increments) of the viewport relative to the device's natural orientation.
 
 #### Deprecated
 
@@ -3676,9 +3642,25 @@ This is a legacy alias of `ontransitionend`.
 
 ***
 
+### originAgentCluster
+
+> `readonly` **originAgentCluster**: `boolean`
+
+The **`originAgentCluster`** read-only property of the Window interface returns `true` if this window belongs to an _origin-keyed agent cluster_: this means that the operating system has provided dedicated resources (for example an operating system process) to this window's origin that are not shared with windows from other origins.
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/originAgentCluster)
+
+#### Inherited from
+
+`Window.originAgentCluster`
+
+***
+
 ### outerHeight
 
 > `readonly` **outerHeight**: `number`
+
+The **`Window.outerHeight`** read-only property returns the height in pixels of the whole browser window, including any sidebar, window chrome, and window-resizing borders/handles.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerHeight)
 
@@ -3692,6 +3674,8 @@ This is a legacy alias of `ontransitionend`.
 
 > `readonly` **outerWidth**: `number`
 
+**`Window.outerWidth`** read-only property returns the width of the outside of the browser window.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerWidth)
 
 #### Inherited from
@@ -3700,13 +3684,9 @@ This is a legacy alias of `ontransitionend`.
 
 ***
 
-### ~~pageXOffset~~
+### pageXOffset
 
 > `readonly` **pageXOffset**: `number`
-
-#### Deprecated
-
-This is a legacy alias of `scrollX`.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX)
 
@@ -3716,13 +3696,9 @@ This is a legacy alias of `scrollX`.
 
 ***
 
-### ~~pageYOffset~~
+### pageYOffset
 
 > `readonly` **pageYOffset**: `number`
-
-#### Deprecated
-
-This is a legacy alias of `scrollY`.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY)
 
@@ -3736,9 +3712,7 @@ This is a legacy alias of `scrollY`.
 
 > `readonly` **parent**: `Window`
 
-Refers to either the parent WindowProxy, or itself.
-
-It can rarely be null e.g. for contentWindow of an iframe that is already removed from the parent.
+The **`Window.parent`** property is a reference to the parent of the current window or subframe.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/parent)
 
@@ -3764,7 +3738,7 @@ It can rarely be null e.g. for contentWindow of an iframe that is already remove
 
 > `readonly` **personalbar**: `BarProp`
 
-Returns true if the personal bar is visible; otherwise, returns false.
+Returns the `personalbar` object.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/personalbar)
 
@@ -3778,6 +3752,8 @@ Returns true if the personal bar is visible; otherwise, returns false.
 
 > `readonly` **screen**: `Screen`
 
+The Window property **`screen`** returns a reference to the screen object associated with the window.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screen)
 
 #### Inherited from
@@ -3789,6 +3765,8 @@ Returns true if the personal bar is visible; otherwise, returns false.
 ### screenLeft
 
 > `readonly` **screenLeft**: `number`
+
+The **`Window.screenLeft`** read-only property returns the horizontal distance, in CSS pixels, from the left border of the user's browser viewport to the left side of the screen.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenLeft)
 
@@ -3802,6 +3780,8 @@ Returns true if the personal bar is visible; otherwise, returns false.
 
 > `readonly` **screenTop**: `number`
 
+The **`Window.screenTop`** read-only property returns the vertical distance, in CSS pixels, from the top border of the user's browser viewport to the top side of the screen.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenTop)
 
 #### Inherited from
@@ -3813,6 +3793,8 @@ Returns true if the personal bar is visible; otherwise, returns false.
 ### screenX
 
 > `readonly` **screenX**: `number`
+
+The **`Window.screenX`** read-only property returns the horizontal distance, in CSS pixels, of the left border of the user's browser viewport to the left side of the screen.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenX)
 
@@ -3826,6 +3808,8 @@ Returns true if the personal bar is visible; otherwise, returns false.
 
 > `readonly` **screenY**: `number`
 
+The **`Window.screenY`** read-only property returns the vertical distance, in CSS pixels, of the top border of the user's browser viewport to the top edge of the screen.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenY)
 
 #### Inherited from
@@ -3838,7 +3822,7 @@ Returns true if the personal bar is visible; otherwise, returns false.
 
 > `readonly` **scrollbars**: `BarProp`
 
-Returns true if the scrollbars are visible; otherwise, returns false.
+Returns the `scrollbars` object.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollbars)
 
@@ -3852,6 +3836,8 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 
 > `readonly` **scrollX**: `number`
 
+The read-only **`scrollX`** property of the Window interface returns the number of pixels by which the document is currently scrolled horizontally.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX)
 
 #### Inherited from
@@ -3864,6 +3850,8 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 
 > `readonly` **scrollY**: `number`
 
+The read-only **`scrollY`** property of the Window interface returns the number of pixels by which the document is currently scrolled vertically.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY)
 
 #### Inherited from
@@ -3875,6 +3863,8 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 ### self
 
 > `readonly` **self**: `Window` & *typeof* `globalThis`
+
+The **`Window.self`** read-only property returns the window itself, as a WindowProxy.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/self)
 
@@ -3900,6 +3890,8 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 
 > `readonly` **speechSynthesis**: `SpeechSynthesis`
 
+The `speechSynthesis` read-only property of the Window object returns a SpeechSynthesis object, which is the entry point into using Web Speech API speech synthesis functionality.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis)
 
 #### Inherited from
@@ -3911,6 +3903,8 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 ### ~~status~~
 
 > **status**: `string`
+
+The **`status`** property of the bar at the bottom of the browser window.
 
 #### Deprecated
 
@@ -3926,7 +3920,7 @@ Returns true if the scrollbars are visible; otherwise, returns false.
 
 > `readonly` **statusbar**: `BarProp`
 
-Returns true if the status bar is visible; otherwise, returns false.
+Returns the `statusbar` object.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/statusbar)
 
@@ -3940,7 +3934,7 @@ Returns true if the status bar is visible; otherwise, returns false.
 
 > `readonly` **toolbar**: `BarProp`
 
-Returns true if the toolbar is visible; otherwise, returns false.
+Returns the `toolbar` object.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/toolbar)
 
@@ -3954,6 +3948,8 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 > `readonly` **top**: `Window`
 
+Returns a reference to the topmost window in the window hierarchy.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/top)
 
 #### Inherited from
@@ -3966,6 +3962,8 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 > `readonly` **visualViewport**: `VisualViewport`
 
+The **`visualViewport`** read-only property of the Window interface returns a VisualViewport object representing the visual viewport for a given window, or `null` if current document is not fully active.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/visualViewport)
 
 #### Inherited from
@@ -3977,6 +3975,8 @@ Returns true if the toolbar is visible; otherwise, returns false.
 ### window
 
 > `readonly` **window**: `Window` & *typeof* `globalThis`
+
+The **`window`** property of a Window object points to the window object itself.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/window)
 
@@ -3992,6 +3992,8 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 > **get** **location**(): `Location`
 
+The **`Window.location`** read-only property returns a Location object with information about the current location of the document.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/location)
 
 ##### Returns
@@ -4006,7 +4008,7 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 ###### href
 
-`string` | `Location`
+`string`
 
 ##### Returns
 
@@ -4022,27 +4024,17 @@ Returns true if the toolbar is visible; otherwise, returns false.
 
 #### Call Signature
 
-> **addEventListener**\<`K`\>(`type`, `listener`, `options`?): `void`
+> **addEventListener**\<`K`\>(`type`, `listener`, `options?`): `void`
 
-Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-
-The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-
-When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-
-When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
-
-When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
-
-If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
-
-The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+The **`addEventListener()`** method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
 
 ##### Type Parameters
 
-• **K** *extends* keyof `WindowEventMap`
+###### K
+
+`K` *extends* keyof `WindowEventMap`
 
 ##### Parameters
 
@@ -4068,21 +4060,9 @@ The event listener is appended to target's event listener list and is not append
 
 #### Call Signature
 
-> **addEventListener**(`type`, `listener`, `options`?): `void`
+> **addEventListener**(`type`, `listener`, `options?`): `void`
 
-Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-
-The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-
-When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-
-When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
-
-When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
-
-If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
-
-The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+The **`addEventListener()`** method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
 
@@ -4112,7 +4092,9 @@ The event listener is appended to target's event listener list and is not append
 
 ### alert()
 
-> **alert**(`message`?): `void`
+> **alert**(`message?`): `void`
+
+`window.alert()` instructs the browser to display a dialog with an optional message, and to wait until the user dismisses the dialog.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/alert)
 
@@ -4157,6 +4139,8 @@ The event listener is appended to target's event listener list and is not append
 ### ~~blur()~~
 
 > **blur**(): `void`
+
+The **`Window.blur()`** method does nothing.
 
 #### Returns
 
@@ -4220,6 +4204,8 @@ The event listener is appended to target's event listener list and is not append
 
 > **cancelIdleCallback**(`handle`): `void`
 
+The **`window.cancelIdleCallback()`** method cancels a callback previously scheduled with window.requestIdleCallback().
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback)
 
 #### Parameters
@@ -4242,6 +4228,8 @@ The event listener is appended to target's event listener list and is not append
 
 > **captureEvents**(): `void`
 
+The **`Window.captureEvents()`** method does nothing.
+
 #### Returns
 
 `void`
@@ -4260,7 +4248,7 @@ The event listener is appended to target's event listener list and is not append
 
 > **clearInterval**(`id`): `void`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/clearInterval)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/clearInterval)
 
 #### Parameters
 
@@ -4282,7 +4270,7 @@ The event listener is appended to target's event listener list and is not append
 
 > **clearTimeout**(`id`): `void`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/clearTimeout)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/clearTimeout)
 
 #### Parameters
 
@@ -4304,7 +4292,7 @@ The event listener is appended to target's event listener list and is not append
 
 > **close**(): `void`
 
-Closes the window.
+The **`Window.close()`** method closes the current window, or the window on which it was called.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/close)
 
@@ -4320,7 +4308,9 @@ Closes the window.
 
 ### confirm()
 
-> **confirm**(`message`?): `boolean`
+> **confirm**(`message?`): `boolean`
+
+`window.confirm()` instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels the dialog.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/confirm)
 
@@ -4344,9 +4334,9 @@ Closes the window.
 
 #### Call Signature
 
-> **createImageBitmap**(`image`, `options`?): `Promise`\<`ImageBitmap`\>
+> **createImageBitmap**(`image`, `options?`): `Promise`\<`ImageBitmap`\>
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/createImageBitmap)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/createImageBitmap)
 
 ##### Parameters
 
@@ -4368,7 +4358,7 @@ Closes the window.
 
 #### Call Signature
 
-> **createImageBitmap**(`image`, `sx`, `sy`, `sw`, `sh`, `options`?): `Promise`\<`ImageBitmap`\>
+> **createImageBitmap**(`image`, `sx`, `sy`, `sw`, `sh`, `options?`): `Promise`\<`ImageBitmap`\>
 
 ##### Parameters
 
@@ -4410,7 +4400,7 @@ Closes the window.
 
 > **dispatchEvent**(`event`): `boolean`
 
-Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+The **`dispatchEvent()`** method of the EventTarget sends an Event to the object, (synchronously) invoking the affected event listeners in the appropriate order.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
 
@@ -4432,7 +4422,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 ### fetch()
 
-> **fetch**(`input`, `init`?): `Promise`\<`Response`\>
+> **fetch**(`input`, `init?`): `Promise`\<`Response`\>
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/fetch)
 
@@ -4460,7 +4450,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 > **focus**(): `void`
 
-Moves the focus to the window's browsing context, if any.
+Makes a request to bring the window to the front.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/focus)
 
@@ -4476,7 +4466,9 @@ Moves the focus to the window's browsing context, if any.
 
 ### getComputedStyle()
 
-> **getComputedStyle**(`elt`, `pseudoElt`?): `CSSStyleDeclaration`
+> **getComputedStyle**(`elt`, `pseudoElt?`): `CSSStyleDeclaration`
+
+The **`Window.getComputedStyle()`** method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle)
 
@@ -4504,6 +4496,8 @@ Moves the focus to the window's browsing context, if any.
 
 > **getSelection**(): `Selection`
 
+The **`getSelection()`** method of the Window interface returns the Selection object associated with the window's document, representing the range of text selected by the user or the current position of the caret.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getSelection)
 
 #### Returns
@@ -4519,6 +4513,8 @@ Moves the focus to the window's browsing context, if any.
 ### matchMedia()
 
 > **matchMedia**(`query`): `MediaQueryList`
+
+The Window interface's **`matchMedia()`** method returns a new MediaQueryList object that can then be used to determine if the document matches the media query string, as well as to monitor the document to detect when it matches (or stops matching) that media query.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/matchMedia)
 
@@ -4541,6 +4537,8 @@ Moves the focus to the window's browsing context, if any.
 ### moveBy()
 
 > **moveBy**(`x`, `y`): `void`
+
+The **`moveBy()`** method of the Window interface moves the current window by a specified amount.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveBy)
 
@@ -4568,6 +4566,8 @@ Moves the focus to the window's browsing context, if any.
 
 > **moveTo**(`x`, `y`): `void`
 
+The **`moveTo()`** method of the Window interface moves the current window to the specified coordinates.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveTo)
 
 #### Parameters
@@ -4592,7 +4592,9 @@ Moves the focus to the window's browsing context, if any.
 
 ### open()
 
-> **open**(`url`?, `target`?, `features`?): `Window`
+> **open**(`url?`, `target?`, `features?`): `Window`
+
+The **`open()`** method of the `Window` interface loads a specified resource into a new or existing browsing context (that is, a tab, a window, or an iframe) under a specified name.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/open)
 
@@ -4624,17 +4626,9 @@ Moves the focus to the window's browsing context, if any.
 
 #### Call Signature
 
-> **postMessage**(`message`, `targetOrigin`, `transfer`?): `void`
+> **postMessage**(`message`, `targetOrigin`, `transfer?`): `void`
 
-Posts a message to the given window. Messages can be structured objects, e.g. nested objects and arrays, can contain JavaScript values (strings, numbers, Date objects, etc), and can contain certain data objects such as File Blob, FileList, and ArrayBuffer objects.
-
-Objects listed in the transfer member of options are transferred, not just cloned, meaning that they are no longer usable on the sending side.
-
-A target origin can be specified using the targetOrigin member of options. If not provided, it defaults to "/". This default restricts the message to same-origin targets only.
-
-If the origin of the target window doesn't match the given target origin, the message is discarded, to avoid information leakage. To send the message to the target regardless of origin, set the target origin to "*".
-
-Throws a "DataCloneError" DOMException if transfer array contains duplicate objects or if message could not be cloned.
+The **`window.postMessage()`** method safely enables cross-origin communication between Window objects; _e.g.,_ between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/postMessage)
 
@@ -4662,7 +4656,7 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 #### Call Signature
 
-> **postMessage**(`message`, `options`?): `void`
+> **postMessage**(`message`, `options?`): `void`
 
 ##### Parameters
 
@@ -4688,6 +4682,8 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 > **print**(): `void`
 
+Opens the print dialog to print the current document.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/print)
 
 #### Returns
@@ -4702,7 +4698,9 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 ### prompt()
 
-> **prompt**(`message`?, `_default`?): `string`
+> **prompt**(`message?`, `_default?`): `string`
+
+`window.prompt()` instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/prompt)
 
@@ -4730,7 +4728,7 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 > **queueMicrotask**(`callback`): `void`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/queueMicrotask)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/queueMicrotask)
 
 #### Parameters
 
@@ -4752,6 +4750,8 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 > **releaseEvents**(): `void`
 
+Releases the window from trapping events of a specific type.
+
 #### Returns
 
 `void`
@@ -4770,15 +4770,17 @@ Throws a "DataCloneError" DOMException if transfer array contains duplicate obje
 
 #### Call Signature
 
-> **removeEventListener**\<`K`\>(`type`, `listener`, `options`?): `void`
+> **removeEventListener**\<`K`\>(`type`, `listener`, `options?`): `void`
 
-Removes the event listener in target's event listener list with the same type, callback, and options.
+The **`removeEventListener()`** method of the EventTarget interface removes an event listener previously registered with EventTarget.addEventListener() from the target.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
 
 ##### Type Parameters
 
-• **K** *extends* keyof `WindowEventMap`
+###### K
+
+`K` *extends* keyof `WindowEventMap`
 
 ##### Parameters
 
@@ -4804,9 +4806,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 #### Call Signature
 
-> **removeEventListener**(`type`, `listener`, `options`?): `void`
+> **removeEventListener**(`type`, `listener`, `options?`): `void`
 
-Removes the event listener in target's event listener list with the same type, callback, and options.
+The **`removeEventListener()`** method of the EventTarget interface removes an event listener previously registered with EventTarget.addEventListener() from the target.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
 
@@ -4838,7 +4840,7 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **reportError**(`e`): `void`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/reportError)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/reportError)
 
 #### Parameters
 
@@ -4880,7 +4882,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 ### requestIdleCallback()
 
-> **requestIdleCallback**(`callback`, `options`?): `number`
+> **requestIdleCallback**(`callback`, `options?`): `number`
+
+The **`window.requestIdleCallback()`** method queues a function to be called during a browser's idle periods.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback)
 
@@ -4908,6 +4912,8 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **resizeBy**(`x`, `y`): `void`
 
+The **`Window.resizeBy()`** method resizes the current window by a specified amount.
+
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeBy)
 
 #### Parameters
@@ -4933,6 +4939,8 @@ Removes the event listener in target's event listener list with the same type, c
 ### resizeTo()
 
 > **resizeTo**(`width`, `height`): `void`
+
+The **`Window.resizeTo()`** method dynamically resizes the window.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeTo)
 
@@ -4960,7 +4968,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 #### Call Signature
 
-> **scroll**(`options`?): `void`
+> **scroll**(`options?`): `void`
+
+The **`Window.scroll()`** method scrolls the window to a particular place in the document.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scroll)
 
@@ -5006,7 +5016,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 #### Call Signature
 
-> **scrollBy**(`options`?): `void`
+> **scrollBy**(`options?`): `void`
+
+The **`Window.scrollBy()`** method scrolls the document in the window by the given amount.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollBy)
 
@@ -5052,7 +5064,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 #### Call Signature
 
-> **scrollTo**(`options`?): `void`
+> **scrollTo**(`options?`): `void`
+
+**`Window.scrollTo()`** scrolls to a particular set of coordinates in the document.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollTo)
 
@@ -5096,9 +5110,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 ### setInterval()
 
-> **setInterval**(`handler`, `timeout`?, ...`arguments`?): `number`
+> **setInterval**(`handler`, `timeout?`, ...`arguments?`): `number`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/setInterval)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/setInterval)
 
 #### Parameters
 
@@ -5126,9 +5140,9 @@ Removes the event listener in target's event listener list with the same type, c
 
 ### setTimeout()
 
-> **setTimeout**(`handler`, `timeout`?, ...`arguments`?): `number`
+> **setTimeout**(`handler`, `timeout?`, ...`arguments?`): `number`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/setTimeout)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/setTimeout)
 
 #### Parameters
 
@@ -5158,7 +5172,7 @@ Removes the event listener in target's event listener list with the same type, c
 
 > **stop**(): `void`
 
-Cancels the document load.
+The **`window.stop()`** stops further resource loading in the current browsing context, equivalent to the stop button in the browser.
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/stop)
 
@@ -5174,13 +5188,15 @@ Cancels the document load.
 
 ### structuredClone()
 
-> **structuredClone**\<`T`\>(`value`, `options`?): `T`
+> **structuredClone**\<`T`\>(`value`, `options?`): `T`
 
-[MDN Reference](https://developer.mozilla.org/docs/Web/API/structuredClone)
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/structuredClone)
 
 #### Type Parameters
 
-• **T** = `any`
+##### T
+
+`T` = `any`
 
 #### Parameters
 

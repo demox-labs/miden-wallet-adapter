@@ -14,23 +14,19 @@
     "doc": "typedoc --disableSources --plugin typedoc-plugin-markdown"
   },
   "dependencies": {
-    "@demox-labs/miden-wallet-adapter-base": "^0.3.0",
-    "@demox-labs/miden-wallet-adapter-react": "^0.3.0"
+    "@demox-labs/miden-wallet-adapter-base": "workspace:^",
+    "@demox-labs/miden-wallet-adapter-react": "workspace:^"
   },
   "devDependencies": {
-    "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "copyfiles": "^2.4.1",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "rimraf": "^6.0.1",
-    "typedoc": "^0.27.6",
-    "typedoc-plugin-markdown": "^4.4.1",
-    "typescript": "^5.7.2"
-  },
-  "peerDependencies": {
-    "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "peerDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
 }

@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-react](../globals.md) / WalletProviderProps
+[@demox-labs/miden-wallet-adapter-react](../README.md) / WalletProviderProps
 
 # Interface: WalletProviderProps
 

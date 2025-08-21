@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-react](../globals.md) / WalletContextState
+[@demox-labs/miden-wallet-adapter-react](../README.md) / WalletContextState
 
 # Interface: WalletContextState
 
@@ -84,7 +84,7 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
+> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
 
 #### Parameters
 

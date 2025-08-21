@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / ConsumeTransaction
+[@demox-labs/miden-wallet-adapter-base](../README.md) / ConsumeTransaction
 
 # Class: ConsumeTransaction
 
@@ -12,9 +12,9 @@
 
 ## Constructors
 
-### new ConsumeTransaction()
+### Constructor
 
-> **new ConsumeTransaction**(`faucetId`, `noteId`, `noteType`, `amount`, `noteBytes`?): [`ConsumeTransaction`](ConsumeTransaction.md)
+> **new ConsumeTransaction**(`faucetId`, `noteId`, `noteType`, `amount`, `noteBytes?`): `ConsumeTransaction`
 
 #### Parameters
 
@@ -40,7 +40,7 @@
 
 #### Returns
 
-[`ConsumeTransaction`](ConsumeTransaction.md)
+`ConsumeTransaction`
 
 ## Properties
 

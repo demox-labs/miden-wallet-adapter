@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / Transaction
+[@demox-labs/miden-wallet-adapter-base](../README.md) / Transaction
 
 # Class: Transaction
 
@@ -12,9 +12,9 @@
 
 ## Constructors
 
-### new Transaction()
+### Constructor
 
-> **new Transaction**(`type`, `payload`): [`Transaction`](Transaction.md)
+> **new Transaction**(`type`, `payload`): `Transaction`
 
 #### Parameters
 
@@ -28,7 +28,7 @@
 
 #### Returns
 
-[`Transaction`](Transaction.md)
+`Transaction`
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 ### createConsumeTransaction()
 
-> `static` **createConsumeTransaction**(`faucetId`, `noteId`, `noteType`, `amount`, `noteBytes`?): [`Transaction`](Transaction.md)
+> `static` **createConsumeTransaction**(`faucetId`, `noteId`, `noteType`, `amount`, `noteBytes?`): `Transaction`
 
 #### Parameters
 
@@ -80,13 +80,13 @@
 
 #### Returns
 
-[`Transaction`](Transaction.md)
+`Transaction`
 
 ***
 
 ### createCustomTransaction()
 
-> `static` **createCustomTransaction**(`accountId`, `transactionRequest`, `inputNoteIds`?, `noteBytes`?): [`Transaction`](Transaction.md)
+> `static` **createCustomTransaction**(`accountId`, `transactionRequest`, `inputNoteIds?`, `noteBytes?`): `Transaction`
 
 #### Parameters
 
@@ -104,17 +104,17 @@
 
 ##### noteBytes?
 
-`Uint8Array`[]
+`Uint8Array`\<`ArrayBufferLike`\>[]
 
 #### Returns
 
-[`Transaction`](Transaction.md)
+`Transaction`
 
 ***
 
 ### createSendTransaction()
 
-> `static` **createSendTransaction**(`sender`, `recipient`, `faucetId`, `noteType`, `amount`, `recallBlocks`?): [`Transaction`](Transaction.md)
+> `static` **createSendTransaction**(`sender`, `recipient`, `faucetId`, `noteType`, `amount`, `recallBlocks?`): `Transaction`
 
 #### Parameters
 
@@ -144,4 +144,4 @@
 
 #### Returns
 
-[`Transaction`](Transaction.md)
+`Transaction`

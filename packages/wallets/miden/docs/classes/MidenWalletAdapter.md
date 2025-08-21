@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-miden](../globals.md) / MidenWalletAdapter
+[@demox-labs/miden-wallet-adapter-miden](../README.md) / MidenWalletAdapter
 
 # Class: MidenWalletAdapter
 
@@ -12,9 +12,9 @@
 
 ## Constructors
 
-### new MidenWalletAdapter()
+### Constructor
 
-> **new MidenWalletAdapter**(`__namedParameters`): [`MidenWalletAdapter`](MidenWalletAdapter.md)
+> **new MidenWalletAdapter**(`__namedParameters`): `MidenWalletAdapter`
 
 #### Parameters
 
@@ -24,7 +24,7 @@
 
 #### Returns
 
-[`MidenWalletAdapter`](MidenWalletAdapter.md)
+`MidenWalletAdapter`
 
 #### Overrides
 
@@ -174,11 +174,13 @@
 
 ### addListener()
 
-> **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **addListener**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 
@@ -206,7 +208,7 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
+> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
 
 #### Parameters
 
@@ -254,7 +256,9 @@ Calls each of the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 
@@ -323,7 +327,9 @@ Return the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 
@@ -343,11 +349,13 @@ Return the listeners registered for a given event.
 
 ### off()
 
-> **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **off**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 
@@ -379,13 +387,15 @@ Return the listeners registered for a given event.
 
 ### on()
 
-> **on**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **on**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 
@@ -413,13 +423,15 @@ Add a listener for a given event.
 
 ### once()
 
-> **once**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **once**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a one-time listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 
@@ -447,7 +459,7 @@ Add a one-time listener for a given event.
 
 ### removeAllListeners()
 
-> **removeAllListeners**(`event`?): `this`
+> **removeAllListeners**(`event?`): `this`
 
 Remove all listeners, or those of the specified event.
 
@@ -469,13 +481,15 @@ keyof `WalletAdapterEvents`
 
 ### removeListener()
 
-> **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **removeListener**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 Remove the listeners of a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof `WalletAdapterEvents`
+##### T
+
+`T` *extends* keyof `WalletAdapterEvents`
 
 #### Parameters
 

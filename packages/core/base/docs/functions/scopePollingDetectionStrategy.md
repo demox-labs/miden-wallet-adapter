@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / scopePollingDetectionStrategy
+[@demox-labs/miden-wallet-adapter-base](../README.md) / scopePollingDetectionStrategy
 
 # Function: scopePollingDetectionStrategy()
 

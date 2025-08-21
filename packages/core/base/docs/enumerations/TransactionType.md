@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / TransactionType
+[@demox-labs/miden-wallet-adapter-base](../README.md) / TransactionType
 
 # Enumeration: TransactionType
 

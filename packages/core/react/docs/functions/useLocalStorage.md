@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-react](../globals.md) / useLocalStorage
+[@demox-labs/miden-wallet-adapter-react](../README.md) / useLocalStorage
 
 # Function: useLocalStorage()
 
@@ -10,7 +10,9 @@
 
 ## Type Parameters
 
-• **T**
+### T
+
+`T`
 
 ## Parameters
 

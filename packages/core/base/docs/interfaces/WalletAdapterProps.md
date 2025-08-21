@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletAdapterProps
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletAdapterProps
 
 # Interface: WalletAdapterProps\<Name\>
 
@@ -13,7 +13,9 @@
 
 ## Type Parameters
 
-• **Name** *extends* `string` = `string`
+### Name
+
+`Name` *extends* `string` = `string`
 
 ## Properties
 
@@ -55,7 +57,7 @@
 
 ### supportedTransactionVersions
 
-> **supportedTransactionVersions**: `ReadonlySet`\<`any`\>
+> **supportedTransactionVersions**: `ReadonlySet`
 
 ***
 
@@ -67,7 +69,7 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
+> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
 
 #### Parameters
 

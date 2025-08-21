@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-react](../globals.md) / useWallet
+[@demox-labs/miden-wallet-adapter-react](../README.md) / useWallet
 
 # Function: useWallet()
 

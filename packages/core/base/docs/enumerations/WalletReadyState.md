@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletReadyState
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletReadyState
 
 # Enumeration: WalletReadyState
 

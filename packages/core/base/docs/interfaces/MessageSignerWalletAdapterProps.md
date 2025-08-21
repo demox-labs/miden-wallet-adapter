@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / MessageSignerWalletAdapterProps
+[@demox-labs/miden-wallet-adapter-base](../README.md) / MessageSignerWalletAdapterProps
 
 # Interface: MessageSignerWalletAdapterProps\<Name\>
 
@@ -12,7 +12,9 @@
 
 ## Type Parameters
 
-• **Name** *extends* `string` = `string`
+### Name
+
+`Name` *extends* `string` = `string`
 
 ## Properties
 
@@ -62,7 +64,7 @@
 
 #### Inherited from
 
-[`WalletAdapterProps`](WalletAdapterProps.md).[`name`](WalletAdapterProps.md#name)
+[`WalletAdapterProps`](WalletAdapterProps.md).[`name`](WalletAdapterProps.md#name-1)
 
 ***
 
@@ -78,7 +80,7 @@
 
 ### supportedTransactionVersions
 
-> **supportedTransactionVersions**: `ReadonlySet`\<`any`\>
+> **supportedTransactionVersions**: `ReadonlySet`
 
 #### Inherited from
 
@@ -98,7 +100,7 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
+> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
 
 #### Parameters
 

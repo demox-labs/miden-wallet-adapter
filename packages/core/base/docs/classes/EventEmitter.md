@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / EventEmitter
+[@demox-labs/miden-wallet-adapter-base](../README.md) / EventEmitter
 
 # Class: EventEmitter\<EventTypes, Context\>
 
@@ -15,19 +15,23 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ## Type Parameters
 
-• **EventTypes** *extends* [`ValidEventTypes`](../namespaces/EventEmitter/type-aliases/ValidEventTypes.md) = `string` \| `symbol`
+### EventTypes
 
-• **Context** *extends* `any` = `any`
+`EventTypes` *extends* [`ValidEventTypes`](../@demox-labs/namespaces/EventEmitter/type-aliases/ValidEventTypes.md) = `string` \| `symbol`
+
+### Context
+
+`Context` *extends* `any` = `any`
 
 ## Constructors
 
-### new EventEmitter()
+### Constructor
 
-> **new EventEmitter**\<`EventTypes`, `Context`\>(): [`EventEmitter`](EventEmitter.md)\<`EventTypes`, `Context`\>
+> **new EventEmitter**\<`EventTypes`, `Context`\>(): `EventEmitter`\<`EventTypes`, `Context`\>
 
 #### Returns
 
-[`EventEmitter`](EventEmitter.md)\<`EventTypes`, `Context`\>
+`EventEmitter`\<`EventTypes`, `Context`\>
 
 ## Properties
 
@@ -39,11 +43,13 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ### addListener()
 
-> **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **addListener**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -53,7 +59,7 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ##### fn
 
-[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
+[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
 
 ##### context?
 
@@ -73,7 +79,9 @@ Calls each of the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -83,7 +91,7 @@ Calls each of the listeners registered for a given event.
 
 ##### args
 
-...`Parameters`\<[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>\>
+...`Parameters`\<[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>\>
 
 #### Returns
 
@@ -93,14 +101,14 @@ Calls each of the listeners registered for a given event.
 
 ### eventNames()
 
-> **eventNames**(): [`EventNames`](../namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>[]
+> **eventNames**(): [`EventNames`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>[]
 
 Return an array listing the events for which the emitter has registered
 listeners.
 
 #### Returns
 
-[`EventNames`](../namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>[]
+[`EventNames`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>[]
 
 ***
 
@@ -114,7 +122,7 @@ Return the number of listeners listening to a given event.
 
 ##### event
 
-[`EventNames`](../namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>
+[`EventNames`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>
 
 #### Returns
 
@@ -124,13 +132,15 @@ Return the number of listeners listening to a given event.
 
 ### listeners()
 
-> **listeners**\<`T`\>(`event`): [`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>[]
+> **listeners**\<`T`\>(`event`): [`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>[]
 
 Return the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -140,17 +150,19 @@ Return the listeners registered for a given event.
 
 #### Returns
 
-[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>[]
+[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>[]
 
 ***
 
 ### off()
 
-> **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **off**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -160,7 +172,7 @@ Return the listeners registered for a given event.
 
 ##### fn?
 
-[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
+[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
 
 ##### context?
 
@@ -178,13 +190,15 @@ Return the listeners registered for a given event.
 
 ### on()
 
-> **on**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **on**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -194,7 +208,7 @@ Add a listener for a given event.
 
 ##### fn
 
-[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
+[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
 
 ##### context?
 
@@ -208,13 +222,15 @@ Add a listener for a given event.
 
 ### once()
 
-> **once**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **once**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a one-time listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -224,7 +240,7 @@ Add a one-time listener for a given event.
 
 ##### fn
 
-[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
+[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
 
 ##### context?
 
@@ -238,7 +254,7 @@ Add a one-time listener for a given event.
 
 ### removeAllListeners()
 
-> **removeAllListeners**(`event`?): `this`
+> **removeAllListeners**(`event?`): `this`
 
 Remove all listeners, or those of the specified event.
 
@@ -246,7 +262,7 @@ Remove all listeners, or those of the specified event.
 
 ##### event?
 
-[`EventNames`](../namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>
+[`EventNames`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventNames.md)\<`EventTypes`\>
 
 #### Returns
 
@@ -256,13 +272,15 @@ Remove all listeners, or those of the specified event.
 
 ### removeListener()
 
-> **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **removeListener**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 Remove the listeners of a given event.
 
 #### Type Parameters
 
-• **T** *extends* `string` \| `symbol`
+##### T
+
+`T` *extends* `string` \| `symbol`
 
 #### Parameters
 
@@ -272,7 +290,7 @@ Remove the listeners of a given event.
 
 ##### fn?
 
-[`EventListener`](../namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
+[`EventListener`](../@demox-labs/namespaces/EventEmitter/type-aliases/EventListener.md)\<`EventTypes`, `T`\>
 
 ##### context?
 

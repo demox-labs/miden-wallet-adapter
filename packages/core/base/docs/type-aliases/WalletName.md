@@ -2,11 +2,11 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletName
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletName
 
 # Type Alias: WalletName\<T\>
 
-> **WalletName**\<`T`\>: `T` & `object`
+> **WalletName**\<`T`\> = `T` & `object`
 
 ## Type declaration
 
@@ -16,4 +16,6 @@
 
 ## Type Parameters
 
-• **T** *extends* `string` = `string`
+### T
+
+`T` *extends* `string` = `string`

@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-miden](../globals.md) / MidenWallet
+[@demox-labs/miden-wallet-adapter-miden](../README.md) / MidenWallet
 
 # Interface: MidenWallet
 
@@ -20,11 +20,13 @@
 
 ### addListener()
 
-> **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **addListener**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -52,7 +54,7 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
+> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
 
 #### Parameters
 
@@ -92,7 +94,9 @@ Calls each of the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -161,7 +165,9 @@ Return the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -181,11 +187,13 @@ Return the listeners registered for a given event.
 
 ### off()
 
-> **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **off**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -217,13 +225,15 @@ Return the listeners registered for a given event.
 
 ### on()
 
-> **on**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **on**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -251,13 +261,15 @@ Add a listener for a given event.
 
 ### once()
 
-> **once**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **once**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a one-time listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -285,7 +297,7 @@ Add a one-time listener for a given event.
 
 ### removeAllListeners()
 
-> **removeAllListeners**(`event`?): `this`
+> **removeAllListeners**(`event?`): `this`
 
 Remove all listeners, or those of the specified event.
 
@@ -307,13 +319,15 @@ keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 ### removeListener()
 
-> **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **removeListener**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 Remove the listeners of a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
+##### T
+
+`T` *extends* keyof [`MidenWalletEvents`](MidenWalletEvents.md)
 
 #### Parameters
 
@@ -345,7 +359,7 @@ Remove the listeners of a given event.
 
 ### requestConsume()
 
-> **requestConsume**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
+> **requestConsume**(`transaction`): `Promise`\<\{ `transactionId?`: `string`; \}\>
 
 #### Parameters
 
@@ -355,7 +369,7 @@ Remove the listeners of a given event.
 
 #### Returns
 
-`Promise`\<\{ `transactionId`: `string`; \}\>
+`Promise`\<\{ `transactionId?`: `string`; \}\>
 
 ***
 
@@ -371,7 +385,7 @@ Remove the listeners of a given event.
 
 ### requestSend()
 
-> **requestSend**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
+> **requestSend**(`transaction`): `Promise`\<\{ `transactionId?`: `string`; \}\>
 
 #### Parameters
 
@@ -381,13 +395,13 @@ Remove the listeners of a given event.
 
 #### Returns
 
-`Promise`\<\{ `transactionId`: `string`; \}\>
+`Promise`\<\{ `transactionId?`: `string`; \}\>
 
 ***
 
 ### requestTransaction()
 
-> **requestTransaction**(`transaction`): `Promise`\<\{ `transactionId`: `string`; \}\>
+> **requestTransaction**(`transaction`): `Promise`\<\{ `transactionId?`: `string`; \}\>
 
 #### Parameters
 
@@ -397,4 +411,4 @@ Remove the listeners of a given event.
 
 #### Returns
 
-`Promise`\<\{ `transactionId`: `string`; \}\>
+`Promise`\<\{ `transactionId?`: `string`; \}\>

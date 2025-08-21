@@ -1,0 +1,35 @@
+{
+  "name": "miden-wallet-adapter",
+  "private": true,
+  "workspaces": [
+    "packages/core/base",
+    "packages/core/react",
+    "packages/ui",
+    "packages/wallets/miden",
+    "packages/all"
+  ],
+  "packageManager": "yarn@4.9.3",
+  "scripts": {
+    "build": "yarn workspaces foreach --all --topological-dev run build",
+    "build:all": "yarn workspaces foreach --all --parallel run build",
+    "clean": "yarn workspaces foreach --all run clean",
+    "clean:all": "yarn workspaces foreach --all run clean && rimraf node_modules",
+    "doc": "yarn workspaces foreach --all run doc",
+    "lint": "yarn workspaces foreach --all run lint",
+    "typecheck": "yarn workspaces foreach --all run typecheck",
+    "install:all": "yarn install",
+    "reset": "yarn clean:all && yarn install",
+    "publish:dry": "node util/publish.js --dry-run",
+    "publish": "node util/publish.js"
+  },
+  "devDependencies": {
+    "@demox-labs/miden-sdk": "^0.10.1",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "rimraf": "^6.0.1",
+    "typedoc": "^0.28.0",
+    "typedoc-plugin-markdown": "^4.4.1",
+    "typescript": "^5.7.2"
+  }
+}

@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletAdapterEvents
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletAdapterEvents
 
 # Interface: WalletAdapterEvents
 
@@ -10,7 +10,7 @@
 
 ### connect()
 
-> **connect**(`accountId`, `programs`?): `void`
+> **connect**(`accountId`, `programs?`): `void`
 
 #### Parameters
 

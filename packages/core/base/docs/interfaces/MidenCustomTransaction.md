@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / MidenCustomTransaction
+[@demox-labs/miden-wallet-adapter-base](../README.md) / MidenCustomTransaction
 
 # Interface: MidenCustomTransaction
 

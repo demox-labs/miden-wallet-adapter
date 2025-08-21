@@ -2,9 +2,9 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / BaseMessageSignerWalletAdapter
+[@demox-labs/miden-wallet-adapter-base](../README.md) / BaseMessageSignerWalletAdapter
 
-# Class: `abstract` BaseMessageSignerWalletAdapter\<Name\>
+# Abstract Class: BaseMessageSignerWalletAdapter\<Name\>
 
 Minimal `EventEmitter` interface that is molded against the Node.js
 `EventEmitter` interface.
@@ -15,7 +15,9 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ## Type Parameters
 
-• **Name** *extends* `string` = `string`
+### Name
+
+`Name` *extends* `string` = `string`
 
 ## Implements
 
@@ -23,17 +25,17 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ## Constructors
 
-### new BaseMessageSignerWalletAdapter()
+### Constructor
 
-> **new BaseMessageSignerWalletAdapter**\<`Name`\>(): [`BaseMessageSignerWalletAdapter`](BaseMessageSignerWalletAdapter.md)\<`Name`\>
+> **new BaseMessageSignerWalletAdapter**\<`Name`\>(): `BaseMessageSignerWalletAdapter`\<`Name`\>
 
 #### Returns
 
-[`BaseMessageSignerWalletAdapter`](BaseMessageSignerWalletAdapter.md)\<`Name`\>
+`BaseMessageSignerWalletAdapter`\<`Name`\>
 
 #### Inherited from
 
-[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`constructor`](BaseSignerWalletAdapter.md#constructors)
+[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`constructor`](BaseSignerWalletAdapter.md#constructor)
 
 ## Properties
 
@@ -89,7 +91,7 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 #### Inherited from
 
-[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`name`](BaseSignerWalletAdapter.md#name)
+[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`name`](BaseSignerWalletAdapter.md#name-1)
 
 ***
 
@@ -109,7 +111,7 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ### supportedTransactionVersions
 
-> `abstract` **supportedTransactionVersions**: `ReadonlySet`\<`any`\>
+> `abstract` **supportedTransactionVersions**: `ReadonlySet`
 
 #### Implementation of
 
@@ -167,11 +169,13 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ### addListener()
 
-> **addListener**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **addListener**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 
@@ -203,7 +207,7 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ### connect()
 
-> `abstract` **connect**(`decryptPermission`, `network`, `programs`?): `Promise`\<`void`\>
+> `abstract` **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
 
 #### Parameters
 
@@ -259,7 +263,9 @@ Calls each of the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 
@@ -269,7 +275,7 @@ Calls each of the listeners registered for a given event.
 
 ##### args
 
-...[`ArgumentMap`](../namespaces/EventEmitter/type-aliases/ArgumentMap.md)\<[`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)\>\[`Extract`\<`T`, keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)\>\]
+...[`ArgumentMap`](../@demox-labs/namespaces/EventEmitter/type-aliases/ArgumentMap.md)\<[`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)\>\[`Extract`\<`T`, keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)\>\]
 
 #### Returns
 
@@ -340,7 +346,9 @@ Return the listeners registered for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 
@@ -364,11 +372,13 @@ Return the listeners registered for a given event.
 
 ### off()
 
-> **off**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **off**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 
@@ -404,13 +414,15 @@ Return the listeners registered for a given event.
 
 ### on()
 
-> **on**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **on**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 
@@ -442,13 +454,15 @@ Add a listener for a given event.
 
 ### once()
 
-> **once**\<`T`\>(`event`, `fn`, `context`?): `this`
+> **once**\<`T`\>(`event`, `fn`, `context?`): `this`
 
 Add a one-time listener for a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 
@@ -474,13 +488,13 @@ Add a one-time listener for a given event.
 
 #### Inherited from
 
-[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`once`](BaseSignerWalletAdapter.md#once-1)
+[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`once`](BaseSignerWalletAdapter.md#once)
 
 ***
 
 ### removeAllListeners()
 
-> **removeAllListeners**(`event`?): `this`
+> **removeAllListeners**(`event?`): `this`
 
 Remove all listeners, or those of the specified event.
 
@@ -506,13 +520,15 @@ keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 ### removeListener()
 
-> **removeListener**\<`T`\>(`event`, `fn`?, `context`?, `once`?): `this`
+> **removeListener**\<`T`\>(`event`, `fn?`, `context?`, `once?`): `this`
 
 Remove the listeners of a given event.
 
 #### Type Parameters
 
-• **T** *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
+##### T
+
+`T` *extends* keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)
 
 #### Parameters
 

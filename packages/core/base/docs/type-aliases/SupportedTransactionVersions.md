@@ -2,8 +2,8 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / SupportedTransactionVersions
+[@demox-labs/miden-wallet-adapter-base](../README.md) / SupportedTransactionVersions
 
 # Type Alias: SupportedTransactionVersions
 
-> **SupportedTransactionVersions**: `ReadonlySet`\<`any`\> \| `null`
+> **SupportedTransactionVersions** = `ReadonlySet`\<`any`\> \| `null`

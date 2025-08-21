@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-miden](../globals.md) / MidenWalletEvents
+[@demox-labs/miden-wallet-adapter-miden](../README.md) / MidenWalletEvents
 
 # Interface: MidenWalletEvents
 

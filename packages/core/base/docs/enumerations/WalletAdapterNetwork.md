@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / WalletAdapterNetwork
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletAdapterNetwork
 
 # Enumeration: WalletAdapterNetwork
 

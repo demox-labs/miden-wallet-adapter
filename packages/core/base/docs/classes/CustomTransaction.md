@@ -2,7 +2,7 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../globals.md) / CustomTransaction
+[@demox-labs/miden-wallet-adapter-base](../README.md) / CustomTransaction
 
 # Class: CustomTransaction
 
@@ -12,9 +12,9 @@
 
 ## Constructors
 
-### new CustomTransaction()
+### Constructor
 
-> **new CustomTransaction**(`accountId`, `transactionRequest`, `inputNotesIds`?, `inputNoteBytes`?): [`CustomTransaction`](CustomTransaction.md)
+> **new CustomTransaction**(`accountId`, `transactionRequest`, `inputNotesIds?`, `inputNoteBytes?`): `CustomTransaction`
 
 #### Parameters
 
@@ -32,11 +32,11 @@
 
 ##### inputNoteBytes?
 
-`Uint8Array`[]
+`Uint8Array`\<`ArrayBufferLike`\>[]
 
 #### Returns
 
-[`CustomTransaction`](CustomTransaction.md)
+`CustomTransaction`
 
 ## Properties
 
