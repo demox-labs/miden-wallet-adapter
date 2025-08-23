@@ -90,7 +90,7 @@ export class CustomTransaction implements MidenCustomTransaction {
     const base64 = Buffer.from(requestBytes).toString('base64');
     this.transactionRequest = base64;
     this.inputNoteIds = inputNotesIds;
-    this.importNotes = inputNoteBytes.map((note) =>
+    this.importNotes = inputNoteBytes?.map((note) =>
       Buffer.from(note).toString('base64')
     );
   }
