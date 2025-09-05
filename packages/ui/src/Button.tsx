@@ -1,5 +1,6 @@
 import {
-  DecryptPermission,
+  AllowedPrivateData,
+  PrivateDataPermission,
   WalletAdapterNetwork,
 } from '@demox-labs/miden-wallet-adapter-base';
 import type {
@@ -13,14 +14,14 @@ import type {
 export type ButtonProps = PropsWithChildren<{
   className?: string;
   disabled?: boolean;
-  decryptPermission?: DecryptPermission;
+  privateDataPermission?: PrivateDataPermission;
   network?: WalletAdapterNetwork;
   endIcon?: ReactElement;
   onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
   startIcon?: ReactElement;
   style?: CSSProperties;
   tabIndex?: number;
-  programs?: string[];
+  allowedPrivateData?: AllowedPrivateData;
 }>;
 
 export const Button: FC<ButtonProps> = (props) => {

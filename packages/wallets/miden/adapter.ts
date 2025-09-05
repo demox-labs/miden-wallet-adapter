@@ -1,4 +1,5 @@
 import {
+  AllowedPrivateData,
   BaseMessageSignerWalletAdapter,
   EventEmitter,
   scopePollingDetectionStrategy,
@@ -8,7 +9,7 @@ import {
   WalletNotConnectedError,
   WalletNotReadyError,
   WalletReadyState,
-  DecryptPermission,
+  PrivateDataPermission,
   WalletAdapterNetwork,
   MidenSendTransaction,
   MidenTransaction,
@@ -37,9 +38,9 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
     privateNotes: any[]
   }>;
   connect(
-    decryptPermission: DecryptPermission,
+    privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
-    programs?: string[]
+    allowedPrivateData?: AllowedPrivateData,
   ): Promise<void>;
   disconnect(): Promise<void>;
 }
@@ -68,7 +69,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   private _connecting: boolean;
   private _wallet: MidenWallet | null;
   private _accountId: string | null;
-  private _decryptPermission: string;
+  private _privateDataPermission: string;
   private _readyState: WalletReadyState =
     typeof window === 'undefined' || typeof document === 'undefined'
       ? WalletReadyState.Unsupported
@@ -79,7 +80,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     this._connecting = false;
     this._wallet = null;
     this._accountId = null;
-    this._decryptPermission = DecryptPermission.NoDecrypt;
+    this._privateDataPermission = PrivateDataPermission.UponRequest;
 
     if (this._readyState !== WalletReadyState.Unsupported) {
       scopePollingDetectionStrategy(() => {
@@ -97,8 +98,8 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     return this._accountId;
   }
 
-  get decryptPermission() {
-    return this._decryptPermission;
+  get privateDataPermission() {
+    return this._privateDataPermission;
   }
 
   get connecting() {
@@ -180,9 +181,9 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   }
 
   async connect(
-    decryptPermission: DecryptPermission,
+    privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
-    programs?: string[]
+    allowedPrivateData?: AllowedPrivateData,
   ): Promise<void> {
     try {
       if (this.connected || this.connecting) return;
@@ -195,7 +196,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       const wallet = window.midenWallet! || window.miden!;
 
       try {
-        await wallet.connect(decryptPermission, network, programs);
+        await wallet.connect(privateDataPermission, network, allowedPrivateData);
         if (!wallet?.accountId) {
           throw new WalletConnectionError();
         }
@@ -205,7 +206,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       }
 
       this._wallet = wallet;
-      this._decryptPermission = decryptPermission;
+      this._privateDataPermission = privateDataPermission;
 
       this.emit('connect', this._accountId);
     } catch (error: any) {

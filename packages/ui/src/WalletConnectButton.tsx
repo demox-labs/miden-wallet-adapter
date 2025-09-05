@@ -4,19 +4,15 @@ import { useWallet } from '@demox-labs/miden-wallet-adapter-react';
 import type { ButtonProps } from './Button';
 import { Button } from './Button';
 import { WalletIcon } from './WalletIcon';
-import { DecryptPermission, WalletAdapterNetwork } from '@demox-labs/miden-wallet-adapter-base';
+import { AllowedPrivateData, PrivateDataPermission, WalletAdapterNetwork } from '@demox-labs/miden-wallet-adapter-base';
 
-interface WalletConnectButtonProps extends ButtonProps {
-  programs?: string[];
-}
-
-export const WalletConnectButton: FC<WalletConnectButtonProps> = ({
+export const WalletConnectButton: FC<ButtonProps> = ({
   children,
   disabled,
   onClick,
-  decryptPermission,
+  privateDataPermission,
   network,
-  programs,
+  allowedPrivateData,
   ...props
 }) => {
   const { wallet, connect, connecting, connected } = useWallet();
@@ -27,9 +23,9 @@ export const WalletConnectButton: FC<WalletConnectButtonProps> = ({
       // eslint-disable-next-line @typescript-eslint/no-empty-function
       if (!event.defaultPrevented)
         connect(
-          decryptPermission || DecryptPermission.NoDecrypt,
+          privateDataPermission || PrivateDataPermission.UponRequest,
           network || WalletAdapterNetwork.Testnet,
-          programs ?? []
+          allowedPrivateData ?? AllowedPrivateData.None
         ).catch(() => {});
     },
     [onClick, connect]

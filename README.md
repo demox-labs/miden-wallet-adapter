@@ -5,7 +5,7 @@ The **Miden Wallet Adapter** is a modular TypeScript library that provides walle
 ## Usage Pattern
 
 1. **Setup**: Wrap your app with `WalletProvider` and specify available wallet adapters
-2. **Connection**: Use `WalletMultiButton` to connect or do so programmatically
+2. **Connection**: Use `WalletMultiButton` to connect or do so programmatically (see [Notes](#notes))
 3. **Interaction**: Use the `useWallet` hook to access wallet state and methods, such as the wallet's accountId
 4. **Transactions**: Use [transaction types](https://github.com/demox-labs/miden-wallet-adapter/blob/main/packages/core/base/transaction.ts) to submit a consume or send transaction via the wallet, or a generic transaction using a Miden `TransactionRequest` object
 
@@ -43,6 +43,18 @@ const customTransaction = new CustomTransaction(
     transactionRequest // TransactionRequest object (will need to be generated using the Miden Web SDK)
 );
 await wallet.adapter.requestTransaction(customTransaction)
+```
+
+### Notes
+
+* When using the provided React Components (WalletMultiButton, WalletModal, etc.), the code must import the `styles.css` stylesheet provided or specify custom styles
+
+```
+require('@demox-labs/miden-wallet-adapter/styles.css');
+
+// or
+
+import '@demox-labs/miden-wallet-adapter/styles.css';
 ```
 
 ## Architecture & Structure
@@ -94,5 +106,5 @@ For other use cases, including different front-end libraries and other wallets i
     - `MidenSendTransaction`
     - `MidenConsumeTransaction`
     - Generic `MidenTransaction`
-  - **Permission management**: Handles different decrypt permissions
+  - **Permission management**: Handles permissions for private accounts
   - **Error handling**: Comprehensive error handling for wallet operations

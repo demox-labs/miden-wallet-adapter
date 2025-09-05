@@ -1,12 +1,13 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-react",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Core react infrastructure for connecting Miden-compatible wallets to your dApp.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/demox-labs/miden-wallet-adapter",
   "author": "Demox Labs",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist/ node_modules/",

@@ -55,6 +55,7 @@ __metadata:
   dependencies:
     "@demox-labs/miden-wallet-adapter-base": "workspace:^"
     "@demox-labs/miden-wallet-adapter-react": "workspace:^"
+    "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"
     copyfiles: "npm:^2.4.1"
     react: "npm:^19.1.1"

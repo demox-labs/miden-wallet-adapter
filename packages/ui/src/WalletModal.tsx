@@ -8,7 +8,8 @@ import {
 } from 'react';
 import { createPortal } from 'react-dom';
 import {
-  DecryptPermission,
+  AllowedPrivateData,
+  PrivateDataPermission,
   WalletAdapterNetwork,
   WalletName,
   WalletReadyState,
@@ -21,17 +22,17 @@ import { DiscoverMidenMessage } from './DiscoverMidenMessage';
 export interface WalletModalProps {
   className?: string;
   container?: string;
-  decryptPermission?: DecryptPermission;
+  privateDataPermission?: PrivateDataPermission;
   network?: WalletAdapterNetwork;
-  programs?: string[];
+  allowedPrivateData?: AllowedPrivateData;
 }
 
 export const WalletModal: FC<WalletModalProps> = ({
   className = '',
   container = 'body',
-  decryptPermission,
+  privateDataPermission,
   network,
-  programs,
+  allowedPrivateData,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { wallets, select, connect, wallet } = useWallet();
@@ -158,14 +159,14 @@ export const WalletModal: FC<WalletModalProps> = ({
   useLayoutEffect(() => {
     if (wallet) {
       connect(
-        decryptPermission || DecryptPermission.NoDecrypt,
+        privateDataPermission || PrivateDataPermission.UponRequest,
         network || WalletAdapterNetwork.Testnet,
-        programs ?? []
+        allowedPrivateData ?? AllowedPrivateData.None
       ).catch((e) => {
         console.log({ e });
       });
     }
-  }, [wallet, decryptPermission, network, programs, connect]);
+  }, [wallet, privateDataPermission, network, allowedPrivateData, connect]);
 
   return (
     portal &&

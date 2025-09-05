@@ -1,15 +1,16 @@
 import EventEmitter from 'eventemitter3';
 import type { WalletError } from './errors';
 import type {
+  AllowedPrivateData,
+  PrivateDataPermission,
   SupportedTransactionVersions,
-  DecryptPermission,
   WalletAdapterNetwork,
 } from './types';
 
 export { EventEmitter };
 
 export interface WalletAdapterEvents {
-  connect(accountId: string, programs?: string[]): void;
+  connect(accountId: string, allowedPrivateData?: AllowedPrivateData): void;
   disconnect(): void;
   error(error: WalletError): void;
   readyStateChange(readyState: WalletReadyState): void;
@@ -32,9 +33,9 @@ export interface WalletAdapterProps<Name extends string = string> {
   supportedTransactionVersions: SupportedTransactionVersions;
 
   connect(
-    decryptPermission: DecryptPermission,
+    privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
-    programs?: string[]
+    allowedPrivateData?: AllowedPrivateData
   ): Promise<void>;
   disconnect(): Promise<void>;
 }
@@ -88,9 +89,9 @@ export abstract class BaseWalletAdapter<Name extends string = string>
   }
 
   abstract connect(
-    decryptPermission: DecryptPermission,
+    privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
-    programs?: string[]
+    allowedPrivateData?: AllowedPrivateData
   ): Promise<void>;
   abstract disconnect(): Promise<void>;
 }

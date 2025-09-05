@@ -1,12 +1,13 @@
 import { createContext, useContext } from 'react';
 import {
   Adapter,
+  AllowedPrivateData,
   MidenTransaction,
-  DecryptPermission,
   MessageSignerWalletAdapterProps,
+  PrivateDataPermission,
   WalletAdapterNetwork,
   WalletName,
-  WalletReadyState,
+  WalletReadyState
 } from '@demox-labs/miden-wallet-adapter-base';
 
 export interface Wallet {
@@ -22,13 +23,13 @@ export interface WalletContextState {
   connecting: boolean;
   connected: boolean;
   disconnecting: boolean;
-  decryptPermission?: DecryptPermission;
+  privateDataPermission?: PrivateDataPermission;
 
   select(walletName: WalletName): void;
   connect(
-    decryptPermission: DecryptPermission,
+    privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
-    programs?: string[]
+    allowedPrivateData?: AllowedPrivateData
   ): Promise<void>;
   disconnect(): Promise<void>;
 
@@ -52,9 +53,9 @@ const DEFAULT_CONTEXT = {
     console.error(constructMissingProviderErrorMessage('get', 'select'));
   },
   connect(
-    _decryptPermission: DecryptPermission,
+    _privateDataPermission: PrivateDataPermission,
     _network: WalletAdapterNetwork,
-    _programs?: string[]
+    _allowedPrivateData?: AllowedPrivateData
   ) {
     return Promise.reject(
       console.error(constructMissingProviderErrorMessage('get', 'connect'))

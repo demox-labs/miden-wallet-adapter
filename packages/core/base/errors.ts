@@ -80,6 +80,10 @@ export class WalletDecryptionNotAllowedError extends WalletError {
     name = 'WalletDecryptionNotAllowedError';
 }
 
+export class WalletPrivateDataPermissionError extends WalletError {
+    name = 'WalletPrivateDataPermissionError';
+}
+
 export class WalletDecryptionError extends WalletError {
     name = 'WalletDecryptionError';
 }

@@ -1,15 +1,16 @@
 import {
   Adapter,
+  AllowedPrivateData,
   MessageSignerWalletAdapterProps,
-  WalletNotSelectedError,
+  MidenTransaction,
+  PrivateDataPermission,
+  WalletAdapterNetwork,
   WalletError,
   WalletName,
   WalletNotConnectedError,
   WalletNotReadyError,
+  WalletNotSelectedError,
   WalletReadyState,
-  DecryptPermission,
-  WalletAdapterNetwork,
-  MidenTransaction,
 } from '@demox-labs/miden-wallet-adapter-base';
 import type { FC, ReactNode } from 'react';
 import {
@@ -26,8 +27,8 @@ import { WalletContext } from './useWallet';
 export interface WalletProviderProps {
   children: ReactNode;
   wallets: Adapter[];
-  decryptPermission?: DecryptPermission;
-  programs?: string[];
+  privateDataPermission?: PrivateDataPermission;
+  allowedPrivateData?: AllowedPrivateData;
   network?: WalletAdapterNetwork;
   autoConnect?: boolean;
   onError?: (error: WalletError) => void;
@@ -50,11 +51,11 @@ export const WalletProvider: FC<WalletProviderProps> = ({
   children,
   wallets: adapters,
   autoConnect = false,
-  decryptPermission = DecryptPermission.NoDecrypt,
+  privateDataPermission = PrivateDataPermission.UponRequest,
   network = WalletAdapterNetwork.Testnet,
   onError,
   localStorageKey = 'walletName',
-  programs = [],
+  allowedPrivateData = AllowedPrivateData.None,
 }) => {
   const [name, setName] = useLocalStorage<WalletName | null>(
     localStorageKey,
@@ -212,7 +213,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
       isConnecting.current = true;
       setConnecting(true);
       try {
-        await adapter.connect(decryptPermission, network, programs);
+        await adapter.connect(privateDataPermission, network, allowedPrivateData);
       } catch (error: any) {
         // Clear the selected wallet
         setName(null);
@@ -248,7 +249,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     isConnecting.current = true;
     setConnecting(true);
     try {
-      await adapter.connect(decryptPermission, network, programs);
+      await adapter.connect(privateDataPermission, network, allowedPrivateData);
     } catch (error: any) {
       // Clear the selected wallet
       setName(null);
