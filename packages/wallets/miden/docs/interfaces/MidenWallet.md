@@ -54,21 +54,21 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
+> **connect**(`privateDataPermission`, `network`, `allowedPrivateData?`): `Promise`\<`void`\>
 
 #### Parameters
 
-##### decryptPermission
+##### privateDataPermission
 
-`DecryptPermission`
+`PrivateDataPermission`
 
 ##### network
 
 `WalletAdapterNetwork`
 
-##### programs?
+##### allowedPrivateData?
 
-`string`[]
+`AllowedPrivateData`
 
 #### Returns
 

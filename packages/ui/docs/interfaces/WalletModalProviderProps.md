@@ -12,6 +12,16 @@
 
 ## Properties
 
+### allowedPrivateData?
+
+> `optional` **allowedPrivateData**: `AllowedPrivateData`
+
+#### Inherited from
+
+[`WalletModalProps`](WalletModalProps.md).[`allowedPrivateData`](WalletModalProps.md#allowedprivatedata)
+
+***
+
 ### children
 
 > **children**: `ReactNode`
@@ -38,16 +48,6 @@
 
 ***
 
-### decryptPermission?
-
-> `optional` **decryptPermission**: `DecryptPermission`
-
-#### Inherited from
-
-[`WalletModalProps`](WalletModalProps.md).[`decryptPermission`](WalletModalProps.md#decryptpermission)
-
-***
-
 ### network?
 
 > `optional` **network**: `WalletAdapterNetwork`
@@ -58,10 +58,10 @@
 
 ***
 
-### programs?
+### privateDataPermission?
 
-> `optional` **programs**: `string`[]
+> `optional` **privateDataPermission**: `PrivateDataPermission`
 
 #### Inherited from
 
-[`WalletModalProps`](WalletModalProps.md).[`programs`](WalletModalProps.md#programs)
+[`WalletModalProps`](WalletModalProps.md).[`privateDataPermission`](WalletModalProps.md#privatedatapermission)

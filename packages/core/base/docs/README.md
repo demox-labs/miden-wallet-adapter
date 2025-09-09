@@ -10,7 +10,8 @@
 
 ## Enumerations
 
-- [DecryptPermission](enumerations/DecryptPermission.md)
+- [AllowedPrivateData](enumerations/AllowedPrivateData.md)
+- [PrivateDataPermission](enumerations/PrivateDataPermission.md)
 - [TransactionType](enumerations/TransactionType.md)
 - [WalletAdapterNetwork](enumerations/WalletAdapterNetwork.md)
 - [WalletReadyState](enumerations/WalletReadyState.md)
@@ -39,6 +40,7 @@
 - [WalletNotConnectedError](classes/WalletNotConnectedError.md)
 - [WalletNotReadyError](classes/WalletNotReadyError.md)
 - [WalletNotSelectedError](classes/WalletNotSelectedError.md)
+- [WalletPrivateDataPermissionError](classes/WalletPrivateDataPermissionError.md)
 - [WalletRecordsError](classes/WalletRecordsError.md)
 - [WalletSendTransactionError](classes/WalletSendTransactionError.md)
 - [WalletSignMessageError](classes/WalletSignMessageError.md)

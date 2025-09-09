@@ -32,15 +32,15 @@
 
 ***
 
-### decryptPermission?
-
-> `optional` **decryptPermission**: `DecryptPermission`
-
-***
-
 ### disconnecting
 
 > **disconnecting**: `boolean`
+
+***
+
+### privateDataPermission?
+
+> `optional` **privateDataPermission**: `PrivateDataPermission`
 
 ***
 
@@ -84,21 +84,21 @@
 
 ### connect()
 
-> **connect**(`decryptPermission`, `network`, `programs?`): `Promise`\<`void`\>
+> **connect**(`privateDataPermission`, `network`, `allowedPrivateData?`): `Promise`\<`void`\>
 
 #### Parameters
 
-##### decryptPermission
+##### privateDataPermission
 
-`DecryptPermission`
+`PrivateDataPermission`
 
 ##### network
 
 `WalletAdapterNetwork`
 
-##### programs?
+##### allowedPrivateData?
 
-`string`[]
+`AllowedPrivateData`
 
 #### Returns
 

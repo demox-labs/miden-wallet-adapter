@@ -8,6 +8,12 @@
 
 ## Properties
 
+### allowedPrivateData?
+
+> `optional` **allowedPrivateData**: `AllowedPrivateData`
+
+***
+
 ### autoConnect?
 
 > `optional` **autoConnect**: `boolean`
@@ -17,12 +23,6 @@
 ### children
 
 > **children**: `ReactNode`
-
-***
-
-### decryptPermission?
-
-> `optional` **decryptPermission**: `DecryptPermission`
 
 ***
 
@@ -54,9 +54,9 @@
 
 ***
 
-### programs?
+### privateDataPermission?
 
-> `optional` **programs**: `string`[]
+> `optional` **privateDataPermission**: `PrivateDataPermission`
 
 ***
 

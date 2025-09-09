@@ -2,44 +2,19 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletError
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletPrivateDataPermissionError
 
-# Class: WalletError
+# Class: WalletPrivateDataPermissionError
 
 ## Extends
 
-- `Error`
-
-## Extended by
-
-- [`WalletNotReadyError`](WalletNotReadyError.md)
-- [`WalletLoadError`](WalletLoadError.md)
-- [`WalletConfigError`](WalletConfigError.md)
-- [`WalletConnectionError`](WalletConnectionError.md)
-- [`WalletNotSelectedError`](WalletNotSelectedError.md)
-- [`WalletDisconnectedError`](WalletDisconnectedError.md)
-- [`WalletDisconnectionError`](WalletDisconnectionError.md)
-- [`WalletAccountError`](WalletAccountError.md)
-- [`WalletAccountIdError`](WalletAccountIdError.md)
-- [`WalletKeypairError`](WalletKeypairError.md)
-- [`WalletNotConnectedError`](WalletNotConnectedError.md)
-- [`WalletSendTransactionError`](WalletSendTransactionError.md)
-- [`WalletSignMessageError`](WalletSignMessageError.md)
-- [`WalletSignTransactionError`](WalletSignTransactionError.md)
-- [`WalletTimeoutError`](WalletTimeoutError.md)
-- [`WalletWindowBlockedError`](WalletWindowBlockedError.md)
-- [`WalletWindowClosedError`](WalletWindowClosedError.md)
-- [`WalletDecryptionNotAllowedError`](WalletDecryptionNotAllowedError.md)
-- [`WalletPrivateDataPermissionError`](WalletPrivateDataPermissionError.md)
-- [`WalletDecryptionError`](WalletDecryptionError.md)
-- [`WalletRecordsError`](WalletRecordsError.md)
-- [`WalletTransactionError`](WalletTransactionError.md)
+- [`WalletError`](WalletError.md)
 
 ## Constructors
 
 ### Constructor
 
-> **new WalletError**(`message?`, `error?`): `WalletError`
+> **new WalletPrivateDataPermissionError**(`message?`, `error?`): `WalletPrivateDataPermissionError`
 
 #### Parameters
 
@@ -53,11 +28,11 @@
 
 #### Returns
 
-`WalletError`
+`WalletPrivateDataPermissionError`
 
-#### Overrides
+#### Inherited from
 
-`Error.constructor`
+[`WalletError`](WalletError.md).[`constructor`](WalletError.md#constructor)
 
 ## Properties
 
@@ -67,13 +42,17 @@
 
 #### Inherited from
 
-`Error.cause`
+[`WalletError`](WalletError.md).[`cause`](WalletError.md#cause)
 
 ***
 
 ### error
 
 > **error**: `any`
+
+#### Inherited from
+
+[`WalletError`](WalletError.md).[`error`](WalletError.md#error)
 
 ***
 
@@ -83,17 +62,17 @@
 
 #### Inherited from
 
-`Error.message`
+[`WalletError`](WalletError.md).[`message`](WalletError.md#message)
 
 ***
 
 ### name
 
-> **name**: `string`
+> **name**: `string` = `'WalletPrivateDataPermissionError'`
 
-#### Inherited from
+#### Overrides
 
-`Error.name`
+[`WalletError`](WalletError.md).[`name`](WalletError.md#name)
 
 ***
 
@@ -103,7 +82,7 @@
 
 #### Inherited from
 
-`Error.stack`
+[`WalletError`](WalletError.md).[`stack`](WalletError.md#stack)
 
 ***
 
@@ -123,7 +102,7 @@ not capture any frames.
 
 #### Inherited from
 
-`Error.stackTraceLimit`
+[`WalletError`](WalletError.md).[`stackTraceLimit`](WalletError.md#stacktracelimit)
 
 ## Methods
 
@@ -191,7 +170,7 @@ a();
 
 #### Inherited from
 
-`Error.captureStackTrace`
+[`WalletError`](WalletError.md).[`captureStackTrace`](WalletError.md#capturestacktrace)
 
 ***
 
@@ -213,7 +192,7 @@ Indicates whether the argument provided is a built-in Error instance or not.
 
 #### Inherited from
 
-`Error.isError`
+[`WalletError`](WalletError.md).[`isError`](WalletError.md#iserror)
 
 ***
 
@@ -241,4 +220,4 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 #### Inherited from
 
-`Error.prepareStackTrace`
+[`WalletError`](WalletError.md).[`prepareStackTrace`](WalletError.md#preparestacktrace)

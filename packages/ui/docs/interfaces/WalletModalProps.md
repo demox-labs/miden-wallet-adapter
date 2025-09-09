@@ -12,6 +12,12 @@
 
 ## Properties
 
+### allowedPrivateData?
+
+> `optional` **allowedPrivateData**: `AllowedPrivateData`
+
+***
+
 ### className?
 
 > `optional` **className**: `string`
@@ -24,18 +30,12 @@
 
 ***
 
-### decryptPermission?
-
-> `optional` **decryptPermission**: `DecryptPermission`
-
-***
-
 ### network?
 
 > `optional` **network**: `WalletAdapterNetwork`
 
 ***
 
-### programs?
+### privateDataPermission?
 
-> `optional` **programs**: `string`[]
+> `optional` **privateDataPermission**: `PrivateDataPermission`

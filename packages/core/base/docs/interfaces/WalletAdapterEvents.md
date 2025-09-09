@@ -10,7 +10,7 @@
 
 ### connect()
 
-> **connect**(`accountId`, `programs?`): `void`
+> **connect**(`accountId`, `allowedPrivateData?`): `void`
 
 #### Parameters
 
@@ -18,9 +18,9 @@
 
 `string`
 
-##### programs?
+##### allowedPrivateData?
 
-`string`[]
+[`AllowedPrivateData`](../enumerations/AllowedPrivateData.md)
 
 #### Returns
 

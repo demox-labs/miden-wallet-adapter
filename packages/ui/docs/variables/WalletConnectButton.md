@@ -6,4 +6,4 @@
 
 # Variable: WalletConnectButton
 
-> `const` **WalletConnectButton**: `FC`\<`WalletConnectButtonProps`\>
+> `const` **WalletConnectButton**: `FC`\<`ButtonProps`\>
