@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-09-10
+
+### Changes
+
+* Fix bug with `PrivateDataPermission`
+
+### New Versions
+
+* `0.4.1` for all packages
+
 ## 2025-09-09
 
 ### Changes

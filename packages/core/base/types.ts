@@ -19,5 +19,5 @@ export enum AllowedPrivateData {
   Balance = 1 << 0, // 1
   Notes = 1 << 1, // 2
   Storage = 1 << 2, // 4
-  All = 1 << 15 // 32768 (allows for new permissions without requiring a migration)
+  All = (1 << 16) - 1 // 65535 (allows for new permissions without requiring a migration)
 }

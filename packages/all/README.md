@@ -39,6 +39,8 @@ import {
   MidenWalletAdapter,
 } from '@demox-labs/miden-wallet-adapter';
 
+import '@demox-labs/miden-wallet-adapter/styles.css';
+
 const wallets = [
   new MidenWalletAdapter({ appName: 'Your Miden App' }),
 ];
@@ -53,6 +55,7 @@ function App() {
   );
 }
 ```
+**Note**: Either the stylesheet must be imported or custom styles must be defined
 
 ### 2. Add Wallet Connection UI
 
