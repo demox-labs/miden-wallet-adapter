@@ -10,11 +10,7 @@
 
 ### All
 
-<<<<<<< Updated upstream
 > **All**: `65535`
-=======
-> **All**: `7`
->>>>>>> Stashed changes
 
 ***
 

@@ -40,10 +40,6 @@ export interface WalletContextState {
   requestPrivateNotes: 
     | MessageSignerWalletAdapterProps['requestPrivateNotes']
     | undefined;
-
-  signMessage:
-    | MessageSignerWalletAdapterProps['signMessage']
-    | undefined;
 }
 
 const EMPTY_ARRAY: never[] = [];
@@ -84,13 +80,6 @@ const DEFAULT_CONTEXT = {
       )
     );
   },
-  signMessage(_message: Uint8Array) {
-    return Promise.reject(
-      console.error(
-        constructMissingProviderErrorMessage('get', 'signMessage')
-      )
-    );
-  }
 } as WalletContextState;
 Object.defineProperty(DEFAULT_CONTEXT, 'wallets', {
   get() {

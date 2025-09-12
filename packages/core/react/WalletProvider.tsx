@@ -317,19 +317,6 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     [adapter, handleError, connected]
   );
 
-  const signMessage:
-    | MessageSignerWalletAdapterProps['signMessage']
-    | undefined = useMemo(
-    () =>
-      adapter && 'signMessage' in adapter
-        ? async (message: Uint8Array) => {
-            if (!connected) throw handleError(new WalletNotConnectedError());
-            return await adapter.signMessage(message);
-          }
-        : undefined,
-    [adapter, handleError, connected]
-  );
-
   return (
     <WalletContext.Provider
       value={{
@@ -345,7 +332,6 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         disconnect,
         requestTransaction,
         requestPrivateNotes,
-        signMessage,
       }}
     >
       {children}
