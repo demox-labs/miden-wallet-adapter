@@ -1,10 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter-miden",
-<<<<<<< Updated upstream
-  "version": "0.4.1",
-=======
   "version": "0.5.0",
->>>>>>> Stashed changes
   "description": "Miden wallet adapter for the Miden Wallet.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
