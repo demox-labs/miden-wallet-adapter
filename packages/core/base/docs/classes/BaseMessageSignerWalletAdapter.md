@@ -625,3 +625,23 @@ Remove the listeners of a given event.
 #### Implementation of
 
 `MessageSignerWalletAdapter.requestTransaction`
+
+***
+
+### signMessage()
+
+> `abstract` **signMessage**(`message`): `Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
+
+#### Parameters
+
+##### message
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
+
+#### Implementation of
+
+`MessageSignerWalletAdapter.signMessage`
