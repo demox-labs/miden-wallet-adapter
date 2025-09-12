@@ -412,3 +412,19 @@ Remove the listeners of a given event.
 #### Returns
 
 `Promise`\<\{ `transactionId?`: `string`; \}\>
+
+***
+
+### signMessage()
+
+> **signMessage**(`message`): `Promise`\<\{ `signature`: `Uint8Array`; \}\>
+
+#### Parameters
+
+##### message
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<\{ `signature`: `Uint8Array`; \}\>

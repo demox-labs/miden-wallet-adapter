@@ -163,3 +163,19 @@
 #### Returns
 
 `Promise`\<`string`\>
+
+***
+
+### signMessage()
+
+> **signMessage**(`message`): `Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
+
+#### Parameters
+
+##### message
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
