@@ -38,6 +38,10 @@ export interface WalletContextState {
     | MessageSignerWalletAdapterProps['requestTransaction']
     | undefined;
   
+  requestAssets:
+    | MessageSignerWalletAdapterProps['requestAssets']
+    | undefined;
+  
   requestPrivateNotes: 
     | MessageSignerWalletAdapterProps['requestPrivateNotes']
     | undefined;
@@ -76,6 +80,11 @@ const DEFAULT_CONTEXT = {
       console.error(
         constructMissingProviderErrorMessage('get', 'requestTransaction')
       )
+    );
+  },
+  requestAssets() {
+    return Promise.reject(
+      console.error(constructMissingProviderErrorMessage('get', 'requestAssets'))
     );
   },
   requestPrivateNotes() {

@@ -5,6 +5,7 @@ import {
   MidenSendTransaction,
   MidenTransaction,
 } from './transaction';
+import { Asset } from './types';
 
 export type Adapter =
   | WalletAdapter
@@ -24,6 +25,7 @@ export abstract class BaseSignerWalletAdapter<Name extends string = string>
 export interface MessageSignerWalletAdapterProps<Name extends string = string>
   extends WalletAdapterProps<Name> {
   requestTransaction(transaction: MidenTransaction): Promise<string>;
+  requestAssets(): Promise<Asset[]>;
   requestPrivateNotes(): Promise<any[]>;
   signMessage(message: Uint8Array): Promise<Uint8Array>;
 }
@@ -40,6 +42,7 @@ export abstract class BaseMessageSignerWalletAdapter<
   abstract requestSend(transaction: MidenSendTransaction): Promise<string>;
   abstract requestConsume(transaction: MidenConsumeTransaction): Promise<string>;
   abstract requestTransaction(transaction: MidenTransaction): Promise<string>;
+  abstract requestAssets(): Promise<Asset[]>;
   abstract requestPrivateNotes(): Promise<any[]>;
   abstract signMessage(message: Uint8Array): Promise<Uint8Array>;
 }

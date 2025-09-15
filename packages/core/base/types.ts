@@ -16,8 +16,13 @@ export enum PrivateDataPermission {
 
 export enum AllowedPrivateData {
   None = 0,
-  Balance = 1 << 0, // 1
+  Assets = 1 << 0, // 1
   Notes = 1 << 1, // 2
   Storage = 1 << 2, // 4
   All = (1 << 16) - 1 // 65535 (allows for new permissions without requiring a migration)
+}
+
+export interface Asset {
+  faucetId: string;
+  amount: string;
 }
