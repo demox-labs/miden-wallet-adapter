@@ -25,6 +25,7 @@ export interface MessageSignerWalletAdapterProps<Name extends string = string>
   extends WalletAdapterProps<Name> {
   requestTransaction(transaction: MidenTransaction): Promise<string>;
   requestPrivateNotes(): Promise<any[]>;
+  signMessage(message: Uint8Array): Promise<Uint8Array>;
 }
 
 export type MessageSignerWalletAdapter<Name extends string = string> =
@@ -40,4 +41,5 @@ export abstract class BaseMessageSignerWalletAdapter<
   abstract requestConsume(transaction: MidenConsumeTransaction): Promise<string>;
   abstract requestTransaction(transaction: MidenTransaction): Promise<string>;
   abstract requestPrivateNotes(): Promise<any[]>;
+  abstract signMessage(message: Uint8Array): Promise<Uint8Array>;
 }

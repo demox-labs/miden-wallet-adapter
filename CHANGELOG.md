@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-09-12
+
+### Changes
+
+* Add Ability to Sign a `Word` via the Wallet
+
+### New Versions
+
+* `0.5.0` for all packages
+
 ## 2025-09-10
 
 ### Changes
