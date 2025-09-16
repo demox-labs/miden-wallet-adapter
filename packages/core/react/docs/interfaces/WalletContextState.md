@@ -50,6 +50,16 @@
 
 ***
 
+### requestAssets()
+
+> **requestAssets**: () => `Promise`\<`Asset`[]\>
+
+#### Returns
+
+`Promise`\<`Asset`[]\>
+
+***
+
 ### requestPrivateNotes()
 
 > **requestPrivateNotes**: () => `Promise`\<`any`[]\>

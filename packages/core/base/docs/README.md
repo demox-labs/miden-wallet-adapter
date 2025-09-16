@@ -52,6 +52,7 @@
 
 ## Interfaces
 
+- [Asset](interfaces/Asset.md)
 - [MessageSignerWalletAdapterProps](interfaces/MessageSignerWalletAdapterProps.md)
 - [MidenConsumeTransaction](interfaces/MidenConsumeTransaction.md)
 - [MidenCustomTransaction](interfaces/MidenCustomTransaction.md)

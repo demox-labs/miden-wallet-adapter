@@ -535,6 +535,20 @@ Remove the listeners of a given event.
 
 ***
 
+### requestAssets()
+
+> **requestAssets**(): `Promise`\<`Asset`[]\>
+
+#### Returns
+
+`Promise`\<`Asset`[]\>
+
+#### Overrides
+
+`BaseMessageSignerWalletAdapter.requestAssets`
+
+***
+
 ### requestConsume()
 
 > **requestConsume**(`transaction`): `Promise`\<`string`\>

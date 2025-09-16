@@ -150,6 +150,16 @@
 
 ***
 
+### requestAssets()
+
+> **requestAssets**(): `Promise`\<[`Asset`](Asset.md)[]\>
+
+#### Returns
+
+`Promise`\<[`Asset`](Asset.md)[]\>
+
+***
+
 ### requestPrivateNotes()
 
 > **requestPrivateNotes**(): `Promise`\<`any`[]\>

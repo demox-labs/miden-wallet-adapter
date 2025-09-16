@@ -14,9 +14,9 @@
 
 ***
 
-### Balance
+### Assets
 
-> **Balance**: `1`
+> **Assets**: `1`
 
 ***
 

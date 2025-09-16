@@ -363,6 +363,16 @@ Remove the listeners of a given event.
 
 ***
 
+### requestAssets()
+
+> **requestAssets**(): `Promise`\<\{ `assets`: `Asset`[]; \}\>
+
+#### Returns
+
+`Promise`\<\{ `assets`: `Asset`[]; \}\>
+
+***
+
 ### requestConsume()
 
 > **requestConsume**(`transaction`): `Promise`\<\{ `transactionId?`: `string`; \}\>

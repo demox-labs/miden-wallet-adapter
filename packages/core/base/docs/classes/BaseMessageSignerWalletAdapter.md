@@ -576,6 +576,20 @@ Remove the listeners of a given event.
 
 ***
 
+### requestAssets()
+
+> `abstract` **requestAssets**(): `Promise`\<[`Asset`](../interfaces/Asset.md)[]\>
+
+#### Returns
+
+`Promise`\<[`Asset`](../interfaces/Asset.md)[]\>
+
+#### Implementation of
+
+`MessageSignerWalletAdapter.requestAssets`
+
+***
+
 ### requestConsume()
 
 > `abstract` **requestConsume**(`transaction`): `Promise`\<`string`\>

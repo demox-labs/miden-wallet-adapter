@@ -1,10 +1,25 @@
 # Changelog
 
+## 2025-09-16
+
+### Changes
+
+* Add ability to request assets from Miden Wallet
+* [BREAKING] Rename `AllowedPrivateData.Balance` to `AllowedPrivateData.Assets`
+
+### New Versions
+
+* `0.6.0` for all packages
+
 ## 2025-09-15
 
 ### Changes
 
 * Expose account `publicKey` via `useWallet()` react hook
+
+### New Versions
+
+* `0.5.1` for all packages
 
 ## 2025-09-12
 
