@@ -68,6 +68,16 @@
 
 ***
 
+### publicKey
+
+> **publicKey**: `Uint8Array`\<`ArrayBufferLike`\>
+
+#### Inherited from
+
+[`WalletAdapterProps`](WalletAdapterProps.md).[`publicKey`](WalletAdapterProps.md#publickey)
+
+***
+
 ### readyState
 
 > **readyState**: [`WalletReadyState`](../enumerations/WalletReadyState.md)

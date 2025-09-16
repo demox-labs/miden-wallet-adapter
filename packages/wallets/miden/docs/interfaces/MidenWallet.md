@@ -16,6 +16,12 @@
 
 > `optional` **accountId**: `string`
 
+***
+
+### publicKey?
+
+> `optional` **publicKey**: `Uint8Array`
+
 ## Methods
 
 ### addListener()

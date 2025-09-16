@@ -25,6 +25,7 @@ export interface MidenWalletEvents {
 
 export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
   accountId?: string;
+  publicKey?: Uint8Array;
   requestSend(
     transaction: MidenSendTransaction
   ): Promise<{ transactionId?: string }>;
@@ -72,6 +73,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   private _connecting: boolean;
   private _wallet: MidenWallet | null;
   private _accountId: string | null;
+  private _publicKey: Uint8Array | null;
   private _privateDataPermission: string;
   private _readyState: WalletReadyState =
     typeof window === 'undefined' || typeof document === 'undefined'
@@ -83,6 +85,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     this._connecting = false;
     this._wallet = null;
     this._accountId = null;
+    this._publicKey = null;
     this._privateDataPermission = PrivateDataPermission.UponRequest;
 
     if (this._readyState !== WalletReadyState.Unsupported) {
@@ -99,6 +102,10 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
 
   get accountId() {
     return this._accountId;
+  }
+
+  get publicKey() {
+    return this._publicKey;
   }
 
   get privateDataPermission() {
@@ -220,6 +227,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
           throw new WalletConnectionError();
         }
         this._accountId = wallet.accountId!;
+        this._publicKey = wallet.publicKey!;
       } catch (error: any) {
         throw new WalletConnectionError(error?.message, error);
       }
@@ -243,6 +251,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
 
       this._wallet = null;
       this._accountId = null;
+      this._publicKey = null;
 
       try {
         await wallet.disconnect();

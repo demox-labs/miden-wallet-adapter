@@ -20,6 +20,7 @@ export interface WalletContextState {
   wallets: Wallet[];
   wallet: Wallet | null;
   accountId: string | null;
+  publicKey: Uint8Array | null;
   connecting: boolean;
   connected: boolean;
   disconnecting: boolean;
@@ -107,6 +108,12 @@ Object.defineProperty(DEFAULT_CONTEXT, 'wallet', {
 Object.defineProperty(DEFAULT_CONTEXT, 'accountId', {
   get() {
     console.error(constructMissingProviderErrorMessage('read', 'accountId'));
+    return null;
+  },
+});
+Object.defineProperty(DEFAULT_CONTEXT, 'publicKey', {
+  get() {
+    console.error(constructMissingProviderErrorMessage('read', 'publicKey'));
     return null;
   },
 });

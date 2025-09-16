@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-09-15
+
+### Changes
+
+* Expose account `publicKey` via `useWallet()` react hook
+
 ## 2025-09-12
 
 ### Changes
