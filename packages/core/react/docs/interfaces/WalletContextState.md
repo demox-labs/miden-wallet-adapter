@@ -44,6 +44,12 @@
 
 ***
 
+### publicKey
+
+> **publicKey**: `Uint8Array`\<`ArrayBufferLike`\>
+
+***
+
 ### requestPrivateNotes()
 
 > **requestPrivateNotes**: () => `Promise`\<`any`[]\>

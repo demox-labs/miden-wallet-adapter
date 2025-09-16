@@ -83,6 +83,16 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ***
 
+### publicKey
+
+> `abstract` **publicKey**: `Uint8Array`\<`ArrayBufferLike`\>
+
+#### Implementation of
+
+`WalletAdapter.publicKey`
+
+***
+
 ### readyState
 
 > `abstract` **readyState**: [`WalletReadyState`](../enumerations/WalletReadyState.md)

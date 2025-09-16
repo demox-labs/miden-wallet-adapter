@@ -142,6 +142,22 @@
 
 ***
 
+### publicKey
+
+#### Get Signature
+
+> **get** **publicKey**(): `Uint8Array`\<`ArrayBufferLike`\>
+
+##### Returns
+
+`Uint8Array`\<`ArrayBufferLike`\>
+
+#### Overrides
+
+`BaseMessageSignerWalletAdapter.publicKey`
+
+***
+
 ### readyState
 
 #### Get Signature

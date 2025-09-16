@@ -49,6 +49,12 @@
 
 ***
 
+### publicKey
+
+> **publicKey**: `Uint8Array`\<`ArrayBufferLike`\>
+
+***
+
 ### readyState
 
 > **readyState**: [`WalletReadyState`](../enumerations/WalletReadyState.md)
