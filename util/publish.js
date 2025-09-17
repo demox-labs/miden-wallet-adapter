@@ -164,7 +164,9 @@ async function publishPackages() {
     const results = await Promise.all(levelPromises);
 
     // Wait for npm propagation of newly published packages
-    await waitIfNecessary(results);
+    if (level !== buildOrder.length - 1) {
+      await waitIfNecessary(results);
+    }
 
     console.log(`Level ${level + 1} completed successfully!\n\n`);
   }

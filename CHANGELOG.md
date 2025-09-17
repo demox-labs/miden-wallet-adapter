@@ -1,5 +1,19 @@
 # Changelog
 
+## 2025-09-17
+
+### Changes
+
+* Update `ConsumeTransaction` and `CustomTransaction` constructors to use built-in browser functions instead of `Buffer` (a node.js global)
+
+### New Versions
+
+* `@demox-labs/miden-wallet-adapter`: `0.6.1`
+
+  ---
+
+* `@demox-labs/miden-wallet-adapter-base`: `0.6.1`
+
 ## 2025-09-16
 
 ### Changes

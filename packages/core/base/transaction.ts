@@ -1,4 +1,5 @@
 import { TransactionRequest } from '@demox-labs/miden-sdk';
+import { u8ToB64 } from './helpers';
 
 export type NoteTypeString = 'public' | 'private';
 
@@ -62,7 +63,7 @@ export class ConsumeTransaction implements MidenConsumeTransaction {
     this.noteId = noteId;
     this.noteType = noteType;
     this.amount = amount;
-    this.noteBytes = noteBytes ? Buffer.from(noteBytes).toString('base64') : undefined;
+    this.noteBytes = noteBytes ? u8ToB64(noteBytes) : undefined;
   }
 }
 
@@ -87,12 +88,10 @@ export class CustomTransaction implements MidenCustomTransaction {
   ) {
     this.accountId = accountId;
     const requestBytes = transactionRequest.serialize();
-    const base64 = Buffer.from(requestBytes).toString('base64');
+    const base64 = u8ToB64(requestBytes);
     this.transactionRequest = base64;
     this.inputNoteIds = inputNotesIds;
-    this.importNotes = inputNoteBytes?.map((note) =>
-      Buffer.from(note).toString('base64')
-    );
+    this.importNotes = inputNoteBytes?.map((note) => u8ToB64(note));
   }
 }
 
