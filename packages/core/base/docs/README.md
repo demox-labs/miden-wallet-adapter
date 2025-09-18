@@ -65,6 +65,8 @@
 ## Type Aliases
 
 - [Adapter](type-aliases/Adapter.md)
+- [FungibleAssetDetails](type-aliases/FungibleAssetDetails.md)
+- [InputNoteDetails](type-aliases/InputNoteDetails.md)
 - [MessageSignerWalletAdapter](type-aliases/MessageSignerWalletAdapter.md)
 - [NoteTypeString](type-aliases/NoteTypeString.md)
 - [SignerWalletAdapter](type-aliases/SignerWalletAdapter.md)

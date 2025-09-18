@@ -1,5 +1,20 @@
 # Changelog
 
+## 2025-09-18
+
+### Changes
+
+* Add typings for private notes (see `InputNoteDetails`)
+
+### New Versions
+
+* `@demox-labs/miden-wallet-adapter`: `0.6.2`
+
+  ---
+
+* `@demox-labs/miden-wallet-adapter-base`: `0.6.2`
+* `@demox-labs/miden-wallet-adapter-miden`: `0.6.1`
+
 ## 2025-09-17
 
 ### Changes

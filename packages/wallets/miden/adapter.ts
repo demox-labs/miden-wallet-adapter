@@ -16,6 +16,7 @@ import {
   MidenConsumeTransaction,
   WalletTransactionError,
   Asset,
+  InputNoteDetails,
 } from '@demox-labs/miden-wallet-adapter-base';
 
 export interface MidenWalletEvents {
@@ -40,7 +41,7 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
     assets: Asset[]
   }>;
   requestPrivateNotes(): Promise<{ 
-    privateNotes: any[]
+    privateNotes: InputNoteDetails[]
   }>;
   signMessage(
     message: Uint8Array
@@ -194,7 +195,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     }
   }
 
-  async requestPrivateNotes(): Promise<any[]> {
+  async requestPrivateNotes(): Promise<InputNoteDetails[]> {
     try {
       const wallet = this._wallet;
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();

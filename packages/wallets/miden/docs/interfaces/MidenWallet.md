@@ -391,11 +391,11 @@ Remove the listeners of a given event.
 
 ### requestPrivateNotes()
 
-> **requestPrivateNotes**(): `Promise`\<\{ `privateNotes`: `any`[]; \}\>
+> **requestPrivateNotes**(): `Promise`\<\{ `privateNotes`: `InputNoteDetails`[]; \}\>
 
 #### Returns
 
-`Promise`\<\{ `privateNotes`: `any`[]; \}\>
+`Promise`\<\{ `privateNotes`: `InputNoteDetails`[]; \}\>
 
 ***
 

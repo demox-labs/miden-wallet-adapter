@@ -608,11 +608,11 @@ Remove the listeners of a given event.
 
 ### requestPrivateNotes()
 
-> `abstract` **requestPrivateNotes**(): `Promise`\<`any`[]\>
+> `abstract` **requestPrivateNotes**(): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
 
 #### Returns
 
-`Promise`\<`any`[]\>
+`Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
 
 #### Implementation of
 

@@ -162,11 +162,11 @@
 
 ### requestPrivateNotes()
 
-> **requestPrivateNotes**(): `Promise`\<`any`[]\>
+> **requestPrivateNotes**(): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
 
 #### Returns
 
-`Promise`\<`any`[]\>
+`Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
 
 ***
 

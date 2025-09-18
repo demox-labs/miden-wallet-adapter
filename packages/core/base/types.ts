@@ -1,3 +1,5 @@
+import { NoteType } from "@demox-labs/miden-sdk";
+
 export enum WalletAdapterNetwork {
   Testnet = 'testnet',
   Localnet = 'localnet',
@@ -26,3 +28,15 @@ export interface Asset {
   faucetId: string;
   amount: string;
 }
+
+export type InputNoteDetails = {
+  noteId: string;
+  senderAccountId: string | undefined;
+  assets: FungibleAssetDetails[];
+  noteType: NoteType | undefined;
+};
+
+export type FungibleAssetDetails = {
+  amount: string;
+  faucetId: string;
+};
