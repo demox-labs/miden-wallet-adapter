@@ -9,7 +9,10 @@
     "clean": "rimraf dist/ node_modules/",
     "doc": "typedoc --disableSources --tsconfig ./tsconfig.json --plugin typedoc-plugin-markdown --entryPoints index.ts"
   },
-  "repository": "https://github.com/demox-labs/miden-wallet-adapter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demox-labs/miden-wallet-adapter.git"
+  },
   "author": "Demox Labs",
   "license": "MIT",
   "dependencies": {
