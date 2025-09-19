@@ -4,7 +4,6 @@
   "description": "Modular TypeScript wallet adapters and React components for Miden applications.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/demox-labs/miden-wallet-adapter",
   "author": "Demox Labs",
   "license": "MIT",
   "scripts": {
@@ -40,5 +39,9 @@
       "types": "./dist/index.d.ts"
     },
     "./styles.css": "./dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demox-labs/miden-wallet-adapter.git"
   }
 }

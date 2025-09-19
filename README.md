@@ -9,45 +9,144 @@ The **Miden Wallet Adapter** is a modular TypeScript library that provides walle
 3. **Interaction**: Use the `useWallet` hook to access wallet state and methods, such as the wallet's accountId
 4. **Transactions**: Use [transaction types](https://github.com/demox-labs/miden-wallet-adapter/blob/main/packages/core/base/transaction.ts) to submit a consume or send transaction via the wallet, or a generic transaction using a Miden `TransactionRequest` object
 
-Connecting a wallet
-```js
-const walletAdapter = new MidenWalletAdapter({ appName: 'Your Miden App', });
-<WalletProvider wallets={[walletAdapter]}> // Defines which wallets are supported
-    <WalletModalProvider>
-        <>
-            Your app code...
-            <WalletMultiButton /> {/* Launches the WalletModal, prompts the user to connect their wallet */}
-        <>
-    </WalletModalProvider>
-</WalletProvider>
+### Connecting a wallet
+```tsx
+import React from 'react';
+import {
+  WalletProvider,
+  WalletModalProvider,
+  MidenWalletAdapter,
+} from '@demox-labs/miden-wallet-adapter';
+
+import '@demox-labs/miden-wallet-adapter/styles.css';
+
+const wallets = [
+  new MidenWalletAdapter({ appName: 'Your Miden App' }),
+];
+
+function App() {
+  return (
+    <WalletProvider wallets={wallets}>
+      <WalletModalProvider>
+        <YourAppComponents />
+      </WalletModalProvider>
+    </WalletProvider>
+  );
+}
+```
+**Note**: Either the stylesheet must be imported or custom styles must be defined
+
+### 2. Add Wallet Connection UI
+
+Use the `WalletMultiButton` for a complete wallet connection experience:
+
+```tsx
+import { WalletMultiButton } from '@demox-labs/miden-wallet-adapter';
+
+function Header() {
+  return (
+    <header>
+      <h1>My Miden dApp</h1>
+      <WalletMultiButton />
+    </header>
+  );
+}
 ```
 
-Submitting a send transaction
-```js
-const { wallet, accountId } = useWallet();
-const midenTransaction = new SendTransaction(
-    accountId,
-    toAddress,
-    faucetId,
-    sharePrivately ? 'private' : 'public',
-    amount!
-);
-await wallet.adapter.requestSend(midenTransaction);
+### 3. Use Wallet in Components
+
+Access wallet state and functionality with the `useWallet` hook:
+
+#### Send Transaction
+
+```tsx
+import { useWallet, SendTransaction } from '@demox-labs/miden-wallet-adapter';
+
+function SendComponent() {
+  const { wallet, accountId, connected } = useWallet();
+
+  const handleSend = async () => {
+    if (!wallet || !accountId) return;
+
+    const transaction = new SendTransaction(
+      accountId,
+      'recipient_address_here',
+      'faucet_id_here',
+      'public', // or 'private'
+      BigInt(1000) // amount
+    );
+
+    try {
+      await wallet.adapter.requestSend(transaction);
+      console.log('Transaction sent successfully!');
+    } catch (error) {
+      console.error('Transaction failed:', error);
+    }
+  };
+
+  if (!connected) {
+    return <p>Please connect your wallet</p>;
+  }
+
+  return (
+    <div>
+      <p>Connected: {accountId}</p>
+      <button onClick={handleSend}>Send Transaction</button>
+    </div>
+  );
+}
 ```
 
-Submitting a custom transaction
-```js
-const { wallet, accountId } = useWallet();
-const customTransaction = new CustomTransaction(
-    accountId, // AccountId the transaction request will be executed against
-    transactionRequest // TransactionRequest object (will need to be generated using the Miden Web SDK)
-);
-await wallet.adapter.requestTransaction(customTransaction)
+#### Custom Transaction
+
+```tsx
+import { useWallet, CustomTransaction } from '@demox-labs/miden-wallet-adapter';
+
+function CustomTransactionComponent() {
+  const { wallet, accountId, requestTransaction } = useWallet();
+
+  const handleCustomTransaction = async () => {
+    if (!wallet || !accountId) return;
+
+    const customTransaction = new CustomTransaction(
+      accountId,
+      transactionRequest // TransactionRequest from Miden Web SDK
+    );
+
+    await requestTransaction(customTransaction);
+  };
+
+  return <button onClick={handleCustomTransaction}>Execute Custom Transaction</button>;
+}
+```
+
+#### Requesting assets and private notes
+
+```tsx
+import { useWallet } from '@demox-labs/miden-wallet-adapter';
+
+function AssetsAndNotesComponent() {
+  const { wallet, accountId, requestAssets, requestPrivateNotes } = useWallet();
+
+  const getAssetsAndNotes() = async () => {
+    if (!wallet || !accountId) return;
+
+    // { faucetId: string, amount: string }[]
+    const assets = await requestAssets();
+
+    // { noteId: string, noteType: NoteType, senderAccountId: string, assets: Asset[] }
+    const notes = await requestPrivateNotes();
+
+    return { assets, notes };
+  };
+
+  return <button onClick={getAssetsAndNotes}>Get Assets and Notes</button>
+}
 ```
 
 ### Notes
 
-* When using the provided React Components (WalletMultiButton, WalletModal, etc.), the code must import the `styles.css` stylesheet provided or specify custom styles
+* When using the provided React Components (WalletMultiButton, WalletModal, etc.), the code must either import the `styles.css` stylesheet provided or specify custom styles
 
 ```
 require('@demox-labs/miden-wallet-adapter/styles.css');

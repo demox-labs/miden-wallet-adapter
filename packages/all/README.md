@@ -78,6 +78,8 @@ function Header() {
 
 Access wallet state and functionality with the `useWallet` hook:
 
+#### Send Transaction
+
 ```tsx
 import { useWallet, SendTransaction } from '@demox-labs/miden-wallet-adapter';
 
@@ -116,15 +118,13 @@ function SendComponent() {
 }
 ```
 
-## Advanced Usage
-
-### Custom Transaction
+#### Custom Transaction
 
 ```tsx
 import { useWallet, CustomTransaction } from '@demox-labs/miden-wallet-adapter';
 
 function CustomTransactionComponent() {
-  const { wallet, accountId } = useWallet();
+  const { wallet, accountId, requestTransaction } = useWallet();
 
   const handleCustomTransaction = async () => {
     if (!wallet || !accountId) return;
@@ -134,34 +134,34 @@ function CustomTransactionComponent() {
       transactionRequest // TransactionRequest from Miden Web SDK
     );
 
-    await wallet.adapter.requestTransaction(customTransaction);
+    await requestTransaction(customTransaction);
   };
 
   return <button onClick={handleCustomTransaction}>Execute Custom Transaction</button>;
 }
 ```
 
-### Consume Transaction
+#### Requesting assets and private notes
 
 ```tsx
-import { useWallet, ConsumeTransaction } from '@demox-labs/miden-wallet-adapter';
+import { useWallet } from '@demox-labs/miden-wallet-adapter';
 
-function ConsumeComponent() {
-  const { wallet, accountId } = useWallet();
+function AssetsAndNotesComponent() {
+  const { wallet, accountId, requestAssets, requestPrivateNotes } = useWallet();
 
-  const handleConsume = async () => {
+  const getAssetsAndNotes() = async () => {
     if (!wallet || !accountId) return;
 
-    const consumeTransaction = new ConsumeTransaction(
-      accountId,
-      noteId,
-      'private' // or 'public'
-    );
+    // { faucetId: string, amount: string }[]
+    const assets = await requestAssets();
 
-    await wallet.adapter.requestConsume(consumeTransaction);
+    // { noteId: string, noteType: NoteType, senderAccountId: string, assets: Asset[] }
+    const notes = await requestPrivateNotes();
+
+    return { assets, notes };
   };
 
-  return <button onClick={handleConsume}>Consume Note</button>;
+  return <button onClick={getAssetsAndNotes}>Get Assets and Notes</button>
 }
 ```
 
