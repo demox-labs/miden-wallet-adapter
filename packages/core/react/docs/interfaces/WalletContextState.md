@@ -62,11 +62,11 @@
 
 ### requestPrivateNotes()
 
-> **requestPrivateNotes**: () => `Promise`\<`any`[]\>
+> **requestPrivateNotes**: () => `Promise`\<`InputNoteDetails`[]\>
 
 #### Returns
 
-`Promise`\<`any`[]\>
+`Promise`\<`InputNoteDetails`[]\>
 
 ***
 

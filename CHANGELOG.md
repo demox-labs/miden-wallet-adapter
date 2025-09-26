@@ -1,5 +1,24 @@
 # Changelog
 
+## 2025-09-26
+
+### Changes
+
+* Remove unnecessary webpack dependecy from `miden-wallet-adapter-miden` packages
+* Update code examples in readmes
+* Add repository links for package listings
+
+### New Versions
+
+* `@demox-labs/miden-wallet-adapter`: `0.6.3`
+
+  ---
+
+* `@demox-labs/miden-wallet-adapter-base`: `0.6.3`
+* `@demox-labs/miden-wallet-adapter-react`: `0.6.1`
+* `@demox-labs/miden-wallet-adapter-reactui`: `0.6.1`
+* `@demox-labs/miden-wallet-adapter-miden`: `0.6.2`
+
 ## 2025-09-18
 
 ### Changes
