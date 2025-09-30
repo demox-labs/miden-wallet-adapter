@@ -1,5 +1,22 @@
 # Changelog
 
+## 2025-09-30
+
+### Changes
+
+* Added `recipientAccountId` to `CustomTransaction` to surface recipient address in Miden Wallet
+
+### New Versions
+
+* `@demox-labs/miden-wallet-adapter`: `0.6.4`
+
+  ---
+
+* `@demox-labs/miden-wallet-adapter-base`: `0.6.4`
+* `@demox-labs/miden-wallet-adapter-react`: `0.6.2`
+* `@demox-labs/miden-wallet-adapter-reactui`: `0.6.2`
+* `@demox-labs/miden-wallet-adapter-miden`: `0.6.3`
+
 ## 2025-09-26
 
 ### Changes

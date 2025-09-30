@@ -26,6 +26,12 @@
 
 ***
 
+### recipientAccountId
+
+> **recipientAccountId**: `string`
+
+***
+
 ### transactionRequest
 
 > **transactionRequest**: `string`

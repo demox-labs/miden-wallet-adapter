@@ -117,6 +117,8 @@ async function publishPackages() {
   console.log(isDryRun ? 'DRY RUN MODE - No packages will be actually published' : '🚀 LIVE MODE - Packages will be published to npm');
   const otp = isDryRun ? 'dry-run-otp' : await getOtp();
 
+  const packageUpdates = [];
+
   // Process each level sequentially
   for (let level = 0; level < buildOrder.length; level++) {
     const levelPackages = buildOrder[level];
@@ -132,6 +134,7 @@ async function publishPackages() {
         const versionExists = await checkIfVersionExists(packageName, packageVersion);
         if (versionExists) {
           console.log(`${packageName}@${packageVersion} already exists on npm. Skipping build and publish.`);
+          packageUpdates.push(`${packageName}: ${packageVersion} unchanged`);
           return { published: false, packageName, packageVersion };
         }
 
@@ -147,11 +150,13 @@ async function publishPackages() {
           console.log(`DRY RUN: Would publish ${packageName}@${packageVersion}`);
           await runCommand(dir, `yarn npm publish --dry-run --access=public`);
           console.log(`DRY RUN: Validation successful for ${packageName}@${packageVersion}`);
+          packageUpdates.push(`${packageName}: ${packageVersion} -> ${packageVersion} (dry-run)`);
           return { published: true, packageName, packageVersion };
         } else {
           console.log(`Publishing ${packageName}@${packageVersion}...`);
           await runCommand(dir, `yarn npm publish --otp=${otp} --access=public`);
           console.log(`Successfully published ${packageName}@${packageVersion}`);
+          packageUpdates.push(`${packageName}: ${packageVersion} -> ${packageVersion}`);
           return { published: true, packageName, packageVersion };
         }
       } catch (error) {
@@ -172,6 +177,8 @@ async function publishPackages() {
   }
 
   console.log('All packages published successfully!');
+  console.log('Summary of updates:');
+  packageUpdates.forEach(update => console.log(`- ${update}`));
 }
 
 publishPackages().catch((error) => {

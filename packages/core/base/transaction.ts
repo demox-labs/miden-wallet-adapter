@@ -69,6 +69,7 @@ export class ConsumeTransaction implements MidenConsumeTransaction {
 
 export interface MidenCustomTransaction {
   accountId: string;
+  recipientAccountId: string;
   transactionRequest: string;
   inputNoteIds?: string[];
   importNotes?: string[];
@@ -76,17 +77,20 @@ export interface MidenCustomTransaction {
 
 export class CustomTransaction implements MidenCustomTransaction {
   accountId: string;
+  recipientAccountId: string;
   transactionRequest: string;
   inputNoteIds?: string[];
   importNotes?: string[];
 
   constructor(
     accountId: string,
+    recipientAccountId: string,
     transactionRequest: TransactionRequest,
     inputNotesIds?: string[],
     inputNoteBytes?: Uint8Array[]
   ) {
     this.accountId = accountId;
+    this.recipientAccountId = recipientAccountId;
     const requestBytes = transactionRequest.serialize();
     const base64 = u8ToB64(requestBytes);
     this.transactionRequest = base64;
@@ -157,12 +161,14 @@ export class Transaction implements MidenTransaction {
 
   static createCustomTransaction(
     accountId: string,
+    recipientAccountId: string,
     transactionRequest: TransactionRequest,
     inputNoteIds?: string[],
     noteBytes?: Uint8Array[]
   ) {
     const transactionBytes = new CustomTransaction(
       accountId,
+      recipientAccountId,
       transactionRequest,
       inputNoteIds,
       noteBytes
