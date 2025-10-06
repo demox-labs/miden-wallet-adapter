@@ -49,6 +49,10 @@ export interface WalletContextState {
   signMessage:
     | MessageSignerWalletAdapterProps['signMessage']
     | undefined;
+
+  importPrivateNote:
+    | MessageSignerWalletAdapterProps['importPrivateNote']
+    | undefined;
 }
 
 const EMPTY_ARRAY: never[] = [];
@@ -99,6 +103,11 @@ const DEFAULT_CONTEXT = {
       console.error(
         constructMissingProviderErrorMessage('get', 'signMessage')
       )
+    );
+  },
+  importPrivateNote(_note: Uint8Array) {
+    return Promise.reject(
+      console.error(constructMissingProviderErrorMessage('get', 'importPrivateNote'))
     );
   }
 } as WalletContextState;

@@ -38,6 +38,22 @@
 
 ***
 
+### importPrivateNote()
+
+> **importPrivateNote**: (`note`) => `Promise`\<`string`\>
+
+#### Parameters
+
+##### note
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<`string`\>
+
+***
+
 ### privateDataPermission?
 
 > `optional` **privateDataPermission**: `PrivateDataPermission`

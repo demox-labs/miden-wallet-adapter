@@ -348,6 +348,19 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     [adapter, handleError, connected]
   );
 
+  const importPrivateNote:
+    | MessageSignerWalletAdapterProps['importPrivateNote']
+    | undefined = useMemo(
+    () =>
+      adapter && 'importPrivateNote' in adapter
+        ? async (note: Uint8Array) => {
+            if (!connected) throw handleError(new WalletNotConnectedError());
+            return await adapter.importPrivateNote(note);
+          }
+        : undefined,
+    [adapter, handleError, connected]
+  );
+
   return (
     <WalletContext.Provider
       value={{
@@ -366,6 +379,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         requestAssets,
         requestPrivateNotes,
         signMessage,
+        importPrivateNote,
       }}
     >
       {children}

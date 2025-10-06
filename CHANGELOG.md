@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-10-06
+
+### Changes
+
+* Add `importPrivateNote` endpoint to import a private note file (.mno) into an account via Miden Wallet
+
+### New Versions
+
+* `0.7.0` for all packages
+
 ## 2025-09-30
 
 ### Changes

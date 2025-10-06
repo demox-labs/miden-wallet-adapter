@@ -28,6 +28,7 @@ export interface MessageSignerWalletAdapterProps<Name extends string = string>
   requestAssets(): Promise<Asset[]>;
   requestPrivateNotes(): Promise<InputNoteDetails[]>;
   signMessage(message: Uint8Array): Promise<Uint8Array>;
+  importPrivateNote(note: Uint8Array): Promise<string>;
 }
 
 export type MessageSignerWalletAdapter<Name extends string = string> =
@@ -45,4 +46,5 @@ export abstract class BaseMessageSignerWalletAdapter<
   abstract requestAssets(): Promise<Asset[]>;
   abstract requestPrivateNotes(): Promise<InputNoteDetails[]>;
   abstract signMessage(message: Uint8Array): Promise<Uint8Array>;
+  abstract importPrivateNote(note: Uint8Array): Promise<string>;
 }

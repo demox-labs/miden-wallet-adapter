@@ -326,6 +326,26 @@ keyof [`WalletAdapterEvents`](../interfaces/WalletAdapterEvents.md)[]
 
 ***
 
+### importPrivateNote()
+
+> `abstract` **importPrivateNote**(`note`): `Promise`\<`string`\>
+
+#### Parameters
+
+##### note
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Implementation of
+
+`MessageSignerWalletAdapter.importPrivateNote`
+
+***
+
 ### listenerCount()
 
 > **listenerCount**(`event`): `number`

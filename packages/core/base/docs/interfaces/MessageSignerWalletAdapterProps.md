@@ -150,6 +150,22 @@
 
 ***
 
+### importPrivateNote()
+
+> **importPrivateNote**(`note`): `Promise`\<`string`\>
+
+#### Parameters
+
+##### note
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<`string`\>
+
+***
+
 ### requestAssets()
 
 > **requestAssets**(): `Promise`\<[`Asset`](Asset.md)[]\>

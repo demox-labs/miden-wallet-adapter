@@ -132,9 +132,10 @@ async function publishPackages() {
         // Check if new version to publish exists
         const { name: packageName, version: packageVersion } = getPackageInfo(dir);
         const versionExists = await checkIfVersionExists(packageName, packageVersion);
+        const previousVersion = packageVersion;
         if (versionExists) {
           console.log(`${packageName}@${packageVersion} already exists on npm. Skipping build and publish.`);
-          packageUpdates.push(`${packageName}: ${packageVersion} unchanged`);
+          packageUpdates.push(`${packageName}: ${previousVersion} unchanged`);
           return { published: false, packageName, packageVersion };
         }
 
@@ -150,13 +151,13 @@ async function publishPackages() {
           console.log(`DRY RUN: Would publish ${packageName}@${packageVersion}`);
           await runCommand(dir, `yarn npm publish --dry-run --access=public`);
           console.log(`DRY RUN: Validation successful for ${packageName}@${packageVersion}`);
-          packageUpdates.push(`${packageName}: ${packageVersion} -> ${packageVersion} (dry-run)`);
+          packageUpdates.push(`${packageName}: New version ${packageVersion} (dry-run)`);
           return { published: true, packageName, packageVersion };
         } else {
           console.log(`Publishing ${packageName}@${packageVersion}...`);
           await runCommand(dir, `yarn npm publish --otp=${otp} --access=public`);
           console.log(`Successfully published ${packageName}@${packageVersion}`);
-          packageUpdates.push(`${packageName}: ${packageVersion} -> ${packageVersion}`);
+          packageUpdates.push(`${packageName}: New version ${packageVersion}`);
           return { published: true, packageName, packageVersion };
         }
       } catch (error) {

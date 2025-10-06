@@ -37,15 +37,14 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
   requestTransaction(
     transaction: MidenTransaction
   ): Promise<{ transactionId?: string }>;
-  requestAssets(): Promise<{
-    assets: Asset[]
-  }>;
+  requestAssets(): Promise<{ assets: Asset[] }>;
   requestPrivateNotes(): Promise<{ 
     privateNotes: InputNoteDetails[]
   }>;
   signMessage(
     message: Uint8Array
   ): Promise<{ signature: Uint8Array }>;
+  importPrivateNote(note: Uint8Array): Promise<{ noteId: string }>;
   connect(
     privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
@@ -221,6 +220,18 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       } catch (error: any) {
         throw new WalletTransactionError(error?.message, error);
       }
+    } catch (error: any) {
+      this.emit('error', error);
+      throw error;
+    }
+  }
+
+  async importPrivateNote(note: Uint8Array): Promise<string> {
+    try {
+      const wallet = this._wallet;
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      const result = await wallet.importPrivateNote(note);
+      return result.noteId;
     } catch (error: any) {
       this.emit('error', error);
       throw error;

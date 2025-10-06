@@ -141,6 +141,22 @@ keyof [`MidenWalletEvents`](MidenWalletEvents.md)[]
 
 ***
 
+### importPrivateNote()
+
+> **importPrivateNote**(`note`): `Promise`\<\{ `noteId`: `string`; \}\>
+
+#### Parameters
+
+##### note
+
+`Uint8Array`
+
+#### Returns
+
+`Promise`\<\{ `noteId`: `string`; \}\>
+
+***
+
 ### listenerCount()
 
 > **listenerCount**(`event`): `number`
