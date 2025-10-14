@@ -24,6 +24,8 @@ export enum AllowedPrivateData {
   All = (1 << 16) - 1 // 65535 (allows for new permissions without requiring a migration)
 }
 
+export type SignKind = "word" | "signingInputs";
+
 export interface Asset {
   faucetId: string;
   amount: string;

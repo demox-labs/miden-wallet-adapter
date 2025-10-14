@@ -3,6 +3,7 @@ import {
   BaseMessageSignerWalletAdapter,
   EventEmitter,
   scopePollingDetectionStrategy,
+  SignKind,
   WalletConnectionError,
   WalletDisconnectionError,
   WalletName,
@@ -41,8 +42,9 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
   requestPrivateNotes(): Promise<{ 
     privateNotes: InputNoteDetails[]
   }>;
-  signMessage(
-    message: Uint8Array
+  signBytes(
+    message: Uint8Array,
+    kind: SignKind
   ): Promise<{ signature: Uint8Array }>;
   importPrivateNote(note: Uint8Array): Promise<{ noteId: string }>;
   connect(
@@ -210,12 +212,12 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     }
   }
 
-  async signMessage(message: Uint8Array): Promise<Uint8Array> {
+  async signBytes(message: Uint8Array, kind: SignKind): Promise<Uint8Array> {
     try {
       const wallet = this._wallet;
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
-        const result = await wallet.signMessage(message);
+        const result = await wallet.signBytes(message, kind);
         return result.signature;
       } catch (error: any) {
         throw new WalletTransactionError(error?.message, error);

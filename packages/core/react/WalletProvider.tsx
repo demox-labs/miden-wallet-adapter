@@ -4,6 +4,7 @@ import {
   MessageSignerWalletAdapterProps,
   MidenTransaction,
   PrivateDataPermission,
+  SignKind,
   WalletAdapterNetwork,
   WalletError,
   WalletName,
@@ -335,14 +336,14 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     [adapter, handleError, connected]
   );
 
-  const signMessage:
-    | MessageSignerWalletAdapterProps['signMessage']
+  const signBytes:
+    | MessageSignerWalletAdapterProps['signBytes']
     | undefined = useMemo(
     () =>
-      adapter && 'signMessage' in adapter
-        ? async (message: Uint8Array) => {
+      adapter && 'signBytes' in adapter
+        ? async (message: Uint8Array, kind: SignKind) => {
             if (!connected) throw handleError(new WalletNotConnectedError());
-            return await adapter.signMessage(message);
+            return await adapter.signBytes(message, kind);
           }
         : undefined,
     [adapter, handleError, connected]
@@ -378,8 +379,8 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         requestTransaction,
         requestAssets,
         requestPrivateNotes,
-        signMessage,
-        importPrivateNote,
+        signBytes,
+        importPrivateNote
       }}
     >
       {children}
