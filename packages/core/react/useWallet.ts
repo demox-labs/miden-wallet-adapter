@@ -5,6 +5,7 @@ import {
   MidenTransaction,
   MessageSignerWalletAdapterProps,
   PrivateDataPermission,
+  SignKind,
   WalletAdapterNetwork,
   WalletName,
   WalletReadyState
@@ -46,8 +47,8 @@ export interface WalletContextState {
     | MessageSignerWalletAdapterProps['requestPrivateNotes']
     | undefined;
 
-  signMessage:
-    | MessageSignerWalletAdapterProps['signMessage']
+  signBytes:
+    | MessageSignerWalletAdapterProps['signBytes']
     | undefined;
 
   importPrivateNote:
@@ -98,10 +99,10 @@ const DEFAULT_CONTEXT = {
       )
     );
   },
-  signMessage(_message: Uint8Array) {
+  signBytes(_message: Uint8Array, _kind: SignKind) {
     return Promise.reject(
       console.error(
-        constructMissingProviderErrorMessage('get', 'signMessage')
+        constructMissingProviderErrorMessage('get', 'signBytes')
       )
     );
   },
