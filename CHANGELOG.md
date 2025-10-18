@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-10-17
+
+### Changes
+
+* Change `signMessage` to `signBytes` and allow for signing of `SigningInputs`
+
+### New Versions
+
+* `0.8.0` for all packages
+
 ## 2025-10-06
 
 ### Changes
