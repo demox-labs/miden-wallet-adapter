@@ -24,6 +24,7 @@ import {
 import { useLocalStorage } from './useLocalStorage';
 import type { Wallet } from './useWallet';
 import { WalletContext } from './useWallet';
+import type { NoteFilterTypes } from '@demox-labs/miden-sdk';
 
 export interface WalletProviderProps {
   children: ReactNode;
@@ -328,9 +329,9 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     | undefined = useMemo(
     () =>
       adapter && 'requestPrivateNotes' in adapter
-        ? async () => {
+        ? async (noteFilterType: NoteFilterTypes, noteIds?: string[]) => {
             if (!connected) throw handleError(new WalletNotConnectedError());
-            return await adapter.requestPrivateNotes();
+            return await adapter.requestPrivateNotes(noteFilterType, noteIds);
           }
         : undefined,
     [adapter, handleError, connected]

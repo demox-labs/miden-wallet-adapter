@@ -1,4 +1,4 @@
-import { NoteType } from "@demox-labs/miden-sdk";
+import type { InputNoteState, NoteType } from "@demox-labs/miden-sdk";
 
 export enum WalletAdapterNetwork {
   Testnet = 'testnet',
@@ -36,6 +36,8 @@ export type InputNoteDetails = {
   senderAccountId: string | undefined;
   assets: FungibleAssetDetails[];
   noteType: NoteType | undefined;
+  nullifier: string;
+  state: InputNoteState;
 };
 
 export type FungibleAssetDetails = {

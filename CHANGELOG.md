@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-10-22
+
+### Changes
+
+* Update `requestPrivateNotes` to accept a `noteFilterType` param and an optional `noteIds` param. See [NoteFilter](https://github.com/0xMiden/miden-client/blob/main/crates/web-client/src/models/note_filter.rs) in miden client for details about usage.
+
+### New Versions
+
+* `0.8.1` for all packages
+
 ## 2025-10-17
 
 ### Changes

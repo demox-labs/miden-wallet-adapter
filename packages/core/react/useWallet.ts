@@ -10,6 +10,7 @@ import {
   WalletName,
   WalletReadyState
 } from '@demox-labs/miden-wallet-adapter-base';
+import type { NoteFilterTypes } from '@demox-labs/miden-sdk';
 
 export interface Wallet {
   adapter: Adapter;
@@ -92,7 +93,7 @@ const DEFAULT_CONTEXT = {
       console.error(constructMissingProviderErrorMessage('get', 'requestAssets'))
     );
   },
-  requestPrivateNotes() {
+  requestPrivateNotes(_noteFilterType: NoteFilterTypes, _noteIds?: string[]) {
     return Promise.reject(
       console.error(
         constructMissingProviderErrorMessage('get', 'requestPrivateNotes')

@@ -1,3 +1,4 @@
+import type { NoteFilterTypes } from '@demox-labs/miden-sdk';
 import {
   AllowedPrivateData,
   BaseMessageSignerWalletAdapter,
@@ -39,7 +40,7 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
     transaction: MidenTransaction
   ): Promise<{ transactionId?: string }>;
   requestAssets(): Promise<{ assets: Asset[] }>;
-  requestPrivateNotes(): Promise<{ 
+  requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<{ 
     privateNotes: InputNoteDetails[]
   }>;
   signBytes(
@@ -196,12 +197,12 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     }
   }
 
-  async requestPrivateNotes(): Promise<InputNoteDetails[]> {
+  async requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<InputNoteDetails[]> {
     try {
       const wallet = this._wallet;
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       try {
-        const result = await wallet.requestPrivateNotes();
+        const result = await wallet.requestPrivateNotes(noteFilterType, noteIds);
         return result.privateNotes;
       } catch (error: any) {
         throw new WalletTransactionError(error?.message, error);

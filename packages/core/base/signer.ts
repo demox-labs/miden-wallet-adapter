@@ -1,3 +1,4 @@
+import type { NoteFilterTypes } from '@demox-labs/miden-sdk';
 import type { WalletAdapter, WalletAdapterProps } from './adapter';
 import { BaseWalletAdapter } from './adapter';
 import {
@@ -26,7 +27,7 @@ export interface MessageSignerWalletAdapterProps<Name extends string = string>
   extends WalletAdapterProps<Name> {
   requestTransaction(transaction: MidenTransaction): Promise<string>;
   requestAssets(): Promise<Asset[]>;
-  requestPrivateNotes(): Promise<InputNoteDetails[]>;
+  requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<InputNoteDetails[]>;
   signBytes(data: Uint8Array, kind: SignKind): Promise<Uint8Array>;
   importPrivateNote(note: Uint8Array): Promise<string>;
 }
@@ -44,7 +45,7 @@ export abstract class BaseMessageSignerWalletAdapter<
   abstract requestConsume(transaction: MidenConsumeTransaction): Promise<string>;
   abstract requestTransaction(transaction: MidenTransaction): Promise<string>;
   abstract requestAssets(): Promise<Asset[]>;
-  abstract requestPrivateNotes(): Promise<InputNoteDetails[]>;
+  abstract requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<InputNoteDetails[]>;
   abstract signBytes(data: Uint8Array, kind: SignKind): Promise<Uint8Array>;
   abstract importPrivateNote(note: Uint8Array): Promise<string>;
 }
