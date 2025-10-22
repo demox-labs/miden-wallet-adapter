@@ -28,6 +28,18 @@
 
 ***
 
+### nullifier
+
+> **nullifier**: `string`
+
+***
+
 ### senderAccountId
 
 > **senderAccountId**: `string` \| `undefined`
+
+***
+
+### state
+
+> **state**: `InputNoteState`

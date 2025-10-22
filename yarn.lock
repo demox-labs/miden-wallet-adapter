@@ -5,14 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@demox-labs/miden-sdk@npm:0.11.6":
-  version: 0.11.6
-  resolution: "@demox-labs/miden-sdk@npm:0.11.6"
+"@demox-labs/miden-sdk@npm:0.11.11":
+  version: 0.11.11
+  resolution: "@demox-labs/miden-sdk@npm:0.11.11"
   dependencies:
     chai-as-promised: "npm:^8.0.0"
     dexie: "npm:^4.0.1"
     glob: "npm:^11.0.0"
-  checksum: 10c0/b1b216734fff12906958743870dbe40138fb08d9e7653e487572b3ff694f38bf11fc3fc79ddcf9dd93bb466cfc555cf4214f6842e8b63a373c63ec44660bc19d
+  checksum: 10c0/5549b49827a8059c3c111ba13b4ee4983a98a7eca26b9b0197046729cc5a1dedf4401b435821bbc948d8a21ae45b98a9a05ee316c269f2b172685c62c8a81021
   languageName: node
   linkType: hard
 
@@ -580,7 +580,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "miden-wallet-adapter@workspace:."
   dependencies:
-    "@demox-labs/miden-sdk": "npm:0.11.6"
+    "@demox-labs/miden-sdk": "npm:0.11.11"
     "@types/node": "npm:^22.13.5"
     "@types/react": "npm:^19.0.10"
     "@types/react-dom": "npm:^19.0.4"

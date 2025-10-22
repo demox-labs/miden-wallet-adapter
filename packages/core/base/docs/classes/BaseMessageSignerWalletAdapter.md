@@ -628,7 +628,17 @@ Remove the listeners of a given event.
 
 ### requestPrivateNotes()
 
-> `abstract` **requestPrivateNotes**(): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
+> `abstract` **requestPrivateNotes**(`noteFilterType`, `noteIds?`): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
+
+#### Parameters
+
+##### noteFilterType
+
+`NoteFilterTypes`
+
+##### noteIds?
+
+`string`[]
 
 #### Returns
 
@@ -676,15 +686,19 @@ Remove the listeners of a given event.
 
 ***
 
-### signMessage()
+### signBytes()
 
-> `abstract` **signMessage**(`message`): `Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
+> `abstract` **signBytes**(`data`, `kind`): `Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
 
 #### Parameters
 
-##### message
+##### data
 
 `Uint8Array`
+
+##### kind
+
+[`SignKind`](../type-aliases/SignKind.md)
 
 #### Returns
 
@@ -692,4 +706,4 @@ Remove the listeners of a given event.
 
 #### Implementation of
 
-`MessageSignerWalletAdapter.signMessage`
+`MessageSignerWalletAdapter.signBytes`

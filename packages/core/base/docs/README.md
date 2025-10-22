@@ -70,6 +70,7 @@
 - [MessageSignerWalletAdapter](type-aliases/MessageSignerWalletAdapter.md)
 - [NoteTypeString](type-aliases/NoteTypeString.md)
 - [SignerWalletAdapter](type-aliases/SignerWalletAdapter.md)
+- [SignKind](type-aliases/SignKind.md)
 - [SupportedTransactionVersions](type-aliases/SupportedTransactionVersions.md)
 - [TransactionOrVersionedTransaction](type-aliases/TransactionOrVersionedTransaction.md)
 - [TransactionPayload](type-aliases/TransactionPayload.md)

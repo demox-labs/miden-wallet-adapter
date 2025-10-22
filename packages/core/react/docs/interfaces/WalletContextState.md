@@ -78,7 +78,17 @@
 
 ### requestPrivateNotes()
 
-> **requestPrivateNotes**: () => `Promise`\<`InputNoteDetails`[]\>
+> **requestPrivateNotes**: (`noteFilterType`, `noteIds?`) => `Promise`\<`InputNoteDetails`[]\>
+
+#### Parameters
+
+##### noteFilterType
+
+`NoteFilterTypes`
+
+##### noteIds?
+
+`string`[]
 
 #### Returns
 
@@ -102,15 +112,19 @@
 
 ***
 
-### signMessage()
+### signBytes()
 
-> **signMessage**: (`message`) => `Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
+> **signBytes**: (`data`, `kind`) => `Promise`\<`Uint8Array`\<`ArrayBufferLike`\>\>
 
 #### Parameters
 
-##### message
+##### data
 
 `Uint8Array`
+
+##### kind
+
+`SignKind`
 
 #### Returns
 
