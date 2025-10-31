@@ -55,6 +55,10 @@ export interface WalletContextState {
   importPrivateNote:
     | MessageSignerWalletAdapterProps['importPrivateNote']
     | undefined;
+
+  requestConsumableNotes:
+    | MessageSignerWalletAdapterProps['requestConsumableNotes']
+    | undefined;
 }
 
 const EMPTY_ARRAY: never[] = [];
@@ -111,7 +115,12 @@ const DEFAULT_CONTEXT = {
     return Promise.reject(
       console.error(constructMissingProviderErrorMessage('get', 'importPrivateNote'))
     );
-  }
+  },
+  requestConsumableNotes() {
+    return Promise.reject(
+      console.error(constructMissingProviderErrorMessage('get', 'requestConsumableNotes'))
+    );
+  },
 } as WalletContextState;
 Object.defineProperty(DEFAULT_CONTEXT, 'wallets', {
   get() {

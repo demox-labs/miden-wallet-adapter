@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-10-31
+
+### Changes
+
+* Add `requestConsumableNotes` endpoint to retrieve all consumable notes for the connected account
+
+### New Versions
+
+* `0.8.2` for all packages
+
 ## 2025-10-22
 
 ### Changes

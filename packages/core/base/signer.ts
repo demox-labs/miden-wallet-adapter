@@ -30,6 +30,7 @@ export interface MessageSignerWalletAdapterProps<Name extends string = string>
   requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<InputNoteDetails[]>;
   signBytes(data: Uint8Array, kind: SignKind): Promise<Uint8Array>;
   importPrivateNote(note: Uint8Array): Promise<string>;
+  requestConsumableNotes(): Promise<InputNoteDetails[]>;
 }
 
 export type MessageSignerWalletAdapter<Name extends string = string> =
@@ -48,4 +49,5 @@ export abstract class BaseMessageSignerWalletAdapter<
   abstract requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<InputNoteDetails[]>;
   abstract signBytes(data: Uint8Array, kind: SignKind): Promise<Uint8Array>;
   abstract importPrivateNote(note: Uint8Array): Promise<string>;
+  abstract requestConsumableNotes(): Promise<InputNoteDetails[]>;
 }

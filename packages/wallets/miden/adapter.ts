@@ -48,6 +48,7 @@ export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
     kind: SignKind
   ): Promise<{ signature: Uint8Array }>;
   importPrivateNote(note: Uint8Array): Promise<{ noteId: string }>;
+  requestConsumableNotes(): Promise<{ consumableNotes: InputNoteDetails[] }>;
   connect(
     privateDataPermission: PrivateDataPermission,
     network: WalletAdapterNetwork,
@@ -235,6 +236,18 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       if (!wallet || !this.accountId) throw new WalletNotConnectedError();
       const result = await wallet.importPrivateNote(note);
       return result.noteId;
+    } catch (error: any) {
+      this.emit('error', error);
+      throw error;
+    }
+  }
+
+  async requestConsumableNotes(): Promise<InputNoteDetails[]> {
+    try {
+      const wallet = this._wallet;
+      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      const result = await wallet.requestConsumableNotes();
+      return result.consumableNotes;
     } catch (error: any) {
       this.emit('error', error);
       throw error;

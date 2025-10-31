@@ -76,6 +76,16 @@
 
 ***
 
+### requestConsumableNotes()
+
+> **requestConsumableNotes**: () => `Promise`\<`InputNoteDetails`[]\>
+
+#### Returns
+
+`Promise`\<`InputNoteDetails`[]\>
+
+***
+
 ### requestPrivateNotes()
 
 > **requestPrivateNotes**: (`noteFilterType`, `noteIds?`) => `Promise`\<`InputNoteDetails`[]\>

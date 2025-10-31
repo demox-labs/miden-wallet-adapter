@@ -389,6 +389,16 @@ Remove the listeners of a given event.
 
 ***
 
+### requestConsumableNotes()
+
+> **requestConsumableNotes**(): `Promise`\<\{ `consumableNotes`: `InputNoteDetails`[]; \}\>
+
+#### Returns
+
+`Promise`\<\{ `consumableNotes`: `InputNoteDetails`[]; \}\>
+
+***
+
 ### requestConsume()
 
 > **requestConsume**(`transaction`): `Promise`\<\{ `transactionId?`: `string`; \}\>

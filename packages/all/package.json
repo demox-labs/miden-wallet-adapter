@@ -1,6 +1,6 @@
 {
   "name": "@demox-labs/miden-wallet-adapter",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Modular TypeScript wallet adapters and React components for Miden applications.",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -610,6 +610,20 @@ Remove the listeners of a given event.
 
 ***
 
+### requestConsumableNotes()
+
+> `abstract` **requestConsumableNotes**(): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
+
+#### Returns
+
+`Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
+
+#### Implementation of
+
+`MessageSignerWalletAdapter.requestConsumableNotes`
+
+***
+
 ### requestConsume()
 
 > `abstract` **requestConsume**(`transaction`): `Promise`\<`string`\>

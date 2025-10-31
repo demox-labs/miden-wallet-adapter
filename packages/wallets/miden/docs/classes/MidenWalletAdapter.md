@@ -569,6 +569,20 @@ Remove the listeners of a given event.
 
 ***
 
+### requestConsumableNotes()
+
+> **requestConsumableNotes**(): `Promise`\<`InputNoteDetails`[]\>
+
+#### Returns
+
+`Promise`\<`InputNoteDetails`[]\>
+
+#### Overrides
+
+`BaseMessageSignerWalletAdapter.requestConsumableNotes`
+
+***
+
 ### requestConsume()
 
 > **requestConsume**(`transaction`): `Promise`\<`string`\>

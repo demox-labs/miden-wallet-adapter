@@ -176,6 +176,16 @@
 
 ***
 
+### requestConsumableNotes()
+
+> **requestConsumableNotes**(): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
+
+#### Returns
+
+`Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
+
+***
+
 ### requestPrivateNotes()
 
 > **requestPrivateNotes**(`noteFilterType`, `noteIds?`): `Promise`\<[`InputNoteDetails`](../type-aliases/InputNoteDetails.md)[]\>
