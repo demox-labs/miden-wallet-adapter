@@ -1,5 +1,30 @@
 # Changelog
 
+## 2025-11-20
+
+### Changes
+
+* Update React UI components and Miden Wallet logo to match Miden color theme
+
+### New Versions
+
+* `@demox-labs/miden-wallet-adapter`: `0.9.1`
+
+  ---
+
+* `@demox-labs/miden-wallet-adapter-reactui`: `0.9.1`
+* `@demox-labs/miden-wallet-adapter-miden`: `0.9.1`
+
+## 2025-11-18
+
+### Changes
+
+* Bump `@demox-labs/miden-sdk` dependency to `0.12.3`
+
+### New Versions
+
+* `0.9.0` for all packages
+
 ## 2025-10-31
 
 ### Changes

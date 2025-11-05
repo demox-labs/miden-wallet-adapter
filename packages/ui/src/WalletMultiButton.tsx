@@ -78,7 +78,14 @@ export const WalletMultiButton: FC<ButtonProps> = ({ children, ...props }) => {
       <Button
         aria-expanded={active}
         className="wallet-adapter-button-trigger"
-        style={{ pointerEvents: active ? 'none' : 'auto', ...props.style }}
+        style={{
+          pointerEvents: active ? 'none' : 'auto',
+          width: '100%',
+          backgroundColor: '#FFFFFF',
+          border: '1px solid #D7D7D7',
+          color: 'black',
+          ...props.style
+        }}
         onClick={openDropdown}
         startIcon={<WalletIcon wallet={wallet} />}
         {...props}
