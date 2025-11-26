@@ -21,20 +21,24 @@ export const WalletMultiButton: FC<ButtonProps> = ({ children, ...props }) => {
   const [active, setActive] = useState(false);
   const ref = useRef<HTMLUListElement>(null);
 
-  const base58 = useMemo(() => accountId?.toString(), [accountId]);
+  const address = useMemo(() => accountId?.toString(), [accountId]);
   const content = useMemo(() => {
     if (children) return children;
-    if (!wallet || !base58) return null;
-    return base58.slice(0, 4) + '..' + base58.slice(-4);
-  }, [children, wallet, base58]);
+    if (!wallet || !address) return null;
+
+    const underscoreIndex = address.indexOf('_');
+    const frontPart = address.slice(0, 6);
+    const middlePart = address.slice(underscoreIndex - 4, underscoreIndex);
+    return `${frontPart}...${middlePart}`;
+  }, [children, wallet, address]);
 
   const copyAddress = useCallback(async () => {
-    if (base58) {
-      await navigator.clipboard.writeText(base58);
+    if (address) {
+      await navigator.clipboard.writeText(address);
       setCopied(true);
       setTimeout(() => setCopied(false), 400);
     }
-  }, [base58]);
+  }, [address]);
 
   const openDropdown = useCallback(() => {
     setActive(true);
@@ -70,7 +74,7 @@ export const WalletMultiButton: FC<ButtonProps> = ({ children, ...props }) => {
 
   if (!wallet)
     return <WalletModalButton {...props}>{children}</WalletModalButton>;
-  if (!base58)
+  if (!address)
     return <WalletConnectButton {...props}>{children}</WalletConnectButton>;
 
   return (

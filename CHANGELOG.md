@@ -1,5 +1,19 @@
 # Changelog
 
+## 2025-11-25
+
+### Changes
+
+* Update truncation of Miden address in `WalletMultiButton`
+
+### New Versions
+
+* `@demox-labs/miden-wallet-adapter`: `0.9.2`
+
+  ---
+
+* `@demox-labs/miden-wallet-adapter-reactui`: `0.9.2`
+
 ## 2025-11-20
 
 ### Changes
