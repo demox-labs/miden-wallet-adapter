@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-11-26
+
+### Changes
+
+* [BREAKING] Refactor all components to reference `address` instead of `accountId`, to match the underlying address data
+
+### New Versions
+
+* `0.10.0` for all packages
+
 ## 2025-11-25
 
 ### Changes

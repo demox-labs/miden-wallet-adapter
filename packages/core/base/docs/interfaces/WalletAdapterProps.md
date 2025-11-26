@@ -19,9 +19,9 @@
 
 ## Properties
 
-### accountId
+### address
 
-> **accountId**: `string`
+> **address**: `string`
 
 ***
 

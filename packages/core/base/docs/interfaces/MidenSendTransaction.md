@@ -32,12 +32,12 @@
 
 ***
 
-### recipientAccountId
+### recipientAddress
 
-> **recipientAccountId**: `string`
+> **recipientAddress**: `string`
 
 ***
 
-### senderAccountId
+### senderAddress
 
-> **senderAccountId**: `string`
+> **senderAddress**: `string`

@@ -10,11 +10,11 @@
 
 ### connect()
 
-> **connect**(`accountId`, `allowedPrivateData?`): `void`
+> **connect**(`address`, `allowedPrivateData?`): `void`
 
 #### Parameters
 
-##### accountId
+##### address
 
 `string`
 

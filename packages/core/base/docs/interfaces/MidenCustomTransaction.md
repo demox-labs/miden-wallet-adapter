@@ -8,9 +8,9 @@
 
 ## Properties
 
-### accountId
+### address
 
-> **accountId**: `string`
+> **address**: `string`
 
 ***
 
@@ -26,9 +26,9 @@
 
 ***
 
-### recipientAccountId
+### recipientAddress
 
-> **recipientAccountId**: `string`
+> **recipientAddress**: `string`
 
 ***
 

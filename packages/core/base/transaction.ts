@@ -4,8 +4,8 @@ import { u8ToB64 } from './helpers';
 export type NoteTypeString = 'public' | 'private';
 
 export interface MidenSendTransaction {
-  senderAccountId: string;
-  recipientAccountId: string;
+  senderAddress: string;
+  recipientAddress: string;
   faucetId: string;
   noteType: NoteTypeString;
   amount: number;
@@ -13,8 +13,8 @@ export interface MidenSendTransaction {
 }
 
 export class SendTransaction implements MidenSendTransaction {
-  senderAccountId: string;
-  recipientAccountId: string;
+  senderAddress: string;
+  recipientAddress: string;
   faucetId: string;
   noteType: NoteTypeString;
   amount: number;
@@ -28,8 +28,8 @@ export class SendTransaction implements MidenSendTransaction {
     amount: number,
     recallBlocks?: number
   ) {
-    this.senderAccountId = sender;
-    this.recipientAccountId = recipient;
+    this.senderAddress = sender;
+    this.recipientAddress = recipient;
     this.faucetId = faucetId;
     this.noteType = noteType;
     this.amount = amount;
@@ -68,29 +68,29 @@ export class ConsumeTransaction implements MidenConsumeTransaction {
 }
 
 export interface MidenCustomTransaction {
-  accountId: string;
-  recipientAccountId: string;
+  address: string;
+  recipientAddress: string;
   transactionRequest: string;
   inputNoteIds?: string[];
   importNotes?: string[];
 }
 
 export class CustomTransaction implements MidenCustomTransaction {
-  accountId: string;
-  recipientAccountId: string;
+  address: string;
+  recipientAddress: string;
   transactionRequest: string;
   inputNoteIds?: string[];
   importNotes?: string[];
 
   constructor(
-    accountId: string,
-    recipientAccountId: string,
+    address: string,
+    recipientAddress: string,
     transactionRequest: TransactionRequest,
     inputNotesIds?: string[],
     inputNoteBytes?: Uint8Array[]
   ) {
-    this.accountId = accountId;
-    this.recipientAccountId = recipientAccountId;
+    this.address = address;
+    this.recipientAddress = recipientAddress;
     const requestBytes = transactionRequest.serialize();
     const base64 = u8ToB64(requestBytes);
     this.transactionRequest = base64;
@@ -160,15 +160,15 @@ export class Transaction implements MidenTransaction {
   }
 
   static createCustomTransaction(
-    accountId: string,
-    recipientAccountId: string,
+    address: string,
+    recipientAddress: string,
     transactionRequest: TransactionRequest,
     inputNoteIds?: string[],
     noteBytes?: Uint8Array[]
   ) {
     const transactionBytes = new CustomTransaction(
-      accountId,
-      recipientAccountId,
+      address,
+      recipientAddress,
       transactionRequest,
       inputNoteIds,
       noteBytes

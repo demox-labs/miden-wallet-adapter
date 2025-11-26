@@ -39,17 +39,17 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ## Properties
 
-### accountId
+### address
 
-> `abstract` **accountId**: `string`
+> `abstract` **address**: `string`
 
 #### Implementation of
 
-`MessageSignerWalletAdapter.accountId`
+`MessageSignerWalletAdapter.address`
 
 #### Inherited from
 
-[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`accountId`](BaseSignerWalletAdapter.md#accountid)
+[`BaseSignerWalletAdapter`](BaseSignerWalletAdapter.md).[`address`](BaseSignerWalletAdapter.md#address)
 
 ***
 

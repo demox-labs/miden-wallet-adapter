@@ -20,7 +20,7 @@
 - [`WalletDisconnectedError`](WalletDisconnectedError.md)
 - [`WalletDisconnectionError`](WalletDisconnectionError.md)
 - [`WalletAccountError`](WalletAccountError.md)
-- [`WalletAccountIdError`](WalletAccountIdError.md)
+- [`WalletAddressError`](WalletAddressError.md)
 - [`WalletKeypairError`](WalletKeypairError.md)
 - [`WalletNotConnectedError`](WalletNotConnectedError.md)
 - [`WalletSendTransactionError`](WalletSendTransactionError.md)

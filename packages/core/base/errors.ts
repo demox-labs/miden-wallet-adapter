@@ -40,8 +40,8 @@ export class WalletAccountError extends WalletError {
     name = 'WalletAccountError';
 }
 
-export class WalletAccountIdError extends WalletError {
-    name = 'WalletAccountIdError';
+export class WalletAddressError extends WalletError {
+    name = 'WalletAddressError';
 }
 
 export class WalletKeypairError extends WalletError {

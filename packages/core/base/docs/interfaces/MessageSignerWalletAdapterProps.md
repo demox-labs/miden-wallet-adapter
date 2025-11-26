@@ -18,13 +18,13 @@
 
 ## Properties
 
-### accountId
+### address
 
-> **accountId**: `string`
+> **address**: `string`
 
 #### Inherited from
 
-[`WalletAdapterProps`](WalletAdapterProps.md).[`accountId`](WalletAdapterProps.md#accountid)
+[`WalletAdapterProps`](WalletAdapterProps.md).[`address`](WalletAdapterProps.md#address)
 
 ***
 

@@ -2,9 +2,9 @@
 
 ***
 
-[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletAccountIdError
+[@demox-labs/miden-wallet-adapter-base](../README.md) / WalletAddressError
 
-# Class: WalletAccountIdError
+# Class: WalletAddressError
 
 ## Extends
 
@@ -14,7 +14,7 @@
 
 ### Constructor
 
-> **new WalletAccountIdError**(`message?`, `error?`): `WalletAccountIdError`
+> **new WalletAddressError**(`message?`, `error?`): `WalletAddressError`
 
 #### Parameters
 
@@ -28,7 +28,7 @@
 
 #### Returns
 
-`WalletAccountIdError`
+`WalletAddressError`
 
 #### Inherited from
 
@@ -68,7 +68,7 @@
 
 ### name
 
-> **name**: `string` = `'WalletAccountIdError'`
+> **name**: `string` = `'WalletAddressError'`
 
 #### Overrides
 

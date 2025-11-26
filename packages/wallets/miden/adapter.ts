@@ -28,7 +28,7 @@ export interface MidenWalletEvents {
 }
 
 export interface MidenWallet extends EventEmitter<MidenWalletEvents> {
-  accountId?: string;
+  address?: string;
   publicKey?: Uint8Array;
   requestSend(
     transaction: MidenSendTransaction
@@ -80,7 +80,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
 
   private _connecting: boolean;
   private _wallet: MidenWallet | null;
-  private _accountId: string | null;
+  private _address: string | null;
   private _publicKey: Uint8Array | null;
   private _privateDataPermission: string;
   private _readyState: WalletReadyState =
@@ -92,7 +92,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     super();
     this._connecting = false;
     this._wallet = null;
-    this._accountId = null;
+    this._address = null;
     this._publicKey = null;
     this._privateDataPermission = PrivateDataPermission.UponRequest;
 
@@ -108,8 +108,8 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
     }
   }
 
-  get accountId() {
-    return this._accountId;
+  get address() {
+    return this._address;
   }
 
   get publicKey() {
@@ -135,7 +135,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestSend(transaction: MidenSendTransaction): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestSend(transaction);
         return result.transactionId!;
@@ -153,7 +153,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   ): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestConsume(transaction);
         return result.transactionId!;
@@ -169,7 +169,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestTransaction(transaction: MidenTransaction): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestTransaction(transaction);
         return result.transactionId!;
@@ -185,7 +185,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestAssets(): Promise<Asset[]> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestAssets();
         return result.assets;
@@ -201,7 +201,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestPrivateNotes(noteFilterType: NoteFilterTypes, noteIds?: string[]): Promise<InputNoteDetails[]> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       try {
         const result = await wallet.requestPrivateNotes(noteFilterType, noteIds);
         return result.privateNotes;
@@ -217,7 +217,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async signBytes(message: Uint8Array, kind: SignKind): Promise<Uint8Array> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       try {
         const result = await wallet.signBytes(message, kind);
         return result.signature;
@@ -233,7 +233,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async importPrivateNote(note: Uint8Array): Promise<string> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       const result = await wallet.importPrivateNote(note);
       return result.noteId;
     } catch (error: any) {
@@ -245,7 +245,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async requestConsumableNotes(): Promise<InputNoteDetails[]> {
     try {
       const wallet = this._wallet;
-      if (!wallet || !this.accountId) throw new WalletNotConnectedError();
+      if (!wallet || !this.address) throw new WalletNotConnectedError();
       const result = await wallet.requestConsumableNotes();
       return result.consumableNotes;
     } catch (error: any) {
@@ -271,10 +271,10 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
 
       try {
         await wallet.connect(privateDataPermission, network, allowedPrivateData);
-        if (!wallet?.accountId) {
+        if (!wallet.address) {
           throw new WalletConnectionError();
         }
-        this._accountId = wallet.accountId!;
+        this._address = wallet.address;
         this._publicKey = wallet.publicKey!;
       } catch (error: any) {
         throw new WalletConnectionError(error?.message, error);
@@ -283,7 +283,7 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
       this._wallet = wallet;
       this._privateDataPermission = privateDataPermission;
 
-      this.emit('connect', this._accountId);
+      this.emit('connect', this._address);
     } catch (error: any) {
       this.emit('error', error);
       throw error;
@@ -295,10 +295,8 @@ export class MidenWalletAdapter extends BaseMessageSignerWalletAdapter {
   async disconnect(): Promise<void> {
     const wallet = this._wallet;
     if (wallet) {
-      // wallet.off('disconnect', this._disconnected);
-
       this._wallet = null;
-      this._accountId = null;
+      this._address = null;
       this._publicKey = null;
 
       try {

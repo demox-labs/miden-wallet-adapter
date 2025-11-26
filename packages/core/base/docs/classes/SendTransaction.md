@@ -88,20 +88,20 @@
 
 ***
 
-### recipientAccountId
+### recipientAddress
 
-> **recipientAccountId**: `string`
+> **recipientAddress**: `string`
 
 #### Implementation of
 
-[`MidenSendTransaction`](../interfaces/MidenSendTransaction.md).[`recipientAccountId`](../interfaces/MidenSendTransaction.md#recipientaccountid)
+[`MidenSendTransaction`](../interfaces/MidenSendTransaction.md).[`recipientAddress`](../interfaces/MidenSendTransaction.md#recipientaddress)
 
 ***
 
-### senderAccountId
+### senderAddress
 
-> **senderAccountId**: `string`
+> **senderAddress**: `string`
 
 #### Implementation of
 
-[`MidenSendTransaction`](../interfaces/MidenSendTransaction.md).[`senderAccountId`](../interfaces/MidenSendTransaction.md#senderaccountid)
+[`MidenSendTransaction`](../interfaces/MidenSendTransaction.md).[`senderAddress`](../interfaces/MidenSendTransaction.md#senderaddress)

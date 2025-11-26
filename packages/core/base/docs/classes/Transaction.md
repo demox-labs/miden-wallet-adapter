@@ -86,15 +86,15 @@
 
 ### createCustomTransaction()
 
-> `static` **createCustomTransaction**(`accountId`, `recipientAccountId`, `transactionRequest`, `inputNoteIds?`, `noteBytes?`): `Transaction`
+> `static` **createCustomTransaction**(`address`, `recipientAddress`, `transactionRequest`, `inputNoteIds?`, `noteBytes?`): `Transaction`
 
 #### Parameters
 
-##### accountId
+##### address
 
 `string`
 
-##### recipientAccountId
+##### recipientAddress
 
 `string`
 

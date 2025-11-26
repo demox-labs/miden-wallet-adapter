@@ -14,15 +14,15 @@
 
 ### Constructor
 
-> **new CustomTransaction**(`accountId`, `recipientAccountId`, `transactionRequest`, `inputNotesIds?`, `inputNoteBytes?`): `CustomTransaction`
+> **new CustomTransaction**(`address`, `recipientAddress`, `transactionRequest`, `inputNotesIds?`, `inputNoteBytes?`): `CustomTransaction`
 
 #### Parameters
 
-##### accountId
+##### address
 
 `string`
 
-##### recipientAccountId
+##### recipientAddress
 
 `string`
 
@@ -44,13 +44,13 @@
 
 ## Properties
 
-### accountId
+### address
 
-> **accountId**: `string`
+> **address**: `string`
 
 #### Implementation of
 
-[`MidenCustomTransaction`](../interfaces/MidenCustomTransaction.md).[`accountId`](../interfaces/MidenCustomTransaction.md#accountid)
+[`MidenCustomTransaction`](../interfaces/MidenCustomTransaction.md).[`address`](../interfaces/MidenCustomTransaction.md#address)
 
 ***
 
@@ -74,13 +74,13 @@
 
 ***
 
-### recipientAccountId
+### recipientAddress
 
-> **recipientAccountId**: `string`
+> **recipientAddress**: `string`
 
 #### Implementation of
 
-[`MidenCustomTransaction`](../interfaces/MidenCustomTransaction.md).[`recipientAccountId`](../interfaces/MidenCustomTransaction.md#recipientaccountid)
+[`MidenCustomTransaction`](../interfaces/MidenCustomTransaction.md).[`recipientAddress`](../interfaces/MidenCustomTransaction.md#recipientaddress)
 
 ***
 

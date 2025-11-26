@@ -27,7 +27,7 @@
 - [SendTransaction](classes/SendTransaction.md)
 - [Transaction](classes/Transaction.md)
 - [WalletAccountError](classes/WalletAccountError.md)
-- [WalletAccountIdError](classes/WalletAccountIdError.md)
+- [WalletAddressError](classes/WalletAddressError.md)
 - [WalletConfigError](classes/WalletConfigError.md)
 - [WalletConnectionError](classes/WalletConnectionError.md)
 - [WalletDecryptionError](classes/WalletDecryptionError.md)

@@ -12,9 +12,9 @@
 
 ## Properties
 
-### accountId?
+### address?
 
-> `optional` **accountId**: `string`
+> `optional` **address**: `string`
 
 ***
 

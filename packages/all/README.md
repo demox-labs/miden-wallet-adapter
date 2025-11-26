@@ -84,13 +84,13 @@ Access wallet state and functionality with the `useWallet` hook:
 import { useWallet, SendTransaction } from '@demox-labs/miden-wallet-adapter';
 
 function SendComponent() {
-  const { wallet, accountId, connected } = useWallet();
+  const { wallet, address, connected } = useWallet();
 
   const handleSend = async () => {
-    if (!wallet || !accountId) return;
+    if (!wallet || !address) return;
 
     const transaction = new SendTransaction(
-      accountId,
+      address,
       'recipient_address_here',
       'faucet_id_here',
       'public', // or 'private'
@@ -111,7 +111,7 @@ function SendComponent() {
 
   return (
     <div>
-      <p>Connected: {accountId}</p>
+      <p>Connected: {address}</p>
       <button onClick={handleSend}>Send Transaction</button>
     </div>
   );
@@ -124,13 +124,13 @@ function SendComponent() {
 import { useWallet, CustomTransaction } from '@demox-labs/miden-wallet-adapter';
 
 function CustomTransactionComponent() {
-  const { wallet, accountId, requestTransaction } = useWallet();
+  const { wallet, address, requestTransaction } = useWallet();
 
   const handleCustomTransaction = async () => {
-    if (!wallet || !accountId) return;
+    if (!wallet || !address) return;
 
     const customTransaction = new CustomTransaction(
-      accountId,
+      address,
       transactionRequest // TransactionRequest from Miden Web SDK
     );
 
@@ -147,10 +147,10 @@ function CustomTransactionComponent() {
 import { useWallet } from '@demox-labs/miden-wallet-adapter';
 
 function AssetsAndNotesComponent() {
-  const { wallet, accountId, requestAssets, requestPrivateNotes } = useWallet();
+  const { wallet, address, requestAssets, requestPrivateNotes } = useWallet();
 
   const getAssetsAndNotes() = async () => {
-    if (!wallet || !accountId) return;
+    if (!wallet || !address) return;
 
     // { faucetId: string, amount: string }[]
     const assets = await requestAssets();

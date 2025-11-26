@@ -43,13 +43,13 @@ Minimal `EventEmitter` interface that is molded against the Node.js
 
 ## Properties
 
-### accountId
+### address
 
-> `abstract` **accountId**: `string`
+> `abstract` **address**: `string`
 
 #### Implementation of
 
-`WalletAdapter.accountId`
+`WalletAdapter.address`
 
 ***
 

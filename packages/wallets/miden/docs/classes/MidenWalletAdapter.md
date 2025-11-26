@@ -82,11 +82,11 @@
 
 ## Accessors
 
-### accountId
+### address
 
 #### Get Signature
 
-> **get** **accountId**(): `string`
+> **get** **address**(): `string`
 
 ##### Returns
 
@@ -94,7 +94,7 @@
 
 #### Overrides
 
-`BaseMessageSignerWalletAdapter.accountId`
+`BaseMessageSignerWalletAdapter.address`
 
 ***
 

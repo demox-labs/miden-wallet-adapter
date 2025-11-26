@@ -15,13 +15,12 @@ import { WalletIcon } from './WalletIcon';
 import { WalletModalButton } from './WalletModalButton';
 
 export const WalletMultiButton: FC<ButtonProps> = ({ children, ...props }) => {
-  const { accountId, wallet, disconnect } = useWallet();
+  const { address, wallet, disconnect } = useWallet();
   const { setVisible } = useWalletModal();
   const [copied, setCopied] = useState(false);
   const [active, setActive] = useState(false);
   const ref = useRef<HTMLUListElement>(null);
 
-  const address = useMemo(() => accountId?.toString(), [accountId]);
   const content = useMemo(() => {
     if (children) return children;
     if (!wallet || !address) return null;

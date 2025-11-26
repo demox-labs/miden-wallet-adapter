@@ -40,13 +40,13 @@ export interface WalletProviderProps {
 const initialState: {
   wallet: Wallet | null;
   adapter: Adapter | null;
-  accountId: string | null;
+  address: string | null;
   publicKey: Uint8Array | null;
   connected: boolean;
 } = {
   wallet: null,
   adapter: null,
-  accountId: null,
+  address: null,
   publicKey: null,
   connected: false,
 };
@@ -65,7 +65,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     localStorageKey,
     null
   );
-  const [{ wallet, adapter, accountId, publicKey, connected }, setState] =
+  const [{ wallet, adapter, address, publicKey, connected }, setState] =
     useState(initialState);
   const readyState = adapter?.readyState || WalletReadyState.Unsupported;
   const [connecting, setConnecting] = useState(false);
@@ -135,7 +135,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         wallet,
         adapter: wallet.adapter,
         connected: wallet.adapter.connected,
-        accountId: wallet.adapter.accountId,
+        address: wallet.adapter.address,
         publicKey: wallet.adapter.publicKey
       });
     } else {
@@ -159,7 +159,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     setState((state) => ({
       ...state,
       connected: adapter.connected,
-      accountId: adapter.accountId,
+      address: adapter.address,
       publicKey: adapter.publicKey
     }));
   }, [adapter]);
@@ -382,7 +382,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         autoConnect,
         wallets,
         wallet,
-        accountId,
+        address,
         publicKey,
         connected,
         connecting,
